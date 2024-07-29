@@ -1,0 +1,20 @@
+﻿<Window x:Class="Project.WPF.TextSettings"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Project.WPF"
+        mc:Ignorable="d"
+        Title="TextSettings" Height="208" Width="318" Closed="Window_Closed">
+    <Grid>
+        <Label Content="文字内容" HorizontalAlignment="Left" Margin="30,25,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,3.635"/>
+        <Label Content="文字高度" HorizontalAlignment="Left" Margin="30,109,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,3.635"/>
+        <Label Content="文字颜色" HorizontalAlignment="Left" Margin="30,68,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,3.635"/>
+        <TextBox HorizontalAlignment="Left" Margin="121,29,0,0" TextWrapping="Wrap" Text="{Binding TextString}" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Margin="121,71,0,0" TextWrapping="Wrap" Text="{Binding ColorIndex}" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Margin="121,113,0,0" TextWrapping="Wrap" Text="{Binding TextHeight}" VerticalAlignment="Top" Width="120"/>
+        <Button Content="确定" HorizontalAlignment="Left" Margin="54,155,0,0" VerticalAlignment="Top" Width="50" Click="Button_Click"/>
+        <Button Content="取消" HorizontalAlignment="Left" Margin="198,155,0,0" VerticalAlignment="Top" Width="49" Click="Button_Click_1"/>
+
+    </Grid>
+</Window>
