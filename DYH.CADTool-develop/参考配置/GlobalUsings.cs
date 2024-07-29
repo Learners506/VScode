@@ -1,0 +1,55 @@
+﻿global using Autodesk.AutoCAD.ApplicationServices;
+global using Autodesk.AutoCAD.Colors;
+global using Autodesk.AutoCAD.DatabaseServices;
+global using Autodesk.AutoCAD.DatabaseServices.Filters;
+global using Autodesk.AutoCAD.EditorInput;
+global using Autodesk.AutoCAD.Geometry;
+global using Autodesk.AutoCAD.GraphicsInterface;
+global using Autodesk.AutoCAD.GraphicsSystem;
+global using Autodesk.AutoCAD.Runtime;
+global using DYH.Tools;
+global using IFoxCAD.Basal;
+global using IFoxCAD.Cad;
+global using Microsoft.CSharp.RuntimeBinder;
+global using Microsoft.Win32;
+global using System;
+global using System.Collections;
+global using System.Collections.Generic;
+global using System.Collections.ObjectModel;
+global using System.ComponentModel;
+//global using System.Runtime.CompilerServices;
+global using System.Diagnostics;
+global using System.Diagnostics.CodeAnalysis;
+global using System.IO;
+global using System.Linq;
+global using System.Linq.Expressions;
+global using System.Reflection;
+global using System.Runtime.CompilerServices;
+global using System.Runtime.InteropServices;
+global using System.Text;
+//global using Expression=Autodesk.AutoCAD.Windows.Data.Expression;
+// 系统引用
+global using System.Text.RegularExpressions;
+global using System.Threading;
+global using System.Windows.Forms;
+global using System.Windows.Input;
+global using Acap = Autodesk.AutoCAD.ApplicationServices.Application;
+global using Acaop = Autodesk.AutoCAD.ApplicationServices.Core.Application;
+global using SystemVariableChangedEventArgs = Autodesk.AutoCAD.ApplicationServices.SystemVariableChangedEventArgs;
+global using Color = Autodesk.AutoCAD.Colors.Color;
+global using Group = Autodesk.AutoCAD.DatabaseServices.Group;
+global using LineWeight = Autodesk.AutoCAD.DatabaseServices.LineWeight;
+global using Polyline = Autodesk.AutoCAD.DatabaseServices.Polyline;
+global using Viewport = Autodesk.AutoCAD.DatabaseServices.Viewport;
+global using CursorType = Autodesk.AutoCAD.EditorInput.CursorType;
+global using Registry = Microsoft.Win32.Registry;
+global using RegistryKey = Microsoft.Win32.RegistryKey;
+global using Exception = System.Exception;
+global using MessageBox = System.Windows.Forms.MessageBox;
+global using MouseEventArgs = System.Windows.Forms.MouseEventArgs;
+//global using System.Security.Cryptography;
+
+//v0.6
+global using MouseEventHandler = System.Windows.Forms.MouseEventHandler;
+global using MediaColor = System.Windows.Media.Color;
+//global using 

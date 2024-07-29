@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <MSBuildAllProjects Condition="'$(MSBuildVersion)' == '' Or '$(MSBuildVersion)' &lt; '16.0'">$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+        <HasSharedItems>true</HasSharedItems>
+        <SharedGUID>4502c157-7d98-473b-a8ea-70ca9c6ea265</SharedGUID>
+    </PropertyGroup>
+    <PropertyGroup Label="Configuration">
+        <Import_RootNamespace>DYHCadTool</Import_RootNamespace>
+    </PropertyGroup>
+    <ItemGroup>
+        <Compile Include="$(MSBuildThisFileDirectory)Tools\BaseTool.cs"/>
+        <Compile Include="$(MSBuildThisFileDirectory)Tools\BestBox.cs"/>
+        <Compile Include="$(MSBuildThisFileDirectory)Tools\ColorTool.cs"/>
+        <Compile Include="$(MSBuildThisFileDirectory)Tools\Com.cs"/>
+        <Compile Include="$(MSBuildThisFileDirectory)Tools\IdleNoCmdAction.cs"/>
+        <Compile Include="$(MSBuildThisFileDirectory)Tools\LinqTool.cs"/>
+        <Compile Include="$(MSBuildThisFileDirectory)Tools\NetworkTime.cs"/>
+        <Compile Include="$(MSBuildThisFileDirectory)Tools\DBDictionaryTool.cs"/>
+        <Compile Include="$(MSBuildThisFileDirectory)Tools\DBObjectEx.cs"/>
+        <Compile Include="$(MSBuildThisFileDirectory)Tools\DebugTool.cs"/>
+        <Compile Include="$(MSBuildThisFileDirectory)Tools\DelegateEx.cs"/>
+        <Compile Include="$(MSBuildThisFileDirectory)Tools\DisposeTool.cs"/>
+        <Compile Include="$(MSBuildThisFileDirectory)Tools\EditorTool.cs"/>
+        <Compile Include="$(MSBuildThisFileDirectory)Tools\GeometryOnZPlane.cs"/>
+        <Compile Include="$(MSBuildThisFileDirectory)Tools\NetStandardTool.cs"/>
+        <Compile Include="$(MSBuildThisFileDirectory)Tools\PaletteSetEx.cs"/>
+        <Compile Include="$(MSBuildThisFileDirectory)Tools\Point5d.cs"/>
+        <Compile Include="$(MSBuildThisFileDirectory)Tools\RegEx.cs"/>
+        <Compile Include="$(MSBuildThisFileDirectory)Tools\RegionTool.cs"/>
+        <Compile Include="$(MSBuildThisFileDirectory)Tools\RXClassEx.cs"/>
+        <Compile Include="$(MSBuildThisFileDirectory)Tools\SerializeTool.cs"/>
+        <Compile Include="$(MSBuildThisFileDirectory)Tools\SymbolTableTool.cs"/>
+        <Compile Include="$(MSBuildThisFileDirectory)Tools\SystemTool.cs"/>
+        <Compile Include="$(MSBuildThisFileDirectory)Tools\TangentTool.cs"/>
+    <Compile Include="$(MSBuildThisFileDirectory)Tools\WindowTool.cs" />
+        <Compile Include="$(MSBuildThisFileDirectory)Tools\XDataEx.cs"/>
+        <Compile Include="$(MSBuildThisFileDirectory)Utils\ScanSort.cs"/>
+    </ItemGroup>
+</Project>
