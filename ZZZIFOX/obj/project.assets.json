@@ -1,0 +1,915 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETFramework,Version=v4.8": {
+      "AutoCAD.NET/23.0.0": {
+        "type": "package",
+        "dependencies": {
+          "AutoCAD.NET.Core": "[23.0.0, 24.0.0)"
+        },
+        "compile": {
+          "lib/net47/AcCui.dll": {
+            "related": ".xml"
+          },
+          "lib/net47/AcDx.dll": {
+            "related": ".xml"
+          },
+          "lib/net47/AcMgd.dll": {
+            "related": ".xml"
+          },
+          "lib/net47/AcMr.dll": {
+            "related": ".xml"
+          },
+          "lib/net47/AcSeamless.dll": {},
+          "lib/net47/AcTcMgd.dll": {
+            "related": ".xml"
+          },
+          "lib/net47/AcWindows.dll": {
+            "related": ".xml"
+          },
+          "lib/net47/AdUIMgd.dll": {
+            "related": ".xml"
+          },
+          "lib/net47/AdUiPalettes.dll": {},
+          "lib/net47/AdWindows.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net47/_._": {
+            "related": ".xml"
+          }
+        }
+      },
+      "AutoCAD.NET.Core/23.0.0": {
+        "type": "package",
+        "dependencies": {
+          "AutoCAD.NET.Model": "[23.0.0, 24.0.0)"
+        },
+        "compile": {
+          "lib/net47/AcCoreMgd.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net47/_._": {
+            "related": ".xml"
+          }
+        }
+      },
+      "AutoCAD.NET.Model/23.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net47/AcDbMgd.dll": {
+            "related": ".xml"
+          },
+          "lib/net47/acdbmgdbrep.dll": {}
+        },
+        "runtime": {
+          "lib/net47/_._": {
+            "related": ".xml"
+          }
+        }
+      },
+      "IFox.Basal.Source/0.7.2": {
+        "type": "package",
+        "contentFiles": {
+          "contentFiles/cs/any/IFox.Basal.Source/CLS/Index.cs": {
+            "buildAction": "Compile",
+            "codeLanguage": "cs",
+            "copyToOutput": false
+          },
+          "contentFiles/cs/any/IFox.Basal.Source/CLS/Range.cs": {
+            "buildAction": "Compile",
+            "codeLanguage": "cs",
+            "copyToOutput": false
+          },
+          "contentFiles/cs/any/IFox.Basal.Source/CLS/RuntimeHelpers.cs": {
+            "buildAction": "Compile",
+            "codeLanguage": "cs",
+            "copyToOutput": false
+          },
+          "contentFiles/cs/any/IFox.Basal.Source/CLS/TupleElementNamesAttribute.cs": {
+            "buildAction": "Compile",
+            "codeLanguage": "cs",
+            "copyToOutput": false
+          },
+          "contentFiles/cs/any/IFox.Basal.Source/ExpressionTrees/ParameterRebinder.cs": {
+            "buildAction": "Compile",
+            "codeLanguage": "cs",
+            "copyToOutput": false
+          },
+          "contentFiles/cs/any/IFox.Basal.Source/ExpressionTrees/PredicateBuilder.cs": {
+            "buildAction": "Compile",
+            "codeLanguage": "cs",
+            "copyToOutput": false
+          },
+          "contentFiles/cs/any/IFox.Basal.Source/ExpressionTrees/SqlExpressionVisitor.cs": {
+            "buildAction": "Compile",
+            "codeLanguage": "cs",
+            "copyToOutput": false
+          },
+          "contentFiles/cs/any/IFox.Basal.Source/General/ArrayEx.cs": {
+            "buildAction": "Compile",
+            "codeLanguage": "cs",
+            "copyToOutput": false
+          },
+          "contentFiles/cs/any/IFox.Basal.Source/General/DebugHelper.cs": {
+            "buildAction": "Compile",
+            "codeLanguage": "cs",
+            "copyToOutput": false
+          },
+          "contentFiles/cs/any/IFox.Basal.Source/General/DictEx.cs": {
+            "buildAction": "Compile",
+            "codeLanguage": "cs",
+            "copyToOutput": false
+          },
+          "contentFiles/cs/any/IFox.Basal.Source/General/EnumEx.cs": {
+            "buildAction": "Compile",
+            "codeLanguage": "cs",
+            "copyToOutput": false
+          },
+          "contentFiles/cs/any/IFox.Basal.Source/General/IsExternalInit.cs": {
+            "buildAction": "Compile",
+            "codeLanguage": "cs",
+            "copyToOutput": false
+          },
+          "contentFiles/cs/any/IFox.Basal.Source/General/LinkedHashMap.cs": {
+            "buildAction": "Compile",
+            "codeLanguage": "cs",
+            "copyToOutput": false
+          },
+          "contentFiles/cs/any/IFox.Basal.Source/General/LinkedHashSet.cs": {
+            "buildAction": "Compile",
+            "codeLanguage": "cs",
+            "copyToOutput": false
+          },
+          "contentFiles/cs/any/IFox.Basal.Source/General/LinqEx.cs": {
+            "buildAction": "Compile",
+            "codeLanguage": "cs",
+            "copyToOutput": false
+          },
+          "contentFiles/cs/any/IFox.Basal.Source/General/ListEx.cs": {
+            "buildAction": "Compile",
+            "codeLanguage": "cs",
+            "copyToOutput": false
+          },
+          "contentFiles/cs/any/IFox.Basal.Source/General/LoopList.cs": {
+            "buildAction": "Compile",
+            "codeLanguage": "cs",
+            "copyToOutput": false
+          },
+          "contentFiles/cs/any/IFox.Basal.Source/General/LoopState.cs": {
+            "buildAction": "Compile",
+            "codeLanguage": "cs",
+            "copyToOutput": false
+          },
+          "contentFiles/cs/any/IFox.Basal.Source/General/MathEx.cs": {
+            "buildAction": "Compile",
+            "codeLanguage": "cs",
+            "copyToOutput": false
+          },
+          "contentFiles/cs/any/IFox.Basal.Source/General/RandomEx.cs": {
+            "buildAction": "Compile",
+            "codeLanguage": "cs",
+            "copyToOutput": false
+          },
+          "contentFiles/cs/any/IFox.Basal.Source/General/Timer.cs": {
+            "buildAction": "Compile",
+            "codeLanguage": "cs",
+            "copyToOutput": false
+          },
+          "contentFiles/cs/any/IFox.Basal.Source/Nullable/ArgumentNullEx.cs": {
+            "buildAction": "Compile",
+            "codeLanguage": "cs",
+            "copyToOutput": false
+          },
+          "contentFiles/cs/any/IFox.Basal.Source/Nullable/CallerArgumentExpressionAttribute.cs": {
+            "buildAction": "Compile",
+            "codeLanguage": "cs",
+            "copyToOutput": false
+          },
+          "contentFiles/cs/any/IFox.Basal.Source/Nullable/NullableAttributes.cs": {
+            "buildAction": "Compile",
+            "codeLanguage": "cs",
+            "copyToOutput": false
+          },
+          "contentFiles/cs/any/IFox.Basal.Source/WindowsAPI/Enums.cs": {
+            "buildAction": "Compile",
+            "codeLanguage": "cs",
+            "copyToOutput": false
+          },
+          "contentFiles/cs/any/IFox.Basal.Source/WindowsAPI/MouseHook.cs": {
+            "buildAction": "Compile",
+            "codeLanguage": "cs",
+            "copyToOutput": false
+          },
+          "contentFiles/cs/any/IFox.Basal.Source/WindowsAPI/WindowsAPI.cs": {
+            "buildAction": "Compile",
+            "codeLanguage": "cs",
+            "copyToOutput": false
+          }
+        }
+      },
+      "IFox.CAD.Source/0.7.2": {
+        "type": "package",
+        "contentFiles": {
+          "contentFiles/cs/any/IFox.CAD.Source/Algorithms/Graph/Graph.cs": {
+            "buildAction": "Compile",
+            "codeLanguage": "cs",
+            "copyToOutput": false
+          },
+          "contentFiles/cs/any/IFox.CAD.Source/Algorithms/Graph/IGraph.cs": {
+            "buildAction": "Compile",
+            "codeLanguage": "cs",
+            "copyToOutput": false
+          },
+          "contentFiles/cs/any/IFox.CAD.Source/Algorithms/QuadTree/QuadEntity.cs": {
+            "buildAction": "Compile",
+            "codeLanguage": "cs",
+            "copyToOutput": false
+          },
+          "contentFiles/cs/any/IFox.CAD.Source/Algorithms/QuadTree/QuadTree.cs": {
+            "buildAction": "Compile",
+            "codeLanguage": "cs",
+            "copyToOutput": false
+          },
+          "contentFiles/cs/any/IFox.CAD.Source/Algorithms/QuadTree/QuadTreeEvn.cs": {
+            "buildAction": "Compile",
+            "codeLanguage": "cs",
+            "copyToOutput": false
+          },
+          "contentFiles/cs/any/IFox.CAD.Source/Algorithms/QuadTree/QuadTreeNode.cs": {
+            "buildAction": "Compile",
+            "codeLanguage": "cs",
+            "copyToOutput": false
+          },
+          "contentFiles/cs/any/IFox.CAD.Source/Algorithms/QuadTree/QuadTreeSelectMode.cs": {
+            "buildAction": "Compile",
+            "codeLanguage": "cs",
+            "copyToOutput": false
+          },
+          "contentFiles/cs/any/IFox.CAD.Source/Algorithms/QuadTree/Rect.cs": {
+            "buildAction": "Compile",
+            "codeLanguage": "cs",
+            "copyToOutput": false
+          },
+          "contentFiles/cs/any/IFox.CAD.Source/AutoReg/AcadEMR.cs": {
+            "buildAction": "Compile",
+            "codeLanguage": "cs",
+            "copyToOutput": false
+          },
+          "contentFiles/cs/any/IFox.CAD.Source/AutoReg/AssemInfo.cs": {
+            "buildAction": "Compile",
+            "codeLanguage": "cs",
+            "copyToOutput": false
+          },
+          "contentFiles/cs/any/IFox.CAD.Source/AutoReg/AutoLoad.cs": {
+            "buildAction": "Compile",
+            "codeLanguage": "cs",
+            "copyToOutput": false
+          },
+          "contentFiles/cs/any/IFox.CAD.Source/AutoReg/AutoReg.cs": {
+            "buildAction": "Compile",
+            "codeLanguage": "cs",
+            "copyToOutput": false
+          },
+          "contentFiles/cs/any/IFox.CAD.Source/AutoReg/AutoRegAssem.cs": {
+            "buildAction": "Compile",
+            "codeLanguage": "cs",
+            "copyToOutput": false
+          },
+          "contentFiles/cs/any/IFox.CAD.Source/AutoReg/IAutoGo.cs": {
+            "buildAction": "Compile",
+            "codeLanguage": "cs",
+            "copyToOutput": false
+          },
+          "contentFiles/cs/any/IFox.CAD.Source/AutoReg/MethodInfoHelper.cs": {
+            "buildAction": "Compile",
+            "codeLanguage": "cs",
+            "copyToOutput": false
+          },
+          "contentFiles/cs/any/IFox.CAD.Source/CadVersion/AcadVersion.cs": {
+            "buildAction": "Compile",
+            "codeLanguage": "cs",
+            "copyToOutput": false
+          },
+          "contentFiles/cs/any/IFox.CAD.Source/CadVersion/CadVersion.cs": {
+            "buildAction": "Compile",
+            "codeLanguage": "cs",
+            "copyToOutput": false
+          },
+          "contentFiles/cs/any/IFox.CAD.Source/Copyclip/BitmapTool.cs": {
+            "buildAction": "Compile",
+            "codeLanguage": "cs",
+            "copyToOutput": false
+          },
+          "contentFiles/cs/any/IFox.CAD.Source/Copyclip/EmfTool.cs": {
+            "buildAction": "Compile",
+            "codeLanguage": "cs",
+            "copyToOutput": false
+          },
+          "contentFiles/cs/any/IFox.CAD.Source/Copyclip/TagClipboardInfo.cs": {
+            "buildAction": "Compile",
+            "codeLanguage": "cs",
+            "copyToOutput": false
+          },
+          "contentFiles/cs/any/IFox.CAD.Source/ExtensionMethod/AttachmentPointHelper.cs": {
+            "buildAction": "Compile",
+            "codeLanguage": "cs",
+            "copyToOutput": false
+          },
+          "contentFiles/cs/any/IFox.CAD.Source/ExtensionMethod/BulgeVertexWidth.cs": {
+            "buildAction": "Compile",
+            "codeLanguage": "cs",
+            "copyToOutput": false
+          },
+          "contentFiles/cs/any/IFox.CAD.Source/ExtensionMethod/CheckFactory.cs": {
+            "buildAction": "Compile",
+            "codeLanguage": "cs",
+            "copyToOutput": false
+          },
+          "contentFiles/cs/any/IFox.CAD.Source/ExtensionMethod/CollectionEx.cs": {
+            "buildAction": "Compile",
+            "codeLanguage": "cs",
+            "copyToOutput": false
+          },
+          "contentFiles/cs/any/IFox.CAD.Source/ExtensionMethod/Curve2dEx.cs": {
+            "buildAction": "Compile",
+            "codeLanguage": "cs",
+            "copyToOutput": false
+          },
+          "contentFiles/cs/any/IFox.CAD.Source/ExtensionMethod/Curve3dEx.cs": {
+            "buildAction": "Compile",
+            "codeLanguage": "cs",
+            "copyToOutput": false
+          },
+          "contentFiles/cs/any/IFox.CAD.Source/ExtensionMethod/CurveEx.cs": {
+            "buildAction": "Compile",
+            "codeLanguage": "cs",
+            "copyToOutput": false
+          },
+          "contentFiles/cs/any/IFox.CAD.Source/ExtensionMethod/DBDictionaryEx.cs": {
+            "buildAction": "Compile",
+            "codeLanguage": "cs",
+            "copyToOutput": false
+          },
+          "contentFiles/cs/any/IFox.CAD.Source/ExtensionMethod/DBObjectEx.cs": {
+            "buildAction": "Compile",
+            "codeLanguage": "cs",
+            "copyToOutput": false
+          },
+          "contentFiles/cs/any/IFox.CAD.Source/ExtensionMethod/DBTransEx.cs": {
+            "buildAction": "Compile",
+            "codeLanguage": "cs",
+            "copyToOutput": false
+          },
+          "contentFiles/cs/any/IFox.CAD.Source/ExtensionMethod/DatabaseEx.cs": {
+            "buildAction": "Compile",
+            "codeLanguage": "cs",
+            "copyToOutput": false
+          },
+          "contentFiles/cs/any/IFox.CAD.Source/ExtensionMethod/DwgMark.cs": {
+            "buildAction": "Compile",
+            "codeLanguage": "cs",
+            "copyToOutput": false
+          },
+          "contentFiles/cs/any/IFox.CAD.Source/ExtensionMethod/EditorEx.cs": {
+            "buildAction": "Compile",
+            "codeLanguage": "cs",
+            "copyToOutput": false
+          },
+          "contentFiles/cs/any/IFox.CAD.Source/ExtensionMethod/Entity/ArcEx.cs": {
+            "buildAction": "Compile",
+            "codeLanguage": "cs",
+            "copyToOutput": false
+          },
+          "contentFiles/cs/any/IFox.CAD.Source/ExtensionMethod/Entity/BlockReferenceEx.cs": {
+            "buildAction": "Compile",
+            "codeLanguage": "cs",
+            "copyToOutput": false
+          },
+          "contentFiles/cs/any/IFox.CAD.Source/ExtensionMethod/Entity/BoundingInfo.cs": {
+            "buildAction": "Compile",
+            "codeLanguage": "cs",
+            "copyToOutput": false
+          },
+          "contentFiles/cs/any/IFox.CAD.Source/ExtensionMethod/Entity/CircleEx.cs": {
+            "buildAction": "Compile",
+            "codeLanguage": "cs",
+            "copyToOutput": false
+          },
+          "contentFiles/cs/any/IFox.CAD.Source/ExtensionMethod/Entity/DBTextEx.cs": {
+            "buildAction": "Compile",
+            "codeLanguage": "cs",
+            "copyToOutput": false
+          },
+          "contentFiles/cs/any/IFox.CAD.Source/ExtensionMethod/Entity/EntityBoundingInfo.cs": {
+            "buildAction": "Compile",
+            "codeLanguage": "cs",
+            "copyToOutput": false
+          },
+          "contentFiles/cs/any/IFox.CAD.Source/ExtensionMethod/Entity/EntityEx.cs": {
+            "buildAction": "Compile",
+            "codeLanguage": "cs",
+            "copyToOutput": false
+          },
+          "contentFiles/cs/any/IFox.CAD.Source/ExtensionMethod/Entity/MTextEx.cs": {
+            "buildAction": "Compile",
+            "codeLanguage": "cs",
+            "copyToOutput": false
+          },
+          "contentFiles/cs/any/IFox.CAD.Source/ExtensionMethod/Entity/PolylineEx.cs": {
+            "buildAction": "Compile",
+            "codeLanguage": "cs",
+            "copyToOutput": false
+          },
+          "contentFiles/cs/any/IFox.CAD.Source/ExtensionMethod/Enums.cs": {
+            "buildAction": "Compile",
+            "codeLanguage": "cs",
+            "copyToOutput": false
+          },
+          "contentFiles/cs/any/IFox.CAD.Source/ExtensionMethod/ErrorInfoEx.cs": {
+            "buildAction": "Compile",
+            "codeLanguage": "cs",
+            "copyToOutput": false
+          },
+          "contentFiles/cs/any/IFox.CAD.Source/ExtensionMethod/Filer/DwgFiler.cs": {
+            "buildAction": "Compile",
+            "codeLanguage": "cs",
+            "copyToOutput": false
+          },
+          "contentFiles/cs/any/IFox.CAD.Source/ExtensionMethod/Filer/DwgFilerEx.cs": {
+            "buildAction": "Compile",
+            "codeLanguage": "cs",
+            "copyToOutput": false
+          },
+          "contentFiles/cs/any/IFox.CAD.Source/ExtensionMethod/Filer/DxfFiler.cs": {
+            "buildAction": "Compile",
+            "codeLanguage": "cs",
+            "copyToOutput": false
+          },
+          "contentFiles/cs/any/IFox.CAD.Source/ExtensionMethod/GeometryEx.cs": {
+            "buildAction": "Compile",
+            "codeLanguage": "cs",
+            "copyToOutput": false
+          },
+          "contentFiles/cs/any/IFox.CAD.Source/ExtensionMethod/IdleAction.cs": {
+            "buildAction": "Compile",
+            "codeLanguage": "cs",
+            "copyToOutput": false
+          },
+          "contentFiles/cs/any/IFox.CAD.Source/ExtensionMethod/Jig/JigEx.cs": {
+            "buildAction": "Compile",
+            "codeLanguage": "cs",
+            "copyToOutput": false
+          },
+          "contentFiles/cs/any/IFox.CAD.Source/ExtensionMethod/Jig/JigExTransient.cs": {
+            "buildAction": "Compile",
+            "codeLanguage": "cs",
+            "copyToOutput": false
+          },
+          "contentFiles/cs/any/IFox.CAD.Source/ExtensionMethod/JsonConverter.cs": {
+            "buildAction": "Compile",
+            "codeLanguage": "cs",
+            "copyToOutput": false
+          },
+          "contentFiles/cs/any/IFox.CAD.Source/ExtensionMethod/ObjEx.cs": {
+            "buildAction": "Compile",
+            "codeLanguage": "cs",
+            "copyToOutput": false
+          },
+          "contentFiles/cs/any/IFox.CAD.Source/ExtensionMethod/ObjectIdEx.cs": {
+            "buildAction": "Compile",
+            "codeLanguage": "cs",
+            "copyToOutput": false
+          },
+          "contentFiles/cs/any/IFox.CAD.Source/ExtensionMethod/PointEx.cs": {
+            "buildAction": "Compile",
+            "codeLanguage": "cs",
+            "copyToOutput": false
+          },
+          "contentFiles/cs/any/IFox.CAD.Source/ExtensionMethod/RedrawEx.cs": {
+            "buildAction": "Compile",
+            "codeLanguage": "cs",
+            "copyToOutput": false
+          },
+          "contentFiles/cs/any/IFox.CAD.Source/ExtensionMethod/SelectionSetEx.cs": {
+            "buildAction": "Compile",
+            "codeLanguage": "cs",
+            "copyToOutput": false
+          },
+          "contentFiles/cs/any/IFox.CAD.Source/ExtensionMethod/SingleKeyWordHook.cs": {
+            "buildAction": "Compile",
+            "codeLanguage": "cs",
+            "copyToOutput": false
+          },
+          "contentFiles/cs/any/IFox.CAD.Source/ExtensionMethod/SymbolTableEx.cs": {
+            "buildAction": "Compile",
+            "codeLanguage": "cs",
+            "copyToOutput": false
+          },
+          "contentFiles/cs/any/IFox.CAD.Source/ExtensionMethod/SymbolTableRecordEx.cs": {
+            "buildAction": "Compile",
+            "codeLanguage": "cs",
+            "copyToOutput": false
+          },
+          "contentFiles/cs/any/IFox.CAD.Source/ExtensionMethod/Tools.cs": {
+            "buildAction": "Compile",
+            "codeLanguage": "cs",
+            "copyToOutput": false
+          },
+          "contentFiles/cs/any/IFox.CAD.Source/ExtensionMethod/TransactionEx.cs": {
+            "buildAction": "Compile",
+            "codeLanguage": "cs",
+            "copyToOutput": false
+          },
+          "contentFiles/cs/any/IFox.CAD.Source/ExtensionMethod/XrefEx.cs": {
+            "buildAction": "Compile",
+            "codeLanguage": "cs",
+            "copyToOutput": false
+          },
+          "contentFiles/cs/any/IFox.CAD.Source/ExtensionMethod/新建填充/HatchConverter.cs": {
+            "buildAction": "Compile",
+            "codeLanguage": "cs",
+            "copyToOutput": false
+          },
+          "contentFiles/cs/any/IFox.CAD.Source/ExtensionMethod/新建填充/HatchEx.cs": {
+            "buildAction": "Compile",
+            "codeLanguage": "cs",
+            "copyToOutput": false
+          },
+          "contentFiles/cs/any/IFox.CAD.Source/ExtensionMethod/新建填充/HatchInfo.cs": {
+            "buildAction": "Compile",
+            "codeLanguage": "cs",
+            "copyToOutput": false
+          },
+          "contentFiles/cs/any/IFox.CAD.Source/PE/AcadPeInfo.cs": {
+            "buildAction": "Compile",
+            "codeLanguage": "cs",
+            "copyToOutput": false
+          },
+          "contentFiles/cs/any/IFox.CAD.Source/PE/DBmod.cs": {
+            "buildAction": "Compile",
+            "codeLanguage": "cs",
+            "copyToOutput": false
+          },
+          "contentFiles/cs/any/IFox.CAD.Source/PE/PostCmd.cs": {
+            "buildAction": "Compile",
+            "codeLanguage": "cs",
+            "copyToOutput": false
+          },
+          "contentFiles/cs/any/IFox.CAD.Source/PE/ProgramPE.cs": {
+            "buildAction": "Compile",
+            "codeLanguage": "cs",
+            "copyToOutput": false
+          },
+          "contentFiles/cs/any/IFox.CAD.Source/ResultData/LispDottedPair.cs": {
+            "buildAction": "Compile",
+            "codeLanguage": "cs",
+            "copyToOutput": false
+          },
+          "contentFiles/cs/any/IFox.CAD.Source/ResultData/LispList.cs": {
+            "buildAction": "Compile",
+            "codeLanguage": "cs",
+            "copyToOutput": false
+          },
+          "contentFiles/cs/any/IFox.CAD.Source/ResultData/TypedValueList.cs": {
+            "buildAction": "Compile",
+            "codeLanguage": "cs",
+            "copyToOutput": false
+          },
+          "contentFiles/cs/any/IFox.CAD.Source/ResultData/XRecordDataList.cs": {
+            "buildAction": "Compile",
+            "codeLanguage": "cs",
+            "copyToOutput": false
+          },
+          "contentFiles/cs/any/IFox.CAD.Source/ResultData/XdataList.cs": {
+            "buildAction": "Compile",
+            "codeLanguage": "cs",
+            "copyToOutput": false
+          },
+          "contentFiles/cs/any/IFox.CAD.Source/Runtime/DBTrans.cs": {
+            "buildAction": "Compile",
+            "codeLanguage": "cs",
+            "copyToOutput": false
+          },
+          "contentFiles/cs/any/IFox.CAD.Source/Runtime/Env.cs": {
+            "buildAction": "Compile",
+            "codeLanguage": "cs",
+            "copyToOutput": false
+          },
+          "contentFiles/cs/any/IFox.CAD.Source/Runtime/IFoxUtils.cs": {
+            "buildAction": "Compile",
+            "codeLanguage": "cs",
+            "copyToOutput": false
+          },
+          "contentFiles/cs/any/IFox.CAD.Source/Runtime/SymbolTable.cs": {
+            "buildAction": "Compile",
+            "codeLanguage": "cs",
+            "copyToOutput": false
+          },
+          "contentFiles/cs/any/IFox.CAD.Source/SelectionFilter/OpComp.cs": {
+            "buildAction": "Compile",
+            "codeLanguage": "cs",
+            "copyToOutput": false
+          },
+          "contentFiles/cs/any/IFox.CAD.Source/SelectionFilter/OpEqual.cs": {
+            "buildAction": "Compile",
+            "codeLanguage": "cs",
+            "copyToOutput": false
+          },
+          "contentFiles/cs/any/IFox.CAD.Source/SelectionFilter/OpFilter.cs": {
+            "buildAction": "Compile",
+            "codeLanguage": "cs",
+            "copyToOutput": false
+          },
+          "contentFiles/cs/any/IFox.CAD.Source/SelectionFilter/OpList.cs": {
+            "buildAction": "Compile",
+            "codeLanguage": "cs",
+            "copyToOutput": false
+          },
+          "contentFiles/cs/any/IFox.CAD.Source/SelectionFilter/OpLogi.cs": {
+            "buildAction": "Compile",
+            "codeLanguage": "cs",
+            "copyToOutput": false
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "AutoCAD.NET/23.0.0": {
+      "sha512": "3YaXDJC0p32Grbn0g6Mf8Fpxx5mI1uA0xU1gkJiPWnDu6eHK/ec2oNV0BSP1Bu3UOF1m52Ls+j8tpu712Cdz5Q==",
+      "type": "package",
+      "path": "autocad.net/23.0.0",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "adsk.xml",
+        "autocad.net.23.0.0.nupkg.sha512",
+        "autocad.net.nuspec",
+        "lib/net47/AcCui.dll",
+        "lib/net47/AcCui.xml",
+        "lib/net47/AcDx.dll",
+        "lib/net47/AcDx.xml",
+        "lib/net47/AcMgd.dll",
+        "lib/net47/AcMgd.xml",
+        "lib/net47/AcMr.dll",
+        "lib/net47/AcMr.xml",
+        "lib/net47/AcSeamless.dll",
+        "lib/net47/AcTcMgd.dll",
+        "lib/net47/AcTcMgd.xml",
+        "lib/net47/AcWindows.dll",
+        "lib/net47/AcWindows.xml",
+        "lib/net47/AdUIMgd.dll",
+        "lib/net47/AdUIMgd.xml",
+        "lib/net47/AdUiPalettes.dll",
+        "lib/net47/AdWindows.dll",
+        "lib/net47/AdWindows.xml",
+        "tools/install.ps1"
+      ]
+    },
+    "AutoCAD.NET.Core/23.0.0": {
+      "sha512": "cUriS1b9C4ydmvrZ1GYtHLugybuy6KhG5VzZJpbhJAsqWTLfgXt/fJSDM53Wq7301VFn0XhoK3DhO4vembY2Uw==",
+      "type": "package",
+      "path": "autocad.net.core/23.0.0",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "adsk.xml",
+        "autocad.net.core.23.0.0.nupkg.sha512",
+        "autocad.net.core.nuspec",
+        "lib/net47/AcCoreMgd.dll",
+        "lib/net47/AcCoreMgd.xml",
+        "tools/install.ps1"
+      ]
+    },
+    "AutoCAD.NET.Model/23.0.0": {
+      "sha512": "dAYMJfENU/8GZGQOgoeEaA+cWULSZwZP/8ZUDERO5t9/hCj+xcKCLlBw4JOLPMhXq5JzxhO74ROSR0KTSZ5NJg==",
+      "type": "package",
+      "path": "autocad.net.model/23.0.0",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "adsk.xml",
+        "autocad.net.model.23.0.0.nupkg.sha512",
+        "autocad.net.model.nuspec",
+        "lib/net47/AcDbMgd.dll",
+        "lib/net47/AcDbMgd.xml",
+        "lib/net47/AcDbMgdBrep.xml",
+        "lib/net47/acdbmgdbrep.dll",
+        "tools/install.ps1"
+      ]
+    },
+    "IFox.Basal.Source/0.7.2": {
+      "sha512": "krlmtdDgnU727IZOMnGbLQvOC/JVSPX/BNeqT4TNg7eC1sIAYngzPDTKdUYk0wkrxTeIw50EZhXEoPPz+oMiRA==",
+      "type": "package",
+      "path": "ifox.basal.source/0.7.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "contentFiles/cs/any/IFox.Basal.Source/CLS/Index.cs",
+        "contentFiles/cs/any/IFox.Basal.Source/CLS/Range.cs",
+        "contentFiles/cs/any/IFox.Basal.Source/CLS/RuntimeHelpers.cs",
+        "contentFiles/cs/any/IFox.Basal.Source/CLS/TupleElementNamesAttribute.cs",
+        "contentFiles/cs/any/IFox.Basal.Source/ExpressionTrees/ParameterRebinder.cs",
+        "contentFiles/cs/any/IFox.Basal.Source/ExpressionTrees/PredicateBuilder.cs",
+        "contentFiles/cs/any/IFox.Basal.Source/ExpressionTrees/SqlExpressionVisitor.cs",
+        "contentFiles/cs/any/IFox.Basal.Source/General/ArrayEx.cs",
+        "contentFiles/cs/any/IFox.Basal.Source/General/DebugHelper.cs",
+        "contentFiles/cs/any/IFox.Basal.Source/General/DictEx.cs",
+        "contentFiles/cs/any/IFox.Basal.Source/General/EnumEx.cs",
+        "contentFiles/cs/any/IFox.Basal.Source/General/IsExternalInit.cs",
+        "contentFiles/cs/any/IFox.Basal.Source/General/LinkedHashMap.cs",
+        "contentFiles/cs/any/IFox.Basal.Source/General/LinkedHashSet.cs",
+        "contentFiles/cs/any/IFox.Basal.Source/General/LinqEx.cs",
+        "contentFiles/cs/any/IFox.Basal.Source/General/ListEx.cs",
+        "contentFiles/cs/any/IFox.Basal.Source/General/LoopList.cs",
+        "contentFiles/cs/any/IFox.Basal.Source/General/LoopState.cs",
+        "contentFiles/cs/any/IFox.Basal.Source/General/MathEx.cs",
+        "contentFiles/cs/any/IFox.Basal.Source/General/RandomEx.cs",
+        "contentFiles/cs/any/IFox.Basal.Source/General/Timer.cs",
+        "contentFiles/cs/any/IFox.Basal.Source/Nullable/ArgumentNullEx.cs",
+        "contentFiles/cs/any/IFox.Basal.Source/Nullable/CallerArgumentExpressionAttribute.cs",
+        "contentFiles/cs/any/IFox.Basal.Source/Nullable/NullableAttributes.cs",
+        "contentFiles/cs/any/IFox.Basal.Source/WindowsAPI/Enums.cs",
+        "contentFiles/cs/any/IFox.Basal.Source/WindowsAPI/MouseHook.cs",
+        "contentFiles/cs/any/IFox.Basal.Source/WindowsAPI/WindowsAPI.cs",
+        "ifox.basal.source.0.7.2.nupkg.sha512",
+        "ifox.basal.source.nuspec"
+      ]
+    },
+    "IFox.CAD.Source/0.7.2": {
+      "sha512": "rH1sHyorLpyd/NlVjcWxDKEewXKah1Tz+OgO6yjSEHTziSmmJ7bt4X9A4lRHdGS1Sj4Rm7p/EBJqMGAa+5uEmw==",
+      "type": "package",
+      "path": "ifox.cad.source/0.7.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "contentFiles/cs/any/IFox.CAD.Source/Algorithms/Graph/Graph.cs",
+        "contentFiles/cs/any/IFox.CAD.Source/Algorithms/Graph/IGraph.cs",
+        "contentFiles/cs/any/IFox.CAD.Source/Algorithms/QuadTree/QuadEntity.cs",
+        "contentFiles/cs/any/IFox.CAD.Source/Algorithms/QuadTree/QuadTree.cs",
+        "contentFiles/cs/any/IFox.CAD.Source/Algorithms/QuadTree/QuadTreeEvn.cs",
+        "contentFiles/cs/any/IFox.CAD.Source/Algorithms/QuadTree/QuadTreeNode.cs",
+        "contentFiles/cs/any/IFox.CAD.Source/Algorithms/QuadTree/QuadTreeSelectMode.cs",
+        "contentFiles/cs/any/IFox.CAD.Source/Algorithms/QuadTree/Rect.cs",
+        "contentFiles/cs/any/IFox.CAD.Source/AutoReg/AcadEMR.cs",
+        "contentFiles/cs/any/IFox.CAD.Source/AutoReg/AssemInfo.cs",
+        "contentFiles/cs/any/IFox.CAD.Source/AutoReg/AutoLoad.cs",
+        "contentFiles/cs/any/IFox.CAD.Source/AutoReg/AutoReg.cs",
+        "contentFiles/cs/any/IFox.CAD.Source/AutoReg/AutoRegAssem.cs",
+        "contentFiles/cs/any/IFox.CAD.Source/AutoReg/IAutoGo.cs",
+        "contentFiles/cs/any/IFox.CAD.Source/AutoReg/MethodInfoHelper.cs",
+        "contentFiles/cs/any/IFox.CAD.Source/CadVersion/AcadVersion.cs",
+        "contentFiles/cs/any/IFox.CAD.Source/CadVersion/CadVersion.cs",
+        "contentFiles/cs/any/IFox.CAD.Source/Copyclip/BitmapTool.cs",
+        "contentFiles/cs/any/IFox.CAD.Source/Copyclip/EmfTool.cs",
+        "contentFiles/cs/any/IFox.CAD.Source/Copyclip/TagClipboardInfo.cs",
+        "contentFiles/cs/any/IFox.CAD.Source/ExtensionMethod/AttachmentPointHelper.cs",
+        "contentFiles/cs/any/IFox.CAD.Source/ExtensionMethod/BulgeVertexWidth.cs",
+        "contentFiles/cs/any/IFox.CAD.Source/ExtensionMethod/CheckFactory.cs",
+        "contentFiles/cs/any/IFox.CAD.Source/ExtensionMethod/CollectionEx.cs",
+        "contentFiles/cs/any/IFox.CAD.Source/ExtensionMethod/Curve2dEx.cs",
+        "contentFiles/cs/any/IFox.CAD.Source/ExtensionMethod/Curve3dEx.cs",
+        "contentFiles/cs/any/IFox.CAD.Source/ExtensionMethod/CurveEx.cs",
+        "contentFiles/cs/any/IFox.CAD.Source/ExtensionMethod/DBDictionaryEx.cs",
+        "contentFiles/cs/any/IFox.CAD.Source/ExtensionMethod/DBObjectEx.cs",
+        "contentFiles/cs/any/IFox.CAD.Source/ExtensionMethod/DBTransEx.cs",
+        "contentFiles/cs/any/IFox.CAD.Source/ExtensionMethod/DatabaseEx.cs",
+        "contentFiles/cs/any/IFox.CAD.Source/ExtensionMethod/DwgMark.cs",
+        "contentFiles/cs/any/IFox.CAD.Source/ExtensionMethod/EditorEx.cs",
+        "contentFiles/cs/any/IFox.CAD.Source/ExtensionMethod/Entity/ArcEx.cs",
+        "contentFiles/cs/any/IFox.CAD.Source/ExtensionMethod/Entity/BlockReferenceEx.cs",
+        "contentFiles/cs/any/IFox.CAD.Source/ExtensionMethod/Entity/BoundingInfo.cs",
+        "contentFiles/cs/any/IFox.CAD.Source/ExtensionMethod/Entity/CircleEx.cs",
+        "contentFiles/cs/any/IFox.CAD.Source/ExtensionMethod/Entity/DBTextEx.cs",
+        "contentFiles/cs/any/IFox.CAD.Source/ExtensionMethod/Entity/EntityBoundingInfo.cs",
+        "contentFiles/cs/any/IFox.CAD.Source/ExtensionMethod/Entity/EntityEx.cs",
+        "contentFiles/cs/any/IFox.CAD.Source/ExtensionMethod/Entity/MTextEx.cs",
+        "contentFiles/cs/any/IFox.CAD.Source/ExtensionMethod/Entity/PolylineEx.cs",
+        "contentFiles/cs/any/IFox.CAD.Source/ExtensionMethod/Enums.cs",
+        "contentFiles/cs/any/IFox.CAD.Source/ExtensionMethod/ErrorInfoEx.cs",
+        "contentFiles/cs/any/IFox.CAD.Source/ExtensionMethod/Filer/DwgFiler.cs",
+        "contentFiles/cs/any/IFox.CAD.Source/ExtensionMethod/Filer/DwgFilerEx.cs",
+        "contentFiles/cs/any/IFox.CAD.Source/ExtensionMethod/Filer/DxfFiler.cs",
+        "contentFiles/cs/any/IFox.CAD.Source/ExtensionMethod/GeometryEx.cs",
+        "contentFiles/cs/any/IFox.CAD.Source/ExtensionMethod/IdleAction.cs",
+        "contentFiles/cs/any/IFox.CAD.Source/ExtensionMethod/Jig/JigEx.cs",
+        "contentFiles/cs/any/IFox.CAD.Source/ExtensionMethod/Jig/JigExTransient.cs",
+        "contentFiles/cs/any/IFox.CAD.Source/ExtensionMethod/JsonConverter.cs",
+        "contentFiles/cs/any/IFox.CAD.Source/ExtensionMethod/ObjEx.cs",
+        "contentFiles/cs/any/IFox.CAD.Source/ExtensionMethod/ObjectIdEx.cs",
+        "contentFiles/cs/any/IFox.CAD.Source/ExtensionMethod/PointEx.cs",
+        "contentFiles/cs/any/IFox.CAD.Source/ExtensionMethod/RedrawEx.cs",
+        "contentFiles/cs/any/IFox.CAD.Source/ExtensionMethod/SelectionSetEx.cs",
+        "contentFiles/cs/any/IFox.CAD.Source/ExtensionMethod/SingleKeyWordHook.cs",
+        "contentFiles/cs/any/IFox.CAD.Source/ExtensionMethod/SymbolTableEx.cs",
+        "contentFiles/cs/any/IFox.CAD.Source/ExtensionMethod/SymbolTableRecordEx.cs",
+        "contentFiles/cs/any/IFox.CAD.Source/ExtensionMethod/Tools.cs",
+        "contentFiles/cs/any/IFox.CAD.Source/ExtensionMethod/TransactionEx.cs",
+        "contentFiles/cs/any/IFox.CAD.Source/ExtensionMethod/XrefEx.cs",
+        "contentFiles/cs/any/IFox.CAD.Source/ExtensionMethod/新建填充/HatchConverter.cs",
+        "contentFiles/cs/any/IFox.CAD.Source/ExtensionMethod/新建填充/HatchEx.cs",
+        "contentFiles/cs/any/IFox.CAD.Source/ExtensionMethod/新建填充/HatchInfo.cs",
+        "contentFiles/cs/any/IFox.CAD.Source/PE/AcadPeInfo.cs",
+        "contentFiles/cs/any/IFox.CAD.Source/PE/DBmod.cs",
+        "contentFiles/cs/any/IFox.CAD.Source/PE/PostCmd.cs",
+        "contentFiles/cs/any/IFox.CAD.Source/PE/ProgramPE.cs",
+        "contentFiles/cs/any/IFox.CAD.Source/ResultData/LispDottedPair.cs",
+        "contentFiles/cs/any/IFox.CAD.Source/ResultData/LispList.cs",
+        "contentFiles/cs/any/IFox.CAD.Source/ResultData/TypedValueList.cs",
+        "contentFiles/cs/any/IFox.CAD.Source/ResultData/XRecordDataList.cs",
+        "contentFiles/cs/any/IFox.CAD.Source/ResultData/XdataList.cs",
+        "contentFiles/cs/any/IFox.CAD.Source/Runtime/DBTrans.cs",
+        "contentFiles/cs/any/IFox.CAD.Source/Runtime/Env.cs",
+        "contentFiles/cs/any/IFox.CAD.Source/Runtime/IFoxUtils.cs",
+        "contentFiles/cs/any/IFox.CAD.Source/Runtime/SymbolTable.cs",
+        "contentFiles/cs/any/IFox.CAD.Source/SelectionFilter/OpComp.cs",
+        "contentFiles/cs/any/IFox.CAD.Source/SelectionFilter/OpEqual.cs",
+        "contentFiles/cs/any/IFox.CAD.Source/SelectionFilter/OpFilter.cs",
+        "contentFiles/cs/any/IFox.CAD.Source/SelectionFilter/OpList.cs",
+        "contentFiles/cs/any/IFox.CAD.Source/SelectionFilter/OpLogi.cs",
+        "ifox.cad.source.0.7.2.nupkg.sha512",
+        "ifox.cad.source.nuspec"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETFramework,Version=v4.8": [
+      "AutoCAD.NET >= 23.0.0",
+      "IFox.Basal.Source >= 0.7.2",
+      "IFox.CAD.Source >= 0.7.2"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\np0825\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "D:\\GithubProject\\VScode\\ZZZIFOX\\ZZZIFOX.csproj",
+      "projectName": "ZZZIFOX",
+      "projectPath": "D:\\GithubProject\\VScode\\ZZZIFOX\\ZZZIFOX.csproj",
+      "packagesPath": "C:\\Users\\np0825\\.nuget\\packages\\",
+      "outputPath": "D:\\GithubProject\\VScode\\ZZZIFOX\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\np0825\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net48"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net48": {
+          "targetAlias": "net48",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      }
+    },
+    "frameworks": {
+      "net48": {
+        "targetAlias": "net48",
+        "dependencies": {
+          "AutoCAD.NET": {
+            "include": "Compile, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+            "target": "Package",
+            "version": "[23.0.0, )"
+          },
+          "IFox.Basal.Source": {
+            "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[0.7.2, )"
+          },
+          "IFox.CAD.Source": {
+            "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[0.7.2, )"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

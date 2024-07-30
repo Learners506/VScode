@@ -1,0 +1,10 @@
+D:\GithubProject\VScode\ZZZIFOX\bin\Debug\net48\ZZZIFOX.dll
+D:\GithubProject\VScode\ZZZIFOX\bin\Debug\net48\ZZZIFOX.pdb
+D:\GithubProject\VScode\ZZZIFOX\obj\Debug\net48\ZZZIFOX.csproj.AssemblyReference.cache
+D:\GithubProject\VScode\ZZZIFOX\obj\Debug\net48\ZZZIFOX.GeneratedMSBuildEditorConfig.editorconfig
+D:\GithubProject\VScode\ZZZIFOX\obj\Debug\net48\ZZZIFOX.AssemblyInfoInputs.cache
+D:\GithubProject\VScode\ZZZIFOX\obj\Debug\net48\ZZZIFOX.AssemblyInfo.cs
+D:\GithubProject\VScode\ZZZIFOX\obj\Debug\net48\ZZZIFOX.csproj.CoreCompileInputs.cache
+D:\GithubProject\VScode\ZZZIFOX\obj\Debug\net48\ZZZIFOX.sourcelink.json
+D:\GithubProject\VScode\ZZZIFOX\obj\Debug\net48\ZZZIFOX.dll
+D:\GithubProject\VScode\ZZZIFOX\obj\Debug\net48\ZZZIFOX.pdb
