@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ZZZIFOX")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+03cdfffc880acd52d779cdf8f8879974d737762a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e553818f46b7475be0a9764737abb91b3cbec4c0")]
 [assembly: System.Reflection.AssemblyProductAttribute("ZZZIFOX")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ZZZIFOX")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.*")]

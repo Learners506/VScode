@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ZZZIFOX.DotNetARX;
 
 namespace ZZZIFOX
 {
@@ -124,5 +125,15 @@ namespace ZZZIFOX
                 }
             }
         }
+
+        [CommandMethod(nameof(CS999))]
+        public void CS999()
+        {
+            string str1 = "999";
+            string str2 = "aaa";
+            Env.Editor.WriteMessage(str1.IsNumeric().ToString());
+            Env.Editor.WriteMessage(str2.IsNumeric().ToString());
+        }
+
     }
 }
