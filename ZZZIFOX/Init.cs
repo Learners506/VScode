@@ -3,13 +3,13 @@
     /// <summary>
     /// 自动加载和初始化类
     /// </summary>
-    /* 默认自动加载和初始化为注释掉的状态，如果你需要可以取消注释
+
     public class Init : AutoLoad
     {
         public override void Initialize()
         {
 
-            Env.Print("loading...");
+            Env.Print("loading...,请输入AddMenu载入插件");
             // 如果需要将程序的目录加入信任路径，将下行代码取消注释
             // AppendSupportPath(CurrentDirectory.FullName);
         }
@@ -21,5 +21,5 @@
 
         }
     }
-    */
+
 }

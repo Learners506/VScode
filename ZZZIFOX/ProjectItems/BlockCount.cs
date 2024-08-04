@@ -30,6 +30,7 @@ namespace ZZZIFOX.ProjectItems
             }
             using var tr = new DBTrans();
             // 创建文字样式表
+            
             string newTextStyle = "zzz_text";
             if (!tr.TextStyleTable.Has(newTextStyle))
             {
