@@ -1,45 +1,49 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\GitHubFile\\VScode\\ZZZIFOX\\",
+  "WorkspaceRootPath": "D:\\GithubProject\\VScode\\ZZZIFOX\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1C630A4E-0CD8-4FF4-9136-9CE2506C8848}|ZZZIFOX.csproj|e:\\githubfile\\vscode\\zzzifox\\dotnetarx\\blocktools.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1C630A4E-0CD8-4FF4-9136-9CE2506C8848}|ZZZIFOX.csproj|solutionrelative:dotnetarx\\blocktools.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1C630A4E-0CD8-4FF4-9136-9CE2506C8848}|ZZZIFOX.csproj|e:\\githubfile\\vscode\\zzzifox\\init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1C630A4E-0CD8-4FF4-9136-9CE2506C8848}|ZZZIFOX.csproj|solutionrelative:init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1C630A4E-0CD8-4FF4-9136-9CE2506C8848}|ZZZIFOX.csproj|e:\\githubfile\\vscode\\zzzifox\\startmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1C630A4E-0CD8-4FF4-9136-9CE2506C8848}|ZZZIFOX.csproj|solutionrelative:startmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1C630A4E-0CD8-4FF4-9136-9CE2506C8848}|ZZZIFOX.csproj|e:\\githubfile\\vscode\\zzzifox\\test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1C630A4E-0CD8-4FF4-9136-9CE2506C8848}|ZZZIFOX.csproj|solutionrelative:test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1C630A4E-0CD8-4FF4-9136-9CE2506C8848}|ZZZIFOX.csproj|e:\\githubfile\\vscode\\zzzifox\\dotnetarx\\getools.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1C630A4E-0CD8-4FF4-9136-9CE2506C8848}|ZZZIFOX.csproj|solutionrelative:dotnetarx\\getools.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1C630A4E-0CD8-4FF4-9136-9CE2506C8848}|ZZZIFOX.csproj|e:\\githubfile\\vscode\\zzzifox\\dotnetarx\\circletools.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1C630A4E-0CD8-4FF4-9136-9CE2506C8848}|ZZZIFOX.csproj|d:\\githubproject\\vscode\\zzzifox\\dotnetarx\\circletools.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1C630A4E-0CD8-4FF4-9136-9CE2506C8848}|ZZZIFOX.csproj|solutionrelative:dotnetarx\\circletools.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1C630A4E-0CD8-4FF4-9136-9CE2506C8848}|ZZZIFOX.csproj|e:\\githubfile\\vscode\\zzzifox\\dotnetarx\\texttools.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1C630A4E-0CD8-4FF4-9136-9CE2506C8848}|ZZZIFOX.csproj|solutionrelative:dotnetarx\\texttools.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1C630A4E-0CD8-4FF4-9136-9CE2506C8848}|ZZZIFOX.csproj|d:\\githubproject\\vscode\\zzzifox\\wpfui\\window1.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{1C630A4E-0CD8-4FF4-9136-9CE2506C8848}|ZZZIFOX.csproj|solutionrelative:wpfui\\window1.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1C630A4E-0CD8-4FF4-9136-9CE2506C8848}|ZZZIFOX.csproj|e:\\githubfile\\vscode\\zzzifox\\dotnetarx\\textstyletools.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1C630A4E-0CD8-4FF4-9136-9CE2506C8848}|ZZZIFOX.csproj|d:\\githubproject\\vscode\\zzzifox\\dotnetarx\\textstyletools.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1C630A4E-0CD8-4FF4-9136-9CE2506C8848}|ZZZIFOX.csproj|solutionrelative:dotnetarx\\textstyletools.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1C630A4E-0CD8-4FF4-9136-9CE2506C8848}|ZZZIFOX.csproj|e:\\githubfile\\vscode\\zzzifox\\dotnetarx\\tools.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1C630A4E-0CD8-4FF4-9136-9CE2506C8848}|ZZZIFOX.csproj|d:\\githubproject\\vscode\\zzzifox\\dotnetarx\\texttools.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1C630A4E-0CD8-4FF4-9136-9CE2506C8848}|ZZZIFOX.csproj|solutionrelative:dotnetarx\\texttools.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1C630A4E-0CD8-4FF4-9136-9CE2506C8848}|ZZZIFOX.csproj|d:\\githubproject\\vscode\\zzzifox\\dotnetarx\\blocktools.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1C630A4E-0CD8-4FF4-9136-9CE2506C8848}|ZZZIFOX.csproj|solutionrelative:dotnetarx\\blocktools.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1C630A4E-0CD8-4FF4-9136-9CE2506C8848}|ZZZIFOX.csproj|d:\\githubproject\\vscode\\zzzifox\\init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1C630A4E-0CD8-4FF4-9136-9CE2506C8848}|ZZZIFOX.csproj|solutionrelative:init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1C630A4E-0CD8-4FF4-9136-9CE2506C8848}|ZZZIFOX.csproj|d:\\githubproject\\vscode\\zzzifox\\startmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1C630A4E-0CD8-4FF4-9136-9CE2506C8848}|ZZZIFOX.csproj|solutionrelative:startmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1C630A4E-0CD8-4FF4-9136-9CE2506C8848}|ZZZIFOX.csproj|d:\\githubproject\\vscode\\zzzifox\\test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1C630A4E-0CD8-4FF4-9136-9CE2506C8848}|ZZZIFOX.csproj|solutionrelative:test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1C630A4E-0CD8-4FF4-9136-9CE2506C8848}|ZZZIFOX.csproj|d:\\githubproject\\vscode\\zzzifox\\dotnetarx\\getools.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1C630A4E-0CD8-4FF4-9136-9CE2506C8848}|ZZZIFOX.csproj|solutionrelative:dotnetarx\\getools.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1C630A4E-0CD8-4FF4-9136-9CE2506C8848}|ZZZIFOX.csproj|d:\\githubproject\\vscode\\zzzifox\\dotnetarx\\tools.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1C630A4E-0CD8-4FF4-9136-9CE2506C8848}|ZZZIFOX.csproj|solutionrelative:dotnetarx\\tools.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1C630A4E-0CD8-4FF4-9136-9CE2506C8848}|ZZZIFOX.csproj|e:\\githubfile\\vscode\\zzzifox\\command.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1C630A4E-0CD8-4FF4-9136-9CE2506C8848}|ZZZIFOX.csproj|d:\\githubproject\\vscode\\zzzifox\\command.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1C630A4E-0CD8-4FF4-9136-9CE2506C8848}|ZZZIFOX.csproj|solutionrelative:command.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -50,104 +54,40 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "StartMenu.cs",
-              "DocumentMoniker": "E:\\GitHubFile\\VScode\\ZZZIFOX\\StartMenu.cs",
-              "RelativeDocumentMoniker": "StartMenu.cs",
-              "ToolTip": "E:\\GitHubFile\\VScode\\ZZZIFOX\\StartMenu.cs",
-              "RelativeToolTip": "StartMenu.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAVAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-03T06:51:20.682Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Init.cs",
-              "DocumentMoniker": "E:\\GitHubFile\\VScode\\ZZZIFOX\\Init.cs",
-              "RelativeDocumentMoniker": "Init.cs",
-              "ToolTip": "E:\\GitHubFile\\VScode\\ZZZIFOX\\Init.cs",
-              "RelativeToolTip": "Init.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAASAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-03T06:49:52.005Z",
+              "Title": "Window1.xaml",
+              "DocumentMoniker": "D:\\GithubProject\\VScode\\ZZZIFOX\\WPFUI\\Window1.xaml",
+              "RelativeDocumentMoniker": "WPFUI\\Window1.xaml",
+              "ToolTip": "D:\\GithubProject\\VScode\\ZZZIFOX\\WPFUI\\Window1.xaml",
+              "RelativeToolTip": "WPFUI\\Window1.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-08-05T11:32:38.106Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "BlockTools.cs",
-              "DocumentMoniker": "E:\\GitHubFile\\VScode\\ZZZIFOX\\DotNetARX\\BlockTools.cs",
-              "RelativeDocumentMoniker": "DotNetARX\\BlockTools.cs",
-              "ToolTip": "E:\\GitHubFile\\VScode\\ZZZIFOX\\DotNetARX\\BlockTools.cs",
-              "RelativeToolTip": "DotNetARX\\BlockTools.cs",
-              "ViewState": "AQIAACkAAAAAAAAAAAAYwDcAAAAsAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-02T16:15:03.729Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "test.cs",
-              "DocumentMoniker": "E:\\GitHubFile\\VScode\\ZZZIFOX\\test.cs",
-              "RelativeDocumentMoniker": "test.cs",
-              "ToolTip": "E:\\GitHubFile\\VScode\\ZZZIFOX\\test.cs",
-              "RelativeToolTip": "test.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAsAAAAhAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-01T08:47:53.096Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "GeTools.cs",
-              "DocumentMoniker": "E:\\GitHubFile\\VScode\\ZZZIFOX\\DotNetARX\\GeTools.cs",
-              "RelativeDocumentMoniker": "DotNetARX\\GeTools.cs",
-              "ToolTip": "E:\\GitHubFile\\VScode\\ZZZIFOX\\DotNetARX\\GeTools.cs",
-              "RelativeToolTip": "DotNetARX\\GeTools.cs",
-              "ViewState": "AQIAABEAAAAAAAAAAAAowCYAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-02T15:45:25.712Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "TextTools.cs",
-              "DocumentMoniker": "E:\\GitHubFile\\VScode\\ZZZIFOX\\DotNetARX\\TextTools.cs",
-              "RelativeDocumentMoniker": "DotNetARX\\TextTools.cs",
-              "ToolTip": "E:\\GitHubFile\\VScode\\ZZZIFOX\\DotNetARX\\TextTools.cs",
-              "RelativeToolTip": "DotNetARX\\TextTools.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-01T12:56:21.639Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
               "Title": "CircleTools.cs",
-              "DocumentMoniker": "E:\\GitHubFile\\VScode\\ZZZIFOX\\DotNetARX\\CircleTools.cs",
+              "DocumentMoniker": "D:\\GithubProject\\VScode\\ZZZIFOX\\DotNetARX\\CircleTools.cs",
               "RelativeDocumentMoniker": "DotNetARX\\CircleTools.cs",
-              "ToolTip": "E:\\GitHubFile\\VScode\\ZZZIFOX\\DotNetARX\\CircleTools.cs",
+              "ToolTip": "D:\\GithubProject\\VScode\\ZZZIFOX\\DotNetARX\\CircleTools.cs",
               "RelativeToolTip": "DotNetARX\\CircleTools.cs",
               "ViewState": "AQIAABkAAAAAAAAAAAAIwB4AAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-02T15:43:30.59Z"
+              "WhenOpened": "2024-08-02T15:43:30.59Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "Tools.cs",
-              "DocumentMoniker": "E:\\GitHubFile\\VScode\\ZZZIFOX\\DotNetARX\\Tools.cs",
+              "DocumentMoniker": "D:\\GithubProject\\VScode\\ZZZIFOX\\DotNetARX\\Tools.cs",
               "RelativeDocumentMoniker": "DotNetARX\\Tools.cs",
-              "ToolTip": "E:\\GitHubFile\\VScode\\ZZZIFOX\\DotNetARX\\Tools.cs",
+              "ToolTip": "D:\\GithubProject\\VScode\\ZZZIFOX\\DotNetARX\\Tools.cs",
               "RelativeToolTip": "DotNetARX\\Tools.cs",
               "ViewState": "AQIAABAAAAAAAAAAAAAQwAgAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -155,23 +95,98 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 2,
               "Title": "TextStyleTools.cs",
-              "DocumentMoniker": "E:\\GitHubFile\\VScode\\ZZZIFOX\\DotNetARX\\TextStyleTools.cs",
+              "DocumentMoniker": "D:\\GithubProject\\VScode\\ZZZIFOX\\DotNetARX\\TextStyleTools.cs",
               "RelativeDocumentMoniker": "DotNetARX\\TextStyleTools.cs",
-              "ToolTip": "E:\\GitHubFile\\VScode\\ZZZIFOX\\DotNetARX\\TextStyleTools.cs",
+              "ToolTip": "D:\\GithubProject\\VScode\\ZZZIFOX\\DotNetARX\\TextStyleTools.cs",
               "RelativeToolTip": "DotNetARX\\TextStyleTools.cs",
-              "ViewState": "AQIAAGEAAAAAAAAAAAAAAG8AAAAcAAAA",
+              "ViewState": "AQIAAIAAAAAAAAAAAAAuwOwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-01T12:56:45.808Z"
+              "WhenOpened": "2024-08-01T12:56:45.808Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 6,
+              "Title": "StartMenu.cs",
+              "DocumentMoniker": "D:\\GithubProject\\VScode\\ZZZIFOX\\StartMenu.cs",
+              "RelativeDocumentMoniker": "StartMenu.cs",
+              "ToolTip": "D:\\GithubProject\\VScode\\ZZZIFOX\\StartMenu.cs",
+              "RelativeToolTip": "StartMenu.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-03T06:51:20.682Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Init.cs",
+              "DocumentMoniker": "D:\\GithubProject\\VScode\\ZZZIFOX\\Init.cs",
+              "RelativeDocumentMoniker": "Init.cs",
+              "ToolTip": "D:\\GithubProject\\VScode\\ZZZIFOX\\Init.cs",
+              "RelativeToolTip": "Init.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-03T06:49:52.005Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BlockTools.cs",
+              "DocumentMoniker": "D:\\GithubProject\\VScode\\ZZZIFOX\\DotNetARX\\BlockTools.cs",
+              "RelativeDocumentMoniker": "DotNetARX\\BlockTools.cs",
+              "ToolTip": "D:\\GithubProject\\VScode\\ZZZIFOX\\DotNetARX\\BlockTools.cs",
+              "RelativeToolTip": "DotNetARX\\BlockTools.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFIAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-02T16:15:03.729Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "test.cs",
+              "DocumentMoniker": "D:\\GithubProject\\VScode\\ZZZIFOX\\test.cs",
+              "RelativeDocumentMoniker": "test.cs",
+              "ToolTip": "D:\\GithubProject\\VScode\\ZZZIFOX\\test.cs",
+              "RelativeToolTip": "test.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAsAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-01T08:47:53.096Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "GeTools.cs",
+              "DocumentMoniker": "D:\\GithubProject\\VScode\\ZZZIFOX\\DotNetARX\\GeTools.cs",
+              "RelativeDocumentMoniker": "DotNetARX\\GeTools.cs",
+              "ToolTip": "D:\\GithubProject\\VScode\\ZZZIFOX\\DotNetARX\\GeTools.cs",
+              "RelativeToolTip": "DotNetARX\\GeTools.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAowCYAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-02T15:45:25.712Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TextTools.cs",
+              "DocumentMoniker": "D:\\GithubProject\\VScode\\ZZZIFOX\\DotNetARX\\TextTools.cs",
+              "RelativeDocumentMoniker": "DotNetARX\\TextTools.cs",
+              "ToolTip": "D:\\GithubProject\\VScode\\ZZZIFOX\\DotNetARX\\TextTools.cs",
+              "RelativeToolTip": "DotNetARX\\TextTools.cs",
+              "ViewState": "AQIAAFwAAAAAAAAAAAAgwH0AAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-01T12:56:21.639Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "Command.cs",
-              "DocumentMoniker": "E:\\GitHubFile\\VScode\\ZZZIFOX\\Command.cs",
+              "DocumentMoniker": "D:\\GithubProject\\VScode\\ZZZIFOX\\Command.cs",
               "RelativeDocumentMoniker": "Command.cs",
-              "ToolTip": "E:\\GitHubFile\\VScode\\ZZZIFOX\\Command.cs",
+              "ToolTip": "D:\\GithubProject\\VScode\\ZZZIFOX\\Command.cs",
               "RelativeToolTip": "Command.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

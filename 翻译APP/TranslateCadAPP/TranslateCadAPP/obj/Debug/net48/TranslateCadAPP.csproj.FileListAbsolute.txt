@@ -1,0 +1,51 @@
+C:\Users\ZZZ\OneDrive\File\VS Projects\TranslateCadAPP\bin\Debug\net48\TranslateCadAPP.dll.config
+C:\Users\ZZZ\OneDrive\File\VS Projects\TranslateCadAPP\bin\Debug\net48\TranslateCadAPP.dll
+C:\Users\ZZZ\OneDrive\File\VS Projects\TranslateCadAPP\bin\Debug\net48\TranslateCadAPP.pdb
+C:\Users\ZZZ\OneDrive\File\VS Projects\TranslateCadAPP\bin\Debug\net48\Newtonsoft.Json.dll
+C:\Users\ZZZ\OneDrive\File\VS Projects\TranslateCadAPP\obj\Debug\net48\TranslateCadAPP.csproj.AssemblyReference.cache
+C:\Users\ZZZ\OneDrive\File\VS Projects\TranslateCadAPP\obj\Debug\net48\WPFUI\translatecad.g.cs
+C:\Users\ZZZ\OneDrive\File\VS Projects\TranslateCadAPP\obj\Debug\net48\TranslateCadAPP_MarkupCompile.cache
+C:\Users\ZZZ\OneDrive\File\VS Projects\TranslateCadAPP\obj\Debug\net48\TranslateCadAPP_MarkupCompile.lref
+C:\Users\ZZZ\OneDrive\File\VS Projects\TranslateCadAPP\obj\Debug\net48\WPFUI\translatecad.baml
+C:\Users\ZZZ\OneDrive\File\VS Projects\TranslateCadAPP\obj\Debug\net48\TranslateCadAPP.g.resources
+C:\Users\ZZZ\OneDrive\File\VS Projects\TranslateCadAPP\obj\Debug\net48\TranslateCadAPP.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ZZZ\OneDrive\File\VS Projects\TranslateCadAPP\obj\Debug\net48\TranslateCadAPP.AssemblyInfoInputs.cache
+C:\Users\ZZZ\OneDrive\File\VS Projects\TranslateCadAPP\obj\Debug\net48\TranslateCadAPP.AssemblyInfo.cs
+C:\Users\ZZZ\OneDrive\File\VS Projects\TranslateCadAPP\obj\Debug\net48\TranslateCadAPP.csproj.CoreCompileInputs.cache
+C:\Users\ZZZ\OneDrive\File\VS Projects\TranslateCadAPP\obj\Debug\net48\Translat.312552A9.Up2Date
+C:\Users\ZZZ\OneDrive\File\VS Projects\TranslateCadAPP\obj\Debug\net48\TranslateCadAPP.dll
+C:\Users\ZZZ\OneDrive\File\VS Projects\TranslateCadAPP\obj\Debug\net48\TranslateCadAPP.pdb
+C:\Users\np0825\Desktop\TranslateCadAPP\bin\Debug\net48\TranslateCadAPP.dll.config
+C:\Users\np0825\Desktop\TranslateCadAPP\bin\Debug\net48\TranslateCadAPP.dll
+C:\Users\np0825\Desktop\TranslateCadAPP\bin\Debug\net48\TranslateCadAPP.pdb
+C:\Users\np0825\Desktop\TranslateCadAPP\bin\Debug\net48\Newtonsoft.Json.dll
+C:\Users\np0825\Desktop\TranslateCadAPP\obj\Debug\net48\TranslateCadAPP.csproj.AssemblyReference.cache
+C:\Users\np0825\Desktop\TranslateCadAPP\obj\Debug\net48\WPFUI\translatecad.g.cs
+C:\Users\np0825\Desktop\TranslateCadAPP\obj\Debug\net48\TranslateCadAPP_MarkupCompile.cache
+C:\Users\np0825\Desktop\TranslateCadAPP\obj\Debug\net48\TranslateCadAPP_MarkupCompile.lref
+C:\Users\np0825\Desktop\TranslateCadAPP\obj\Debug\net48\WPFUI\translatecad.baml
+C:\Users\np0825\Desktop\TranslateCadAPP\obj\Debug\net48\TranslateCadAPP.g.resources
+C:\Users\np0825\Desktop\TranslateCadAPP\obj\Debug\net48\TranslateCadAPP.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\np0825\Desktop\TranslateCadAPP\obj\Debug\net48\TranslateCadAPP.AssemblyInfoInputs.cache
+C:\Users\np0825\Desktop\TranslateCadAPP\obj\Debug\net48\TranslateCadAPP.AssemblyInfo.cs
+C:\Users\np0825\Desktop\TranslateCadAPP\obj\Debug\net48\TranslateCadAPP.csproj.CoreCompileInputs.cache
+C:\Users\np0825\Desktop\TranslateCadAPP\obj\Debug\net48\Translat.312552A9.Up2Date
+C:\Users\np0825\Desktop\TranslateCadAPP\obj\Debug\net48\TranslateCadAPP.dll
+C:\Users\np0825\Desktop\TranslateCadAPP\obj\Debug\net48\TranslateCadAPP.pdb
+C:\Users\np0825\Desktop\TranslateCadAPP\TranslateCadAPP\bin\Debug\net48\TranslateCadAPP.dll.config
+C:\Users\np0825\Desktop\TranslateCadAPP\TranslateCadAPP\bin\Debug\net48\TranslateCadAPP.dll
+C:\Users\np0825\Desktop\TranslateCadAPP\TranslateCadAPP\bin\Debug\net48\TranslateCadAPP.pdb
+C:\Users\np0825\Desktop\TranslateCadAPP\TranslateCadAPP\bin\Debug\net48\Newtonsoft.Json.dll
+C:\Users\np0825\Desktop\TranslateCadAPP\TranslateCadAPP\obj\Debug\net48\TranslateCadAPP.csproj.AssemblyReference.cache
+C:\Users\np0825\Desktop\TranslateCadAPP\TranslateCadAPP\obj\Debug\net48\WPFUI\translatecad.g.cs
+C:\Users\np0825\Desktop\TranslateCadAPP\TranslateCadAPP\obj\Debug\net48\TranslateCadAPP_MarkupCompile.cache
+C:\Users\np0825\Desktop\TranslateCadAPP\TranslateCadAPP\obj\Debug\net48\TranslateCadAPP_MarkupCompile.lref
+C:\Users\np0825\Desktop\TranslateCadAPP\TranslateCadAPP\obj\Debug\net48\WPFUI\translatecad.baml
+C:\Users\np0825\Desktop\TranslateCadAPP\TranslateCadAPP\obj\Debug\net48\TranslateCadAPP.g.resources
+C:\Users\np0825\Desktop\TranslateCadAPP\TranslateCadAPP\obj\Debug\net48\TranslateCadAPP.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\np0825\Desktop\TranslateCadAPP\TranslateCadAPP\obj\Debug\net48\TranslateCadAPP.AssemblyInfoInputs.cache
+C:\Users\np0825\Desktop\TranslateCadAPP\TranslateCadAPP\obj\Debug\net48\TranslateCadAPP.AssemblyInfo.cs
+C:\Users\np0825\Desktop\TranslateCadAPP\TranslateCadAPP\obj\Debug\net48\TranslateCadAPP.csproj.CoreCompileInputs.cache
+C:\Users\np0825\Desktop\TranslateCadAPP\TranslateCadAPP\obj\Debug\net48\Translat.312552A9.Up2Date
+C:\Users\np0825\Desktop\TranslateCadAPP\TranslateCadAPP\obj\Debug\net48\TranslateCadAPP.dll
+C:\Users\np0825\Desktop\TranslateCadAPP\TranslateCadAPP\obj\Debug\net48\TranslateCadAPP.pdb

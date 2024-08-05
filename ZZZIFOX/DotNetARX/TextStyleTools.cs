@@ -85,7 +85,7 @@ namespace ZZZIFOX.DotNetARX
     public static class TextStyleTools
     {
         /// <summary>
-        /// 创建一个新的文字样式
+        /// 1创建一个新的文字样式,只设置了字体文件名和大字体文字名
         /// </summary>
         /// <param name="db">数据库对象</param>
         /// <param name="styleName">文字样式名</param>
@@ -111,6 +111,129 @@ namespace ZZZIFOX.DotNetARX
             }
             return st[styleName];//返回新添加的文字样式表记录的ObjectId
         }
+
+        /// <summary>
+        /// 2创建一个新的文字样式，只设置了字体文件名，不设置大字体文件名
+        /// </summary>
+        /// <param name="db">数据库对象</param>
+        /// <param name="styleName">文字样式名</param>
+        /// <param name="fontFilename">字体文件名</param>
+        /// <returns>返回添加的文字样式的Id</returns>
+        public static ObjectId AddTextStyle(this Database db, string styleName, string fontFilename)
+        {
+            return db.AddTextStyle(styleName, fontFilename, "");
+        }
+
+        /// <summary>
+        /// 3创建一个新的文字样式，设置了字体文件名，加粗，倾斜，字符集和字宽和语系定义
+        /// </summary>
+        /// <param name="db">数据库对象</param>
+        /// <param name="styleName">文字样式名</param>
+        /// <param name="fontName">字体文件名</param>
+        /// <param name="bold">是否加粗</param>
+        /// <param name="italic">是否倾斜</param>
+        /// <param name="charset">字体的字符集</param>
+        /// <param name="pitchAndFamily">字体的字宽和语系定义</param>
+        /// <returns>返回添加的文字样式的Id</returns>
+        public static ObjectId AddTextStyle(this Database db, string styleName, string fontName, bool bold, bool italic, int charset, int pitchAndFamily)
+        {
+            //打开文字样式表
+            TextStyleTable st = (TextStyleTable)db.TextStyleTableId.GetObject(OpenMode.ForRead);
+            if (!st.Has(styleName))//如果不存在名为styleName的文字样式，则新建一个文字样式
+            {
+                //定义一个新的的文字样式表记录
+                TextStyleTableRecord str = new TextStyleTableRecord();
+                str.Name = styleName;//设置的文字样式名
+                //设置文字样式的字体
+                str.Font = new FontDescriptor(fontName, bold, italic, charset, pitchAndFamily);
+                st.UpgradeOpen();//切换的文字样式表的状态为写以添加新的的文字样式
+                st.Add(str);//将新建的文字样式表记录的信息添加到文字样式表中
+                //把的文字样式表记录添加到事务处理中
+                db.TransactionManager.AddNewlyCreatedDBObject(str, true);
+                st.DowngradeOpen();//为了安全，将文字样式表的状态切换为读
+            }
+            return st[styleName];//返回新添加的的文字样式表记录的ObjectId
+        }
+
+        /// <summary>
+        /// 4将指定文字样式设置为当前文字样式
+        /// </summary>
+        /// <param name="db">数据库对象</param>
+        /// <param name="styleName">文字样式名</param>
+        /// <returns>如果设置成功返回true，否则返回false</returns>
+        public static bool SetCurrentTextStyle(this Database db, string styleName)
+        {
+            var trans = db.TransactionManager;
+            //打开文字样式表
+            TextStyleTable st = (TextStyleTable)trans.GetObject(db.TextStyleTableId, OpenMode.ForRead);
+            //如果不存在名为styleName的文字样式，则返回
+            if (!st.Has(styleName)) return false;
+            //获取名为styleName的的文字样式表记录的Id
+            ObjectId styleId = st[styleName];
+            //如果指定的文字样式为当前文字样式，则返回
+            if (db.Textstyle == styleId) return false;
+            //指定当前文字样式
+            db.Textstyle = styleId;
+            return true;//指定当前文字样式成功
+        }
+
+        /// <summary>
+        /// 删除文字样式
+        /// </summary>
+        /// <param name="db">数据库对象</param>
+        /// <param name="styleName">文字样式名</param>
+        /// <returns>如果删除成功返回true，否则返回false</returns>
+        public static bool DeleteTextStyle(this Database db, string styleName)
+        {
+            var trans = db.TransactionManager;
+            //打开文字样式表
+            TextStyleTable st = (TextStyleTable)trans.GetObject(db.TextStyleTableId, OpenMode.ForRead);
+            //如果不存在名为styleName的文字样式，则返回
+            if (!st.Has(styleName)) return false;
+            //获取名为styleName的文字样式表记录的Id
+            ObjectId styleId = st[styleName];
+            //如果要删除的文字样式为当前文字样式，则返回（不能删除当前文字样式）
+            if (styleId == db.Textstyle) return false;
+            //以写的方式打开名为styleName的文字样式表记录
+            TextStyleTableRecord str = (TextStyleTableRecord)trans.GetObject(styleId, OpenMode.ForWrite);
+            //删除名为styleName的文字样式
+            str.Erase(true);
+            return true;//删除文字样式成功
+        }
+
+        /// <summary>
+        /// 设置文字样式的有关属性
+        /// </summary>
+        /// <param name="styleId">文字样式的Id</param>
+        /// <param name="textSize">高度</param>
+        /// <param name="xscale">宽度因子</param>
+        /// <param name="obliquingAngle">倾斜角度</param>
+        /// <param name="isVertical">是否垂直</param>
+        /// <param name="upsideDown">是否上下颠倒</param>
+        /// <param name="backwards">是否反向</param>
+        /// <param name="annotative">是否具有注释性</param>
+        /// <param name="paperOrientation">文字方向与布局是否匹配</param>
+        public static void SetTextStyleProp(this ObjectId styleId, double textSize, double xscale, double obliquingAngle, bool isVertical, bool upsideDown, bool backwards, AnnotativeStates annotative, bool paperOrientation)
+        {
+            //打开文字样式表记录
+            TextStyleTableRecord str = styleId.GetObject(OpenMode.ForWrite) as TextStyleTableRecord;
+            if (str == null) return;////如果styleId表示是不是文字样式表记录，则返回            
+            str.TextSize = textSize;//高度
+            str.XScale = xscale;//宽度因子
+            str.ObliquingAngle = obliquingAngle;//倾斜角度
+            str.IsVertical = isVertical;//是否垂直
+            str.FlagBits = (byte)0;
+            str.FlagBits += upsideDown ? (byte)2 : (byte)0;//是否上下颠倒
+            str.FlagBits += backwards ? (byte)4 : (byte)0;//是否反向
+            str.Annotative = annotative;//是否具有注释性
+            str.SetPaperOrientation(paperOrientation);//文字方向与布局是否匹配           
+            str.DowngradeOpen();//为了安全切换为读的状态            
+        }
+
+
+
+
+
 
 
 
