@@ -31,53 +31,53 @@
             buttonimport = new Button();
             comboBox1 = new ComboBox();
             groupBox1 = new GroupBox();
-            textBox1 = new TextBox();
+            textBoxWeight = new TextBox();
             label1 = new Label();
             groupBox2 = new GroupBox();
-            textBox14 = new TextBox();
+            textBoxZJJ = new TextBox();
             label14 = new Label();
-            textBox13 = new TextBox();
+            textBoxLZJ = new TextBox();
             label13 = new Label();
-            textBox5 = new TextBox();
+            textBoxJC = new TextBox();
             label5 = new Label();
-            textBox6 = new TextBox();
+            textBoxJK = new TextBox();
             label6 = new Label();
-            textBox7 = new TextBox();
+            textBoxJG = new TextBox();
             label7 = new Label();
-            textBox8 = new TextBox();
+            textBoxMC = new TextBox();
             label8 = new Label();
             groupBox3 = new GroupBox();
-            textBox10 = new TextBox();
+            textBoxM = new TextBox();
             label10 = new Label();
-            textBox11 = new TextBox();
+            textBoxFy = new TextBox();
             label11 = new Label();
             textBoxFx = new TextBox();
             label12 = new Label();
             groupBox4 = new GroupBox();
-            textBox15 = new TextBox();
+            textBoxBR = new TextBox();
             label15 = new Label();
-            textBox16 = new TextBox();
+            textBoxKBXS = new TextBox();
             label16 = new Label();
-            textBox17 = new TextBox();
+            textBoxZBL = new TextBox();
             label17 = new Label();
             groupBox5 = new GroupBox();
-            textBox9 = new TextBox();
+            textBoxHR = new TextBox();
             label18 = new Label();
-            textBox2 = new TextBox();
+            textBoxHYXS = new TextBox();
             label2 = new Label();
-            textBox3 = new TextBox();
+            textBoxHDL = new TextBox();
             label3 = new Label();
-            textBox4 = new TextBox();
+            textBoxKHL = new TextBox();
             label4 = new Label();
             label9 = new Label();
             groupBox6 = new GroupBox();
-            textBox18 = new TextBox();
+            textBoxQR = new TextBox();
             label19 = new Label();
-            textBox19 = new TextBox();
+            textBoxQFXS = new TextBox();
             label20 = new Label();
-            textBox20 = new TextBox();
+            textBoxQFL = new TextBox();
             label21 = new Label();
-            textBox21 = new TextBox();
+            textBoxKQF = new TextBox();
             label22 = new Label();
             button2 = new Button();
             button3 = new Button();
@@ -111,7 +111,7 @@
             // 
             // groupBox1
             // 
-            groupBox1.Controls.Add(textBox1);
+            groupBox1.Controls.Add(textBoxWeight);
             groupBox1.Controls.Add(label1);
             groupBox1.Location = new Point(12, 427);
             groupBox1.Name = "groupBox1";
@@ -121,12 +121,12 @@
             groupBox1.Text = "稳定性复核";
             groupBox1.Enter += groupBox1_Enter;
             // 
-            // textBox1
+            // textBoxWeight
             // 
-            textBox1.Location = new Point(115, 26);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(100, 23);
-            textBox1.TabIndex = 1;
+            textBoxWeight.Location = new Point(115, 26);
+            textBoxWeight.Name = "textBoxWeight";
+            textBoxWeight.Size = new Size(100, 23);
+            textBoxWeight.TabIndex = 1;
             // 
             // label1
             // 
@@ -139,17 +139,17 @@
             // 
             // groupBox2
             // 
-            groupBox2.Controls.Add(textBox14);
+            groupBox2.Controls.Add(textBoxZJJ);
             groupBox2.Controls.Add(label14);
-            groupBox2.Controls.Add(textBox13);
+            groupBox2.Controls.Add(textBoxLZJ);
             groupBox2.Controls.Add(label13);
-            groupBox2.Controls.Add(textBox5);
+            groupBox2.Controls.Add(textBoxJC);
             groupBox2.Controls.Add(label5);
-            groupBox2.Controls.Add(textBox6);
+            groupBox2.Controls.Add(textBoxJK);
             groupBox2.Controls.Add(label6);
-            groupBox2.Controls.Add(textBox7);
+            groupBox2.Controls.Add(textBoxJG);
             groupBox2.Controls.Add(label7);
-            groupBox2.Controls.Add(textBox8);
+            groupBox2.Controls.Add(textBoxMC);
             groupBox2.Controls.Add(label8);
             groupBox2.Location = new Point(12, 62);
             groupBox2.Name = "groupBox2";
@@ -159,12 +159,12 @@
             groupBox2.Text = "基础相关";
             groupBox2.Enter += groupBox1_Enter;
             // 
-            // textBox14
+            // textBoxZJJ
             // 
-            textBox14.Location = new Point(115, 171);
-            textBox14.Name = "textBox14";
-            textBox14.Size = new Size(100, 23);
-            textBox14.TabIndex = 1;
+            textBoxZJJ.Location = new Point(115, 171);
+            textBoxZJJ.Name = "textBoxZJJ";
+            textBoxZJJ.Size = new Size(100, 23);
+            textBoxZJJ.TabIndex = 1;
             // 
             // label14
             // 
@@ -175,12 +175,12 @@
             label14.TabIndex = 0;
             label14.Text = "支架纵向间距";
             // 
-            // textBox13
+            // textBoxLZJ
             // 
-            textBox13.Location = new Point(115, 142);
-            textBox13.Name = "textBox13";
-            textBox13.Size = new Size(100, 23);
-            textBox13.TabIndex = 1;
+            textBoxLZJ.Location = new Point(115, 142);
+            textBoxLZJ.Name = "textBoxLZJ";
+            textBoxLZJ.Size = new Size(100, 23);
+            textBoxLZJ.TabIndex = 1;
             // 
             // label13
             // 
@@ -191,12 +191,12 @@
             label13.TabIndex = 0;
             label13.Text = "前后立柱间距";
             // 
-            // textBox5
+            // textBoxJC
             // 
-            textBox5.Location = new Point(115, 113);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(100, 23);
-            textBox5.TabIndex = 1;
+            textBoxJC.Location = new Point(115, 113);
+            textBoxJC.Name = "textBoxJC";
+            textBoxJC.Size = new Size(100, 23);
+            textBoxJC.TabIndex = 1;
             // 
             // label5
             // 
@@ -207,12 +207,12 @@
             label5.TabIndex = 0;
             label5.Text = "矩形基础长度";
             // 
-            // textBox6
+            // textBoxJK
             // 
-            textBox6.Location = new Point(115, 84);
-            textBox6.Name = "textBox6";
-            textBox6.Size = new Size(100, 23);
-            textBox6.TabIndex = 1;
+            textBoxJK.Location = new Point(115, 84);
+            textBoxJK.Name = "textBoxJK";
+            textBoxJK.Size = new Size(100, 23);
+            textBoxJK.TabIndex = 1;
             // 
             // label6
             // 
@@ -223,12 +223,12 @@
             label6.TabIndex = 0;
             label6.Text = "矩形基础宽度";
             // 
-            // textBox7
+            // textBoxJG
             // 
-            textBox7.Location = new Point(115, 55);
-            textBox7.Name = "textBox7";
-            textBox7.Size = new Size(100, 23);
-            textBox7.TabIndex = 1;
+            textBoxJG.Location = new Point(115, 55);
+            textBoxJG.Name = "textBoxJG";
+            textBoxJG.Size = new Size(100, 23);
+            textBoxJG.TabIndex = 1;
             // 
             // label7
             // 
@@ -239,12 +239,12 @@
             label7.TabIndex = 0;
             label7.Text = "矩形基础高度";
             // 
-            // textBox8
+            // textBoxMC
             // 
-            textBox8.Location = new Point(115, 26);
-            textBox8.Name = "textBox8";
-            textBox8.Size = new Size(100, 23);
-            textBox8.TabIndex = 1;
+            textBoxMC.Location = new Point(115, 26);
+            textBoxMC.Name = "textBoxMC";
+            textBoxMC.Size = new Size(100, 23);
+            textBoxMC.TabIndex = 1;
             // 
             // label8
             // 
@@ -257,9 +257,9 @@
             // 
             // groupBox3
             // 
-            groupBox3.Controls.Add(textBox10);
+            groupBox3.Controls.Add(textBoxM);
             groupBox3.Controls.Add(label10);
-            groupBox3.Controls.Add(textBox11);
+            groupBox3.Controls.Add(textBoxFy);
             groupBox3.Controls.Add(label11);
             groupBox3.Controls.Add(textBoxFx);
             groupBox3.Controls.Add(label12);
@@ -271,12 +271,12 @@
             groupBox3.Text = "柱脚荷载";
             groupBox3.Enter += groupBox1_Enter;
             // 
-            // textBox10
+            // textBoxM
             // 
-            textBox10.Location = new Point(115, 84);
-            textBox10.Name = "textBox10";
-            textBox10.Size = new Size(100, 23);
-            textBox10.TabIndex = 1;
+            textBoxM.Location = new Point(115, 84);
+            textBoxM.Name = "textBoxM";
+            textBoxM.Size = new Size(100, 23);
+            textBoxM.TabIndex = 1;
             // 
             // label10
             // 
@@ -287,12 +287,12 @@
             label10.TabIndex = 0;
             label10.Text = "弯矩";
             // 
-            // textBox11
+            // textBoxFy
             // 
-            textBox11.Location = new Point(115, 55);
-            textBox11.Name = "textBox11";
-            textBox11.Size = new Size(100, 23);
-            textBox11.TabIndex = 1;
+            textBoxFy.Location = new Point(115, 55);
+            textBoxFy.Name = "textBoxFy";
+            textBoxFy.Size = new Size(100, 23);
+            textBoxFy.TabIndex = 1;
             // 
             // label11
             // 
@@ -321,11 +321,11 @@
             // 
             // groupBox4
             // 
-            groupBox4.Controls.Add(textBox15);
+            groupBox4.Controls.Add(textBoxBR);
             groupBox4.Controls.Add(label15);
-            groupBox4.Controls.Add(textBox16);
+            groupBox4.Controls.Add(textBoxKBXS);
             groupBox4.Controls.Add(label16);
-            groupBox4.Controls.Add(textBox17);
+            groupBox4.Controls.Add(textBoxZBL);
             groupBox4.Controls.Add(label17);
             groupBox4.Location = new Point(288, 62);
             groupBox4.Name = "groupBox4";
@@ -335,12 +335,12 @@
             groupBox4.Text = "抗拔稳定验算";
             groupBox4.Enter += groupBox1_Enter;
             // 
-            // textBox15
+            // textBoxBR
             // 
-            textBox15.Location = new Point(137, 84);
-            textBox15.Name = "textBox15";
-            textBox15.Size = new Size(100, 23);
-            textBox15.TabIndex = 1;
+            textBoxBR.Location = new Point(137, 84);
+            textBoxBR.Name = "textBoxBR";
+            textBoxBR.Size = new Size(100, 23);
+            textBoxBR.TabIndex = 1;
             // 
             // label15
             // 
@@ -351,12 +351,12 @@
             label15.TabIndex = 0;
             label15.Text = "是否满足";
             // 
-            // textBox16
+            // textBoxKBXS
             // 
-            textBox16.Location = new Point(137, 55);
-            textBox16.Name = "textBox16";
-            textBox16.Size = new Size(100, 23);
-            textBox16.TabIndex = 1;
+            textBoxKBXS.Location = new Point(137, 55);
+            textBoxKBXS.Name = "textBoxKBXS";
+            textBoxKBXS.Size = new Size(100, 23);
+            textBoxKBXS.TabIndex = 1;
             // 
             // label16
             // 
@@ -367,12 +367,12 @@
             label16.TabIndex = 0;
             label16.Text = "抗拔稳定系数";
             // 
-            // textBox17
+            // textBoxZBL
             // 
-            textBox17.Location = new Point(137, 26);
-            textBox17.Name = "textBox17";
-            textBox17.Size = new Size(100, 23);
-            textBox17.TabIndex = 1;
+            textBoxZBL.Location = new Point(137, 26);
+            textBoxZBL.Name = "textBoxZBL";
+            textBoxZBL.Size = new Size(100, 23);
+            textBoxZBL.TabIndex = 1;
             // 
             // label17
             // 
@@ -385,13 +385,13 @@
             // 
             // groupBox5
             // 
-            groupBox5.Controls.Add(textBox9);
+            groupBox5.Controls.Add(textBoxHR);
             groupBox5.Controls.Add(label18);
-            groupBox5.Controls.Add(textBox2);
+            groupBox5.Controls.Add(textBoxHYXS);
             groupBox5.Controls.Add(label2);
-            groupBox5.Controls.Add(textBox3);
+            groupBox5.Controls.Add(textBoxHDL);
             groupBox5.Controls.Add(label3);
-            groupBox5.Controls.Add(textBox4);
+            groupBox5.Controls.Add(textBoxKHL);
             groupBox5.Controls.Add(label4);
             groupBox5.Location = new Point(288, 190);
             groupBox5.Name = "groupBox5";
@@ -401,12 +401,12 @@
             groupBox5.Text = "抗滑移稳定验算";
             groupBox5.Enter += groupBox1_Enter;
             // 
-            // textBox9
+            // textBoxHR
             // 
-            textBox9.Location = new Point(137, 112);
-            textBox9.Name = "textBox9";
-            textBox9.Size = new Size(100, 23);
-            textBox9.TabIndex = 1;
+            textBoxHR.Location = new Point(137, 112);
+            textBoxHR.Name = "textBoxHR";
+            textBoxHR.Size = new Size(100, 23);
+            textBoxHR.TabIndex = 1;
             // 
             // label18
             // 
@@ -417,12 +417,12 @@
             label18.TabIndex = 0;
             label18.Text = "是否满足";
             // 
-            // textBox2
+            // textBoxHYXS
             // 
-            textBox2.Location = new Point(137, 84);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(100, 23);
-            textBox2.TabIndex = 1;
+            textBoxHYXS.Location = new Point(137, 84);
+            textBoxHYXS.Name = "textBoxHYXS";
+            textBoxHYXS.Size = new Size(100, 23);
+            textBoxHYXS.TabIndex = 1;
             // 
             // label2
             // 
@@ -433,12 +433,12 @@
             label2.TabIndex = 0;
             label2.Text = "抗滑移稳定系数";
             // 
-            // textBox3
+            // textBoxHDL
             // 
-            textBox3.Location = new Point(137, 55);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(100, 23);
-            textBox3.TabIndex = 1;
+            textBoxHDL.Location = new Point(137, 55);
+            textBoxHDL.Name = "textBoxHDL";
+            textBoxHDL.Size = new Size(100, 23);
+            textBoxHDL.TabIndex = 1;
             // 
             // label3
             // 
@@ -449,12 +449,12 @@
             label3.TabIndex = 0;
             label3.Text = "总滑动力";
             // 
-            // textBox4
+            // textBoxKHL
             // 
-            textBox4.Location = new Point(137, 26);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(100, 23);
-            textBox4.TabIndex = 1;
+            textBoxKHL.Location = new Point(137, 26);
+            textBoxKHL.Name = "textBoxKHL";
+            textBoxKHL.Size = new Size(100, 23);
+            textBoxKHL.TabIndex = 1;
             // 
             // label4
             // 
@@ -476,13 +476,13 @@
             // 
             // groupBox6
             // 
-            groupBox6.Controls.Add(textBox18);
+            groupBox6.Controls.Add(textBoxQR);
             groupBox6.Controls.Add(label19);
-            groupBox6.Controls.Add(textBox19);
+            groupBox6.Controls.Add(textBoxQFXS);
             groupBox6.Controls.Add(label20);
-            groupBox6.Controls.Add(textBox20);
+            groupBox6.Controls.Add(textBoxQFL);
             groupBox6.Controls.Add(label21);
-            groupBox6.Controls.Add(textBox21);
+            groupBox6.Controls.Add(textBoxKQF);
             groupBox6.Controls.Add(label22);
             groupBox6.Location = new Point(288, 342);
             groupBox6.Name = "groupBox6";
@@ -492,12 +492,12 @@
             groupBox6.Text = "抗倾覆稳定验算";
             groupBox6.Enter += groupBox1_Enter;
             // 
-            // textBox18
+            // textBoxQR
             // 
-            textBox18.Location = new Point(137, 112);
-            textBox18.Name = "textBox18";
-            textBox18.Size = new Size(100, 23);
-            textBox18.TabIndex = 1;
+            textBoxQR.Location = new Point(137, 112);
+            textBoxQR.Name = "textBoxQR";
+            textBoxQR.Size = new Size(100, 23);
+            textBoxQR.TabIndex = 1;
             // 
             // label19
             // 
@@ -508,12 +508,12 @@
             label19.TabIndex = 0;
             label19.Text = "是否满足";
             // 
-            // textBox19
+            // textBoxQFXS
             // 
-            textBox19.Location = new Point(137, 84);
-            textBox19.Name = "textBox19";
-            textBox19.Size = new Size(100, 23);
-            textBox19.TabIndex = 1;
+            textBoxQFXS.Location = new Point(137, 84);
+            textBoxQFXS.Name = "textBoxQFXS";
+            textBoxQFXS.Size = new Size(100, 23);
+            textBoxQFXS.TabIndex = 1;
             // 
             // label20
             // 
@@ -524,12 +524,12 @@
             label20.TabIndex = 0;
             label20.Text = "抗倾覆稳定系数";
             // 
-            // textBox20
+            // textBoxQFL
             // 
-            textBox20.Location = new Point(137, 55);
-            textBox20.Name = "textBox20";
-            textBox20.Size = new Size(100, 23);
-            textBox20.TabIndex = 1;
+            textBoxQFL.Location = new Point(137, 55);
+            textBoxQFL.Name = "textBoxQFL";
+            textBoxQFL.Size = new Size(100, 23);
+            textBoxQFL.TabIndex = 1;
             // 
             // label21
             // 
@@ -540,12 +540,12 @@
             label21.TabIndex = 0;
             label21.Text = "总倾覆力";
             // 
-            // textBox21
+            // textBoxKQF
             // 
-            textBox21.Location = new Point(137, 26);
-            textBox21.Name = "textBox21";
-            textBox21.Size = new Size(100, 23);
-            textBox21.TabIndex = 1;
+            textBoxKQF.Location = new Point(137, 26);
+            textBoxKQF.Name = "textBoxKQF";
+            textBoxKQF.Size = new Size(100, 23);
+            textBoxKQF.TabIndex = 1;
             // 
             // label22
             // 
@@ -564,6 +564,7 @@
             button2.TabIndex = 4;
             button2.Text = "缺省参数";
             button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // button3
             // 
@@ -582,6 +583,7 @@
             button4.TabIndex = 4;
             button4.Text = "开始验算";
             button4.UseVisualStyleBackColor = true;
+            button4.Click += button4_Click;
             // 
             // Form1
             // 
@@ -623,53 +625,53 @@
         private Button buttonimport;
         private ComboBox comboBox1;
         private GroupBox groupBox1;
-        private TextBox textBox1;
+        private TextBox textBoxWeight;
         private Label label1;
         private GroupBox groupBox2;
-        private TextBox textBox5;
+        private TextBox textBoxJC;
         private Label label5;
-        private TextBox textBox6;
+        private TextBox textBoxJK;
         private Label label6;
-        private TextBox textBox7;
+        private TextBox textBoxJG;
         private Label label7;
-        private TextBox textBox8;
+        private TextBox textBoxMC;
         private Label label8;
         private GroupBox groupBox3;
-        private TextBox textBox10;
+        private TextBox textBoxM;
         private Label label10;
-        private TextBox textBox11;
+        private TextBox textBoxFy;
         private Label label11;
         private TextBox textBoxFx;
         private Label label12;
-        private TextBox textBox14;
+        private TextBox textBoxZJJ;
         private Label label14;
-        private TextBox textBox13;
+        private TextBox textBoxLZJ;
         private Label label13;
         private GroupBox groupBox4;
-        private TextBox textBox15;
+        private TextBox textBoxBR;
         private Label label15;
-        private TextBox textBox16;
+        private TextBox textBoxKBXS;
         private Label label16;
-        private TextBox textBox17;
+        private TextBox textBoxZBL;
         private Label label17;
         private GroupBox groupBox5;
-        private TextBox textBox2;
+        private TextBox textBoxHYXS;
         private Label label2;
-        private TextBox textBox3;
+        private TextBox textBoxHDL;
         private Label label3;
-        private TextBox textBox4;
+        private TextBox textBoxKHL;
         private Label label4;
         private Label label9;
-        private TextBox textBox9;
+        private TextBox textBoxHR;
         private Label label18;
         private GroupBox groupBox6;
-        private TextBox textBox18;
+        private TextBox textBoxQR;
         private Label label19;
-        private TextBox textBox19;
+        private TextBox textBoxQFXS;
         private Label label20;
-        private TextBox textBox20;
+        private TextBox textBoxQFL;
         private Label label21;
-        private TextBox textBox21;
+        private TextBox textBoxKQF;
         private Label label22;
         private Button button2;
         private Button button3;

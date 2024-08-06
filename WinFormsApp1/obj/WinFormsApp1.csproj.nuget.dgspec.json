@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\GithubProject\\VScode\\WinFormsApp1\\WinFormsApp1.csproj": {}
+    "E:\\GitHubFile\\VScode\\WinFormsApp1\\WinFormsApp1.csproj": {}
   },
   "projects": {
-    "D:\\GithubProject\\VScode\\WinFormsApp1\\WinFormsApp1.csproj": {
+    "E:\\GitHubFile\\VScode\\WinFormsApp1\\WinFormsApp1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GithubProject\\VScode\\WinFormsApp1\\WinFormsApp1.csproj",
+        "projectUniqueName": "E:\\GitHubFile\\VScode\\WinFormsApp1\\WinFormsApp1.csproj",
         "projectName": "WinFormsApp1",
-        "projectPath": "D:\\GithubProject\\VScode\\WinFormsApp1\\WinFormsApp1.csproj",
-        "packagesPath": "C:\\Users\\np0825\\.nuget\\packages\\",
-        "outputPath": "D:\\GithubProject\\VScode\\WinFormsApp1\\obj\\",
+        "projectPath": "E:\\GitHubFile\\VScode\\WinFormsApp1\\WinFormsApp1.csproj",
+        "packagesPath": "C:\\Users\\ZZZ\\.nuget\\packages\\",
+        "outputPath": "E:\\GitHubFile\\VScode\\WinFormsApp1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\np0825\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ZZZ\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -73,7 +73,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
