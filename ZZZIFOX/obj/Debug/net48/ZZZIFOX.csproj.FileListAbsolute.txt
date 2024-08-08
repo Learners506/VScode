@@ -18,3 +18,8 @@ E:\GitHubFile\VScode\ZZZIFOX\obj\Debug\net48\ZZZIFOX.csproj.CoreCompileInputs.ca
 E:\GitHubFile\VScode\ZZZIFOX\obj\Debug\net48\ZZZIFOX.sourcelink.json
 E:\GitHubFile\VScode\ZZZIFOX\obj\Debug\net48\ZZZIFOX.dll
 E:\GitHubFile\VScode\ZZZIFOX\obj\Debug\net48\ZZZIFOX.pdb
+D:\GithubProject\VScode\ZZZIFOX\obj\Debug\net48\WPFUI\Window1.g.cs
+D:\GithubProject\VScode\ZZZIFOX\obj\Debug\net48\ZZZIFOX_MarkupCompile.cache
+D:\GithubProject\VScode\ZZZIFOX\obj\Debug\net48\ZZZIFOX_MarkupCompile.lref
+D:\GithubProject\VScode\ZZZIFOX\obj\Debug\net48\WPFUI\Window1.baml
+D:\GithubProject\VScode\ZZZIFOX\obj\Debug\net48\ZZZIFOX.g.resources
