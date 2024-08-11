@@ -5,3 +5,10 @@ E:\GitHubFile\VScode\ComputeIt\obj\Debug\ComputeIt.csproj.AssemblyReference.cach
 E:\GitHubFile\VScode\ComputeIt\obj\Debug\ComputeIt.csproj.CoreCompileInputs.cache
 E:\GitHubFile\VScode\ComputeIt\obj\Debug\ComputeIt.exe
 E:\GitHubFile\VScode\ComputeIt\obj\Debug\ComputeIt.pdb
+D:\GithubProject\VScode\ComputeIt\bin\Debug\ComputeIt.exe.config
+D:\GithubProject\VScode\ComputeIt\bin\Debug\ComputeIt.exe
+D:\GithubProject\VScode\ComputeIt\bin\Debug\ComputeIt.pdb
+D:\GithubProject\VScode\ComputeIt\obj\Debug\ComputeIt.csproj.AssemblyReference.cache
+D:\GithubProject\VScode\ComputeIt\obj\Debug\ComputeIt.csproj.CoreCompileInputs.cache
+D:\GithubProject\VScode\ComputeIt\obj\Debug\ComputeIt.exe
+D:\GithubProject\VScode\ComputeIt\obj\Debug\ComputeIt.pdb

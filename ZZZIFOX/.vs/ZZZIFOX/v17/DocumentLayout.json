@@ -1,118 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\GithubProject\\VScode\\ZZZIFOX\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\GithubProject\\VScode\\ZZZIFOX\\ProjectItems\\ReplaceBlock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ProjectItems\\ReplaceBlock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\GithubProject\\VScode\\ZZZIFOX\\ProjectItems\\ToInsetBlock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ProjectItems\\ToInsetBlock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1C630A4E-0CD8-4FF4-9136-9CE2506C8848}|ZZZIFOX.csproj|d:\\githubproject\\vscode\\zzzifox\\test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1C630A4E-0CD8-4FF4-9136-9CE2506C8848}|ZZZIFOX.csproj|solutionrelative:test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1C630A4E-0CD8-4FF4-9136-9CE2506C8848}|ZZZIFOX.csproj|d:\\githubproject\\vscode\\zzzifox\\dotnetarx\\blocktools.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1C630A4E-0CD8-4FF4-9136-9CE2506C8848}|ZZZIFOX.csproj|solutionrelative:dotnetarx\\blocktools.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1C630A4E-0CD8-4FF4-9136-9CE2506C8848}|ZZZIFOX.csproj|d:\\githubproject\\vscode\\zzzifox\\dotnetarx\\textstyletools.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1C630A4E-0CD8-4FF4-9136-9CE2506C8848}|ZZZIFOX.csproj|solutionrelative:dotnetarx\\textstyletools.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1C630A4E-0CD8-4FF4-9136-9CE2506C8848}|ZZZIFOX.csproj|d:\\githubproject\\vscode\\zzzifox\\projectitems\\blockcount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1C630A4E-0CD8-4FF4-9136-9CE2506C8848}|ZZZIFOX.csproj|solutionrelative:projectitems\\blockcount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 5,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "TextStyleTools.cs",
-              "DocumentMoniker": "D:\\GithubProject\\VScode\\ZZZIFOX\\DotNetARX\\TextStyleTools.cs",
-              "RelativeDocumentMoniker": "DotNetARX\\TextStyleTools.cs",
-              "ToolTip": "D:\\GithubProject\\VScode\\ZZZIFOX\\DotNetARX\\TextStyleTools.cs",
-              "RelativeToolTip": "DotNetARX\\TextStyleTools.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAOwAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-01T12:56:45.808Z",
-              "IsPinned": true
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ToInsetBlock.cs",
-              "DocumentMoniker": "D:\\GithubProject\\VScode\\ZZZIFOX\\ProjectItems\\ToInsetBlock.cs",
-              "RelativeDocumentMoniker": "ProjectItems\\ToInsetBlock.cs",
-              "ToolTip": "D:\\GithubProject\\VScode\\ZZZIFOX\\ProjectItems\\ToInsetBlock.cs",
-              "RelativeToolTip": "ProjectItems\\ToInsetBlock.cs",
-              "ViewState": "AQIAABYAAAAAAAAAAAAAwFAAAAAZAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-08T05:51:13.282Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "test.cs",
-              "DocumentMoniker": "D:\\GithubProject\\VScode\\ZZZIFOX\\test.cs",
-              "RelativeDocumentMoniker": "test.cs",
-              "ToolTip": "D:\\GithubProject\\VScode\\ZZZIFOX\\test.cs",
-              "RelativeToolTip": "test.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAgAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-08T05:46:00.252Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "BlockTools.cs",
-              "DocumentMoniker": "D:\\GithubProject\\VScode\\ZZZIFOX\\DotNetARX\\BlockTools.cs",
-              "RelativeDocumentMoniker": "DotNetARX\\BlockTools.cs",
-              "ToolTip": "D:\\GithubProject\\VScode\\ZZZIFOX\\DotNetARX\\BlockTools.cs",
-              "RelativeToolTip": "DotNetARX\\BlockTools.cs",
-              "ViewState": "AQIAABwAAAAAAAAAAAAIwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-08T05:00:51.272Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "BlockCount.cs",
-              "DocumentMoniker": "D:\\GithubProject\\VScode\\ZZZIFOX\\ProjectItems\\BlockCount.cs",
-              "RelativeDocumentMoniker": "ProjectItems\\BlockCount.cs",
-              "ToolTip": "D:\\GithubProject\\VScode\\ZZZIFOX\\ProjectItems\\BlockCount.cs",
-              "RelativeToolTip": "ProjectItems\\BlockCount.cs",
-              "ViewState": "AQIAACUAAAAAAAAAAAAIwDUAAAARAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-08T04:33:38.966Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ReplaceBlock.cs",
-              "DocumentMoniker": "D:\\GithubProject\\VScode\\ZZZIFOX\\ProjectItems\\ReplaceBlock.cs",
-              "RelativeDocumentMoniker": "ProjectItems\\ReplaceBlock.cs",
-              "ToolTip": "D:\\GithubProject\\VScode\\ZZZIFOX\\ProjectItems\\ReplaceBlock.cs",
-              "RelativeToolTip": "ProjectItems\\ReplaceBlock.cs",
-              "ViewState": "AQIAAF0AAAAAAAAAAAAIwIUAAAAcAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-08T04:28:21.81Z",
-              "EditorCaption": ""
-            }
-          ]
-        }
-      ]
+      "DocumentGroups": []
     }
   ]
 }
