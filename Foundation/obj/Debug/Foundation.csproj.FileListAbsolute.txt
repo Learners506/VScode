@@ -8,3 +8,13 @@ D:\GithubProject\VScode\Foundation\obj\Debug\Foundation.csproj.GenerateResource.
 D:\GithubProject\VScode\Foundation\obj\Debug\Foundation.csproj.CoreCompileInputs.cache
 D:\GithubProject\VScode\Foundation\obj\Debug\Foundation.exe
 D:\GithubProject\VScode\Foundation\obj\Debug\Foundation.pdb
+E:\GitHubFile\VScode\Foundation\bin\Debug\Foundation.exe.config
+E:\GitHubFile\VScode\Foundation\bin\Debug\Foundation.exe
+E:\GitHubFile\VScode\Foundation\bin\Debug\Foundation.pdb
+E:\GitHubFile\VScode\Foundation\obj\Debug\Foundation.csproj.AssemblyReference.cache
+E:\GitHubFile\VScode\Foundation\obj\Debug\Foundation.Form1.resources
+E:\GitHubFile\VScode\Foundation\obj\Debug\Foundation.Properties.Resources.resources
+E:\GitHubFile\VScode\Foundation\obj\Debug\Foundation.csproj.GenerateResource.cache
+E:\GitHubFile\VScode\Foundation\obj\Debug\Foundation.csproj.CoreCompileInputs.cache
+E:\GitHubFile\VScode\Foundation\obj\Debug\Foundation.exe
+E:\GitHubFile\VScode\Foundation\obj\Debug\Foundation.pdb

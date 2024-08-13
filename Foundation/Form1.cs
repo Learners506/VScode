@@ -15,6 +15,15 @@ namespace Foundation
         public Form1()
         {
             InitializeComponent();
+            // 设置初始状态
+            radioSingle.Checked = true;
+            textBoxTCH.Enabled = false;
+
+        }
+
+        private void radioButton2_CheckedChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

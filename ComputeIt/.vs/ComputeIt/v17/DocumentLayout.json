@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\GithubProject\\VScode\\ComputeIt\\",
+  "WorkspaceRootPath": "E:\\GitHubFile\\VScode\\ComputeIt\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9879B24C-CD7D-4667-8B30-57047AD11513}|ComputeIt.csproj|d:\\githubproject\\vscode\\computeit\\programers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{9879B24C-CD7D-4667-8B30-57047AD11513}|ComputeIt.csproj|e:\\githubfile\\vscode\\computeit\\programers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9879B24C-CD7D-4667-8B30-57047AD11513}|ComputeIt.csproj|solutionrelative:programers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -20,11 +20,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Programers.cs",
-              "DocumentMoniker": "D:\\GithubProject\\VScode\\ComputeIt\\Programers.cs",
+              "DocumentMoniker": "E:\\GitHubFile\\VScode\\ComputeIt\\Programers.cs",
               "RelativeDocumentMoniker": "Programers.cs",
-              "ToolTip": "D:\\GithubProject\\VScode\\ComputeIt\\Programers.cs",
+              "ToolTip": "E:\\GitHubFile\\VScode\\ComputeIt\\Programers.cs",
               "RelativeToolTip": "Programers.cs",
-              "ViewState": "AQIAAFIAAAAAAAAAAAAAwGIAAAA/AAAA",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAwwBIAAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-11T08:05:27.041Z",
               "EditorCaption": ""
