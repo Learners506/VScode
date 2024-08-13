@@ -1,0 +1,10 @@
+D:\GithubProject\VScode\Foundation\bin\Debug\Foundation.exe.config
+D:\GithubProject\VScode\Foundation\bin\Debug\Foundation.exe
+D:\GithubProject\VScode\Foundation\bin\Debug\Foundation.pdb
+D:\GithubProject\VScode\Foundation\obj\Debug\Foundation.csproj.AssemblyReference.cache
+D:\GithubProject\VScode\Foundation\obj\Debug\Foundation.Form1.resources
+D:\GithubProject\VScode\Foundation\obj\Debug\Foundation.Properties.Resources.resources
+D:\GithubProject\VScode\Foundation\obj\Debug\Foundation.csproj.GenerateResource.cache
+D:\GithubProject\VScode\Foundation\obj\Debug\Foundation.csproj.CoreCompileInputs.cache
+D:\GithubProject\VScode\Foundation\obj\Debug\Foundation.exe
+D:\GithubProject\VScode\Foundation\obj\Debug\Foundation.pdb
