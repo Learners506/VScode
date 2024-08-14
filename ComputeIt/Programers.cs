@@ -18,7 +18,9 @@ namespace ComputeIt
             double 叶片间距 = 0.6;
             double 上片间距 = 0.7875;
             double 下片顶距 = 1.510;
-            double 分割高度 = 0.6;
+
+
+            double 分割高度 = 0;
             double 侧摩系数1 = 20;
             double 侧摩系数2 = 20;
             double 抗拔系数1 = 0.7;

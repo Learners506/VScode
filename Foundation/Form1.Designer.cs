@@ -32,23 +32,23 @@
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.button2 = new System.Windows.Forms.Button();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.textBox20 = new System.Windows.Forms.TextBox();
+            this.textBoxBYPJFW = new System.Windows.Forms.TextBox();
             this.label20 = new System.Windows.Forms.Label();
-            this.textBox19 = new System.Windows.Forms.TextBox();
+            this.textBoxBKBCZL = new System.Windows.Forms.TextBox();
             this.label19 = new System.Windows.Forms.Label();
-            this.textBox18 = new System.Windows.Forms.TextBox();
+            this.textBoxBJXCZL = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.textBox17 = new System.Windows.Forms.TextBox();
+            this.textBoxYKYCZLT = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
-            this.textBox16 = new System.Windows.Forms.TextBox();
+            this.textBoxYKYCZL = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
-            this.textBox15 = new System.Windows.Forms.TextBox();
+            this.textBoxYJXDZ = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
-            this.textBox14 = new System.Windows.Forms.TextBox();
+            this.textBoxYJXCZ = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
-            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.textBoxYYPJFW = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.textBoxKB2 = new System.Windows.Forms.TextBox();
@@ -68,15 +68,15 @@
             this.radioMulty = new System.Windows.Forms.RadioButton();
             this.radioSingle = new System.Windows.Forms.RadioButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBoxSYPJZJ = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBoxYPJU = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBoxZC = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBoxYPJ = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBoxZJ = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tabPage3 = new System.Windows.Forms.TabPage();
@@ -123,14 +123,15 @@
             this.button2.TabIndex = 6;
             this.button2.Text = "取消";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // groupBox4
             // 
-            this.groupBox4.Controls.Add(this.textBox20);
+            this.groupBox4.Controls.Add(this.textBoxBYPJFW);
             this.groupBox4.Controls.Add(this.label20);
-            this.groupBox4.Controls.Add(this.textBox19);
+            this.groupBox4.Controls.Add(this.textBoxBKBCZL);
             this.groupBox4.Controls.Add(this.label19);
-            this.groupBox4.Controls.Add(this.textBox18);
+            this.groupBox4.Controls.Add(this.textBoxBJXCZL);
             this.groupBox4.Controls.Add(this.label18);
             this.groupBox4.Location = new System.Drawing.Point(384, 222);
             this.groupBox4.Name = "groupBox4";
@@ -139,12 +140,12 @@
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "抗拔承载力";
             // 
-            // textBox20
+            // textBoxBYPJFW
             // 
-            this.textBox20.Location = new System.Drawing.Point(148, 38);
-            this.textBox20.Name = "textBox20";
-            this.textBox20.Size = new System.Drawing.Size(100, 21);
-            this.textBox20.TabIndex = 7;
+            this.textBoxBYPJFW.Location = new System.Drawing.Point(148, 38);
+            this.textBoxBYPJFW.Name = "textBoxBYPJFW";
+            this.textBoxBYPJFW.Size = new System.Drawing.Size(100, 21);
+            this.textBoxBYPJFW.TabIndex = 7;
             // 
             // label20
             // 
@@ -155,12 +156,12 @@
             this.label20.TabIndex = 6;
             this.label20.Text = "叶片距范围：";
             // 
-            // textBox19
+            // textBoxBKBCZL
             // 
-            this.textBox19.Location = new System.Drawing.Point(148, 116);
-            this.textBox19.Name = "textBox19";
-            this.textBox19.Size = new System.Drawing.Size(100, 21);
-            this.textBox19.TabIndex = 5;
+            this.textBoxBKBCZL.Location = new System.Drawing.Point(148, 116);
+            this.textBoxBKBCZL.Name = "textBoxBKBCZL";
+            this.textBoxBKBCZL.Size = new System.Drawing.Size(100, 21);
+            this.textBoxBKBCZL.TabIndex = 5;
             // 
             // label19
             // 
@@ -171,12 +172,12 @@
             this.label19.TabIndex = 4;
             this.label19.Text = "抗拔承载力特征值：";
             // 
-            // textBox18
+            // textBoxBJXCZL
             // 
-            this.textBox18.Location = new System.Drawing.Point(148, 76);
-            this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(100, 21);
-            this.textBox18.TabIndex = 3;
+            this.textBoxBJXCZL.Location = new System.Drawing.Point(148, 76);
+            this.textBoxBJXCZL.Name = "textBoxBJXCZL";
+            this.textBoxBJXCZL.Size = new System.Drawing.Size(100, 21);
+            this.textBoxBJXCZL.TabIndex = 3;
             // 
             // label18
             // 
@@ -195,18 +196,19 @@
             this.button1.TabIndex = 4;
             this.button1.Text = "计算";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.textBox17);
+            this.groupBox3.Controls.Add(this.textBoxYKYCZLT);
             this.groupBox3.Controls.Add(this.label17);
-            this.groupBox3.Controls.Add(this.textBox16);
+            this.groupBox3.Controls.Add(this.textBoxYKYCZL);
             this.groupBox3.Controls.Add(this.label16);
-            this.groupBox3.Controls.Add(this.textBox15);
+            this.groupBox3.Controls.Add(this.textBoxYJXDZ);
             this.groupBox3.Controls.Add(this.label15);
-            this.groupBox3.Controls.Add(this.textBox14);
+            this.groupBox3.Controls.Add(this.textBoxYJXCZ);
             this.groupBox3.Controls.Add(this.label14);
-            this.groupBox3.Controls.Add(this.textBox13);
+            this.groupBox3.Controls.Add(this.textBoxYYPJFW);
             this.groupBox3.Controls.Add(this.label13);
             this.groupBox3.Location = new System.Drawing.Point(46, 222);
             this.groupBox3.Name = "groupBox3";
@@ -215,12 +217,12 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "抗压承载力";
             // 
-            // textBox17
+            // textBoxYKYCZLT
             // 
-            this.textBox17.Location = new System.Drawing.Point(162, 135);
-            this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(100, 21);
-            this.textBox17.TabIndex = 9;
+            this.textBoxYKYCZLT.Location = new System.Drawing.Point(162, 135);
+            this.textBoxYKYCZLT.Name = "textBoxYKYCZLT";
+            this.textBoxYKYCZLT.Size = new System.Drawing.Size(100, 21);
+            this.textBoxYKYCZLT.TabIndex = 9;
             // 
             // label17
             // 
@@ -231,12 +233,12 @@
             this.label17.TabIndex = 8;
             this.label17.Text = "抗压承载力特征值：";
             // 
-            // textBox16
+            // textBoxYKYCZL
             // 
-            this.textBox16.Location = new System.Drawing.Point(162, 108);
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(100, 21);
-            this.textBox16.TabIndex = 7;
+            this.textBoxYKYCZL.Location = new System.Drawing.Point(162, 108);
+            this.textBoxYKYCZL.Name = "textBoxYKYCZL";
+            this.textBoxYKYCZL.Size = new System.Drawing.Size(100, 21);
+            this.textBoxYKYCZL.TabIndex = 7;
             // 
             // label16
             // 
@@ -247,12 +249,12 @@
             this.label16.TabIndex = 6;
             this.label16.Text = "抗压承载力标准值：";
             // 
-            // textBox15
+            // textBoxYJXDZ
             // 
-            this.textBox15.Location = new System.Drawing.Point(162, 81);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(100, 21);
-            this.textBox15.TabIndex = 5;
+            this.textBoxYJXDZ.Location = new System.Drawing.Point(162, 81);
+            this.textBoxYJXDZ.Name = "textBoxYJXDZ";
+            this.textBoxYJXDZ.Size = new System.Drawing.Size(100, 21);
+            this.textBoxYJXDZ.TabIndex = 5;
             // 
             // label15
             // 
@@ -263,12 +265,12 @@
             this.label15.TabIndex = 4;
             this.label15.Text = "总极限端阻力：";
             // 
-            // textBox14
+            // textBoxYJXCZ
             // 
-            this.textBox14.Location = new System.Drawing.Point(162, 54);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(100, 21);
-            this.textBox14.TabIndex = 3;
+            this.textBoxYJXCZ.Location = new System.Drawing.Point(162, 54);
+            this.textBoxYJXCZ.Name = "textBoxYJXCZ";
+            this.textBoxYJXCZ.Size = new System.Drawing.Size(100, 21);
+            this.textBoxYJXCZ.TabIndex = 3;
             // 
             // label14
             // 
@@ -279,12 +281,12 @@
             this.label14.TabIndex = 2;
             this.label14.Text = "总极限侧阻力：";
             // 
-            // textBox13
+            // textBoxYYPJFW
             // 
-            this.textBox13.Location = new System.Drawing.Point(163, 27);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(100, 21);
-            this.textBox13.TabIndex = 1;
+            this.textBoxYYPJFW.Location = new System.Drawing.Point(163, 27);
+            this.textBoxYYPJFW.Name = "textBoxYYPJFW";
+            this.textBoxYYPJFW.Size = new System.Drawing.Size(100, 21);
+            this.textBoxYYPJFW.TabIndex = 1;
             // 
             // label13
             // 
@@ -457,15 +459,15 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.textBox5);
+            this.groupBox1.Controls.Add(this.textBoxSYPJZJ);
             this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.textBox4);
+            this.groupBox1.Controls.Add(this.textBoxYPJU);
             this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.textBox3);
+            this.groupBox1.Controls.Add(this.textBoxZC);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.textBox2);
+            this.groupBox1.Controls.Add(this.textBoxYPJ);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.textBoxZJ);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(16, 18);
             this.groupBox1.Name = "groupBox1";
@@ -474,12 +476,12 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "桩身参数";
             // 
-            // textBox5
+            // textBoxSYPJZJ
             // 
-            this.textBox5.Location = new System.Drawing.Point(126, 132);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(83, 21);
-            this.textBox5.TabIndex = 9;
+            this.textBoxSYPJZJ.Location = new System.Drawing.Point(126, 132);
+            this.textBoxSYPJZJ.Name = "textBoxSYPJZJ";
+            this.textBoxSYPJZJ.Size = new System.Drawing.Size(83, 21);
+            this.textBoxSYPJZJ.TabIndex = 9;
             // 
             // label5
             // 
@@ -490,12 +492,12 @@
             this.label5.TabIndex = 8;
             this.label5.Text = "上叶片距桩尖/m";
             // 
-            // textBox4
+            // textBoxYPJU
             // 
-            this.textBox4.Location = new System.Drawing.Point(126, 105);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(83, 21);
-            this.textBox4.TabIndex = 7;
+            this.textBoxYPJU.Location = new System.Drawing.Point(126, 105);
+            this.textBoxYPJU.Name = "textBoxYPJU";
+            this.textBoxYPJU.Size = new System.Drawing.Size(83, 21);
+            this.textBoxYPJU.TabIndex = 7;
             // 
             // label4
             // 
@@ -506,12 +508,12 @@
             this.label4.TabIndex = 6;
             this.label4.Text = "叶片距/m";
             // 
-            // textBox3
+            // textBoxZC
             // 
-            this.textBox3.Location = new System.Drawing.Point(126, 78);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(83, 21);
-            this.textBox3.TabIndex = 5;
+            this.textBoxZC.Location = new System.Drawing.Point(126, 78);
+            this.textBoxZC.Name = "textBoxZC";
+            this.textBoxZC.Size = new System.Drawing.Size(83, 21);
+            this.textBoxZC.TabIndex = 5;
             // 
             // label3
             // 
@@ -522,12 +524,12 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "桩长/m";
             // 
-            // textBox2
+            // textBoxYPJ
             // 
-            this.textBox2.Location = new System.Drawing.Point(126, 51);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(83, 21);
-            this.textBox2.TabIndex = 3;
+            this.textBoxYPJ.Location = new System.Drawing.Point(126, 51);
+            this.textBoxYPJ.Name = "textBoxYPJ";
+            this.textBoxYPJ.Size = new System.Drawing.Size(83, 21);
+            this.textBoxYPJ.TabIndex = 3;
             // 
             // label2
             // 
@@ -538,12 +540,12 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "叶片径/m";
             // 
-            // textBox1
+            // textBoxZJ
             // 
-            this.textBox1.Location = new System.Drawing.Point(126, 24);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(83, 21);
-            this.textBox1.TabIndex = 1;
+            this.textBoxZJ.Location = new System.Drawing.Point(126, 24);
+            this.textBoxZJ.Name = "textBoxZJ";
+            this.textBoxZJ.Size = new System.Drawing.Size(83, 21);
+            this.textBoxZJ.TabIndex = 1;
             // 
             // label1
             // 
@@ -604,14 +606,14 @@
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBoxZC;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBoxYPJ;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox textBoxZJ;
+        private System.Windows.Forms.TextBox textBoxSYPJZJ;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textBoxYPJU;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.RadioButton radioMulty;
@@ -632,23 +634,23 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TextBox textBox17;
+        private System.Windows.Forms.TextBox textBoxYKYCZLT;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.TextBox textBox16;
+        private System.Windows.Forms.TextBox textBoxYKYCZL;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.TextBox textBox15;
+        private System.Windows.Forms.TextBox textBoxYJXDZ;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.TextBox textBox14;
+        private System.Windows.Forms.TextBox textBoxYJXCZ;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.TextBox textBox13;
+        private System.Windows.Forms.TextBox textBoxYYPJFW;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.TextBox textBox18;
+        private System.Windows.Forms.TextBox textBoxBJXCZL;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.TextBox textBox20;
+        private System.Windows.Forms.TextBox textBoxBYPJFW;
         private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.TextBox textBox19;
+        private System.Windows.Forms.TextBox textBoxBKBCZL;
         private System.Windows.Forms.Label label19;
     }
 }
