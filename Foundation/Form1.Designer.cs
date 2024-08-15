@@ -28,8 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button2 = new System.Windows.Forms.Button();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.textBoxBYPJFW = new System.Windows.Forms.TextBox();
@@ -82,6 +84,7 @@
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox4.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -90,116 +93,92 @@
             // 
             // tabControl1
             // 
+            resources.ApplyResources(this.tabControl1, "tabControl1");
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
-            this.tabControl1.Location = new System.Drawing.Point(1, 1);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(691, 489);
-            this.tabControl1.TabIndex = 0;
             // 
             // tabPage1
             // 
+            resources.ApplyResources(this.tabPage1, "tabPage1");
+            this.tabPage1.Controls.Add(this.pictureBox1);
             this.tabPage1.Controls.Add(this.button2);
             this.tabPage1.Controls.Add(this.groupBox4);
             this.tabPage1.Controls.Add(this.button1);
             this.tabPage1.Controls.Add(this.groupBox3);
             this.tabPage1.Controls.Add(this.groupBox2);
             this.tabPage1.Controls.Add(this.groupBox1);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(683, 463);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "螺旋钢管桩基础验算";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox1
+            // 
+            resources.ApplyResources(this.pictureBox1, "pictureBox1");
+            this.pictureBox1.Image = global::Foundation.Properties.Resources.图片1;
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.TabStop = false;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(364, 421);
+            resources.ApplyResources(this.button2, "button2");
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 6;
-            this.button2.Text = "取消";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // groupBox4
             // 
+            resources.ApplyResources(this.groupBox4, "groupBox4");
             this.groupBox4.Controls.Add(this.textBoxBYPJFW);
             this.groupBox4.Controls.Add(this.label20);
             this.groupBox4.Controls.Add(this.textBoxBKBCZL);
             this.groupBox4.Controls.Add(this.label19);
             this.groupBox4.Controls.Add(this.textBoxBJXCZL);
             this.groupBox4.Controls.Add(this.label18);
-            this.groupBox4.Location = new System.Drawing.Point(384, 222);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(271, 177);
-            this.groupBox4.TabIndex = 5;
             this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "抗拔承载力";
             // 
             // textBoxBYPJFW
             // 
-            this.textBoxBYPJFW.Location = new System.Drawing.Point(148, 38);
+            resources.ApplyResources(this.textBoxBYPJFW, "textBoxBYPJFW");
             this.textBoxBYPJFW.Name = "textBoxBYPJFW";
-            this.textBoxBYPJFW.Size = new System.Drawing.Size(100, 21);
-            this.textBoxBYPJFW.TabIndex = 7;
             // 
             // label20
             // 
-            this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(19, 42);
+            resources.ApplyResources(this.label20, "label20");
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(77, 12);
-            this.label20.TabIndex = 6;
-            this.label20.Text = "叶片距范围：";
             // 
             // textBoxBKBCZL
             // 
-            this.textBoxBKBCZL.Location = new System.Drawing.Point(148, 116);
+            resources.ApplyResources(this.textBoxBKBCZL, "textBoxBKBCZL");
             this.textBoxBKBCZL.Name = "textBoxBKBCZL";
-            this.textBoxBKBCZL.Size = new System.Drawing.Size(100, 21);
-            this.textBoxBKBCZL.TabIndex = 5;
             // 
             // label19
             // 
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(18, 122);
+            resources.ApplyResources(this.label19, "label19");
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(113, 12);
-            this.label19.TabIndex = 4;
-            this.label19.Text = "抗拔承载力特征值：";
             // 
             // textBoxBJXCZL
             // 
-            this.textBoxBJXCZL.Location = new System.Drawing.Point(148, 76);
+            resources.ApplyResources(this.textBoxBJXCZL, "textBoxBJXCZL");
             this.textBoxBJXCZL.Name = "textBoxBJXCZL";
-            this.textBoxBJXCZL.Size = new System.Drawing.Size(100, 21);
-            this.textBoxBJXCZL.TabIndex = 3;
             // 
             // label18
             // 
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(19, 82);
+            resources.ApplyResources(this.label18, "label18");
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(125, 12);
-            this.label18.TabIndex = 2;
-            this.label18.Text = "总极限侧阻力标准值：";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(170, 421);
+            resources.ApplyResources(this.button1, "button1");
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "计算";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // groupBox3
             // 
+            resources.ApplyResources(this.groupBox3, "groupBox3");
             this.groupBox3.Controls.Add(this.textBoxYKYCZLT);
             this.groupBox3.Controls.Add(this.label17);
             this.groupBox3.Controls.Add(this.textBoxYKYCZL);
@@ -210,95 +189,62 @@
             this.groupBox3.Controls.Add(this.label14);
             this.groupBox3.Controls.Add(this.textBoxYYPJFW);
             this.groupBox3.Controls.Add(this.label13);
-            this.groupBox3.Location = new System.Drawing.Point(46, 222);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(290, 177);
-            this.groupBox3.TabIndex = 3;
             this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "抗压承载力";
             // 
             // textBoxYKYCZLT
             // 
-            this.textBoxYKYCZLT.Location = new System.Drawing.Point(162, 135);
+            resources.ApplyResources(this.textBoxYKYCZLT, "textBoxYKYCZLT");
             this.textBoxYKYCZLT.Name = "textBoxYKYCZLT";
-            this.textBoxYKYCZLT.Size = new System.Drawing.Size(100, 21);
-            this.textBoxYKYCZLT.TabIndex = 9;
             // 
             // label17
             // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(26, 140);
+            resources.ApplyResources(this.label17, "label17");
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(113, 12);
-            this.label17.TabIndex = 8;
-            this.label17.Text = "抗压承载力特征值：";
             // 
             // textBoxYKYCZL
             // 
-            this.textBoxYKYCZL.Location = new System.Drawing.Point(162, 108);
+            resources.ApplyResources(this.textBoxYKYCZL, "textBoxYKYCZL");
             this.textBoxYKYCZL.Name = "textBoxYKYCZL";
-            this.textBoxYKYCZL.Size = new System.Drawing.Size(100, 21);
-            this.textBoxYKYCZL.TabIndex = 7;
             // 
             // label16
             // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(26, 113);
+            resources.ApplyResources(this.label16, "label16");
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(113, 12);
-            this.label16.TabIndex = 6;
-            this.label16.Text = "抗压承载力标准值：";
             // 
             // textBoxYJXDZ
             // 
-            this.textBoxYJXDZ.Location = new System.Drawing.Point(162, 81);
+            resources.ApplyResources(this.textBoxYJXDZ, "textBoxYJXDZ");
             this.textBoxYJXDZ.Name = "textBoxYJXDZ";
-            this.textBoxYJXDZ.Size = new System.Drawing.Size(100, 21);
-            this.textBoxYJXDZ.TabIndex = 5;
             // 
             // label15
             // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(26, 86);
+            resources.ApplyResources(this.label15, "label15");
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(89, 12);
-            this.label15.TabIndex = 4;
-            this.label15.Text = "总极限端阻力：";
             // 
             // textBoxYJXCZ
             // 
-            this.textBoxYJXCZ.Location = new System.Drawing.Point(162, 54);
+            resources.ApplyResources(this.textBoxYJXCZ, "textBoxYJXCZ");
             this.textBoxYJXCZ.Name = "textBoxYJXCZ";
-            this.textBoxYJXCZ.Size = new System.Drawing.Size(100, 21);
-            this.textBoxYJXCZ.TabIndex = 3;
             // 
             // label14
             // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(26, 59);
+            resources.ApplyResources(this.label14, "label14");
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(89, 12);
-            this.label14.TabIndex = 2;
-            this.label14.Text = "总极限侧阻力：";
             // 
             // textBoxYYPJFW
             // 
-            this.textBoxYYPJFW.Location = new System.Drawing.Point(163, 27);
+            resources.ApplyResources(this.textBoxYYPJFW, "textBoxYYPJFW");
             this.textBoxYYPJFW.Name = "textBoxYYPJFW";
-            this.textBoxYYPJFW.Size = new System.Drawing.Size(100, 21);
-            this.textBoxYYPJFW.TabIndex = 1;
             // 
             // label13
             // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(27, 32);
+            resources.ApplyResources(this.label13, "label13");
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(77, 12);
-            this.label13.TabIndex = 0;
-            this.label13.Text = "叶片距范围：";
             // 
             // groupBox2
             // 
+            resources.ApplyResources(this.groupBox2, "groupBox2");
             this.groupBox2.Controls.Add(this.textBoxKB2);
             this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Controls.Add(this.textBoxDZ2);
@@ -315,150 +261,97 @@
             this.groupBox2.Controls.Add(this.label7);
             this.groupBox2.Controls.Add(this.radioMulty);
             this.groupBox2.Controls.Add(this.radioSingle);
-            this.groupBox2.Location = new System.Drawing.Point(259, 18);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(415, 175);
-            this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "土层参数";
             // 
             // textBoxKB2
             // 
-            this.textBoxKB2.Location = new System.Drawing.Point(313, 131);
+            resources.ApplyResources(this.textBoxKB2, "textBoxKB2");
             this.textBoxKB2.Name = "textBoxKB2";
-            this.textBoxKB2.Size = new System.Drawing.Size(83, 21);
-            this.textBoxKB2.TabIndex = 17;
             // 
             // label6
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(224, 135);
+            resources.ApplyResources(this.label6, "label6");
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(59, 12);
-            this.label6.TabIndex = 16;
-            this.label6.Text = "抗拔系数2";
             // 
             // textBoxDZ2
             // 
-            this.textBoxDZ2.Location = new System.Drawing.Point(313, 104);
+            resources.ApplyResources(this.textBoxDZ2, "textBoxDZ2");
             this.textBoxDZ2.Name = "textBoxDZ2";
-            this.textBoxDZ2.Size = new System.Drawing.Size(83, 21);
-            this.textBoxDZ2.TabIndex = 15;
             // 
             // label12
             // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(224, 108);
+            resources.ApplyResources(this.label12, "label12");
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(71, 12);
-            this.label12.TabIndex = 14;
-            this.label12.Text = "端阻标准值2";
             // 
             // textBoxCZ2
             // 
-            this.textBoxCZ2.Location = new System.Drawing.Point(313, 80);
+            resources.ApplyResources(this.textBoxCZ2, "textBoxCZ2");
             this.textBoxCZ2.Name = "textBoxCZ2";
-            this.textBoxCZ2.Size = new System.Drawing.Size(83, 21);
-            this.textBoxCZ2.TabIndex = 13;
             // 
             // label11
             // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(224, 84);
+            resources.ApplyResources(this.label11, "label11");
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(71, 12);
-            this.label11.TabIndex = 12;
-            this.label11.Text = "侧阻标准值2";
             // 
             // textBoxTCH
             // 
-            this.textBoxTCH.Location = new System.Drawing.Point(313, 53);
+            resources.ApplyResources(this.textBoxTCH, "textBoxTCH");
             this.textBoxTCH.Name = "textBoxTCH";
-            this.textBoxTCH.Size = new System.Drawing.Size(83, 21);
-            this.textBoxTCH.TabIndex = 11;
             // 
             // label10
             // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(224, 57);
+            resources.ApplyResources(this.label10, "label10");
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(77, 12);
-            this.label10.TabIndex = 10;
-            this.label10.Text = "交界土层厚度";
             // 
             // textBoxKB1
             // 
-            this.textBoxKB1.Location = new System.Drawing.Point(105, 119);
+            resources.ApplyResources(this.textBoxKB1, "textBoxKB1");
             this.textBoxKB1.Name = "textBoxKB1";
-            this.textBoxKB1.Size = new System.Drawing.Size(83, 21);
-            this.textBoxKB1.TabIndex = 9;
             // 
             // label9
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(16, 123);
+            resources.ApplyResources(this.label9, "label9");
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(59, 12);
-            this.label9.TabIndex = 8;
-            this.label9.Text = "抗拔系数1";
             // 
             // textBoxDZ1
             // 
-            this.textBoxDZ1.Location = new System.Drawing.Point(105, 92);
+            resources.ApplyResources(this.textBoxDZ1, "textBoxDZ1");
             this.textBoxDZ1.Name = "textBoxDZ1";
-            this.textBoxDZ1.Size = new System.Drawing.Size(83, 21);
-            this.textBoxDZ1.TabIndex = 7;
             // 
             // label8
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(16, 96);
+            resources.ApplyResources(this.label8, "label8");
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(71, 12);
-            this.label8.TabIndex = 6;
-            this.label8.Text = "端阻标准值1";
             // 
             // textBoxCZ1
             // 
-            this.textBoxCZ1.Location = new System.Drawing.Point(105, 64);
+            resources.ApplyResources(this.textBoxCZ1, "textBoxCZ1");
             this.textBoxCZ1.Name = "textBoxCZ1";
-            this.textBoxCZ1.Size = new System.Drawing.Size(83, 21);
-            this.textBoxCZ1.TabIndex = 5;
             // 
             // label7
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(16, 68);
+            resources.ApplyResources(this.label7, "label7");
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(71, 12);
-            this.label7.TabIndex = 4;
-            this.label7.Text = "侧阻标准值1";
             // 
             // radioMulty
             // 
-            this.radioMulty.AutoSize = true;
-            this.radioMulty.Location = new System.Drawing.Point(227, 26);
+            resources.ApplyResources(this.radioMulty, "radioMulty");
             this.radioMulty.Name = "radioMulty";
-            this.radioMulty.Size = new System.Drawing.Size(59, 16);
-            this.radioMulty.TabIndex = 2;
             this.radioMulty.TabStop = true;
-            this.radioMulty.Text = "两层土";
             this.radioMulty.UseVisualStyleBackColor = true;
             this.radioMulty.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
             // 
             // radioSingle
             // 
-            this.radioSingle.AutoSize = true;
-            this.radioSingle.Location = new System.Drawing.Point(18, 28);
+            resources.ApplyResources(this.radioSingle, "radioSingle");
             this.radioSingle.Name = "radioSingle";
-            this.radioSingle.Size = new System.Drawing.Size(59, 16);
-            this.radioSingle.TabIndex = 1;
             this.radioSingle.TabStop = true;
-            this.radioSingle.Text = "单层土";
             this.radioSingle.UseVisualStyleBackColor = true;
             // 
             // groupBox1
             // 
+            resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Controls.Add(this.textBoxSYPJZJ);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.textBoxYPJU);
@@ -469,123 +362,82 @@
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.textBoxZJ);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(16, 18);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(229, 175);
-            this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "桩身参数";
             // 
             // textBoxSYPJZJ
             // 
-            this.textBoxSYPJZJ.Location = new System.Drawing.Point(126, 132);
+            resources.ApplyResources(this.textBoxSYPJZJ, "textBoxSYPJZJ");
             this.textBoxSYPJZJ.Name = "textBoxSYPJZJ";
-            this.textBoxSYPJZJ.Size = new System.Drawing.Size(83, 21);
-            this.textBoxSYPJZJ.TabIndex = 9;
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(16, 136);
+            resources.ApplyResources(this.label5, "label5");
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(89, 12);
-            this.label5.TabIndex = 8;
-            this.label5.Text = "上叶片距桩尖/m";
             // 
             // textBoxYPJU
             // 
-            this.textBoxYPJU.Location = new System.Drawing.Point(126, 105);
+            resources.ApplyResources(this.textBoxYPJU, "textBoxYPJU");
             this.textBoxYPJU.Name = "textBoxYPJU";
-            this.textBoxYPJU.Size = new System.Drawing.Size(83, 21);
-            this.textBoxYPJU.TabIndex = 7;
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(16, 109);
+            resources.ApplyResources(this.label4, "label4");
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(53, 12);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "叶片距/m";
             // 
             // textBoxZC
             // 
-            this.textBoxZC.Location = new System.Drawing.Point(126, 78);
+            resources.ApplyResources(this.textBoxZC, "textBoxZC");
             this.textBoxZC.Name = "textBoxZC";
-            this.textBoxZC.Size = new System.Drawing.Size(83, 21);
-            this.textBoxZC.TabIndex = 5;
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(16, 82);
+            resources.ApplyResources(this.label3, "label3");
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(41, 12);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "桩长/m";
             // 
             // textBoxYPJ
             // 
-            this.textBoxYPJ.Location = new System.Drawing.Point(126, 51);
+            resources.ApplyResources(this.textBoxYPJ, "textBoxYPJ");
             this.textBoxYPJ.Name = "textBoxYPJ";
-            this.textBoxYPJ.Size = new System.Drawing.Size(83, 21);
-            this.textBoxYPJ.TabIndex = 3;
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(16, 55);
+            resources.ApplyResources(this.label2, "label2");
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(53, 12);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "叶片径/m";
             // 
             // textBoxZJ
             // 
-            this.textBoxZJ.Location = new System.Drawing.Point(126, 24);
+            resources.ApplyResources(this.textBoxZJ, "textBoxZJ");
             this.textBoxZJ.Name = "textBoxZJ";
-            this.textBoxZJ.Size = new System.Drawing.Size(83, 21);
-            this.textBoxZJ.TabIndex = 1;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(16, 28);
+            resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(41, 12);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "桩径/m";
             // 
             // tabPage2
             // 
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            resources.ApplyResources(this.tabPage2, "tabPage2");
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(683, 463);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // tabPage3
             // 
-            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            resources.ApplyResources(this.tabPage3, "tabPage3");
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(683, 463);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "tabPage3";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(692, 495);
             this.Controls.Add(this.tabControl1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.HelpButton = true;
             this.Name = "Form1";
-            this.Text = "光伏支架配重计算";
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             this.groupBox3.ResumeLayout(false);
@@ -652,6 +504,7 @@
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.TextBox textBoxBKBCZL;
         private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 

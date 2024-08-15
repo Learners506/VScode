@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
 
 namespace Foundation
@@ -24,6 +25,7 @@ namespace Foundation
             textBoxKB2.Enabled = false;
             radioSingle.CheckedChanged += RadioButton_CheckedChanged;
             radioMulty.CheckedChanged += RadioButton_CheckedChanged;
+            this.pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
 
 
         }
@@ -58,6 +60,24 @@ namespace Foundation
         // 确定按钮，开始计算
         private void button1_Click(object sender, EventArgs e)
         {
+            // 检查各文本框是否输入正确
+
+            if (radioSingle.Checked)
+            {
+                if (!AreTextBoxesFilled(textBoxZJ, textBoxYPJ, textBoxZC, textBoxYPJU, textBoxSYPJZJ, textBoxCZ1, textBoxKB1, textBoxDZ1)) // 根据实际情况传入所有相关的文本框
+                {
+                    return;
+                }
+            }
+            else if (radioMulty.Checked)
+            {
+                if (!AreTextBoxesFilled(textBoxZJ, textBoxYPJ, textBoxZC, textBoxYPJU, textBoxSYPJZJ, textBoxCZ1, textBoxKB1, textBoxDZ1, textBoxTCH, textBoxCZ2, textBoxKB2, textBoxDZ2)) // 根据实际情况传入所有相关的文本框
+                {
+                    return;
+                }
+            }
+
+
             double 桩径 = Convert.ToDouble(textBoxZJ.Text);
             double 叶片径 = Convert.ToDouble(textBoxYPJ.Text);
             double 桩长 = Convert.ToDouble(textBoxZC.Text);
@@ -67,6 +87,7 @@ namespace Foundation
             double 侧摩系数1 = Convert.ToDouble(textBoxCZ1.Text);
             double 抗拔系数1 = Convert.ToDouble(textBoxKB1.Text);
             double 端阻系数1 = Convert.ToDouble(textBoxDZ1.Text);
+
             double 使用端阻 = Convert.ToDouble(textBoxDZ1.Text);
             double 分割高度 = 0;
             double 侧摩系数2 = 0;
@@ -124,6 +145,8 @@ namespace Foundation
                 使用端阻 = Convert.ToDouble(textBoxDZ2.Text);
             }
 
+            
+
 
 
             if (叶片间距 <= 3 * 叶片径)
@@ -156,10 +179,10 @@ namespace Foundation
                 侧向阻力 = 计算侧向阻力(计算周长列表, 计算长度列表, 分割高度, 侧摩系数1, 侧摩系数2);
 
                 // 使用v1、v2、v7、v8
-                double v7 = Math.PI * 叶片径;
-                double v8 = 0;
-                double m7 = 3 * 叶片径;
-                double m8 = 叶片间距 - 3 * 叶片径;
+                double v7 = 0;
+                double v8 = Math.PI * 叶片径;
+                double m7 = 叶片间距 - 3 * 叶片径;
+                double m8 = 3 * 叶片径;
                 计算周长列表2 = new List<double>() { v1, v2, v7, v8 };
                 计算长度列表2 = new List<double>() { m1, m2, m7, m8 };
                 抗拔承载力 = 计算抗拔力(计算周长列表2, 计算长度列表2, 分割高度, 抗拔系数1, 抗拔系数2, 侧摩系数1, 侧摩系数2);
@@ -186,18 +209,33 @@ namespace Foundation
             double 抗拔承载力特征值 = 抗拔承载力 * 0.5;
 
 
-            textBoxYJXCZ.Text = $"{侧向阻力}";
-            textBoxYJXDZ.Text = $"{端阻力}";
-            textBoxYKYCZL.Text = $"{抗压承载力标准值}";
-            textBoxYKYCZLT.Text = $"{抗压承载力特征值}";
+            textBoxYJXCZ.Text = $"{侧向阻力:F2}";
+            textBoxYJXDZ.Text = $"{端阻力:F2}";
+            textBoxYKYCZL.Text = $"{抗压承载力标准值:F2}";
+            textBoxYKYCZLT.Text = $"{抗压承载力特征值:F2}";
 
-            textBoxBJXCZL.Text = $"{抗拔承载力}";
-            textBoxBKBCZL.Text = $"{抗拔承载力特征值}";
+            textBoxBJXCZL.Text = $"{抗拔承载力:F2}";
+            textBoxBKBCZL.Text = $"{抗拔承载力特征值:F2}";
 
 
 
         }
 
+
+        // 检查文本框是否输入正确的函数
+        private bool AreTextBoxesFilled(params System.Windows.Forms.TextBox[] textBoxes)
+        {
+            foreach (var textBox in textBoxes)
+            {
+                if (string.IsNullOrWhiteSpace(textBox.Text))
+                {
+                    MessageBox.Show("请将输入参数填写完整", "输入错误", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    textBox.Focus();
+                    return false;
+                }
+            }
+            return true;
+        }
 
         // 查找索引函数
         public static (int, int) FindIndices(List<double> values, double target)
