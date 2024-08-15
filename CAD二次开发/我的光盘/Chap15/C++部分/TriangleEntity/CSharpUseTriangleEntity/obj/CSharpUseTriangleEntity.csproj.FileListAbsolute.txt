@@ -1,0 +1,6 @@
+D:\工作资料\撰写图书\AutoCAD VBA & VB.NET开发教程（第二版）\TriangleEntity\CSharpUseTriangleEntity\obj\Debug\ResolveAssemblyReference.cache
+D:\工作资料\撰写图书\AutoCAD VBA & VB.NET开发教程（第二版）\TriangleEntity\CSharpUseTriangleEntity\bin\Debug\CSharpUseTriangleEntity.dll
+D:\工作资料\撰写图书\AutoCAD VBA & VB.NET开发教程（第二版）\TriangleEntity\CSharpUseTriangleEntity\bin\Debug\CSharpUseTriangleEntity.pdb
+D:\工作资料\撰写图书\AutoCAD VBA & VB.NET开发教程（第二版）\TriangleEntity\CSharpUseTriangleEntity\bin\Debug\ZfgkTriangleEntityDB.dll
+D:\工作资料\撰写图书\AutoCAD VBA & VB.NET开发教程（第二版）\TriangleEntity\CSharpUseTriangleEntity\obj\Debug\CSharpUseTriangleEntity.dll
+D:\工作资料\撰写图书\AutoCAD VBA & VB.NET开发教程（第二版）\TriangleEntity\CSharpUseTriangleEntity\obj\Debug\CSharpUseTriangleEntity.pdb

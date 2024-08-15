@@ -1,0 +1,2 @@
+F:\AutoCAD二次开发教程\AutoCAD资料\Book\程序\3章\Chap03\Commands\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\cc\Desktop\我的光盘\我的光盘\Chap03\Commands\obj\Debug\ResolveAssemblyReference.cache

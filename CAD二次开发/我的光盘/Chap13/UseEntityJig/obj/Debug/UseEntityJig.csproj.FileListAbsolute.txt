@@ -1,0 +1,10 @@
+e:\backup\我的文档\visual studio 2010\Projects\Chap13\UseEntityJig\bin\Debug\UseEntityJig.dll
+e:\backup\我的文档\visual studio 2010\Projects\Chap13\UseEntityJig\bin\Debug\UseEntityJig.pdb
+e:\backup\我的文档\visual studio 2010\Projects\Chap13\UseEntityJig\obj\Debug\ResolveAssemblyReference.cache
+e:\backup\我的文档\visual studio 2010\Projects\Chap13\UseEntityJig\obj\Debug\UseEntityJig.dll
+e:\backup\我的文档\visual studio 2010\Projects\Chap13\UseEntityJig\obj\Debug\UseEntityJig.pdb
+F:\AutoCAD二次开发教程\AutoCAD资料\Book\程序\13章\Chap13\UseEntityJig\bin\Debug\UseEntityJig.dll
+F:\AutoCAD二次开发教程\AutoCAD资料\Book\程序\13章\Chap13\UseEntityJig\bin\Debug\UseEntityJig.pdb
+F:\AutoCAD二次开发教程\AutoCAD资料\Book\程序\13章\Chap13\UseEntityJig\obj\Debug\ResolveAssemblyReference.cache
+F:\AutoCAD二次开发教程\AutoCAD资料\Book\程序\13章\Chap13\UseEntityJig\obj\Debug\UseEntityJig.dll
+F:\AutoCAD二次开发教程\AutoCAD资料\Book\程序\13章\Chap13\UseEntityJig\obj\Debug\UseEntityJig.pdb

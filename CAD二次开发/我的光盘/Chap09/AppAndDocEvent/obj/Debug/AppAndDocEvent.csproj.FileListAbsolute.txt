@@ -1,0 +1,8 @@
+F:\AutoCAD二次开发教程\AutoCAD资料\Book\程序\9章\AppAndDocEvent\bin\Debug\AppAndDocEvent.dll
+F:\AutoCAD二次开发教程\AutoCAD资料\Book\程序\9章\AppAndDocEvent\bin\Debug\AppAndDocEvent.pdb
+F:\AutoCAD二次开发教程\AutoCAD资料\Book\程序\9章\AppAndDocEvent\bin\Debug\DotNetARX.dll
+F:\AutoCAD二次开发教程\AutoCAD资料\Book\程序\9章\AppAndDocEvent\bin\Debug\DotNetARX.pdb
+F:\AutoCAD二次开发教程\AutoCAD资料\Book\程序\9章\AppAndDocEvent\bin\Debug\DotNetARX.xml
+F:\AutoCAD二次开发教程\AutoCAD资料\Book\程序\9章\AppAndDocEvent\obj\Debug\ResolveAssemblyReference.cache
+F:\AutoCAD二次开发教程\AutoCAD资料\Book\程序\9章\AppAndDocEvent\obj\Debug\AppAndDocEvent.dll
+F:\AutoCAD二次开发教程\AutoCAD资料\Book\程序\9章\AppAndDocEvent\obj\Debug\AppAndDocEvent.pdb

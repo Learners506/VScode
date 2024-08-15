@@ -1,0 +1,10 @@
+F:\AutoCAD二次开发实例教程\Book\程序\18章\Chap18\COMTest\bin\Debug\COMTest.dll
+F:\AutoCAD二次开发实例教程\Book\程序\18章\Chap18\COMTest\bin\Debug\COMTest.pdb
+F:\AutoCAD二次开发实例教程\Book\程序\18章\Chap18\COMTest\obj\Debug\ResolveAssemblyReference.cache
+F:\AutoCAD二次开发实例教程\Book\程序\18章\Chap18\COMTest\obj\Debug\COMTest.dll
+F:\AutoCAD二次开发实例教程\Book\程序\18章\Chap18\COMTest\obj\Debug\COMTest.pdb
+F:\AutoCAD二次开发教程\AutoCAD资料\Book\程序\18章\Chap18\COMTest\bin\Debug\COMTest.dll
+F:\AutoCAD二次开发教程\AutoCAD资料\Book\程序\18章\Chap18\COMTest\bin\Debug\COMTest.pdb
+F:\AutoCAD二次开发教程\AutoCAD资料\Book\程序\18章\Chap18\COMTest\obj\Debug\ResolveAssemblyReference.cache
+F:\AutoCAD二次开发教程\AutoCAD资料\Book\程序\18章\Chap18\COMTest\obj\Debug\COMTest.dll
+F:\AutoCAD二次开发教程\AutoCAD资料\Book\程序\18章\Chap18\COMTest\obj\Debug\COMTest.pdb

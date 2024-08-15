@@ -1,0 +1,8 @@
+F:\AutoCAD二次开发实例教程\Book\程序\5章\Chap05\Chap05\bin\Debug\Chap05.dll
+F:\AutoCAD二次开发实例教程\Book\程序\5章\Chap05\Chap05\bin\Debug\Chap05.pdb
+F:\AutoCAD二次开发实例教程\Book\程序\5章\Chap05\Chap05\obj\Debug\ResolveAssemblyReference.cache
+F:\AutoCAD二次开发实例教程\Book\程序\5章\Chap05\Chap05\obj\Debug\Chap05.dll
+F:\AutoCAD二次开发实例教程\Book\程序\5章\Chap05\Chap05\obj\Debug\Chap05.pdb
+F:\AutoCAD二次开发实例教程\Book\程序\5章\Chap05\Chap05\bin\Debug\DotNetARX.dll
+F:\AutoCAD二次开发实例教程\Book\程序\5章\Chap05\Chap05\bin\Debug\DotNetARX.pdb
+F:\AutoCAD二次开发实例教程\Book\程序\5章\Chap05\Chap05\bin\Debug\DotNetARX.xml

@@ -1,0 +1,5 @@
+d:\backup\我的文档\visual studio 2010\Projects\Chap18_2006\Chap18_2006\bin\Debug\Chap18_2006.dll
+d:\backup\我的文档\visual studio 2010\Projects\Chap18_2006\Chap18_2006\bin\Debug\Chap18_2006.pdb
+d:\backup\我的文档\visual studio 2010\Projects\Chap18_2006\Chap18_2006\obj\Debug\ResolveAssemblyReference.cache
+d:\backup\我的文档\visual studio 2010\Projects\Chap18_2006\Chap18_2006\obj\Debug\Chap18_2006.dll
+d:\backup\我的文档\visual studio 2010\Projects\Chap18_2006\Chap18_2006\obj\Debug\Chap18_2006.pdb

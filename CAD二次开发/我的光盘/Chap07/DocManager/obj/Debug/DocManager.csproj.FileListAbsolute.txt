@@ -1,0 +1,16 @@
+F:\AutoCAD二次开发实例教程\Book\程序\7章\Chap07\DocManager\bin\Debug\DocManager.dll
+F:\AutoCAD二次开发实例教程\Book\程序\7章\Chap07\DocManager\bin\Debug\DocManager.pdb
+F:\AutoCAD二次开发实例教程\Book\程序\7章\Chap07\DocManager\bin\Debug\DotNetARX.dll
+F:\AutoCAD二次开发实例教程\Book\程序\7章\Chap07\DocManager\bin\Debug\DotNetARX.pdb
+F:\AutoCAD二次开发实例教程\Book\程序\7章\Chap07\DocManager\bin\Debug\DotNetARX.xml
+F:\AutoCAD二次开发实例教程\Book\程序\7章\Chap07\DocManager\obj\Debug\ResolveAssemblyReference.cache
+F:\AutoCAD二次开发实例教程\Book\程序\7章\Chap07\DocManager\obj\Debug\DocManager.dll
+F:\AutoCAD二次开发实例教程\Book\程序\7章\Chap07\DocManager\obj\Debug\DocManager.pdb
+F:\AutoCAD二次开发教程\AutoCAD资料\Book\程序\7章\Chap07\DocManager\bin\Debug\DocManager.dll
+F:\AutoCAD二次开发教程\AutoCAD资料\Book\程序\7章\Chap07\DocManager\bin\Debug\DocManager.pdb
+F:\AutoCAD二次开发教程\AutoCAD资料\Book\程序\7章\Chap07\DocManager\bin\Debug\DotNetARX.dll
+F:\AutoCAD二次开发教程\AutoCAD资料\Book\程序\7章\Chap07\DocManager\bin\Debug\DotNetARX.pdb
+F:\AutoCAD二次开发教程\AutoCAD资料\Book\程序\7章\Chap07\DocManager\bin\Debug\DotNetARX.xml
+F:\AutoCAD二次开发教程\AutoCAD资料\Book\程序\7章\Chap07\DocManager\obj\Debug\ResolveAssemblyReference.cache
+F:\AutoCAD二次开发教程\AutoCAD资料\Book\程序\7章\Chap07\DocManager\obj\Debug\DocManager.dll
+F:\AutoCAD二次开发教程\AutoCAD资料\Book\程序\7章\Chap07\DocManager\obj\Debug\DocManager.pdb

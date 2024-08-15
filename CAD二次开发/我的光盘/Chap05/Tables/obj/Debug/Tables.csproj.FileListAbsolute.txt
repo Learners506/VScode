@@ -1,0 +1,8 @@
+F:\AutoCAD二次开发教程\AutoCAD资料\Book\程序\5章\Chap05\Tables\bin\Debug\TableTest.dll
+F:\AutoCAD二次开发教程\AutoCAD资料\Book\程序\5章\Chap05\Tables\bin\Debug\TableTest.pdb
+F:\AutoCAD二次开发教程\AutoCAD资料\Book\程序\5章\Chap05\Tables\bin\Debug\DotNetARX.dll
+F:\AutoCAD二次开发教程\AutoCAD资料\Book\程序\5章\Chap05\Tables\bin\Debug\DotNetARX.pdb
+F:\AutoCAD二次开发教程\AutoCAD资料\Book\程序\5章\Chap05\Tables\bin\Debug\DotNetARX.xml
+F:\AutoCAD二次开发教程\AutoCAD资料\Book\程序\5章\Chap05\Tables\obj\Debug\ResolveAssemblyReference.cache
+F:\AutoCAD二次开发教程\AutoCAD资料\Book\程序\5章\Chap05\Tables\obj\Debug\TableTest.dll
+F:\AutoCAD二次开发教程\AutoCAD资料\Book\程序\5章\Chap05\Tables\obj\Debug\TableTest.pdb

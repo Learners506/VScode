@@ -1,0 +1,5 @@
+F:\AutoCAD二次开发教程\AutoCAD资料\Book\初稿\最终稿\新建文件夹\程序\Chap15\C++部分\Chap18_2006\Chap18_2006\bin\Debug\Chap15_2006.dll
+F:\AutoCAD二次开发教程\AutoCAD资料\Book\初稿\最终稿\新建文件夹\程序\Chap15\C++部分\Chap18_2006\Chap18_2006\bin\Debug\Chap15_2006.pdb
+F:\AutoCAD二次开发教程\AutoCAD资料\Book\初稿\最终稿\新建文件夹\程序\Chap15\C++部分\Chap18_2006\Chap18_2006\obj\Debug\ResolveAssemblyReference.cache
+F:\AutoCAD二次开发教程\AutoCAD资料\Book\初稿\最终稿\新建文件夹\程序\Chap15\C++部分\Chap18_2006\Chap18_2006\obj\Debug\Chap15_2006.dll
+F:\AutoCAD二次开发教程\AutoCAD资料\Book\初稿\最终稿\新建文件夹\程序\Chap15\C++部分\Chap18_2006\Chap18_2006\obj\Debug\Chap15_2006.pdb

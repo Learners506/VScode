@@ -1,0 +1,16 @@
+F:\AutoCAD二次开发实例教程\Book\程序\2章\Chap02\Dimensions\bin\Debug\Dimensions.dll
+F:\AutoCAD二次开发实例教程\Book\程序\2章\Chap02\Dimensions\bin\Debug\Dimensions.pdb
+F:\AutoCAD二次开发实例教程\Book\程序\2章\Chap02\Dimensions\bin\Debug\DotNetARX.pdb
+F:\AutoCAD二次开发实例教程\Book\程序\2章\Chap02\Dimensions\bin\Debug\DotNetARX.xml
+F:\AutoCAD二次开发实例教程\Book\程序\2章\Chap02\Dimensions\obj\Debug\ResolveAssemblyReference.cache
+F:\AutoCAD二次开发实例教程\Book\程序\2章\Chap02\Dimensions\obj\Debug\Dimensions.dll
+F:\AutoCAD二次开发实例教程\Book\程序\2章\Chap02\Dimensions\obj\Debug\Dimensions.pdb
+F:\AutoCAD二次开发实例教程\Book\程序\2章\Chap02\Dimensions\bin\Debug\DotNetARX.dll
+F:\AutoCAD二次开发教程\AutoCAD资料\Book\程序\2章\Chap02\Dimensions\bin\Debug\Dimensions.dll
+F:\AutoCAD二次开发教程\AutoCAD资料\Book\程序\2章\Chap02\Dimensions\bin\Debug\Dimensions.pdb
+F:\AutoCAD二次开发教程\AutoCAD资料\Book\程序\2章\Chap02\Dimensions\bin\Debug\DotNetARX.dll
+F:\AutoCAD二次开发教程\AutoCAD资料\Book\程序\2章\Chap02\Dimensions\bin\Debug\DotNetARX.pdb
+F:\AutoCAD二次开发教程\AutoCAD资料\Book\程序\2章\Chap02\Dimensions\bin\Debug\DotNetARX.xml
+F:\AutoCAD二次开发教程\AutoCAD资料\Book\程序\2章\Chap02\Dimensions\obj\Debug\ResolveAssemblyReference.cache
+F:\AutoCAD二次开发教程\AutoCAD资料\Book\程序\2章\Chap02\Dimensions\obj\Debug\Dimensions.dll
+F:\AutoCAD二次开发教程\AutoCAD资料\Book\程序\2章\Chap02\Dimensions\obj\Debug\Dimensions.pdb

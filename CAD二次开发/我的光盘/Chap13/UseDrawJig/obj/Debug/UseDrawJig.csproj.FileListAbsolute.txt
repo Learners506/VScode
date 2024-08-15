@@ -1,0 +1,10 @@
+e:\backup\我的文档\visual studio 2010\Projects\Chap13\UseDrawJig\bin\Debug\UseDrawJig.dll
+e:\backup\我的文档\visual studio 2010\Projects\Chap13\UseDrawJig\bin\Debug\UseDrawJig.pdb
+e:\backup\我的文档\visual studio 2010\Projects\Chap13\UseDrawJig\obj\Debug\ResolveAssemblyReference.cache
+e:\backup\我的文档\visual studio 2010\Projects\Chap13\UseDrawJig\obj\Debug\UseDrawJig.dll
+e:\backup\我的文档\visual studio 2010\Projects\Chap13\UseDrawJig\obj\Debug\UseDrawJig.pdb
+F:\AutoCAD二次开发教程\AutoCAD资料\Book\程序\13章\Chap13\UseDrawJig\bin\Debug\UseDrawJig.dll
+F:\AutoCAD二次开发教程\AutoCAD资料\Book\程序\13章\Chap13\UseDrawJig\bin\Debug\UseDrawJig.pdb
+F:\AutoCAD二次开发教程\AutoCAD资料\Book\程序\13章\Chap13\UseDrawJig\obj\Debug\ResolveAssemblyReference.cache
+F:\AutoCAD二次开发教程\AutoCAD资料\Book\程序\13章\Chap13\UseDrawJig\obj\Debug\UseDrawJig.dll
+F:\AutoCAD二次开发教程\AutoCAD资料\Book\程序\13章\Chap13\UseDrawJig\obj\Debug\UseDrawJig.pdb

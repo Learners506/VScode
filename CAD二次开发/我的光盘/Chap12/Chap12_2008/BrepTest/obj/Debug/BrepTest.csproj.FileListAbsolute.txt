@@ -1,0 +1,17 @@
+e:\backup\我的文档\visual studio 2010\Projects\Chap12_2008\BrepTest\bin\Debug\BrepTest.dll
+e:\backup\我的文档\visual studio 2010\Projects\Chap12_2008\BrepTest\bin\Debug\BrepTest.pdb
+e:\backup\我的文档\visual studio 2010\Projects\Chap12_2008\BrepTest\bin\Debug\ahlzlSolid3dTools.dll
+e:\backup\我的文档\visual studio 2010\Projects\Chap12_2008\BrepTest\obj\Debug\ResolveAssemblyReference.cache
+e:\backup\我的文档\visual studio 2010\Projects\Chap12_2008\BrepTest\obj\Debug\BrepTest.dll
+e:\backup\我的文档\visual studio 2010\Projects\Chap12_2008\BrepTest\obj\Debug\BrepTest.pdb
+D:\My Documents\Visual Studio 2010\Projects\Chap12_2008\BrepTest\bin\Debug\BrepTest.dll
+D:\My Documents\Visual Studio 2010\Projects\Chap12_2008\BrepTest\bin\Debug\BrepTest.pdb
+D:\My Documents\Visual Studio 2010\Projects\Chap12_2008\BrepTest\bin\Debug\ahlzlSolid3dTools.dll
+D:\My Documents\Visual Studio 2010\Projects\Chap12_2008\BrepTest\obj\Debug\ResolveAssemblyReference.cache
+D:\My Documents\Visual Studio 2010\Projects\Chap12_2008\BrepTest\obj\Debug\BrepTest.dll
+D:\My Documents\Visual Studio 2010\Projects\Chap12_2008\BrepTest\obj\Debug\BrepTest.pdb
+F:\AutoCAD二次开发教程\AutoCAD资料\Book\程序\12章\Chap12_2008\BrepTest\bin\Debug\BrepTest.dll
+F:\AutoCAD二次开发教程\AutoCAD资料\Book\程序\12章\Chap12_2008\BrepTest\bin\Debug\BrepTest.pdb
+F:\AutoCAD二次开发教程\AutoCAD资料\Book\程序\12章\Chap12_2008\BrepTest\obj\Debug\ResolveAssemblyReference.cache
+F:\AutoCAD二次开发教程\AutoCAD资料\Book\程序\12章\Chap12_2008\BrepTest\obj\Debug\BrepTest.dll
+F:\AutoCAD二次开发教程\AutoCAD资料\Book\程序\12章\Chap12_2008\BrepTest\obj\Debug\BrepTest.pdb

@@ -1,0 +1,15 @@
+e:\backup\我的文档\visual studio 2010\Projects\Chap12_2012\BrepTest\bin\Debug\BrepTest.dll
+e:\backup\我的文档\visual studio 2010\Projects\Chap12_2012\BrepTest\bin\Debug\BrepTest.pdb
+e:\backup\我的文档\visual studio 2010\Projects\Chap12_2012\BrepTest\obj\Debug\ResolveAssemblyReference.cache
+e:\backup\我的文档\visual studio 2010\Projects\Chap12_2012\BrepTest\obj\Debug\BrepTest.dll
+e:\backup\我的文档\visual studio 2010\Projects\Chap12_2012\BrepTest\obj\Debug\BrepTest.pdb
+F:\AutoCAD二次开发教程\AutoCAD资料\Book\程序\12章\Chap12_2012\BrepTest\bin\Debug\BrepTest.dll
+F:\AutoCAD二次开发教程\AutoCAD资料\Book\程序\12章\Chap12_2012\BrepTest\bin\Debug\BrepTest.pdb
+F:\AutoCAD二次开发教程\AutoCAD资料\Book\程序\12章\Chap12_2012\BrepTest\obj\Debug\ResolveAssemblyReference.cache
+F:\AutoCAD二次开发教程\AutoCAD资料\Book\程序\12章\Chap12_2012\BrepTest\obj\Debug\BrepTest.dll
+F:\AutoCAD二次开发教程\AutoCAD资料\Book\程序\12章\Chap12_2012\BrepTest\obj\Debug\BrepTest.pdb
+C:\Users\cc\Desktop\我的光盘\我的光盘\Chap12\Chap12_2012\BrepTest\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\cc\Desktop\我的光盘\我的光盘\Chap12\Chap12_2012\BrepTest\obj\Debug\BrepTest.dll
+C:\Users\cc\Desktop\我的光盘\我的光盘\Chap12\Chap12_2012\BrepTest\obj\Debug\BrepTest.pdb
+C:\Users\cc\Desktop\我的光盘\我的光盘\Chap12\Chap12_2012\BrepTest\bin\Debug\BrepTest.dll
+C:\Users\cc\Desktop\我的光盘\我的光盘\Chap12\Chap12_2012\BrepTest\bin\Debug\BrepTest.pdb

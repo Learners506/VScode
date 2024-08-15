@@ -1,0 +1,16 @@
+F:\AutoCAD二次开发实例教程\Book\程序\5章\Chap05\AutoNumBlock\bin\Debug\DotNetARX.dll
+F:\AutoCAD二次开发实例教程\Book\程序\5章\Chap05\AutoNumBlock\bin\Debug\DotNetARX.pdb
+F:\AutoCAD二次开发实例教程\Book\程序\5章\Chap05\AutoNumBlock\bin\Debug\DotNetARX.xml
+F:\AutoCAD二次开发实例教程\Book\程序\5章\Chap05\AutoNumBlock\obj\Debug\ResolveAssemblyReference.cache
+F:\AutoCAD二次开发实例教程\Book\程序\5章\Chap05\AutoNumBlock\bin\Debug\AutoNumBlock1.dll
+F:\AutoCAD二次开发实例教程\Book\程序\5章\Chap05\AutoNumBlock\bin\Debug\AutoNumBlock1.pdb
+F:\AutoCAD二次开发实例教程\Book\程序\5章\Chap05\AutoNumBlock\obj\Debug\AutoNumBlock1.dll
+F:\AutoCAD二次开发实例教程\Book\程序\5章\Chap05\AutoNumBlock\obj\Debug\AutoNumBlock1.pdb
+F:\AutoCAD二次开发教程\AutoCAD资料\Book\程序\5章\Chap05\AutoNumBlock\bin\Debug\AutoNumBlock1.dll
+F:\AutoCAD二次开发教程\AutoCAD资料\Book\程序\5章\Chap05\AutoNumBlock\bin\Debug\AutoNumBlock1.pdb
+F:\AutoCAD二次开发教程\AutoCAD资料\Book\程序\5章\Chap05\AutoNumBlock\bin\Debug\DotNetARX.dll
+F:\AutoCAD二次开发教程\AutoCAD资料\Book\程序\5章\Chap05\AutoNumBlock\bin\Debug\DotNetARX.pdb
+F:\AutoCAD二次开发教程\AutoCAD资料\Book\程序\5章\Chap05\AutoNumBlock\bin\Debug\DotNetARX.xml
+F:\AutoCAD二次开发教程\AutoCAD资料\Book\程序\5章\Chap05\AutoNumBlock\obj\Debug\ResolveAssemblyReference.cache
+F:\AutoCAD二次开发教程\AutoCAD资料\Book\程序\5章\Chap05\AutoNumBlock\obj\Debug\AutoNumBlock1.dll
+F:\AutoCAD二次开发教程\AutoCAD资料\Book\程序\5章\Chap05\AutoNumBlock\obj\Debug\AutoNumBlock1.pdb

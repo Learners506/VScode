@@ -1,0 +1,5 @@
+F:\AutoCAD二次开发实例教程\Book\程序\1章\Chap01\InitAndOpt\bin\Debug\InitAndOpt.dll
+F:\AutoCAD二次开发实例教程\Book\程序\1章\Chap01\InitAndOpt\bin\Debug\InitAndOpt.pdb
+F:\AutoCAD二次开发实例教程\Book\程序\1章\Chap01\InitAndOpt\obj\Debug\ResolveAssemblyReference.cache
+F:\AutoCAD二次开发实例教程\Book\程序\1章\Chap01\InitAndOpt\obj\Debug\InitAndOpt.dll
+F:\AutoCAD二次开发实例教程\Book\程序\1章\Chap01\InitAndOpt\obj\Debug\InitAndOpt.pdb

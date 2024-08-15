@@ -1,0 +1,36 @@
+
+
+ÄÚ²¿´íÎó:  !dbobji.cpp@6762: eNotOpenForWrite
+
+06/19/2012 at 14:02:48.281  Í¼ÐÎ: Drawing1.dwg
+-------------
+
+
+ÖÂÃü´íÎó:  Unhandled Access Violation Reading 0x0000 Exception at 8dc9e14h
+
+06/20/2012 at 15:42:53.312  Í¼ÐÎ: Drawing1.dwg
+-------------
+
+
+FATAL ERROR: Unhandled Access Violation Reading 0x7efad564 Exception at 6222cec9h
+
+06/20/2012 at 17:47:08.609 drawing: 
+-------------
+
+
+FATAL ERROR: Unhandled Access Violation Reading 0x7efad564 Exception at 6222cec9h
+
+06/20/2012 at 17:47:29.453 drawing: 
+-------------
+
+
+FATAL ERROR: Unhandled Access Violation Reading 0x7efad564 Exception at 6222cec9h
+
+06/20/2012 at 17:48:54.703 drawing: 
+-------------
+
+
+FATAL ERROR: Unhandled Access Violation Reading 0x7efad564 Exception at 6222cec9h
+
+06/20/2012 at 17:49:40.421 drawing: 
+-------------

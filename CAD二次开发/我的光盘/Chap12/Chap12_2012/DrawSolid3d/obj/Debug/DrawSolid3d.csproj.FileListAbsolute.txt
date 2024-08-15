@@ -1,0 +1,13 @@
+e:\backup\我的文档\visual studio 2010\Projects\Chap12_2012\DrawSolid3d\bin\Debug\DrawSolid3d.dll
+e:\backup\我的文档\visual studio 2010\Projects\Chap12_2012\DrawSolid3d\bin\Debug\DrawSolid3d.pdb
+e:\backup\我的文档\visual studio 2010\Projects\Chap12_2012\DrawSolid3d\obj\Debug\ResolveAssemblyReference.cache
+e:\backup\我的文档\visual studio 2010\Projects\Chap12_2012\DrawSolid3d\obj\Debug\DrawSolid3d.dll
+e:\backup\我的文档\visual studio 2010\Projects\Chap12_2012\DrawSolid3d\obj\Debug\DrawSolid3d.pdb
+F:\AutoCAD二次开发教程\AutoCAD资料\Book\程序\12章\Chap12_2012\DrawSolid3d\bin\Debug\DrawSolid3d.dll
+F:\AutoCAD二次开发教程\AutoCAD资料\Book\程序\12章\Chap12_2012\DrawSolid3d\bin\Debug\DrawSolid3d.pdb
+F:\AutoCAD二次开发教程\AutoCAD资料\Book\程序\12章\Chap12_2012\DrawSolid3d\obj\Debug\ResolveAssemblyReference.cache
+F:\AutoCAD二次开发教程\AutoCAD资料\Book\程序\12章\Chap12_2012\DrawSolid3d\obj\Debug\DrawSolid3d.dll
+F:\AutoCAD二次开发教程\AutoCAD资料\Book\程序\12章\Chap12_2012\DrawSolid3d\obj\Debug\DrawSolid3d.pdb
+C:\Users\cc\Desktop\我的光盘\我的光盘\Chap12\Chap12_2012\DrawSolid3d\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\cc\Desktop\我的光盘\我的光盘\Chap12\Chap12_2012\DrawSolid3d\obj\Debug\DrawSolid3d.dll
+C:\Users\cc\Desktop\我的光盘\我的光盘\Chap12\Chap12_2012\DrawSolid3d\obj\Debug\DrawSolid3d.pdb

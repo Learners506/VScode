@@ -1,0 +1,9 @@
+F:\AutoCAD二次开发实例教程\Book\程序\7章\Chap07\ReadSummaryInfo\bin\Debug\ReadSummaryInfo.exe
+F:\AutoCAD二次开发实例教程\Book\程序\7章\Chap07\ReadSummaryInfo\bin\Debug\ReadSummaryInfo.pdb
+F:\AutoCAD二次开发实例教程\Book\程序\7章\Chap07\ReadSummaryInfo\obj\x86\Debug\ResolveAssemblyReference.cache
+F:\AutoCAD二次开发实例教程\Book\程序\7章\Chap07\ReadSummaryInfo\obj\x86\Debug\ReadSummaryInfo.Form1.resources
+F:\AutoCAD二次开发实例教程\Book\程序\7章\Chap07\ReadSummaryInfo\obj\x86\Debug\ReadSummaryInfo.Properties.Resources.resources
+F:\AutoCAD二次开发实例教程\Book\程序\7章\Chap07\ReadSummaryInfo\obj\x86\Debug\GenerateResource-ResGen.read.1.tlog
+F:\AutoCAD二次开发实例教程\Book\程序\7章\Chap07\ReadSummaryInfo\obj\x86\Debug\GenerateResource-ResGen.write.1.tlog
+F:\AutoCAD二次开发实例教程\Book\程序\7章\Chap07\ReadSummaryInfo\obj\x86\Debug\ReadSummaryInfo.exe
+F:\AutoCAD二次开发实例教程\Book\程序\7章\Chap07\ReadSummaryInfo\obj\x86\Debug\ReadSummaryInfo.pdb

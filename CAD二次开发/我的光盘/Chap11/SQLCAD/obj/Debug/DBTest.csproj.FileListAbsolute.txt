@@ -1,0 +1,12 @@
+F:\DBTest\DBTest\bin\Debug\DBTest.dll.config
+F:\DBTest\DBTest\bin\Debug\DBTest.dll
+F:\DBTest\DBTest\bin\Debug\DBTest.pdb
+F:\DBTest\DBTest\bin\Debug\DotNetARX.dll
+F:\DBTest\DBTest\bin\Debug\acmgdinternal.dll
+F:\DBTest\DBTest\bin\Debug\DotNetARX.pdb
+F:\DBTest\DBTest\obj\Debug\ResolveAssemblyReference.cache
+F:\DBTest\DBTest\obj\Debug\DBTest.EmpForm.resources
+F:\DBTest\DBTest\obj\Debug\GenerateResource-ResGen.read.1.tlog
+F:\DBTest\DBTest\obj\Debug\GenerateResource-ResGen.write.1.tlog
+F:\DBTest\DBTest\obj\Debug\DBTest.dll
+F:\DBTest\DBTest\obj\Debug\DBTest.pdb

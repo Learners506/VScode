@@ -1,0 +1,6 @@
+F:\AutoCAD二次开发实例教程\Book\程序\1章\Chap01\AcadNetAddinCS1\bin\Debug\acad.lsp
+F:\AutoCAD二次开发实例教程\Book\程序\1章\Chap01\AcadNetAddinCS1\bin\Debug\AcadNetAddinCS1.dll
+F:\AutoCAD二次开发实例教程\Book\程序\1章\Chap01\AcadNetAddinCS1\bin\Debug\AcadNetAddinCS1.pdb
+F:\AutoCAD二次开发实例教程\Book\程序\1章\Chap01\AcadNetAddinCS1\obj\Debug\ResolveAssemblyReference.cache
+F:\AutoCAD二次开发实例教程\Book\程序\1章\Chap01\AcadNetAddinCS1\obj\Debug\AcadNetAddinCS1.dll
+F:\AutoCAD二次开发实例教程\Book\程序\1章\Chap01\AcadNetAddinCS1\obj\Debug\AcadNetAddinCS1.pdb

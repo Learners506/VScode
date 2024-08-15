@@ -1,0 +1,22 @@
+F:\AutoCAD二次开发实例教程\Book\程序\17章\Chap17\AppStarter\bin\Debug\AppStarter.exe
+F:\AutoCAD二次开发实例教程\Book\程序\17章\Chap17\AppStarter\bin\Debug\AppStarter.pdb
+F:\AutoCAD二次开发实例教程\Book\程序\17章\Chap17\AppStarter\obj\x86\Debug\ResolveAssemblyReference.cache
+F:\AutoCAD二次开发实例教程\Book\程序\17章\Chap17\AppStarter\obj\x86\Debug\AppStarter.Form1.resources
+F:\AutoCAD二次开发实例教程\Book\程序\17章\Chap17\AppStarter\obj\x86\Debug\AppStarter.Properties.Resources.resources
+F:\AutoCAD二次开发实例教程\Book\程序\17章\Chap17\AppStarter\obj\x86\Debug\GenerateResource-ResGen.read.1.tlog
+F:\AutoCAD二次开发实例教程\Book\程序\17章\Chap17\AppStarter\obj\x86\Debug\GenerateResource-ResGen.write.1.tlog
+F:\AutoCAD二次开发实例教程\Book\程序\17章\Chap17\AppStarter\obj\x86\Debug\AppStarter.exe
+F:\AutoCAD二次开发实例教程\Book\程序\17章\Chap17\AppStarter\obj\x86\Debug\AppStarter.pdb
+F:\AutoCAD二次开发教程\AutoCAD资料\Book\程序\17章\Chap17\AppStarter\obj\x86\Debug\AppStarter.exe
+F:\AutoCAD二次开发教程\AutoCAD资料\Book\程序\17章\Chap17\AppStarter\obj\x86\Debug\AppStarter.pdb
+F:\AutoCAD二次开发教程\AutoCAD资料\Book\程序\17章\Chap17\AppStarter\bin\Debug\AppStarter.exe
+F:\AutoCAD二次开发教程\AutoCAD资料\Book\程序\17章\Chap17\AppStarter\bin\Debug\AppStarter.pdb
+F:\AutoCAD二次开发教程\AutoCAD资料\Book\程序\17章\Chap17\AppStarter\obj\x86\Debug\ResolveAssemblyReference.cache
+F:\AutoCAD二次开发教程\AutoCAD资料\Book\程序\17章\Chap17\AppStarter\obj\x86\Debug\AppStarter.Form1.resources
+F:\AutoCAD二次开发教程\AutoCAD资料\Book\程序\17章\Chap17\AppStarter\obj\x86\Debug\AppStarter.Properties.Resources.resources
+F:\AutoCAD二次开发教程\AutoCAD资料\Book\程序\17章\Chap17\AppStarter\obj\x86\Debug\GenerateResource-ResGen.read.1.tlog
+F:\AutoCAD二次开发教程\AutoCAD资料\Book\程序\17章\Chap17\AppStarter\obj\x86\Debug\GenerateResource-ResGen.write.1.tlog
+F:\AutoCAD二次开发教程\AutoCAD资料\Book\初稿\最终稿\新建文件夹\程序\Chap14\AppStarter\obj\x86\Debug\AppStarter.exe
+F:\AutoCAD二次开发教程\AutoCAD资料\Book\初稿\最终稿\新建文件夹\程序\Chap14\AppStarter\obj\x86\Debug\AppStarter.pdb
+D:\工作资料\撰写图书\AutoCAD VBA & VB.NET开发教程（第二版）\AutoCAD VBA & VB.NET开发教程第二版（7.5）\程序\Chap14\AppStarter\obj\x86\Debug\AppStarter.exe
+D:\工作资料\撰写图书\AutoCAD VBA & VB.NET开发教程（第二版）\AutoCAD VBA & VB.NET开发教程第二版（7.5）\程序\Chap14\AppStarter\obj\x86\Debug\AppStarter.pdb

@@ -1,0 +1,5 @@
+F:\AutoCAD二次开发实例教程\Book\程序\1章\Chap01\Hello\bin\Release\Hello.dll
+F:\AutoCAD二次开发实例教程\Book\程序\1章\Chap01\Hello\bin\Release\Hello.pdb
+F:\AutoCAD二次开发实例教程\Book\程序\1章\Chap01\Hello\obj\Release\ResolveAssemblyReference.cache
+F:\AutoCAD二次开发实例教程\Book\程序\1章\Chap01\Hello\obj\Release\Hello.dll
+F:\AutoCAD二次开发实例教程\Book\程序\1章\Chap01\Hello\obj\Release\Hello.pdb

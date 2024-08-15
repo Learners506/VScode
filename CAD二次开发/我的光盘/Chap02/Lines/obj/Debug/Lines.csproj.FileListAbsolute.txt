@@ -1,0 +1,16 @@
+F:\AutoCAD二次开发实例教程\Book\程序\2章\Chap02\Lines\bin\Debug\Lines.dll
+F:\AutoCAD二次开发实例教程\Book\程序\2章\Chap02\Lines\bin\Debug\Lines.pdb
+F:\AutoCAD二次开发实例教程\Book\程序\2章\Chap02\Lines\bin\Debug\DotNetARX.dll
+F:\AutoCAD二次开发实例教程\Book\程序\2章\Chap02\Lines\bin\Debug\DotNetARX.pdb
+F:\AutoCAD二次开发实例教程\Book\程序\2章\Chap02\Lines\obj\Debug\ResolveAssemblyReference.cache
+F:\AutoCAD二次开发实例教程\Book\程序\2章\Chap02\Lines\obj\Debug\Lines.dll
+F:\AutoCAD二次开发实例教程\Book\程序\2章\Chap02\Lines\obj\Debug\Lines.pdb
+F:\AutoCAD二次开发实例教程\Book\程序\2章\Chap02\Lines\bin\Debug\DotNetARX.xml
+F:\AutoCAD二次开发教程\AutoCAD资料\Book\程序\2章\Chap02\Lines\bin\Debug\Lines.dll
+F:\AutoCAD二次开发教程\AutoCAD资料\Book\程序\2章\Chap02\Lines\bin\Debug\Lines.pdb
+F:\AutoCAD二次开发教程\AutoCAD资料\Book\程序\2章\Chap02\Lines\bin\Debug\DotNetARX.dll
+F:\AutoCAD二次开发教程\AutoCAD资料\Book\程序\2章\Chap02\Lines\bin\Debug\DotNetARX.pdb
+F:\AutoCAD二次开发教程\AutoCAD资料\Book\程序\2章\Chap02\Lines\bin\Debug\DotNetARX.xml
+F:\AutoCAD二次开发教程\AutoCAD资料\Book\程序\2章\Chap02\Lines\obj\Debug\ResolveAssemblyReference.cache
+F:\AutoCAD二次开发教程\AutoCAD资料\Book\程序\2章\Chap02\Lines\obj\Debug\Lines.dll
+F:\AutoCAD二次开发教程\AutoCAD资料\Book\程序\2章\Chap02\Lines\obj\Debug\Lines.pdb

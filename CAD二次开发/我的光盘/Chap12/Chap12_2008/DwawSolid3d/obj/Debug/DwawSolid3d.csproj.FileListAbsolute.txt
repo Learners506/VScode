@@ -1,0 +1,16 @@
+e:\Backup\我的文档\Visual Studio 2010\Projects\Chap12_2008\DwawSolid3d\bin\Debug\DwawSolid3d.dll
+e:\Backup\我的文档\Visual Studio 2010\Projects\Chap12_2008\DwawSolid3d\bin\Debug\DwawSolid3d.pdb
+e:\Backup\我的文档\Visual Studio 2010\Projects\Chap12_2008\DwawSolid3d\obj\Debug\ResolveAssemblyReference.cache
+e:\Backup\我的文档\Visual Studio 2010\Projects\Chap12_2008\DwawSolid3d\obj\Debug\DwawSolid3d.dll
+e:\Backup\我的文档\Visual Studio 2010\Projects\Chap12_2008\DwawSolid3d\obj\Debug\DwawSolid3d.pdb
+e:\Backup\我的文档\Visual Studio 2010\Projects\Chap12_2008\DwawSolid3d\bin\Debug\ahlzlSolid3dTools.dll
+D:\My Documents\Visual Studio 2010\Projects\Chap12_2008\DwawSolid3d\bin\Debug\DwawSolid3d.dll
+D:\My Documents\Visual Studio 2010\Projects\Chap12_2008\DwawSolid3d\bin\Debug\DwawSolid3d.pdb
+D:\My Documents\Visual Studio 2010\Projects\Chap12_2008\DwawSolid3d\obj\Debug\ResolveAssemblyReference.cache
+D:\My Documents\Visual Studio 2010\Projects\Chap12_2008\DwawSolid3d\obj\Debug\DwawSolid3d.dll
+D:\My Documents\Visual Studio 2010\Projects\Chap12_2008\DwawSolid3d\obj\Debug\DwawSolid3d.pdb
+F:\AutoCAD二次开发教程\AutoCAD资料\Book\程序\12章\Chap12_2008\DwawSolid3d\bin\Debug\DwawSolid3d.dll
+F:\AutoCAD二次开发教程\AutoCAD资料\Book\程序\12章\Chap12_2008\DwawSolid3d\bin\Debug\DwawSolid3d.pdb
+F:\AutoCAD二次开发教程\AutoCAD资料\Book\程序\12章\Chap12_2008\DwawSolid3d\obj\Debug\ResolveAssemblyReference.cache
+F:\AutoCAD二次开发教程\AutoCAD资料\Book\程序\12章\Chap12_2008\DwawSolid3d\obj\Debug\DwawSolid3d.dll
+F:\AutoCAD二次开发教程\AutoCAD资料\Book\程序\12章\Chap12_2008\DwawSolid3d\obj\Debug\DwawSolid3d.pdb

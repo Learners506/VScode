@@ -1,0 +1,16 @@
+F:\AutoCAD二次开发实例教程\Book\程序\5章\Chap05\AttBlock\bin\Debug\AttBlock.dll
+F:\AutoCAD二次开发实例教程\Book\程序\5章\Chap05\AttBlock\bin\Debug\AttBlock.pdb
+F:\AutoCAD二次开发实例教程\Book\程序\5章\Chap05\AttBlock\obj\Debug\ResolveAssemblyReference.cache
+F:\AutoCAD二次开发实例教程\Book\程序\5章\Chap05\AttBlock\obj\Debug\AttBlock.dll
+F:\AutoCAD二次开发实例教程\Book\程序\5章\Chap05\AttBlock\obj\Debug\AttBlock.pdb
+F:\AutoCAD二次开发实例教程\Book\程序\5章\Chap05\AttBlock\bin\Debug\DotNetARX.dll
+F:\AutoCAD二次开发实例教程\Book\程序\5章\Chap05\AttBlock\bin\Debug\DotNetARX.pdb
+F:\AutoCAD二次开发实例教程\Book\程序\5章\Chap05\AttBlock\bin\Debug\DotNetARX.xml
+F:\AutoCAD二次开发教程\AutoCAD资料\Book\程序\5章\Chap05\AttBlock\bin\Debug\AttBlock.dll
+F:\AutoCAD二次开发教程\AutoCAD资料\Book\程序\5章\Chap05\AttBlock\bin\Debug\AttBlock.pdb
+F:\AutoCAD二次开发教程\AutoCAD资料\Book\程序\5章\Chap05\AttBlock\bin\Debug\DotNetARX.dll
+F:\AutoCAD二次开发教程\AutoCAD资料\Book\程序\5章\Chap05\AttBlock\bin\Debug\DotNetARX.pdb
+F:\AutoCAD二次开发教程\AutoCAD资料\Book\程序\5章\Chap05\AttBlock\bin\Debug\DotNetARX.xml
+F:\AutoCAD二次开发教程\AutoCAD资料\Book\程序\5章\Chap05\AttBlock\obj\Debug\ResolveAssemblyReference.cache
+F:\AutoCAD二次开发教程\AutoCAD资料\Book\程序\5章\Chap05\AttBlock\obj\Debug\AttBlock.dll
+F:\AutoCAD二次开发教程\AutoCAD资料\Book\程序\5章\Chap05\AttBlock\obj\Debug\AttBlock.pdb

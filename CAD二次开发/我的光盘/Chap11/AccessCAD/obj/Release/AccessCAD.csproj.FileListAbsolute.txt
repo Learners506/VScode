@@ -1,0 +1,13 @@
+F:\AutoCAD二次开发实例教程\Book\Access\AccessCAD\AccessCAD\bin\Release\db_samples.mdb
+F:\AutoCAD二次开发实例教程\Book\Access\AccessCAD\AccessCAD\bin\Release\AccessCAD.dll.config
+F:\AutoCAD二次开发实例教程\Book\Access\AccessCAD\AccessCAD\bin\Release\AccessCAD.dll
+F:\AutoCAD二次开发实例教程\Book\Access\AccessCAD\AccessCAD\bin\Release\AccessCAD.pdb
+F:\AutoCAD二次开发实例教程\Book\Access\AccessCAD\AccessCAD\bin\Release\DotNetARX.dll
+F:\AutoCAD二次开发实例教程\Book\Access\AccessCAD\AccessCAD\bin\Release\acmgdinternal.dll
+F:\AutoCAD二次开发实例教程\Book\Access\AccessCAD\AccessCAD\bin\Release\DotNetARX.pdb
+F:\AutoCAD二次开发实例教程\Book\Access\AccessCAD\AccessCAD\obj\Release\ResolveAssemblyReference.cache
+F:\AutoCAD二次开发实例教程\Book\Access\AccessCAD\AccessCAD\obj\Release\AccessCAD.FormEmployee.resources
+F:\AutoCAD二次开发实例教程\Book\Access\AccessCAD\AccessCAD\obj\Release\GenerateResource-ResGen.read.1.tlog
+F:\AutoCAD二次开发实例教程\Book\Access\AccessCAD\AccessCAD\obj\Release\GenerateResource-ResGen.write.1.tlog
+F:\AutoCAD二次开发实例教程\Book\Access\AccessCAD\AccessCAD\obj\Release\AccessCAD.dll
+F:\AutoCAD二次开发实例教程\Book\Access\AccessCAD\AccessCAD\obj\Release\AccessCAD.pdb

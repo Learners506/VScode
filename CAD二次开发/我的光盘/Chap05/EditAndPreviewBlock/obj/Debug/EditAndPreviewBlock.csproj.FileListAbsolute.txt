@@ -1,0 +1,9 @@
+F:\AutoCAD二次开发教程\AutoCAD资料\Book\程序\5章\Chap05\EditAndPreviewBlock\bin\Debug\EditAndPreviewBlock.dll
+F:\AutoCAD二次开发教程\AutoCAD资料\Book\程序\5章\Chap05\EditAndPreviewBlock\bin\Debug\EditAndPreviewBlock.pdb
+F:\AutoCAD二次开发教程\AutoCAD资料\Book\程序\5章\Chap05\EditAndPreviewBlock\bin\Debug\acmgdinternal.dll
+F:\AutoCAD二次开发教程\AutoCAD资料\Book\程序\5章\Chap05\EditAndPreviewBlock\bin\Debug\DotNetARX.dll
+F:\AutoCAD二次开发教程\AutoCAD资料\Book\程序\5章\Chap05\EditAndPreviewBlock\bin\Debug\DotNetARX.pdb
+F:\AutoCAD二次开发教程\AutoCAD资料\Book\程序\5章\Chap05\EditAndPreviewBlock\bin\Debug\DotNetARX.xml
+F:\AutoCAD二次开发教程\AutoCAD资料\Book\程序\5章\Chap05\EditAndPreviewBlock\obj\Debug\ResolveAssemblyReference.cache
+F:\AutoCAD二次开发教程\AutoCAD资料\Book\程序\5章\Chap05\EditAndPreviewBlock\obj\Debug\EditAndPreviewBlock.dll
+F:\AutoCAD二次开发教程\AutoCAD资料\Book\程序\5章\Chap05\EditAndPreviewBlock\obj\Debug\EditAndPreviewBlock.pdb

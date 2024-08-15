@@ -1,0 +1,5 @@
+E:\Backup\我的文档\书稿\新书\才鸟\Chap18\WrapperTest\bin\Debug\WrapperTest.dll
+E:\Backup\我的文档\书稿\新书\才鸟\Chap18\WrapperTest\bin\Debug\WrapperTest.pdb
+E:\Backup\我的文档\书稿\新书\才鸟\Chap18\WrapperTest\obj\Debug\ResolveAssemblyReference.cache
+E:\Backup\我的文档\书稿\新书\才鸟\Chap18\WrapperTest\obj\Debug\WrapperTest.dll
+E:\Backup\我的文档\书稿\新书\才鸟\Chap18\WrapperTest\obj\Debug\WrapperTest.pdb
