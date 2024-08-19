@@ -36,32 +36,69 @@ namespace Foundation
         private void Form1_Load(object sender, EventArgs e)
         {
             // 设置列数
-            dataGridView1.ColumnCount = 4;
+            dataGridView1.ColumnCount = 6;
+            dataGridView2.ColumnCount = 4;
+
+            // 设置不允许用户添加行数据
+            dataGridView1.AllowUserToAddRows = false;
+            dataGridView2.AllowUserToAddRows = false;
+
+            // 禁止调整行和列的调整
+            dataGridView1.AllowUserToResizeRows = false;
+            dataGridView1.AllowUserToResizeColumns = false;
+            dataGridView2.AllowUserToResizeRows = false;
+            dataGridView2.AllowUserToResizeColumns = false;
+
+
+            // 设置自动换行
+            dataGridView1.DefaultCellStyle.WrapMode = DataGridViewTriState.True;
+            dataGridView2.DefaultCellStyle.WrapMode = DataGridViewTriState.True;
             // 隐藏最左边的行头
             dataGridView1.RowHeadersVisible = false;
+            dataGridView2.RowHeadersVisible = false;
             // 设置列适应 DataGridView 大小
             dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridView2.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             // 设置行适应 DataGridView 大小
             dataGridView1.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
-
+            dataGridView2.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
             // 添加列标题
-            dataGridView1.Columns[0].Name = "列1";
-            dataGridView1.Columns[1].Name = "列2";
-            dataGridView1.Columns[2].Name = "列3";
-            dataGridView1.Columns[3].Name = "列4";
+            dataGridView1.Columns[0].Name = "参数";
+            dataGridView1.Columns[1].Name = "坚硬、硬质黏土、粉质黏土、密实粉土";
+            dataGridView1.Columns[2].Name = "可塑黏土、粉质黏土、中密粉土";
+            dataGridView1.Columns[3].Name = "软塑黏土、粉质黏土、稍密粉土";
+            dataGridView1.Columns[4].Name = "粗砂、中砂";
+            dataGridView1.Columns[5].Name = "细沙、粉砂";
+
+            dataGridView2.Columns[0].Name = "土的名称";
+            dataGridView2.Columns[1].Name = "黏性土";
+            dataGridView2.Columns[2].Name = "粉质黏土、粉土";
+            dataGridView2.Columns[3].Name = "砂土";
+
             // 设置所有单元格内容居中对齐
             foreach (DataGridViewColumn column in dataGridView1.Columns)
             {
                 column.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
                 column.HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter; // 设置列标题居中对齐
             }
+            foreach (DataGridViewColumn column in dataGridView2.Columns)
+            {
+                column.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+                column.HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter; // 设置列标题居中对齐
+            }
+
+
+
 
             // 添加行数据
-            string[] row1 = new string[] { "数据1", "数据2", "数据3", "数据4" };
-            string[] row2 = new string[] { "数据5", "数据6", "数据7", "数据8" };
+            string[] row1 = new string[] { "重度（kN/m3）", "17", "16", "15","17","15" };
+            string[] row2 = new string[] { "等代内摩擦角（°）", "35", "30", "15" ,"35","30"};
+
+            string[] row3 = new string[] { "侧压力系数", "0.72", "0.6", "0.38"};
 
             dataGridView1.Rows.Add(row1);
             dataGridView1.Rows.Add(row2);
+            dataGridView2.Rows.Add(row3);
             
         }
 
