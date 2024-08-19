@@ -26,9 +26,47 @@ namespace Foundation
             radioSingle.CheckedChanged += RadioButton_CheckedChanged;
             radioMulty.CheckedChanged += RadioButton_CheckedChanged;
             this.pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-
+            // 注册 Form1_Load 事件处理程序
+            this.Load += new EventHandler(Form1_Load);
 
         }
+
+
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            // 设置列数
+            dataGridView1.ColumnCount = 4;
+            // 隐藏最左边的行头
+            dataGridView1.RowHeadersVisible = false;
+            // 设置列适应 DataGridView 大小
+            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            // 设置行适应 DataGridView 大小
+            dataGridView1.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
+
+            // 添加列标题
+            dataGridView1.Columns[0].Name = "列1";
+            dataGridView1.Columns[1].Name = "列2";
+            dataGridView1.Columns[2].Name = "列3";
+            dataGridView1.Columns[3].Name = "列4";
+            // 设置所有单元格内容居中对齐
+            foreach (DataGridViewColumn column in dataGridView1.Columns)
+            {
+                column.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+                column.HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter; // 设置列标题居中对齐
+            }
+
+            // 添加行数据
+            string[] row1 = new string[] { "数据1", "数据2", "数据3", "数据4" };
+            string[] row2 = new string[] { "数据5", "数据6", "数据7", "数据8" };
+
+            dataGridView1.Rows.Add(row1);
+            dataGridView1.Rows.Add(row2);
+            
+        }
+
+
+
         private void RadioButton_CheckedChanged(object sender, EventArgs e)
         {
             if (radioSingle.Checked)
@@ -318,5 +356,6 @@ namespace Foundation
             return load;
         }
 
+        
     }
 }
