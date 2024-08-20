@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
+using MathNet.Numerics.RootFinding;
+using MathNet.Numerics;
 
 namespace Foundation
 {
@@ -30,8 +32,6 @@ namespace Foundation
             this.Load += new EventHandler(Form1_Load);
 
         }
-
-
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -104,6 +104,7 @@ namespace Foundation
 
 
 
+        // 页面一按钮
         private void RadioButton_CheckedChanged(object sender, EventArgs e)
         {
             if (radioSingle.Checked)
@@ -297,6 +298,7 @@ namespace Foundation
         }
 
 
+        // 页面一计算辅助函数
         // 检查文本框是否输入正确的函数
         private bool AreTextBoxesFilled(params System.Windows.Forms.TextBox[] textBoxes)
         {
@@ -393,6 +395,66 @@ namespace Foundation
             return load;
         }
 
-        
+
+
+        // 页面二按钮
+        private void button4_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            // 判断输入参数是否为空
+            if (!AreTextBoxesFilled(textBoxZMS, textBoxZSC, textBoxZC2, textBoxZJ2, textBoxJQZD, textBoxNMCJ, textBoxCYLXS))
+            {
+                return;
+            }
+
+            double 桩埋深 = Convert.ToDouble(textBoxZMS.Text);
+            double 桩伸出地面 = Convert.ToDouble(textBoxZSC.Text);
+            double 桩长 = Convert.ToDouble(textBoxZC2.Text);
+            double 桩径 = Convert.ToDouble(textBoxZJ2.Text);
+
+            double 加权重度 = Convert.ToDouble(textBoxJQZD.Text);
+            double 等代内摩擦角 = Convert.ToDouble(textBoxNMCJ.Text);
+            double 侧压力系数 = Convert.ToDouble(textBoxCYLXS.Text);
+
+            double 外摩擦角 = 0;
+
+            外摩擦角 = 加权重度 * Math.Pow( Math.Tan((45+等代内摩擦角/2)*Math.PI/180) , 2);
+            textBoxWMCJ.Text = 外摩擦角.ToString("F2");
+
+            double 空间增大系数 = 1 + (2 * 桩埋深 / (3 * 桩径)) * 侧压力系数 * Math.Cos((45 + 等代内摩擦角/2) * (Math.PI / 180)) * Math.Tan(等代内摩擦角*(Math.PI/180));
+            textBoxKJZDXS.Text = 空间增大系数.ToString("F2");
+
+            double 计算宽度 = 空间增大系数 * 桩径;
+            textBoxJSKD.Text = 计算宽度.ToString("F2");
+            double 比值系数 = 桩伸出地面 / 桩埋深;
+            textBoxBZ.Text = 比值系数.ToString("F2");
+
+            //double[] coefficients = new double[]
+            //{
+            //    1,
+            //    1.5*比值系数,
+            //    -0.75*比值系数,
+            //    -0.5
+            //};
+
+            var roots = Cubic.RealRoots(-0.75 * 比值系数 - 0.5,0, 1.5 * 比值系数);
+            double 扩散角 = roots.Item1;
+            textBoxKSXJJ.Text = 扩散角.ToString("F2");
+
+            double 摩阻系数 = 3 / (1-2*扩散角*扩散角*扩散角);
+            textBoxMZXS.Text = 摩阻系数.ToString("F2");
+
+            double 水平抗力 = 外摩擦角 * 计算宽度 * 桩埋深 * 桩埋深 / (比值系数*摩阻系数);
+            textBoxSPKL.Text = 水平抗力.ToString("F2");
+
+
+
+        }
+
+
     }
 }
