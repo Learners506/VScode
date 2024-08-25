@@ -16,6 +16,10 @@ namespace Foundation
 {
     public partial class Form1 : Form
     {
+        private Color filledBackgroundColor = Color.White;
+
+
+
         public Form1()
         {
             InitializeComponent();
@@ -25,11 +29,31 @@ namespace Foundation
             textBoxCZ2.Enabled = false;
             textBoxDZ2.Enabled = false;
             textBoxKB2.Enabled = false;
+            
+            // 页面三初始化
+
+            textBoxSXXS.Enabled = false;
+            textBoxFT.Enabled = false;
+            textBoxZDWJXS.Enabled = false;
+            textBoxHSJMJ.Enabled = false;
+            textBoxLLYXXS.Enabled = false;
+            textBoxYLYXXS.Enabled = false;
+            textBoxLLCZL.Enabled = false;
+            textBoxYLCZL.Enabled = false;
+            textBoxWYYXZ.Enabled = false;
+            textBoxZSQZ.Enabled = false;
+            textBoxZDSPWYXS.Enabled = false;
+            textBoxSPCZL.Enabled = false;
+
+
+
+
             radioSingle.CheckedChanged += RadioButton_CheckedChanged;
             radioMulty.CheckedChanged += RadioButton_CheckedChanged;
             this.pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             // 注册 Form1_Load 事件处理程序
             this.Load += new EventHandler(Form1_Load);
+            ApplyTextBoxColorChange(new List<System.Windows.Forms.TextBox> { textBoxZWJ,textBoxZNJ,textBoxBHC,textBoxPJL,textBoxEC,textBoxES,textBoxSPL,textBoxSXY,textBoxSXL,textBoxKLBLXS,textBoxQSIK,textBoxQPK,textBoxKBXS,textBoxL,textBoxSXXS,textBoxFT,textBoxZDWJXS,textBoxLLYXXS,textBoxYLYXXS,textBoxWYYXZ,textBoxZSQZ,textBoxZDSPWYXS});
 
         }
 
@@ -455,6 +479,224 @@ namespace Foundation
 
         }
 
+
+        // 页面三按钮
+        // 取消按钮
+        private void button6_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+        // 计算按钮
+        private void button5_Click(object sender, EventArgs e)
+        {
+            if (! AreTextBoxesFilled(textBoxPJL,textBoxZWJ,textBoxZNJ,textBoxBHC,textBoxEC,textBoxES,textBoxSPL,textBoxSXY,textBoxSXL,textBoxKLBLXS,textBoxQSIK,textBoxQPK,textBoxKBXS,textBoxL))
+            {
+                return;
+            }
+            double 桩身配筋率 = Convert.ToDouble(textBoxPJL.Text);
+
+            if (桩身配筋率 > 0.0065)
+            {
+                if (!AreTextBoxesFilled(textBoxWYYXZ,textBoxZSQZ,textBoxZDSPWYXS))
+                {
+                    return;
+                }
+            }
+            else
+            {
+                if (!AreTextBoxesFilled(textBoxSXXS,textBoxFT,textBoxZDWJXS,textBoxLLYXXS,textBoxYLYXXS))
+                {
+                    return;
+                }
+            }
+
+
+
+
+            double 桩外径 = Convert.ToDouble(textBoxZWJ.Text);
+            double 桩内径 = Convert.ToDouble(textBoxZNJ.Text);
+            double 保护层厚度 = Convert.ToDouble(textBoxBHC.Text);
+            double qsik = Convert.ToDouble(textBoxQSIK.Text);
+            double qpk = Convert.ToDouble(textBoxQPK.Text);
+            double L = Convert.ToDouble(textBoxL.Text);
+            double 抗拔系数 = Convert.ToDouble(textBoxKBXS.Text);
+            double 混凝土弹性模量 = Convert.ToDouble(textBoxEC.Text);
+            double 钢筋弹性模量 = Convert.ToDouble(textBoxES.Text);
+            double 模量比值 = 钢筋弹性模量 / 混凝土弹性模量;
+            double 竖向压力标准值 = Convert.ToDouble(textBoxSXY.Text);
+            double 竖向拉力标准值 = Convert.ToDouble(textBoxSXL.Text);
+
+            double 桩周长 = Math.PI * 桩外径;
+            double aj = Math.PI / 4 * (桩外径 * 桩外径 - 桩内径 * 桩内径);
+            double ap1 = Math.PI / 4 * 桩内径 * 桩内径;
+            double d0 = 桩外径 - 2 * 保护层厚度 / 1000;
+            double 换算截面模量 = Math.PI * 桩外径 * (桩外径 * 桩外径 + 2 * (模量比值 - 1) * 桩身配筋率 * d0 * d0) / 32;
+            double 换算截面惯性矩 = 换算截面模量 * d0 / 2;
+            double 钢筋面积 = aj * 1000000 * 桩身配筋率;
+            double 桩身抗弯刚度 = 0.85 * 混凝土弹性模量 * 换算截面惯性矩 * 1000;
+            double 桩身计算宽度 = 0.9 * (1.5 * 桩外径 + 0.5);
+
+
+            double 竖向承载力标准值 = 桩周长 * qsik * L + qpk * aj;
+            double 竖向承载力特征值 = 竖向承载力标准值 / 2;
+            double Tuk = 抗拔系数 * qsik * 桩周长 * L;
+            double 桩自重 = L * aj * 25;
+            double 抗拔特征值 = Tuk / 2 + 桩自重;
+            double 水平抗力比例系数 = Convert.ToDouble(textBoxKLBLXS.Text);
+            double 桩水平变形系数 = Math.Pow(水平抗力比例系数 * 1000 * 桩身计算宽度 / 桩身抗弯刚度, 1.0 / 5.0);
+
+            textBoxZZC.Text = 桩周长.ToString("F2");
+            textBoxAJ.Text = aj.ToString("F2");
+            textBoxAP.Text = ap1.ToString("F2");
+            textBoxD0.Text = d0.ToString("F2");
+            textBoxW0.Text = 换算截面模量.ToString("F2");
+            textBoxI0.Text = 换算截面惯性矩.ToString("F2");
+            textBoxPJL.Text = 桩身配筋率.ToString("F2");
+            textBoxAS.Text = 钢筋面积.ToString("F2");
+            textBoxSXCZL.Text = 竖向承载力标准值.ToString("F2");
+            textBoxSXCZLTZZ.Text = 竖向承载力特征值.ToString("F2");
+            textBoxTUK.Text = Tuk.ToString("F2");
+            textBoxZZZ.Text = 桩自重.ToString("F2");
+            textBoxKBTZZ.Text = 抗拔特征值.ToString("F2");
+            textBoxKWGD.Text = 桩身抗弯刚度.ToString("F2");
+            textBoxZSJSKD.Text = 桩身计算宽度.ToString("F2");
+            textBoxSPBXXS.Text = 桩水平变形系数.ToString("F2");
+
+
+            if (桩身配筋率 > 0.0065)
+            {
+                double 桩深取值 = Convert.ToDouble(textBoxZSQZ.Text);
+                double 桩顶水平位移系数 = Convert.ToDouble(textBoxZDSPWYXS.Text);
+                double 桩顶水平位移允许值 = Convert.ToDouble(textBoxWYYXZ.Text);
+                double 换算埋深 = 桩深取值 * 桩水平变形系数;
+                double 位移控制水平承载力 = 0.75 * Math.Pow(桩水平变形系数, 3) * 桩身抗弯刚度 * 桩顶水平位移允许值 / 桩顶水平位移系数;
+                textBoxSPCZL.Text = 位移控制水平承载力.ToString("F2");
+
+            }
+            else
+            {
+                double 桩截面塑性系数 = Convert.ToDouble(textBoxSXXS.Text);
+                double ft = Convert.ToDouble(textBoxFT.Text);
+                double 桩顶压力竖向影响系数 = Convert.ToDouble(textBoxYLYXXS.Text);
+                double 桩顶拉力竖向影响系数 = Convert.ToDouble(textBoxLLYXXS.Text);
+                double 桩顶最大弯矩系数 = Convert.ToDouble(textBoxZDWJXS.Text);
+                double 桩身换算截面积 = Math.PI * 桩外径 * 桩外径 * (1 + (模量比值 - 1) * 桩身配筋率) / 4;
+                double 压力水平承载力特征值 = 0.75 * 桩水平变形系数 * 桩截面塑性系数 * ft * 1000 * 换算截面模量 * (1.25 + 22 * 桩身配筋率) * (1 + 桩顶压力竖向影响系数 * 竖向压力标准值 / (桩截面塑性系数 * ft * 1000 * 桩身换算截面积)) / 桩顶最大弯矩系数;
+                double 拉力水平承载力特征值 = 0.75 * 桩水平变形系数 * 桩截面塑性系数 * ft * 1000 * 换算截面模量 * (1.25 + 22 * 桩身配筋率) * (1 - 桩顶拉力竖向影响系数 * 竖向拉力标准值 / (桩截面塑性系数 * ft * 1000 * 桩身换算截面积)) / 桩顶最大弯矩系数;
+                textBoxHSJMJ.Text = 桩身换算截面积.ToString("F2");
+                textBoxLLCZL.Text = 拉力水平承载力特征值.ToString("F2");
+                textBoxYLCZL.Text = 压力水平承载力特征值.ToString("F2");
+            }
+        }
+
+        private void textBoxPJL_TextChanged(object sender, EventArgs e)
+        {
+            double 配筋率 = 0;
+            try
+            {
+                配筋率 = Convert.ToDouble(textBoxPJL.Text);
+            }
+            catch (Exception err)
+            {
+                
+            }
+
+            if (配筋率 <= 0.0065)
+            {
+                textBoxWYYXZ.BackColor = Color.White;
+                textBoxZSQZ.BackColor = Color.White;
+                textBoxZDSPWYXS.BackColor = Color.White;
+                textBoxSXXS.Enabled = true;
+                textBoxFT.Enabled = true;
+                textBoxZDWJXS.Enabled = true;
+                textBoxHSJMJ.Enabled = true;
+                textBoxLLYXXS.Enabled = true;
+                textBoxYLYXXS.Enabled = true;
+                textBoxLLCZL.Enabled = true;
+                textBoxYLCZL.Enabled = true;
+
+                textBoxSXXS.BackColor = Color.LightSteelBlue;
+                textBoxFT.BackColor = Color.LightSteelBlue;
+                textBoxZDWJXS.BackColor = Color.LightSteelBlue;
+                textBoxLLYXXS.BackColor = Color.LightSteelBlue;
+                textBoxYLYXXS.BackColor = Color.LightSteelBlue;
+
+                textBoxWYYXZ.Enabled = false;
+                textBoxZSQZ.Enabled = false;
+                textBoxZDSPWYXS.Enabled = false;
+                textBoxSPCZL.Enabled = false;
+            }
+            else
+            {
+
+                textBoxSXXS.BackColor = Color.White;
+                textBoxFT.BackColor = Color.White;
+                textBoxZDWJXS.BackColor = Color.White;
+                textBoxLLYXXS.BackColor = Color.White;
+                textBoxYLYXXS.BackColor = Color.White;
+
+                textBoxSXXS.Enabled = false;
+                textBoxFT.Enabled = false;
+                textBoxZDWJXS.Enabled = false;
+                textBoxHSJMJ.Enabled = false;
+                textBoxLLYXXS.Enabled = false;
+                textBoxYLYXXS.Enabled = false;
+                textBoxLLCZL.Enabled = false;
+                textBoxYLCZL.Enabled = false;
+                textBoxWYYXZ.Enabled = true;
+                textBoxZSQZ.Enabled = true;
+                textBoxZDSPWYXS.Enabled = true;
+                textBoxSPCZL.Enabled = true;
+
+                textBoxWYYXZ.BackColor = Color.LightSteelBlue;
+                textBoxZSQZ.BackColor = Color.LightSteelBlue;
+                textBoxZDSPWYXS.BackColor = Color.LightSteelBlue;
+
+
+            }
+        }
+
+        private void label72_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxC_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxJD_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxKBXS_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TextBox_TextChanged(object sender, EventArgs e)
+        {
+            System.Windows.Forms.TextBox textBox = sender as System.Windows.Forms.TextBox;
+
+            if (!string.IsNullOrEmpty(textBox.Text))
+            {
+                textBox.BackColor = filledBackgroundColor;  // 设置填入后的背景色
+            }
+            else
+            {
+                textBox.BackColor = Color.LightSteelBlue;
+            }
+        }
+
+        private void ApplyTextBoxColorChange(List<System.Windows.Forms.TextBox> textBoxes)
+        {
+            foreach (var textBox in textBoxes)
+            {
+                textBox.TextChanged += TextBox_TextChanged;
+            }
+        }
 
     }
 }

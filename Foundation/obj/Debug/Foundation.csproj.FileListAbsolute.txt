@@ -32,3 +32,5 @@ E:\GitHubFile\VScode\Foundation\obj\Debug\Foundation.Form1.byn-ER.resources
 E:\GitHubFile\VScode\Foundation\obj\Debug\byn-ER\Foundation.resources.dll
 D:\GithubProject\VScode\Foundation\bin\Debug\MathNet.Numerics.xml
 D:\GithubProject\VScode\Foundation\bin\Debug\System.ValueTuple.xml
+E:\GitHubFile\VScode\Foundation\bin\Debug\MathNet.Numerics.xml
+E:\GitHubFile\VScode\Foundation\bin\Debug\System.ValueTuple.xml
