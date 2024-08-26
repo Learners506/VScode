@@ -123,9 +123,56 @@ namespace Foundation
             dataGridView1.Rows.Add(row1);
             dataGridView1.Rows.Add(row2);
             dataGridView2.Rows.Add(row3);
-            
+            dataGridView3.AllowUserToAddRows = false; // 隐藏未提交的行
+            // 添加土层参数列表
+            dataGridView3.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridView3.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
+            dataGridView3.RowHeadersVisible = true;
+
+            // 设置表格居中对齐
+            // 设置单元格内容居中对齐
+            dataGridView3.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            // 设置列标题居中对齐
+            dataGridView3.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            // 设置行头居中对齐
+            dataGridView3.RowHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+
+            // 绑定 CellValueChanged 事件
+            dataGridView3.CellValueChanged += new DataGridViewCellEventHandler(dataGridView3_CellValueChanged);
+            dataGridView3.CurrentCellDirtyStateChanged += new EventHandler(dataGridView3_CurrentCellDirtyStateChanged);
+
+
+        }
+        private void dataGridView3_CurrentCellDirtyStateChanged(object sender, EventArgs e)
+        {
+            if (dataGridView3.IsCurrentCellDirty)
+            {
+                dataGridView3.CommitEdit(DataGridViewDataErrorContexts.Commit);
+            }
         }
 
+        private void dataGridView3_CellValueChanged(object sender, DataGridViewCellEventArgs e)
+        {
+            // 检查是否是第六列的数据发生变化
+            if (e.ColumnIndex == dataGridView3.Columns["Column6"].Index)
+            {
+                UpdateAccumulatedColumn();
+            }
+        }
+
+        private void UpdateAccumulatedColumn()
+        {
+            // 更新累加列的值
+            int accumulatedValue = 0;
+            foreach (DataGridViewRow row in dataGridView3.Rows)
+            {
+                if (int.TryParse(row.Cells["Column6"].Value?.ToString(), out int cellValue))
+                {
+                    accumulatedValue += cellValue;
+                }
+                row.Cells["Column7"].Value = accumulatedValue;
+            }
+        }
 
 
         // 页面一按钮
@@ -698,5 +745,129 @@ namespace Foundation
             }
         }
 
+
+        // 添加一行表格数据
+        private void button7_Click(object sender, EventArgs e)
+        {
+            int rowIndex = dataGridView3.Rows.Add();
+            //DataGridViewRow newRow = dataGridView1.Rows[rowIndex];
+
+            
+            //newRow.Cells["Column6"].Value = "0"; // 确保是一个有效的整数
+            
+            UpdateRowHeaders();
+            
+        }
+
+        // 更新行头序号
+        private void UpdateRowHeaders()
+        {
+            for (int i = 0;i<dataGridView3.Rows.Count;i++)
+            {
+                dataGridView3.Rows[i].HeaderCell.Value = (i + 1).ToString();
+            }
+        }
+
+        //private void UpdateAccumulatedColumn()
+        //{
+        //    // 更新累加列的值
+        //    int accumulatedValue = 0;
+        //    foreach (DataGridViewRow row in dataGridView1.Rows)
+        //    {
+        //        if (int.TryParse(row.Cells["Column6"].Value?.ToString(), out int cellValue))
+        //        {
+        //            accumulatedValue += cellValue;
+        //        }
+        //        row.Cells["Column7"].Value = accumulatedValue;
+        //    }
+        //}
+
+        // 删除当前行的数据
+        private void button8_Click(object sender, EventArgs e)
+        {
+            // 删除选中单元格所在的行
+            if (dataGridView3.SelectedCells.Count > 0)
+            {
+                foreach (DataGridViewCell cell in dataGridView3.SelectedCells)
+                {
+                    if (cell.RowIndex >= 0 && cell.RowIndex < dataGridView3.Rows.Count)
+                    {
+                        dataGridView3.Rows.RemoveAt(cell.RowIndex);
+                    }
+                }
+                UpdateRowHeaders();
+                UpdateAccumulatedColumn();
+
+
+            }
+            else
+            {
+                MessageBox.Show("请先选择要删除的单元格。");
+            }
+        }
+
+        // 上移按钮
+        private void button9_Click(object sender, EventArgs e)
+        {
+            // 上移选中行
+            if (dataGridView3.SelectedCells.Count > 0)
+            {
+                int rowIndex = dataGridView3.SelectedCells[0].RowIndex;
+                if (rowIndex > 0)
+                {
+                    DataGridViewRow selectedRow = dataGridView3.Rows[rowIndex];
+                    dataGridView3.Rows.Remove(selectedRow);
+                    dataGridView3.Rows.Insert(rowIndex - 1, selectedRow);
+                    dataGridView3.ClearSelection();
+                    dataGridView3.Rows[rowIndex - 1].Selected = true;
+                    dataGridView3.CurrentCell = dataGridView3.Rows[rowIndex - 1].Cells[0];
+                    UpdateRowHeaders();
+                    UpdateAccumulatedColumn();
+
+
+                }
+            }
+            else
+            {
+                MessageBox.Show("请先选择要上移的单元格。");
+            }
+        }
+
+        // 下移按钮
+        private void button10_Click(object sender, EventArgs e)
+        {
+            // 下移选中行
+            if (dataGridView3.SelectedCells.Count > 0)
+            {
+                int rowIndex = dataGridView3.SelectedCells[0].RowIndex;
+                if (rowIndex < dataGridView3.Rows.Count - 1)
+                {
+                    DataGridViewRow selectedRow = dataGridView3.Rows[rowIndex];
+                    dataGridView3.Rows.Remove(selectedRow);
+                    dataGridView3.Rows.Insert(rowIndex + 1, selectedRow);
+                    dataGridView3.ClearSelection();
+                    dataGridView3.Rows[rowIndex + 1].Selected = true;
+                    dataGridView3.CurrentCell = dataGridView3.Rows[rowIndex + 1].Cells[0];
+                    UpdateRowHeaders();
+                    UpdateAccumulatedColumn();
+
+
+                }
+            }
+            else
+            {
+                MessageBox.Show("请先选择要下移的单元格。");
+            }
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedTab = tabPage3;
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedTab = tabPage4;
+        }
     }
 }
