@@ -44,6 +44,7 @@ namespace Foundation
             textBoxZSQZ.Enabled = false;
             textBoxZDSPWYXS.Enabled = false;
             textBoxSPCZL.Enabled = false;
+            textBoxDXSWSD3.Enabled = false;
 
 
 
@@ -53,7 +54,7 @@ namespace Foundation
             this.pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             // 注册 Form1_Load 事件处理程序
             this.Load += new EventHandler(Form1_Load);
-            ApplyTextBoxColorChange(new List<System.Windows.Forms.TextBox> { textBoxZWJ,textBoxZNJ,textBoxBHC,textBoxPJL,textBoxEC,textBoxES,textBoxSPL,textBoxSXY,textBoxSXL,textBoxKLBLXS,textBoxQSIK,textBoxQPK,textBoxKBXS,textBoxL,textBoxSXXS,textBoxFT,textBoxZDWJXS,textBoxLLYXXS,textBoxYLYXXS,textBoxWYYXZ,textBoxZSQZ,textBoxZDSPWYXS});
+            ApplyTextBoxColorChange(new List<System.Windows.Forms.TextBox> { textBoxZWJ,textBoxZNJ,textBoxBHC,textBoxPJL,textBoxEC,textBoxES,textBoxSPL,textBoxSXY,textBoxSXL,textBoxKLBLXS,textBoxSXXS,textBoxFT,textBoxZDWJXS,textBoxLLYXXS,textBoxYLYXXS,textBoxWYYXZ,textBoxZSQZ,textBoxZDSPWYXS});
 
         }
 
@@ -536,7 +537,7 @@ namespace Foundation
         // 计算按钮
         private void button5_Click(object sender, EventArgs e)
         {
-            if (! AreTextBoxesFilled(textBoxPJL,textBoxZWJ,textBoxZNJ,textBoxBHC,textBoxEC,textBoxES,textBoxSPL,textBoxSXY,textBoxSXL,textBoxKLBLXS,textBoxQSIK,textBoxQPK,textBoxKBXS,textBoxL))
+            if (! AreTextBoxesFilled(textBoxPJL,textBoxZWJ,textBoxZNJ,textBoxBHC,textBoxEC,textBoxES,textBoxSPL,textBoxSXY,textBoxSXL,textBoxKLBLXS))
             {
                 return;
             }
@@ -563,10 +564,85 @@ namespace Foundation
             double 桩外径 = Convert.ToDouble(textBoxZWJ.Text);
             double 桩内径 = Convert.ToDouble(textBoxZNJ.Text);
             double 保护层厚度 = Convert.ToDouble(textBoxBHC.Text);
-            double qsik = Convert.ToDouble(textBoxQSIK.Text);
-            double qpk = Convert.ToDouble(textBoxQPK.Text);
-            double L = Convert.ToDouble(textBoxL.Text);
-            double 抗拔系数 = Convert.ToDouble(textBoxKBXS.Text);
+
+            double qsik = 0;
+            double qpk = 0;
+            double L = 0;
+            double 抗拔系数 = 0;
+
+
+            // 验证表格的数据是否填写完整
+            List<int> requireColumnIndex = new List<int>() { 1,2,4,5 };
+            int lastRowCheckColumnIndex = 3;
+            bool allrowFilled = true;
+            bool lastRowFilled = true;
+            // 遍历所有行，检查requireColumnIndex列是否全部填充
+            foreach(DataGridViewRow row in dataGridView3.Rows)
+            {
+                if (row.IsNewRow) continue;
+                // 检查requiredColumnIndex列是否为空
+                foreach(var i  in requireColumnIndex)
+                {
+                    if(string.IsNullOrEmpty(row.Cells[i].Value?.ToString()))
+                    {
+                        allrowFilled = false;
+                        break;
+                    }
+                }
+            }
+            // 检查最后一行的lastRowlastRowCheckColumnIndex列是否全部填充
+            if (dataGridView3.Rows.Count >= 1)
+            {
+                DataGridViewRow lastcheckrow = dataGridView3.Rows[dataGridView3.Rows.Count - 1];
+                if (string.IsNullOrWhiteSpace(lastcheckrow.Cells[lastRowCheckColumnIndex].Value?.ToString()))
+                {
+                    lastRowFilled = false;
+
+                }
+            }
+            if(dataGridView3.Rows.Count == 0)
+            {
+                allrowFilled = false;
+                tabControl1.SelectedTab = tabPage4;
+            }
+           if(!allrowFilled || !lastRowFilled)
+            {
+                MessageBox.Show("请将土层数据填写完整");
+                return;
+            }
+
+
+            
+
+
+            // 获取表格中的数据
+            List<List<string>> data = new List<List<string>>();
+            foreach(DataGridViewRow row in dataGridView3.Rows)
+            {
+                List<string> rowData = new List<string>();
+                foreach(DataGridViewCell cell in row.Cells)
+                {
+                    rowData.Add(cell.Value?.ToString() ?? string.Empty);
+                    
+                }
+                data.Add(rowData);
+            }
+            // 获取某一列的数据
+            string columnname = "Column2";
+            int columnIndex = dataGridView3.Columns[columnname].Index;
+            List<string> columnData = new List<string>();
+            foreach (var row in data)
+            {
+                if (row.Count > columnIndex)
+                {
+                    columnData.Add(row[columnIndex]);
+                    Console.WriteLine(row[columnIndex]);
+                }
+            }
+
+
+
+
             double 混凝土弹性模量 = Convert.ToDouble(textBoxEC.Text);
             double 钢筋弹性模量 = Convert.ToDouble(textBoxES.Text);
             double 模量比值 = 钢筋弹性模量 / 混凝土弹性模量;

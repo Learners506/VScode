@@ -190,14 +190,9 @@
             this.textBoxSXCZL = new System.Windows.Forms.TextBox();
             this.label57 = new System.Windows.Forms.Label();
             this.groupBox10 = new System.Windows.Forms.GroupBox();
-            this.textBoxKBXS = new System.Windows.Forms.TextBox();
-            this.label45 = new System.Windows.Forms.Label();
-            this.textBoxL = new System.Windows.Forms.TextBox();
-            this.label48 = new System.Windows.Forms.Label();
-            this.textBoxQPK = new System.Windows.Forms.TextBox();
-            this.label47 = new System.Windows.Forms.Label();
-            this.textBoxQSIK = new System.Windows.Forms.TextBox();
-            this.label46 = new System.Windows.Forms.Label();
+            this.button12 = new System.Windows.Forms.Button();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.label43 = new System.Windows.Forms.Label();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
             this.textBoxSXL = new System.Windows.Forms.TextBox();
             this.label42 = new System.Windows.Forms.Label();
@@ -219,11 +214,12 @@
             this.label70 = new System.Windows.Forms.Label();
             this.textBoxEC = new System.Windows.Forms.TextBox();
             this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.dataGridView3 = new System.Windows.Forms.DataGridView();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
+            this.button11 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
+            this.dataGridView3 = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -231,11 +227,9 @@
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.button11 = new System.Windows.Forms.Button();
-            this.label43 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.button12 = new System.Windows.Forms.Button();
+            this.textBoxDXSWSD3 = new System.Windows.Forms.TextBox();
+            this.label44 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -1292,64 +1286,31 @@
             // 
             this.groupBox10.Controls.Add(this.button12);
             this.groupBox10.Controls.Add(this.checkBox1);
-            this.groupBox10.Controls.Add(this.textBox1);
+            this.groupBox10.Controls.Add(this.textBox2);
+            this.groupBox10.Controls.Add(this.label44);
+            this.groupBox10.Controls.Add(this.textBoxDXSWSD3);
             this.groupBox10.Controls.Add(this.label43);
-            this.groupBox10.Controls.Add(this.textBoxKBXS);
-            this.groupBox10.Controls.Add(this.label45);
-            this.groupBox10.Controls.Add(this.textBoxL);
-            this.groupBox10.Controls.Add(this.label48);
-            this.groupBox10.Controls.Add(this.textBoxQPK);
-            this.groupBox10.Controls.Add(this.label47);
-            this.groupBox10.Controls.Add(this.textBoxQSIK);
-            this.groupBox10.Controls.Add(this.label46);
             resources.ApplyResources(this.groupBox10, "groupBox10");
             this.groupBox10.Name = "groupBox10";
             this.groupBox10.TabStop = false;
             // 
-            // textBoxKBXS
+            // button12
             // 
-            this.textBoxKBXS.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            resources.ApplyResources(this.textBoxKBXS, "textBoxKBXS");
-            this.textBoxKBXS.Name = "textBoxKBXS";
-            this.textBoxKBXS.TextChanged += new System.EventHandler(this.textBoxKBXS_TextChanged);
+            resources.ApplyResources(this.button12, "button12");
+            this.button12.Name = "button12";
+            this.button12.UseVisualStyleBackColor = true;
+            this.button12.Click += new System.EventHandler(this.button12_Click);
             // 
-            // label45
+            // checkBox1
             // 
-            resources.ApplyResources(this.label45, "label45");
-            this.label45.Name = "label45";
+            resources.ApplyResources(this.checkBox1, "checkBox1");
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.UseVisualStyleBackColor = true;
             // 
-            // textBoxL
+            // label43
             // 
-            this.textBoxL.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            resources.ApplyResources(this.textBoxL, "textBoxL");
-            this.textBoxL.Name = "textBoxL";
-            // 
-            // label48
-            // 
-            resources.ApplyResources(this.label48, "label48");
-            this.label48.Name = "label48";
-            // 
-            // textBoxQPK
-            // 
-            this.textBoxQPK.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            resources.ApplyResources(this.textBoxQPK, "textBoxQPK");
-            this.textBoxQPK.Name = "textBoxQPK";
-            // 
-            // label47
-            // 
-            resources.ApplyResources(this.label47, "label47");
-            this.label47.Name = "label47";
-            // 
-            // textBoxQSIK
-            // 
-            this.textBoxQSIK.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            resources.ApplyResources(this.textBoxQSIK, "textBoxQSIK");
-            this.textBoxQSIK.Name = "textBoxQSIK";
-            // 
-            // label46
-            // 
-            resources.ApplyResources(this.label46, "label46");
-            this.label46.Name = "label46";
+            resources.ApplyResources(this.label43, "label43");
+            this.label43.Name = "label43";
             // 
             // groupBox9
             // 
@@ -1493,6 +1454,41 @@
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
+            // button11
+            // 
+            resources.ApplyResources(this.button11, "button11");
+            this.button11.Name = "button11";
+            this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
+            // 
+            // button10
+            // 
+            resources.ApplyResources(this.button10, "button10");
+            this.button10.Name = "button10";
+            this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
+            // 
+            // button9
+            // 
+            resources.ApplyResources(this.button9, "button9");
+            this.button9.Name = "button9";
+            this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
+            // 
+            // button8
+            // 
+            resources.ApplyResources(this.button8, "button8");
+            this.button8.Name = "button8";
+            this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
+            // 
+            // button7
+            // 
+            resources.ApplyResources(this.button7, "button7");
+            this.button7.Name = "button7";
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
             // dataGridView3
             // 
             this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -1507,34 +1503,6 @@
             resources.ApplyResources(this.dataGridView3, "dataGridView3");
             this.dataGridView3.Name = "dataGridView3";
             this.dataGridView3.RowTemplate.Height = 23;
-            // 
-            // button7
-            // 
-            resources.ApplyResources(this.button7, "button7");
-            this.button7.Name = "button7";
-            this.button7.UseVisualStyleBackColor = true;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
-            // 
-            // button8
-            // 
-            resources.ApplyResources(this.button8, "button8");
-            this.button8.Name = "button8";
-            this.button8.UseVisualStyleBackColor = true;
-            this.button8.Click += new System.EventHandler(this.button8_Click);
-            // 
-            // button9
-            // 
-            resources.ApplyResources(this.button9, "button9");
-            this.button9.Name = "button9";
-            this.button9.UseVisualStyleBackColor = true;
-            this.button9.Click += new System.EventHandler(this.button9_Click);
-            // 
-            // button10
-            // 
-            resources.ApplyResources(this.button10, "button10");
-            this.button10.Name = "button10";
-            this.button10.UseVisualStyleBackColor = true;
-            this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
             // Column1
             // 
@@ -1593,37 +1561,24 @@
             this.Column7.Name = "Column7";
             this.Column7.ReadOnly = true;
             // 
-            // button11
+            // textBoxDXSWSD3
             // 
-            resources.ApplyResources(this.button11, "button11");
-            this.button11.Name = "button11";
-            this.button11.UseVisualStyleBackColor = true;
-            this.button11.Click += new System.EventHandler(this.button11_Click);
+            this.textBoxDXSWSD3.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            resources.ApplyResources(this.textBoxDXSWSD3, "textBoxDXSWSD3");
+            this.textBoxDXSWSD3.Name = "textBoxDXSWSD3";
+            this.textBoxDXSWSD3.TextChanged += new System.EventHandler(this.textBoxKBXS_TextChanged);
             // 
-            // label43
+            // label44
             // 
-            resources.ApplyResources(this.label43, "label43");
-            this.label43.Name = "label43";
+            resources.ApplyResources(this.label44, "label44");
+            this.label44.Name = "label44";
             // 
-            // textBox1
+            // textBox2
             // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            resources.ApplyResources(this.textBox1, "textBox1");
-            this.textBox1.Name = "textBox1";
-            this.textBox1.TextChanged += new System.EventHandler(this.textBoxKBXS_TextChanged);
-            // 
-            // checkBox1
-            // 
-            resources.ApplyResources(this.checkBox1, "checkBox1");
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            // 
-            // button12
-            // 
-            resources.ApplyResources(this.button12, "button12");
-            this.button12.Name = "button12";
-            this.button12.UseVisualStyleBackColor = true;
-            this.button12.Click += new System.EventHandler(this.button12_Click);
+            this.textBox2.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            resources.ApplyResources(this.textBox2, "textBox2");
+            this.textBox2.Name = "textBox2";
+            this.textBox2.TextChanged += new System.EventHandler(this.textBoxKBXS_TextChanged);
             // 
             // Form1
             // 
@@ -1785,15 +1740,7 @@
         private System.Windows.Forms.TextBox textBoxSPL;
         private System.Windows.Forms.Label label40;
         private System.Windows.Forms.GroupBox groupBox10;
-        private System.Windows.Forms.TextBox textBoxKBXS;
-        private System.Windows.Forms.Label label45;
-        private System.Windows.Forms.TextBox textBoxQPK;
-        private System.Windows.Forms.Label label47;
-        private System.Windows.Forms.TextBox textBoxQSIK;
-        private System.Windows.Forms.Label label46;
         private System.Windows.Forms.GroupBox groupBox11;
-        private System.Windows.Forms.TextBox textBoxL;
-        private System.Windows.Forms.Label label48;
         private System.Windows.Forms.TextBox textBoxAJ;
         private System.Windows.Forms.Label label50;
         private System.Windows.Forms.TextBox textBoxZZC;
@@ -1878,9 +1825,11 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label43;
         private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label label44;
+        private System.Windows.Forms.TextBox textBoxDXSWSD3;
     }
 }
 
