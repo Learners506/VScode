@@ -34,3 +34,4 @@ D:\GithubProject\VScode\Foundation\bin\Debug\MathNet.Numerics.xml
 D:\GithubProject\VScode\Foundation\bin\Debug\System.ValueTuple.xml
 E:\GitHubFile\VScode\Foundation\bin\Debug\MathNet.Numerics.xml
 E:\GitHubFile\VScode\Foundation\bin\Debug\System.ValueTuple.xml
+D:\GithubProject\VScode\Foundation\obj\Debug\Foundation.Form2.resources

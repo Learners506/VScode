@@ -15,6 +15,7 @@ namespace Foundation
         public Form2()
         {
             InitializeComponent();
+            this.pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
         }
     }
 }

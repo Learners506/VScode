@@ -46,6 +46,8 @@ namespace Foundation
             textBoxSPCZL.Enabled = false;
             textBoxDXSWSD3.Enabled = false;
 
+            textBoxDXSWSD3.Enabled = false;
+            radioButtonYSJJ.Checked = true;
 
 
 
@@ -54,7 +56,7 @@ namespace Foundation
             this.pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             // 注册 Form1_Load 事件处理程序
             this.Load += new EventHandler(Form1_Load);
-            ApplyTextBoxColorChange(new List<System.Windows.Forms.TextBox> { textBoxZWJ,textBoxZNJ,textBoxBHC,textBoxPJL,textBoxEC,textBoxES,textBoxSPL,textBoxSXY,textBoxSXL,textBoxKLBLXS,textBoxSXXS,textBoxFT,textBoxZDWJXS,textBoxLLYXXS,textBoxYLYXXS,textBoxWYYXZ,textBoxZSQZ,textBoxZDSPWYXS});
+            ApplyTextBoxColorChange(new List<System.Windows.Forms.TextBox> { textBoxCLCSD3, textBoxZWJ,textBoxZNJ,textBoxBHC,textBoxPJL,textBoxEC,textBoxES,textBoxSXL3,textBoxSXY,textBoxSXL,textBoxKLBLXS,textBoxSXXS,textBoxFT,textBoxZDWJXS,textBoxLLYXXS,textBoxYLYXXS,textBoxWYYXZ,textBoxZSQZ,textBoxZDSPWYXS});
 
         }
 
@@ -164,10 +166,10 @@ namespace Foundation
         private void UpdateAccumulatedColumn()
         {
             // 更新累加列的值
-            int accumulatedValue = 0;
+            double accumulatedValue = 0;
             foreach (DataGridViewRow row in dataGridView3.Rows)
             {
-                if (int.TryParse(row.Cells["Column6"].Value?.ToString(), out int cellValue))
+                if (double.TryParse(row.Cells["Column6"].Value?.ToString(), out double cellValue))
                 {
                     accumulatedValue += cellValue;
                 }
@@ -537,7 +539,7 @@ namespace Foundation
         // 计算按钮
         private void button5_Click(object sender, EventArgs e)
         {
-            if (! AreTextBoxesFilled(textBoxPJL,textBoxZWJ,textBoxZNJ,textBoxBHC,textBoxEC,textBoxES,textBoxSPL,textBoxSXY,textBoxSXL,textBoxKLBLXS))
+            if (! AreTextBoxesFilled(textBoxCLCSD3,textBoxPJL,textBoxZWJ,textBoxZNJ,textBoxBHC,textBoxEC,textBoxES,textBoxSXL3,textBoxSXY,textBoxSXL,textBoxKLBLXS))
             {
                 return;
             }
@@ -557,20 +559,6 @@ namespace Foundation
                     return;
                 }
             }
-
-
-
-
-            double 桩外径 = Convert.ToDouble(textBoxZWJ.Text);
-            double 桩内径 = Convert.ToDouble(textBoxZNJ.Text);
-            double 保护层厚度 = Convert.ToDouble(textBoxBHC.Text);
-
-            double qsik = 0;
-            double qpk = 0;
-            double L = 0;
-            double 抗拔系数 = 0;
-
-
             // 验证表格的数据是否填写完整
             List<int> requireColumnIndex = new List<int>() { 1,2,4,5 };
             int lastRowCheckColumnIndex = 3;
@@ -612,8 +600,27 @@ namespace Foundation
             }
 
 
-            
 
+            double 持力层深度 = Convert.ToDouble(textBoxCLCSD3.Text);
+            double 桩外径 = Convert.ToDouble(textBoxZWJ.Text);
+            double 桩内径 = Convert.ToDouble(textBoxZNJ.Text);
+            double 保护层厚度 = Convert.ToDouble(textBoxBHC.Text);
+            double 桩周长 = Math.PI * 桩外径;
+            double aj = Math.PI / 4 * (桩外径 * 桩外径 - 桩内径 * 桩内径);
+            double ap1 = Math.PI / 4 * 桩内径 * 桩内径;
+            double d0 = 桩外径 - 2 * 保护层厚度 / 1000;
+            double 桩端土塞效应系数=0;
+            double 桩进入土层总长 =0;
+            double 桩自重 = 0;
+            
+            if (持力层深度 / 桩外径 < 5)
+            {
+                桩端土塞效应系数 = 0.16 * 持力层深度 / 桩外径;
+            }
+            else
+            {
+                桩端土塞效应系数 = 0.8;
+            }
 
             // 获取表格中的数据
             List<List<string>> data = new List<List<string>>();
@@ -627,18 +634,69 @@ namespace Foundation
                 }
                 data.Add(rowData);
             }
-            // 获取某一列的数据
-            string columnname = "Column2";
-            int columnIndex = dataGridView3.Columns[columnname].Index;
-            List<string> columnData = new List<string>();
-            foreach (var row in data)
+            // 单桩竖向极限承载力计算
+            // 获取qsik和土层深度乘积,如果是最后一层的时候就采用进行持力层的深度进行计算
+            string columnqsikname = "Column3";
+            string columnliname = "Column6";
+            string columnkbname = "Column5";
+            int columnqsikIndex = dataGridView3.Columns[columnqsikname].Index;
+            int columnliIndex = dataGridView3.Columns[columnliname].Index;
+            int columnkbIndex = dataGridView3.Columns[columnkbname].Index;
+            double qsiksum = 0;
+            double tuksum = 0;
+            for (int i = 0; i < data.Count; i++)
             {
-                if (row.Count > columnIndex)
+                var row = data[i];
+                double value1, value2,value3;
+                if (double.TryParse(row[columnqsikIndex], out value1) && double.TryParse(row[columnkbIndex], out value3))
                 {
-                    columnData.Add(row[columnIndex]);
-                    Console.WriteLine(row[columnIndex]);
+                    if (i == data.Count - 1) // 判断是否是最后一行
+                    {
+                        桩进入土层总长 += 持力层深度;
+                        qsiksum += value1 * 桩周长 * 持力层深度;
+                        tuksum += value1*value3 * 桩周长 * 持力层深度;
+                    }
+                    else if (double.TryParse(row[columnliIndex], out value2))
+                    {
+                        桩进入土层总长 += value2;
+                        qsiksum += value1 * value2 * 桩周长;
+                        tuksum += value1 * value2 * value3 * 桩周长;
+                    }
                 }
             }
+
+            // 获取qpk的累计和
+            // 获取qpk
+            string columnqpkname = "Column4";
+            int columnqpkIndex = dataGridView3.Columns[columnqpkname].Index;
+            int lastRowIndex = dataGridView3.Rows.Count - 1;
+            double qpkvalue = Convert.ToDouble(dataGridView3.Rows[lastRowIndex].Cells[columnqpkIndex].Value.ToString()); 
+            double qpksum = 0;
+            qpksum = qpkvalue * (aj + 桩端土塞效应系数 * ap1);
+            double 竖向承载力标准值 = qsiksum + qpksum;
+            double 竖向承载力特征值 = 竖向承载力标准值 / 2;
+
+            // 单桩竖向抗拔极限承载力的计算
+            // tuksum和桩进入土层总长上述同时求得，下面计算自重（看是否考虑地下水位）
+            if (checkBox1.Checked)
+            {
+                double 地下水位深度 = Convert.ToDouble(textBoxDXSWSD3.Text);
+                if (地下水位深度 >= 桩进入土层总长)
+                {
+                    MessageBox.Show("地下水位深度大于桩进入土层总长，请重新输入,或取消勾选");
+                    return;
+                }
+                桩自重 = 地下水位深度 * 15 * aj + (桩进入土层总长 - 地下水位深度) * 25 * aj;
+            }
+            else
+            {
+                桩自重 = 桩进入土层总长 * aj * 25;
+            }
+            double 抗拔特征值 = tuksum / 2 + 桩自重;
+
+            // 单桩水平承载力特征值
+            double 输入竖向力 = Convert.ToDouble(textBoxSXL3.Text);
+
 
 
 
@@ -646,27 +704,18 @@ namespace Foundation
             double 混凝土弹性模量 = Convert.ToDouble(textBoxEC.Text);
             double 钢筋弹性模量 = Convert.ToDouble(textBoxES.Text);
             double 模量比值 = 钢筋弹性模量 / 混凝土弹性模量;
-            double 竖向压力标准值 = Convert.ToDouble(textBoxSXY.Text);
-            double 竖向拉力标准值 = Convert.ToDouble(textBoxSXL.Text);
 
-            double 桩周长 = Math.PI * 桩外径;
-            double aj = Math.PI / 4 * (桩外径 * 桩外径 - 桩内径 * 桩内径);
-            double ap1 = Math.PI / 4 * 桩内径 * 桩内径;
-            double d0 = 桩外径 - 2 * 保护层厚度 / 1000;
+            
+
             double 换算截面模量 = Math.PI * 桩外径 * (桩外径 * 桩外径 + 2 * (模量比值 - 1) * 桩身配筋率 * d0 * d0) / 32;
             double 换算截面惯性矩 = 换算截面模量 * d0 / 2;
             double 钢筋面积 = aj * 1000000 * 桩身配筋率;
             double 桩身抗弯刚度 = 0.85 * 混凝土弹性模量 * 换算截面惯性矩 * 1000;
             double 桩身计算宽度 = 0.9 * (1.5 * 桩外径 + 0.5);
-
-
-            double 竖向承载力标准值 = 桩周长 * qsik * L + qpk * aj;
-            double 竖向承载力特征值 = 竖向承载力标准值 / 2;
-            double Tuk = 抗拔系数 * qsik * 桩周长 * L;
-            double 桩自重 = L * aj * 25;
-            double 抗拔特征值 = Tuk / 2 + 桩自重;
             double 水平抗力比例系数 = Convert.ToDouble(textBoxKLBLXS.Text);
             double 桩水平变形系数 = Math.Pow(水平抗力比例系数 * 1000 * 桩身计算宽度 / 桩身抗弯刚度, 1.0 / 5.0);
+            double 换算埋深 = 桩进入土层总长 * 桩水平变形系数;
+
 
             textBoxZZC.Text = 桩周长.ToString("F2");
             textBoxAJ.Text = aj.ToString("F2");
@@ -678,7 +727,7 @@ namespace Foundation
             textBoxAS.Text = 钢筋面积.ToString("F2");
             textBoxSXCZL.Text = 竖向承载力标准值.ToString("F2");
             textBoxSXCZLTZZ.Text = 竖向承载力特征值.ToString("F2");
-            textBoxTUK.Text = Tuk.ToString("F2");
+            textBoxTUK.Text = tuksum.ToString("F2");
             textBoxZZZ.Text = 桩自重.ToString("F2");
             textBoxKBTZZ.Text = 抗拔特征值.ToString("F2");
             textBoxKWGD.Text = 桩身抗弯刚度.ToString("F2");
@@ -686,24 +735,42 @@ namespace Foundation
             textBoxSPBXXS.Text = 桩水平变形系数.ToString("F2");
 
 
+            double 竖向压力标准值 = Convert.ToDouble(textBoxSXY.Text);
+            double 竖向拉力标准值 = Convert.ToDouble(textBoxSXL.Text);
+
+
+
             if (桩身配筋率 > 0.0065)
             {
-                double 桩深取值 = Convert.ToDouble(textBoxZSQZ.Text);
-                double 桩顶水平位移系数 = Convert.ToDouble(textBoxZDSPWYXS.Text);
+                
+                double 桩顶水平位移系数 = GetSPWYXS(换算埋深,radioButtonYSJJ.Checked);
                 double 桩顶水平位移允许值 = Convert.ToDouble(textBoxWYYXZ.Text);
-                double 换算埋深 = 桩深取值 * 桩水平变形系数;
                 double 位移控制水平承载力 = 0.75 * Math.Pow(桩水平变形系数, 3) * 桩身抗弯刚度 * 桩顶水平位移允许值 / 桩顶水平位移系数;
                 textBoxSPCZL.Text = 位移控制水平承载力.ToString("F2");
-
             }
             else
             {
+                double 桩顶最大弯矩系数 = GetWJXS(换算埋深,radioButtonYSJJ.Checked);
+                
                 double 桩截面塑性系数 = Convert.ToDouble(textBoxSXXS.Text);
                 double ft = Convert.ToDouble(textBoxFT.Text);
                 double 桩顶压力竖向影响系数 = Convert.ToDouble(textBoxYLYXXS.Text);
                 double 桩顶拉力竖向影响系数 = Convert.ToDouble(textBoxLLYXXS.Text);
-                double 桩顶最大弯矩系数 = Convert.ToDouble(textBoxZDWJXS.Text);
                 double 桩身换算截面积 = Math.PI * 桩外径 * 桩外径 * (1 + (模量比值 - 1) * 桩身配筋率) / 4;
+
+                double 合成水平承载力特征值 = 0;
+                if (输入竖向力 >= 0)
+                {
+                    // 表示拉力
+                    合成水平承载力特征值 = 0.75 * 桩水平变形系数 * 桩截面塑性系数 * ft * 1000 * 换算截面模量 * (1.25 + 22 * 桩身配筋率) * (1 - 桩顶拉力竖向影响系数 * 输入竖向力 / (桩截面塑性系数 * ft * 1000 * 桩身换算截面积)) / 桩顶最大弯矩系数;
+                    Console.WriteLine(合成水平承载力特征值);
+                }
+                else 
+                {
+                    合成水平承载力特征值 = 0.75 * 桩水平变形系数 * 桩截面塑性系数 * ft * 1000 * 换算截面模量 * (1.25 + 22 * 桩身配筋率) * (1 - 桩顶压力竖向影响系数 * 输入竖向力 / (桩截面塑性系数 * ft * 1000 * 桩身换算截面积)) / 桩顶最大弯矩系数;
+                    Console.WriteLine(合成水平承载力特征值);
+                }
+
                 double 压力水平承载力特征值 = 0.75 * 桩水平变形系数 * 桩截面塑性系数 * ft * 1000 * 换算截面模量 * (1.25 + 22 * 桩身配筋率) * (1 + 桩顶压力竖向影响系数 * 竖向压力标准值 / (桩截面塑性系数 * ft * 1000 * 桩身换算截面积)) / 桩顶最大弯矩系数;
                 double 拉力水平承载力特征值 = 0.75 * 桩水平变形系数 * 桩截面塑性系数 * ft * 1000 * 换算截面模量 * (1.25 + 22 * 桩身配筋率) * (1 - 桩顶拉力竖向影响系数 * 竖向拉力标准值 / (桩截面塑性系数 * ft * 1000 * 桩身换算截面积)) / 桩顶最大弯矩系数;
                 textBoxHSJMJ.Text = 桩身换算截面积.ToString("F2");
@@ -711,6 +778,106 @@ namespace Foundation
                 textBoxYLCZL.Text = 压力水平承载力特征值.ToString("F2");
             }
         }
+        private double GetWJXS(double hsms,bool isjj)
+        {
+            
+            if (isjj)
+            {
+                // 定义已知点和对应的值
+                double[] knownValues = { 0, 2.4, 2.6, 2.8, 3.0, 3.5, 4.0 };
+                double[] correspondingResults = { 0, 0.601, 0.639, 0.675, 0.703, 0.750, 0.768 };
+                if (hsms >= 4)
+                {
+                    return 4;
+                }
+                else
+                {
+                    // 进行线性插值
+                    for (int i = 0; i < knownValues.Length - 1; i++)
+                    {
+                        if (hsms >= knownValues[i] && hsms <= knownValues[i + 1])
+                        {
+                            double t = (hsms - knownValues[i]) / (knownValues[i + 1] - knownValues[i]);
+                            return correspondingResults[i] + t * (correspondingResults[i + 1] - correspondingResults[i]);
+                        }
+                    }
+                }
+            }
+            else
+            {
+                // 定义已知点和对应的值
+                double[] knownValues = { 0, 2.4, 2.6, 2.8, 3.0, 3.5, 4.0 };
+                double[] correspondingResults = { 0, 1.045, 1.018, 0.990, 0.967, 0.934, 0.926 };
+                if (hsms >= 4)
+                {
+                    return 4;
+                }
+                else
+                {
+                    // 进行线性插值
+                    for (int i = 0; i < knownValues.Length - 1; i++)
+                    {
+                        if (hsms >= knownValues[i] && hsms <= knownValues[i + 1])
+                        {
+                            double t = (hsms - knownValues[i]) / (knownValues[i + 1] - knownValues[i]);
+                            return correspondingResults[i] + t * (correspondingResults[i + 1] - correspondingResults[i]);
+                        }
+                    }
+                }
+            }
+            return 0;
+        }
+        private double GetSPWYXS(double hsms, bool isjj)
+        {
+
+            if (isjj)
+            {
+                // 定义已知点和对应的值
+                double[] knownValues = { 0, 2.4, 2.6, 2.8, 3.0, 3.5, 4.0 };
+                double[] correspondingResults = { 0, 3.526, 3.163, 2.905, 2.727, 2.502, 2.441 };
+                if (hsms >= 4)
+                {
+                    return 4;
+                }
+                else
+                {
+                    // 进行线性插值
+                    for (int i = 0; i < knownValues.Length - 1; i++)
+                    {
+                        if (hsms >= knownValues[i] && hsms <= knownValues[i + 1])
+                        {
+                            double t = (hsms - knownValues[i]) / (knownValues[i + 1] - knownValues[i]);
+                            return correspondingResults[i] + t * (correspondingResults[i + 1] - correspondingResults[i]);
+                        }
+                    }
+                }
+            }
+            else
+            {
+                // 定义已知点和对应的值
+                double[] knownValues = { 0, 2.4, 2.6, 2.8, 3.0, 3.5, 4.0 };
+                double[] correspondingResults = { 0, 1.095, 1.079, 1.055, 1.028, 0.970, 0.940 };
+                if (hsms >= 4)
+                {
+                    return 4;
+                }
+                else
+                {
+                    // 进行线性插值
+                    for (int i = 0; i < knownValues.Length - 1; i++)
+                    {
+                        if (hsms >= knownValues[i] && hsms <= knownValues[i + 1])
+                        {
+                            double t = (hsms - knownValues[i]) / (knownValues[i + 1] - knownValues[i]);
+                            return correspondingResults[i] + t * (correspondingResults[i + 1] - correspondingResults[i]);
+                        }
+                    }
+                }
+            }
+            return 0;
+        }
+
+
 
         private void textBoxPJL_TextChanged(object sender, EventArgs e)
         {
@@ -944,6 +1111,24 @@ namespace Foundation
         private void button12_Click(object sender, EventArgs e)
         {
             tabControl1.SelectedTab = tabPage4;
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox1.Checked)
+            {
+                textBoxDXSWSD3.Enabled = true;
+            }
+            else
+            {
+                textBoxDXSWSD3.Enabled = false;
+            }
+        }
+
+        private void buttonblxs_Click(object sender, EventArgs e)
+        {
+            Form form2 = new Form2();
+            form2.Show();
         }
     }
 }
