@@ -38,10 +38,8 @@ namespace Foundation
             textBoxHSJMJ.Enabled = false;
             textBoxLLYXXS.Enabled = false;
             textBoxYLYXXS.Enabled = false;
-            textBoxLLCZL.Enabled = false;
-            textBoxYLCZL.Enabled = false;
             textBoxWYYXZ.Enabled = false;
-            textBoxZSQZ.Enabled = false;
+            
             textBoxZDSPWYXS.Enabled = false;
             textBoxSPCZL.Enabled = false;
             textBoxDXSWSD3.Enabled = false;
@@ -56,7 +54,7 @@ namespace Foundation
             this.pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             // 注册 Form1_Load 事件处理程序
             this.Load += new EventHandler(Form1_Load);
-            ApplyTextBoxColorChange(new List<System.Windows.Forms.TextBox> { textBoxCLCSD3, textBoxZWJ,textBoxZNJ,textBoxBHC,textBoxPJL,textBoxEC,textBoxES,textBoxSXL3,textBoxSXY,textBoxSXL,textBoxKLBLXS,textBoxSXXS,textBoxFT,textBoxZDWJXS,textBoxLLYXXS,textBoxYLYXXS,textBoxWYYXZ,textBoxZSQZ,textBoxZDSPWYXS});
+            ApplyTextBoxColorChange(new List<System.Windows.Forms.TextBox> { textBoxCLCSD3, textBoxZWJ,textBoxZNJ,textBoxBHC,textBoxPJL,textBoxEC,textBoxES,textBoxSXL3,textBoxKLBLXS,textBoxSXXS,textBoxFT,textBoxZDWJXS,textBoxLLYXXS,textBoxYLYXXS,textBoxWYYXZ,textBoxZDSPWYXS});
 
         }
 
@@ -539,7 +537,7 @@ namespace Foundation
         // 计算按钮
         private void button5_Click(object sender, EventArgs e)
         {
-            if (! AreTextBoxesFilled(textBoxCLCSD3,textBoxPJL,textBoxZWJ,textBoxZNJ,textBoxBHC,textBoxEC,textBoxES,textBoxSXL3,textBoxSXY,textBoxSXL,textBoxKLBLXS))
+            if (! AreTextBoxesFilled(textBoxCLCSD3,textBoxPJL,textBoxZWJ,textBoxZNJ,textBoxBHC,textBoxEC,textBoxES,textBoxSXL3,textBoxKLBLXS))
             {
                 return;
             }
@@ -547,14 +545,15 @@ namespace Foundation
 
             if (桩身配筋率 > 0.0065)
             {
-                if (!AreTextBoxesFilled(textBoxWYYXZ,textBoxZSQZ,textBoxZDSPWYXS))
+                // 位移允许值
+                if (!AreTextBoxesFilled(textBoxWYYXZ))
                 {
                     return;
                 }
             }
             else
             {
-                if (!AreTextBoxesFilled(textBoxSXXS,textBoxFT,textBoxZDWJXS,textBoxLLYXXS,textBoxYLYXXS))
+                if (!AreTextBoxesFilled(textBoxSXXS,textBoxFT,textBoxLLYXXS,textBoxYLYXXS))
                 {
                     return;
                 }
@@ -735,8 +734,8 @@ namespace Foundation
             textBoxSPBXXS.Text = 桩水平变形系数.ToString("F2");
 
 
-            double 竖向压力标准值 = Convert.ToDouble(textBoxSXY.Text);
-            double 竖向拉力标准值 = Convert.ToDouble(textBoxSXL.Text);
+            
+            
 
 
 
@@ -771,11 +770,11 @@ namespace Foundation
                     Console.WriteLine(合成水平承载力特征值);
                 }
 
-                double 压力水平承载力特征值 = 0.75 * 桩水平变形系数 * 桩截面塑性系数 * ft * 1000 * 换算截面模量 * (1.25 + 22 * 桩身配筋率) * (1 + 桩顶压力竖向影响系数 * 竖向压力标准值 / (桩截面塑性系数 * ft * 1000 * 桩身换算截面积)) / 桩顶最大弯矩系数;
-                double 拉力水平承载力特征值 = 0.75 * 桩水平变形系数 * 桩截面塑性系数 * ft * 1000 * 换算截面模量 * (1.25 + 22 * 桩身配筋率) * (1 - 桩顶拉力竖向影响系数 * 竖向拉力标准值 / (桩截面塑性系数 * ft * 1000 * 桩身换算截面积)) / 桩顶最大弯矩系数;
+               
+                
                 textBoxHSJMJ.Text = 桩身换算截面积.ToString("F2");
-                textBoxLLCZL.Text = 拉力水平承载力特征值.ToString("F2");
-                textBoxYLCZL.Text = 压力水平承载力特征值.ToString("F2");
+                
+                
             }
         }
         private double GetWJXS(double hsms,bool isjj)
@@ -894,16 +893,11 @@ namespace Foundation
             if (配筋率 <= 0.0065)
             {
                 textBoxWYYXZ.BackColor = Color.White;
-                textBoxZSQZ.BackColor = Color.White;
-                textBoxZDSPWYXS.BackColor = Color.White;
                 textBoxSXXS.Enabled = true;
                 textBoxFT.Enabled = true;
-                textBoxZDWJXS.Enabled = true;
                 textBoxHSJMJ.Enabled = true;
                 textBoxLLYXXS.Enabled = true;
                 textBoxYLYXXS.Enabled = true;
-                textBoxLLCZL.Enabled = true;
-                textBoxYLCZL.Enabled = true;
 
                 textBoxSXXS.BackColor = Color.LightSteelBlue;
                 textBoxFT.BackColor = Color.LightSteelBlue;
@@ -912,7 +906,6 @@ namespace Foundation
                 textBoxYLYXXS.BackColor = Color.LightSteelBlue;
 
                 textBoxWYYXZ.Enabled = false;
-                textBoxZSQZ.Enabled = false;
                 textBoxZDSPWYXS.Enabled = false;
                 textBoxSPCZL.Enabled = false;
             }
@@ -931,15 +924,11 @@ namespace Foundation
                 textBoxHSJMJ.Enabled = false;
                 textBoxLLYXXS.Enabled = false;
                 textBoxYLYXXS.Enabled = false;
-                textBoxLLCZL.Enabled = false;
-                textBoxYLCZL.Enabled = false;
                 textBoxWYYXZ.Enabled = true;
-                textBoxZSQZ.Enabled = true;
                 textBoxZDSPWYXS.Enabled = true;
                 textBoxSPCZL.Enabled = true;
 
                 textBoxWYYXZ.BackColor = Color.LightSteelBlue;
-                textBoxZSQZ.BackColor = Color.LightSteelBlue;
                 textBoxZDSPWYXS.BackColor = Color.LightSteelBlue;
 
 

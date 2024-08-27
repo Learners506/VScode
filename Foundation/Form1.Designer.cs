@@ -28,12 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle26 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle27 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle28 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle29 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle30 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
@@ -125,14 +125,15 @@
             this.textBoxZMS = new System.Windows.Forms.TextBox();
             this.label21 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.groupBox17 = new System.Windows.Forms.GroupBox();
+            this.radioButtonYSGJ = new System.Windows.Forms.RadioButton();
+            this.radioButtonYSJJ = new System.Windows.Forms.RadioButton();
             this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.groupBox14 = new System.Windows.Forms.GroupBox();
             this.groupBox16 = new System.Windows.Forms.GroupBox();
             this.textBoxSPCZL = new System.Windows.Forms.TextBox();
             this.label79 = new System.Windows.Forms.Label();
-            this.textBoxZSQZ = new System.Windows.Forms.TextBox();
-            this.label77 = new System.Windows.Forms.Label();
             this.textBoxZDSPWYXS = new System.Windows.Forms.TextBox();
             this.label78 = new System.Windows.Forms.Label();
             this.textBoxWYYXZ = new System.Windows.Forms.TextBox();
@@ -144,10 +145,6 @@
             this.label65 = new System.Windows.Forms.Label();
             this.textBoxYLYXXS = new System.Windows.Forms.TextBox();
             this.label67 = new System.Windows.Forms.Label();
-            this.textBoxYLCZL = new System.Windows.Forms.TextBox();
-            this.label69 = new System.Windows.Forms.Label();
-            this.textBoxLLCZL = new System.Windows.Forms.TextBox();
-            this.label68 = new System.Windows.Forms.Label();
             this.textBoxLLYXXS = new System.Windows.Forms.TextBox();
             this.label66 = new System.Windows.Forms.Label();
             this.textBoxZDWJXS = new System.Windows.Forms.TextBox();
@@ -162,6 +159,7 @@
             this.textBoxTUK = new System.Windows.Forms.TextBox();
             this.label59 = new System.Windows.Forms.Label();
             this.groupBox11 = new System.Windows.Forms.GroupBox();
+            this.buttonblxs = new System.Windows.Forms.Button();
             this.textBoxAS = new System.Windows.Forms.TextBox();
             this.label56 = new System.Windows.Forms.Label();
             this.textBoxI0 = new System.Windows.Forms.TextBox();
@@ -197,10 +195,6 @@
             this.textBoxDXSWSD3 = new System.Windows.Forms.TextBox();
             this.label43 = new System.Windows.Forms.Label();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
-            this.textBoxSXL = new System.Windows.Forms.TextBox();
-            this.label42 = new System.Windows.Forms.Label();
-            this.textBoxSXY = new System.Windows.Forms.TextBox();
-            this.label41 = new System.Windows.Forms.Label();
             this.textBoxSXL3 = new System.Windows.Forms.TextBox();
             this.label40 = new System.Windows.Forms.Label();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
@@ -230,10 +224,8 @@
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.buttonblxs = new System.Windows.Forms.Button();
-            this.groupBox17 = new System.Windows.Forms.GroupBox();
-            this.radioButtonYSJJ = new System.Windows.Forms.RadioButton();
-            this.radioButtonYSGJ = new System.Windows.Forms.RadioButton();
+            this.label41 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -248,6 +240,7 @@
             this.groupBox6.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.tabPage3.SuspendLayout();
+            this.groupBox17.SuspendLayout();
             this.groupBox14.SuspendLayout();
             this.groupBox16.SuspendLayout();
             this.groupBox15.SuspendLayout();
@@ -259,7 +252,6 @@
             this.groupBox8.SuspendLayout();
             this.tabPage4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
-            this.groupBox17.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -713,33 +705,33 @@
             // 
             // dataGridView2
             // 
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle25.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle25.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle25.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle25.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle25.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle25.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle25.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle25;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView2.DefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle26.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle26.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle26.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle26.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle26.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle26.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle26.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView2.DefaultCellStyle = dataGridViewCellStyle26;
             resources.ApplyResources(this.dataGridView2, "dataGridView2");
             this.dataGridView2.Name = "dataGridView2";
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView2.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle27.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle27.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle27.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle27.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle27.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle27.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle27.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView2.RowHeadersDefaultCellStyle = dataGridViewCellStyle27;
             this.dataGridView2.RowTemplate.Height = 23;
             // 
             // label29
@@ -749,33 +741,33 @@
             // 
             // dataGridView1
             // 
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle28.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle28.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle28.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle28.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle28.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle28.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle28.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle28;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle29.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle29.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle29.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle29.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle29.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle29.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle29.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle29;
             resources.ApplyResources(this.dataGridView1, "dataGridView1");
             this.dataGridView1.Name = "dataGridView1";
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle30.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle30.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle30.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle30.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle30.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle30.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle30.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle30;
             this.dataGridView1.RowTemplate.Height = 23;
             // 
             // groupBox6
@@ -890,6 +882,32 @@
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
+            // groupBox17
+            // 
+            this.groupBox17.Controls.Add(this.radioButtonYSGJ);
+            this.groupBox17.Controls.Add(this.radioButtonYSJJ);
+            this.groupBox17.Controls.Add(this.textBoxZDSPWYXS);
+            this.groupBox17.Controls.Add(this.label64);
+            this.groupBox17.Controls.Add(this.label78);
+            this.groupBox17.Controls.Add(this.textBoxZDWJXS);
+            resources.ApplyResources(this.groupBox17, "groupBox17");
+            this.groupBox17.Name = "groupBox17";
+            this.groupBox17.TabStop = false;
+            // 
+            // radioButtonYSGJ
+            // 
+            resources.ApplyResources(this.radioButtonYSGJ, "radioButtonYSGJ");
+            this.radioButtonYSGJ.Name = "radioButtonYSGJ";
+            this.radioButtonYSGJ.TabStop = true;
+            this.radioButtonYSGJ.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonYSJJ
+            // 
+            resources.ApplyResources(this.radioButtonYSJJ, "radioButtonYSJJ");
+            this.radioButtonYSJJ.Name = "radioButtonYSJJ";
+            this.radioButtonYSJJ.TabStop = true;
+            this.radioButtonYSJJ.UseVisualStyleBackColor = true;
+            // 
             // button6
             // 
             resources.ApplyResources(this.button6, "button6");
@@ -916,10 +934,6 @@
             // 
             this.groupBox16.Controls.Add(this.textBoxSPCZL);
             this.groupBox16.Controls.Add(this.label79);
-            this.groupBox16.Controls.Add(this.textBoxZSQZ);
-            this.groupBox16.Controls.Add(this.label77);
-            this.groupBox16.Controls.Add(this.textBoxZDSPWYXS);
-            this.groupBox16.Controls.Add(this.label78);
             this.groupBox16.Controls.Add(this.textBoxWYYXZ);
             this.groupBox16.Controls.Add(this.label74);
             resources.ApplyResources(this.groupBox16, "groupBox16");
@@ -935,17 +949,6 @@
             // 
             resources.ApplyResources(this.label79, "label79");
             this.label79.Name = "label79";
-            // 
-            // textBoxZSQZ
-            // 
-            this.textBoxZSQZ.BackColor = System.Drawing.SystemColors.Window;
-            resources.ApplyResources(this.textBoxZSQZ, "textBoxZSQZ");
-            this.textBoxZSQZ.Name = "textBoxZSQZ";
-            // 
-            // label77
-            // 
-            resources.ApplyResources(this.label77, "label77");
-            this.label77.Name = "label77";
             // 
             // textBoxZDSPWYXS
             // 
@@ -977,14 +980,10 @@
             this.groupBox15.Controls.Add(this.label65);
             this.groupBox15.Controls.Add(this.textBoxYLYXXS);
             this.groupBox15.Controls.Add(this.label67);
-            this.groupBox15.Controls.Add(this.textBoxYLCZL);
-            this.groupBox15.Controls.Add(this.label69);
-            this.groupBox15.Controls.Add(this.textBoxLLCZL);
-            this.groupBox15.Controls.Add(this.label68);
+            this.groupBox15.Controls.Add(this.textBox1);
+            this.groupBox15.Controls.Add(this.label41);
             this.groupBox15.Controls.Add(this.textBoxLLYXXS);
             this.groupBox15.Controls.Add(this.label66);
-            this.groupBox15.Controls.Add(this.textBoxZDWJXS);
-            this.groupBox15.Controls.Add(this.label64);
             this.groupBox15.Controls.Add(this.textBoxSXXS);
             this.groupBox15.Controls.Add(this.label62);
             resources.ApplyResources(this.groupBox15, "groupBox15");
@@ -1022,26 +1021,6 @@
             // 
             resources.ApplyResources(this.label67, "label67");
             this.label67.Name = "label67";
-            // 
-            // textBoxYLCZL
-            // 
-            resources.ApplyResources(this.textBoxYLCZL, "textBoxYLCZL");
-            this.textBoxYLCZL.Name = "textBoxYLCZL";
-            // 
-            // label69
-            // 
-            resources.ApplyResources(this.label69, "label69");
-            this.label69.Name = "label69";
-            // 
-            // textBoxLLCZL
-            // 
-            resources.ApplyResources(this.textBoxLLCZL, "textBoxLLCZL");
-            this.textBoxLLCZL.Name = "textBoxLLCZL";
-            // 
-            // label68
-            // 
-            resources.ApplyResources(this.label68, "label68");
-            this.label68.Name = "label68";
             // 
             // textBoxLLYXXS
             // 
@@ -1120,15 +1099,12 @@
             // 
             // groupBox11
             // 
-            this.groupBox11.Controls.Add(this.buttonblxs);
             this.groupBox11.Controls.Add(this.textBoxAS);
             this.groupBox11.Controls.Add(this.label56);
             this.groupBox11.Controls.Add(this.textBoxI0);
             this.groupBox11.Controls.Add(this.label55);
-            this.groupBox11.Controls.Add(this.textBoxKLBLXS);
             this.groupBox11.Controls.Add(this.textBoxW0);
             this.groupBox11.Controls.Add(this.label54);
-            this.groupBox11.Controls.Add(this.label75);
             this.groupBox11.Controls.Add(this.textBoxD0);
             this.groupBox11.Controls.Add(this.textBoxSPBXXS);
             this.groupBox11.Controls.Add(this.label53);
@@ -1146,6 +1122,13 @@
             resources.ApplyResources(this.groupBox11, "groupBox11");
             this.groupBox11.Name = "groupBox11";
             this.groupBox11.TabStop = false;
+            // 
+            // buttonblxs
+            // 
+            resources.ApplyResources(this.buttonblxs, "buttonblxs");
+            this.buttonblxs.Name = "buttonblxs";
+            this.buttonblxs.UseVisualStyleBackColor = true;
+            this.buttonblxs.Click += new System.EventHandler(this.buttonblxs_Click);
             // 
             // textBoxAS
             // 
@@ -1341,37 +1324,11 @@
             // 
             // groupBox9
             // 
-            this.groupBox9.Controls.Add(this.textBoxSXL);
-            this.groupBox9.Controls.Add(this.label42);
-            this.groupBox9.Controls.Add(this.textBoxSXY);
-            this.groupBox9.Controls.Add(this.label41);
             this.groupBox9.Controls.Add(this.textBoxSXL3);
             this.groupBox9.Controls.Add(this.label40);
             resources.ApplyResources(this.groupBox9, "groupBox9");
             this.groupBox9.Name = "groupBox9";
             this.groupBox9.TabStop = false;
-            // 
-            // textBoxSXL
-            // 
-            this.textBoxSXL.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            resources.ApplyResources(this.textBoxSXL, "textBoxSXL");
-            this.textBoxSXL.Name = "textBoxSXL";
-            // 
-            // label42
-            // 
-            resources.ApplyResources(this.label42, "label42");
-            this.label42.Name = "label42";
-            // 
-            // textBoxSXY
-            // 
-            this.textBoxSXY.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            resources.ApplyResources(this.textBoxSXY, "textBoxSXY");
-            this.textBoxSXY.Name = "textBoxSXY";
-            // 
-            // label41
-            // 
-            resources.ApplyResources(this.label41, "label41");
-            this.label41.Name = "label41";
             // 
             // textBoxSXL3
             // 
@@ -1386,14 +1343,17 @@
             // 
             // groupBox8
             // 
+            this.groupBox8.Controls.Add(this.buttonblxs);
             this.groupBox8.Controls.Add(this.textBoxES);
             this.groupBox8.Controls.Add(this.textBoxPJL);
             this.groupBox8.Controls.Add(this.label71);
+            this.groupBox8.Controls.Add(this.textBoxKLBLXS);
             this.groupBox8.Controls.Add(this.label51);
             this.groupBox8.Controls.Add(this.textBoxBHC);
             this.groupBox8.Controls.Add(this.label39);
             this.groupBox8.Controls.Add(this.textBoxZNJ);
             this.groupBox8.Controls.Add(this.label38);
+            this.groupBox8.Controls.Add(this.label75);
             this.groupBox8.Controls.Add(this.textBoxZWJ);
             this.groupBox8.Controls.Add(this.label25);
             this.groupBox8.Controls.Add(this.label70);
@@ -1588,34 +1548,16 @@
             this.Column7.Name = "Column7";
             this.Column7.ReadOnly = true;
             // 
-            // buttonblxs
+            // label41
             // 
-            resources.ApplyResources(this.buttonblxs, "buttonblxs");
-            this.buttonblxs.Name = "buttonblxs";
-            this.buttonblxs.UseVisualStyleBackColor = true;
-            this.buttonblxs.Click += new System.EventHandler(this.buttonblxs_Click);
+            resources.ApplyResources(this.label41, "label41");
+            this.label41.Name = "label41";
             // 
-            // groupBox17
+            // textBox1
             // 
-            this.groupBox17.Controls.Add(this.radioButtonYSGJ);
-            this.groupBox17.Controls.Add(this.radioButtonYSJJ);
-            resources.ApplyResources(this.groupBox17, "groupBox17");
-            this.groupBox17.Name = "groupBox17";
-            this.groupBox17.TabStop = false;
-            // 
-            // radioButtonYSJJ
-            // 
-            resources.ApplyResources(this.radioButtonYSJJ, "radioButtonYSJJ");
-            this.radioButtonYSJJ.Name = "radioButtonYSJJ";
-            this.radioButtonYSJJ.TabStop = true;
-            this.radioButtonYSJJ.UseVisualStyleBackColor = true;
-            // 
-            // radioButtonYSGJ
-            // 
-            resources.ApplyResources(this.radioButtonYSGJ, "radioButtonYSGJ");
-            this.radioButtonYSGJ.Name = "radioButtonYSGJ";
-            this.radioButtonYSGJ.TabStop = true;
-            this.radioButtonYSGJ.UseVisualStyleBackColor = true;
+            this.textBox1.BackColor = System.Drawing.SystemColors.Window;
+            resources.ApplyResources(this.textBox1, "textBox1");
+            this.textBox1.Name = "textBox1";
             // 
             // Form1
             // 
@@ -1647,6 +1589,8 @@
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
             this.tabPage3.ResumeLayout(false);
+            this.groupBox17.ResumeLayout(false);
+            this.groupBox17.PerformLayout();
             this.groupBox14.ResumeLayout(false);
             this.groupBox16.ResumeLayout(false);
             this.groupBox16.PerformLayout();
@@ -1666,8 +1610,6 @@
             this.groupBox8.PerformLayout();
             this.tabPage4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
-            this.groupBox17.ResumeLayout(false);
-            this.groupBox17.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1772,10 +1714,6 @@
         private System.Windows.Forms.TextBox textBoxZWJ;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.GroupBox groupBox9;
-        private System.Windows.Forms.TextBox textBoxSXL;
-        private System.Windows.Forms.Label label42;
-        private System.Windows.Forms.TextBox textBoxSXY;
-        private System.Windows.Forms.Label label41;
         private System.Windows.Forms.TextBox textBoxSXL3;
         private System.Windows.Forms.Label label40;
         private System.Windows.Forms.GroupBox groupBox10;
@@ -1823,18 +1761,12 @@
         private System.Windows.Forms.TextBox textBoxSXXS;
         private System.Windows.Forms.TextBox textBoxYLYXXS;
         private System.Windows.Forms.Label label67;
-        private System.Windows.Forms.TextBox textBoxYLCZL;
-        private System.Windows.Forms.Label label69;
-        private System.Windows.Forms.TextBox textBoxLLCZL;
-        private System.Windows.Forms.Label label68;
         private System.Windows.Forms.TextBox textBoxLLYXXS;
         private System.Windows.Forms.Label label66;
         private System.Windows.Forms.TextBox textBoxES;
         private System.Windows.Forms.Label label71;
         private System.Windows.Forms.TextBox textBoxSPCZL;
         private System.Windows.Forms.Label label79;
-        private System.Windows.Forms.TextBox textBoxZSQZ;
-        private System.Windows.Forms.Label label77;
         private System.Windows.Forms.TextBox textBoxKLBLXS;
         private System.Windows.Forms.TextBox textBoxZDSPWYXS;
         private System.Windows.Forms.Label label75;
@@ -1873,6 +1805,8 @@
         private System.Windows.Forms.GroupBox groupBox17;
         private System.Windows.Forms.RadioButton radioButtonYSGJ;
         private System.Windows.Forms.RadioButton radioButtonYSJJ;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label41;
     }
 }
 
