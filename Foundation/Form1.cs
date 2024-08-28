@@ -746,7 +746,6 @@ namespace Foundation
                     }
                 }
             }
-
             // 获取qpk的累计和
             // 获取qpk
             string columnqpkname = "Column4";
@@ -757,7 +756,6 @@ namespace Foundation
             qpksum = qpkvalue * (aj + 桩端土塞效应系数 * ap1);
             double 竖向承载力标准值 = qsiksum + qpksum;
             double 竖向承载力特征值 = 竖向承载力标准值 / 2;
-
             // 单桩竖向抗拔极限承载力的计算
             // tuksum和桩进入土层总长上述同时求得，下面计算自重（看是否考虑地下水位）
             if (checkBox1.Checked)
@@ -775,19 +773,9 @@ namespace Foundation
                 桩自重 = 桩进入土层总长 * aj * 25;
             }
             double 抗拔特征值 = tuksum / 2 + 桩自重;
-
-            
-
-
-
-
-
             double 混凝土弹性模量 = Convert.ToDouble(textBoxZDEC.Text);
             double 钢筋弹性模量 = Convert.ToDouble(textBoxES.Text);
             double 模量比值 = 钢筋弹性模量 / 混凝土弹性模量;
-
-            
-
             double 换算截面模量 = Math.PI * 桩外径 * (桩外径 * 桩外径 + 2 * (模量比值 - 1) * 桩身配筋率 * d0 * d0) / 32;
             double 换算截面惯性矩 = 换算截面模量 * d0 / 2;
             double 钢筋面积 = aj * 1000000 * 桩身配筋率;
@@ -798,8 +786,6 @@ namespace Foundation
             double 换算埋深 = 桩进入土层总长 * 桩水平变形系数;
             double 桩顶水平位移系数 = GetSPWYXS(换算埋深, radioButtonYSJJ.Checked);
             double 桩顶最大弯矩系数 = GetWJXS(换算埋深, radioButtonYSJJ.Checked);
-
-
             textBoxZZC.Text = 桩周长.ToString();
             textBoxAJ.Text = aj.ToString();
             textBoxAP.Text = ap1.ToString();
@@ -818,17 +804,19 @@ namespace Foundation
             textBoxZDSPWYXS.Text = 桩顶水平位移系数.ToString();
             textBoxZDWJXS.Text = 桩顶最大弯矩系数.ToString();
             textBoxKLBLXS.Text = 水平抗力比例系数.ToString();
-
             double 桩顶水平位移允许值 = 0;
             double 位移控制水平承载力 = 0;
             double ft = Convert.ToDouble(textBoxZDFT.Text);
 
-
+            double 输入竖向力 = 0;
+            double 桩截面塑性系数 = 0;
+            double 桩顶压力竖向影响系数 = 0;
+            double 桩顶拉力竖向影响系数 = 0;
+            double 桩身换算截面积 = 0;
+            double 合成水平承载力特征值 = 0;
 
             if (桩身配筋率 > 0.0065)
-            {
-                
-                
+            {  
                 桩顶水平位移允许值 = Convert.ToDouble(textBoxWYYXZ.Text);
                 位移控制水平承载力 = 0.75 * Math.Pow(桩水平变形系数, 3) * 桩身抗弯刚度 * 桩顶水平位移允许值 / 桩顶水平位移系数;
                 textBoxSPCZL.Text = 位移控制水平承载力.ToString("F2");
@@ -836,18 +824,14 @@ namespace Foundation
             else
             {
                 // 单桩水平承载力特征值
-                double 输入竖向力 = Convert.ToDouble(textBoxSXL3.Text);
                 
-                
-                double 桩截面塑性系数 = Convert.ToDouble(textBoxSXXS.Text);
-                
-                double 桩顶压力竖向影响系数 = Convert.ToDouble(textBoxYLYXXS.Text);
-                double 桩顶拉力竖向影响系数 = Convert.ToDouble(textBoxLLYXXS.Text);
-                double 桩身换算截面积 = Math.PI * 桩外径 * 桩外径 * (1 + (模量比值 - 1) * 桩身配筋率) / 4;
-
-                double 合成水平承载力特征值 = 0;
                 if (输入竖向力 >= 0)
                 {
+                    输入竖向力 = Convert.ToDouble(textBoxSXL3.Text);
+                    桩截面塑性系数 = Convert.ToDouble(textBoxSXXS.Text);
+                    桩顶压力竖向影响系数 = Convert.ToDouble(textBoxYLYXXS.Text);
+                    桩顶拉力竖向影响系数 = Convert.ToDouble(textBoxLLYXXS.Text);
+                    桩身换算截面积 = Math.PI * 桩外径 * 桩外径 * (1 + (模量比值 - 1) * 桩身配筋率) / 4;
                     // 表示拉力
                     合成水平承载力特征值 = 0.75 * 桩水平变形系数 * 桩截面塑性系数 * ft * 1000 * 换算截面模量 * (1.25 + 22 * 桩身配筋率) * (1 - 桩顶拉力竖向影响系数 * 输入竖向力 / (桩截面塑性系数 * ft * 1000 * 桩身换算截面积)) / 桩顶最大弯矩系数;
                    
@@ -857,28 +841,22 @@ namespace Foundation
                     合成水平承载力特征值 = 0.75 * 桩水平变形系数 * 桩截面塑性系数 * ft * 1000 * 换算截面模量 * (1.25 + 22 * 桩身配筋率) * (1 - 桩顶压力竖向影响系数 * 输入竖向力 / (桩截面塑性系数 * ft * 1000 * 桩身换算截面积)) / 桩顶最大弯矩系数;
                    
                 }
-
-               
-                
                 textBoxHSJMJ.Text = 桩身换算截面积.ToString();
                 textBoxZSQDSPCZL.Text = 合成水平承载力特征值.ToString();
                 
             }
 
 
-
-
             // 输出计算书
-            string outresult = $"***********************第{computetime}次计算书*******************************";
-            outresult += "\n";
-            outresult += "\n";
-            outresult += "用户输入参数:" + "\n";
+            outresult += $"***********************第{computetime}次计算书*******************************\n";
+            outresult += "*****用户输入参数*****\n";
             outresult += $"桩外径:{桩外径}m\n";
-            outresult += $"桩内径:{桩内径}m(0表示实心桩)\n";
+            outresult += $"桩内径:{桩内径}m  (0表示实心桩)\n";
             outresult += $"保护层厚度:{保护层厚度}mm\n";
             outresult += $"桩身配筋率:{桩身配筋率}\n";
-            outresult += $"混凝土强度等级:{comboBox1.SelectedItem.ToString()}MPa,混凝土弹性模量Ec={混凝土弹性模量}N/mm^2,ft={ft}N/mm^2\n";
+            outresult += $"混凝土强度等级:{comboBox1.SelectedItem.ToString()}MPa, 混凝土弹性模量Ec={混凝土弹性模量}N/mm^2, ft={ft}N/mm^2\n";
             outresult += $"钢筋弹性模量Es:{钢筋弹性模量}N/mm^2\n";
+            //是否考虑地下水位
             if (checkBox1.Checked) 
             { 
                 outresult += $"本次计算考虑地下水位：地下水位深度为{Convert.ToDouble(textBoxDXSWSD3.Text)}m\n";
@@ -888,9 +866,77 @@ namespace Foundation
                 outresult += $"本次计算不考虑地下水位\n";
             }
 
+            outresult += $"桩进入最后一层持力层深度是:{持力层深度}m\n";
+            outresult += "\n";
+            outresult += "*****土层信息*****\n";
+            string rowContent = string.Empty;
+            foreach (DataGridViewRow row in dataGridView3.Rows)
+            {
+                foreach (DataGridViewCell cell in row.Cells)
+                {
+                    // 获取列名
+                    string columnName = dataGridView3.Columns[cell.ColumnIndex].HeaderText;
+                    string neirong = cell.Value?.ToString() ?? string.Empty;
+                    rowContent += $"{columnName}:{neirong}\t";
+                }
+                rowContent+= "\n";
+            }
+            outresult += rowContent;
+            outresult += "\n";
+            outresult += "*****桩计算参数*****\n";
+            outresult += $"桩进入土层总长：{桩进入土层总长}\n";
+            outresult += $"桩的周长值：{桩周长}\n";
+            outresult += $"桩截面实心面积Aj：{aj}m^2\n";
+            outresult += $"桩截面空心面积Ap1：{ap1}m^2\n";
+            outresult += $"除去保护层厚度后的桩径d0：{d0}m\n";
+            outresult += $"换算截面模量w0：{换算截面模量}m^3\n";
+            outresult += $"换算截面惯性矩I0：{换算截面惯性矩}m^4\n";
+            outresult += $"钢筋面积As：{钢筋面积}m^2\n";
+            outresult += $"柱身抗弯刚度EI：{桩身抗弯刚度}kN*m^2\n";
+            outresult += $"柱身计算宽度b0：{桩身计算宽度}m\n";
+            outresult += $"桩的水平变形系数：{桩顶水平位移系数}m^-1\n";
+            outresult += $"水平抗力比例系数m：{水平抗力比例系数}MN/m^4\n";
+            outresult += "\n";
+            outresult += "*****桩顶约束情况*****\n";
+            if (radioButtonYSJJ.Checked)
+            {
+                outresult += "本计算选择的桩顶约束情况是:铰接、自由\n";
+            }
+            else if (radioButtonYSGJ.Checked)
+            {
+                outresult += "本计算选择的桩顶约束情况是:固接\n";
+            }
+            outresult += $"桩顶最大弯矩系数Vm：{桩顶最大弯矩系数}\n";
+            outresult += $"桩顶水平位移系数Vx：{桩顶水平位移系数}\n";
+            outresult += "\n";
+            outresult += "**********桩身竖向抗压、抗拔及水平承载力计算**********\n";
+            outresult += "*****竖向承载力验算*****\n";
+            outresult += $"竖向承载力标准值：{竖向承载力标准值}kN\n";
+            outresult += $"竖向承载力特征值：{竖向承载力特征值}kN\n";
+            outresult += "\n";
+            outresult += "*****抗拔承载力计算*****";
+            outresult += $"抗拔承载力标准值Tuk：{tuksum}kN\n";
+            outresult += $"考虑水位后桩自重为：{桩自重}kN\n";
+            outresult += $"抗拔承载力特征值：{抗拔特征值}kN\n";
+            outresult += "\n";
+            outresult += "*****水平承载力验算*****\n";
+            if (桩身配筋率 > 0.0065)
+            {
+                outresult += "桩身配筋率大于0.65%，水平承载力由水平位移控制\n";
+                outresult += $"桩顶位移允许值：{桩顶水平位移允许值}m\n";
+                outresult += $"位移控制的水平承载力为{位移控制水平承载力}kN\n";
+            }
+            else
+            {
+                outresult += "桩身配筋率小于0.65%，水平承载力由桩身强度控制\n";
+                outresult += $"输入的桩顶竖向力为：{输入竖向力}kN\n";
+                outresult += $"截面塑性系数ym：{桩截面塑性系数}\n";
+                outresult += $"桩身换算截面积An：{桩身换算截面积}mm^2\n";
+                outresult += $"拉力影响系数：{桩顶拉力竖向影响系数}\n";
+                outresult += $"压力影响系数：{桩顶压力竖向影响系数}\n";
+                outresult += $"桩身强度控制的水平承载力为：{合成水平承载力特征值}kN\n";
 
-
-
+            }
             computetime += 1;
 
         }
@@ -1357,7 +1403,7 @@ namespace Foundation
                 string outputpath = savefiledialog.FileName;
                 using (StreamWriter writer = new StreamWriter(outputpath, true))
                 {
-                    writer.Write(outresult);
+                    writer.Write(outresult+"\n"+"\n"+"该程序由福建省电力勘测设计院有限公司发电分公司开发\n");
                 }
                 MessageBox.Show("结果已经保存至文件" + outputpath);
             }
