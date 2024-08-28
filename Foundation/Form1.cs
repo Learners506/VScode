@@ -11,12 +11,15 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
 using MathNet.Numerics.RootFinding;
 using MathNet.Numerics;
+using System.IO;
 
 namespace Foundation
 {
     public partial class Form1 : Form
     {
         private Color filledBackgroundColor = Color.White;
+        public string outresult;
+        public int computetime =1;
 
 
 
@@ -33,18 +36,22 @@ namespace Foundation
             // 页面三初始化
 
             textBoxSXXS.Enabled = false;
-            textBoxFT.Enabled = false;
-            textBoxZDWJXS.Enabled = false;
             textBoxHSJMJ.Enabled = false;
             textBoxLLYXXS.Enabled = false;
             textBoxYLYXXS.Enabled = false;
+            textBoxZSQDSPCZL.Enabled = false;
+
             textBoxWYYXZ.Enabled = false;
-            
-            textBoxZDSPWYXS.Enabled = false;
             textBoxSPCZL.Enabled = false;
-            textBoxDXSWSD3.Enabled = false;
+
+            textBoxSXL3.Enabled = false;
 
             textBoxDXSWSD3.Enabled = false;
+            textBoxZDEC.Enabled = false;
+            textBoxZDFT.Enabled = false;
+            textBoxES.Enabled = false;
+
+
             radioButtonYSJJ.Checked = true;
 
 
@@ -54,12 +61,14 @@ namespace Foundation
             this.pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             // 注册 Form1_Load 事件处理程序
             this.Load += new EventHandler(Form1_Load);
-            ApplyTextBoxColorChange(new List<System.Windows.Forms.TextBox> { textBoxCLCSD3, textBoxZWJ,textBoxZNJ,textBoxBHC,textBoxPJL,textBoxEC,textBoxES,textBoxSXL3,textBoxKLBLXS,textBoxSXXS,textBoxFT,textBoxZDWJXS,textBoxLLYXXS,textBoxYLYXXS,textBoxWYYXZ,textBoxZDSPWYXS});
+            ApplyTextBoxColorChange(new List<System.Windows.Forms.TextBox> { textBoxCLCSD3, textBoxZWJ,textBoxZNJ,textBoxBHC,textBoxPJL,textBoxZDEC,textBoxZDFT,textBoxES,textBoxSXL3,textBoxKLBLXS,textBoxSXXS,textBoxLLYXXS,textBoxYLYXXS,textBoxWYYXZ});
 
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            textBoxES.Text = "200000";
+
             // 设置列数
             dataGridView1.ColumnCount = 6;
             dataGridView2.ColumnCount = 4;
@@ -385,6 +394,7 @@ namespace Foundation
             }
             return true;
         }
+        
 
         // 查找索引函数
         public static (int, int) FindIndices(List<double> values, double target)
@@ -537,11 +547,12 @@ namespace Foundation
         // 计算按钮
         private void button5_Click(object sender, EventArgs e)
         {
-            if (! AreTextBoxesFilled(textBoxCLCSD3,textBoxPJL,textBoxZWJ,textBoxZNJ,textBoxBHC,textBoxEC,textBoxES,textBoxSXL3,textBoxKLBLXS))
+            if (! AreTextBoxesFilled(textBoxCLCSD3,textBoxPJL,textBoxZWJ,textBoxZNJ,textBoxBHC,textBoxES,textBoxZDEC,textBoxZDFT))
             {
                 return;
             }
             double 桩身配筋率 = Convert.ToDouble(textBoxPJL.Text);
+            
 
             if (桩身配筋率 > 0.0065)
             {
@@ -553,13 +564,23 @@ namespace Foundation
             }
             else
             {
-                if (!AreTextBoxesFilled(textBoxSXXS,textBoxFT,textBoxLLYXXS,textBoxYLYXXS))
+                if (!AreTextBoxesFilled(textBoxSXXS,textBoxLLYXXS,textBoxYLYXXS,textBoxSXL3))
                 {
                     return;
                 }
             }
+
+            if (checkBox1.Checked) 
+            {
+                if (!AreTextBoxesFilled(textBoxDXSWSD3))
+                {
+                    return;
+                }
+            }
+
+
             // 验证表格的数据是否填写完整
-            List<int> requireColumnIndex = new List<int>() { 1,2,4,5 };
+            List<int> requireColumnIndex = new List<int>() { 1,2,4,5,7 };
             int lastRowCheckColumnIndex = 3;
             bool allrowFilled = true;
             bool lastRowFilled = true;
@@ -598,10 +619,72 @@ namespace Foundation
                 return;
             }
 
+            // 获取抗力比例系数
+            List<double> targetValues = new List<double>();
+            List<double> heightValues = new List<double>();
+
+            foreach (DataGridViewRow row in dataGridView3.Rows)
+            {
+                if (row.IsNewRow) continue;
+
+                if (double.TryParse(row.Cells[7].Value?.ToString(), out double targetValue))
+                {
+                    targetValues.Add(targetValue);
+                }
+
+                if (double.TryParse(row.Cells[5].Value?.ToString(), out double heightValue))
+                {
+                    heightValues.Add(heightValue);
+                }
+            }
+            double 桩外径 = Convert.ToDouble(textBoxZWJ.Text);
+            double 计算抗力比例系数 = 0;
+            double threshold = 2 * (桩外径 + 1);
+            if (targetValues.Count == 1)
+            {
+                计算抗力比例系数 = targetValues[0];
+            }
+            else if (targetValues.Count == 2)
+            {
+                double h1 = heightValues[0];
+                double h2 = heightValues[1];
+                double m1 = targetValues[0];
+                double m2 = targetValues[1];
+                if (threshold < h1)
+                {
+                    计算抗力比例系数 = m1;
+                }
+                else
+                {
+                    计算抗力比例系数 = (m1 * h1 * h1 + m2 * (2 * h1 + h2) * h2)/(threshold*threshold); // 组合值
+                }
+            }
+            else if (targetValues.Count >= 3)
+            {
+                double h1 = heightValues[0];
+                double h2 = heightValues[1];
+                double h3 = heightValues[2];
+                double m1 = targetValues[0];
+                double m2 = targetValues[1];
+                double m3 = targetValues[2];
+                if (threshold < h1)
+                {
+                    计算抗力比例系数 = m1;
+                }
+                else if (threshold < h1 + h2)
+                { 
+                    计算抗力比例系数 = (m1 * h1 * h1 + m2 * (2 * h1 + h2) * h2) / (threshold * threshold);
+                }
+                else
+                {
+                    计算抗力比例系数 = (m1*h1*h1+m2*(2*h1+h2)*h2+m3*(2*h1+2*h2+h3)*h3)/ (threshold * threshold); // 组合值
+                }
+            }
+            
+
 
 
             double 持力层深度 = Convert.ToDouble(textBoxCLCSD3.Text);
-            double 桩外径 = Convert.ToDouble(textBoxZWJ.Text);
             double 桩内径 = Convert.ToDouble(textBoxZNJ.Text);
             double 保护层厚度 = Convert.ToDouble(textBoxBHC.Text);
             double 桩周长 = Math.PI * 桩外径;
@@ -693,14 +776,13 @@ namespace Foundation
             }
             double 抗拔特征值 = tuksum / 2 + 桩自重;
 
-            // 单桩水平承载力特征值
-            double 输入竖向力 = Convert.ToDouble(textBoxSXL3.Text);
+            
 
 
 
 
 
-            double 混凝土弹性模量 = Convert.ToDouble(textBoxEC.Text);
+            double 混凝土弹性模量 = Convert.ToDouble(textBoxZDEC.Text);
             double 钢筋弹性模量 = Convert.ToDouble(textBoxES.Text);
             double 模量比值 = 钢筋弹性模量 / 混凝土弹性模量;
 
@@ -711,48 +793,54 @@ namespace Foundation
             double 钢筋面积 = aj * 1000000 * 桩身配筋率;
             double 桩身抗弯刚度 = 0.85 * 混凝土弹性模量 * 换算截面惯性矩 * 1000;
             double 桩身计算宽度 = 0.9 * (1.5 * 桩外径 + 0.5);
-            double 水平抗力比例系数 = Convert.ToDouble(textBoxKLBLXS.Text);
+            double 水平抗力比例系数 = 计算抗力比例系数;
             double 桩水平变形系数 = Math.Pow(水平抗力比例系数 * 1000 * 桩身计算宽度 / 桩身抗弯刚度, 1.0 / 5.0);
             double 换算埋深 = 桩进入土层总长 * 桩水平变形系数;
+            double 桩顶水平位移系数 = GetSPWYXS(换算埋深, radioButtonYSJJ.Checked);
+            double 桩顶最大弯矩系数 = GetWJXS(换算埋深, radioButtonYSJJ.Checked);
 
 
-            textBoxZZC.Text = 桩周长.ToString("F2");
-            textBoxAJ.Text = aj.ToString("F2");
-            textBoxAP.Text = ap1.ToString("F2");
-            textBoxD0.Text = d0.ToString("F2");
-            textBoxW0.Text = 换算截面模量.ToString("F2");
-            textBoxI0.Text = 换算截面惯性矩.ToString("F2");
-            textBoxPJL.Text = 桩身配筋率.ToString("F2");
-            textBoxAS.Text = 钢筋面积.ToString("F2");
-            textBoxSXCZL.Text = 竖向承载力标准值.ToString("F2");
-            textBoxSXCZLTZZ.Text = 竖向承载力特征值.ToString("F2");
-            textBoxTUK.Text = tuksum.ToString("F2");
-            textBoxZZZ.Text = 桩自重.ToString("F2");
-            textBoxKBTZZ.Text = 抗拔特征值.ToString("F2");
-            textBoxKWGD.Text = 桩身抗弯刚度.ToString("F2");
-            textBoxZSJSKD.Text = 桩身计算宽度.ToString("F2");
-            textBoxSPBXXS.Text = 桩水平变形系数.ToString("F2");
+            textBoxZZC.Text = 桩周长.ToString();
+            textBoxAJ.Text = aj.ToString();
+            textBoxAP.Text = ap1.ToString();
+            textBoxD0.Text = d0.ToString();
+            textBoxW0.Text = 换算截面模量.ToString();
+            textBoxI0.Text = 换算截面惯性矩.ToString();
+            textBoxAS.Text = 钢筋面积.ToString();
+            textBoxSXCZL.Text = 竖向承载力标准值.ToString();
+            textBoxSXCZLTZZ.Text = 竖向承载力特征值.ToString();
+            textBoxTUK.Text = tuksum.ToString();
+            textBoxZZZ.Text = 桩自重.ToString();
+            textBoxKBTZZ.Text = 抗拔特征值.ToString();
+            textBoxKWGD.Text = 桩身抗弯刚度.ToString();
+            textBoxZSJSKD.Text = 桩身计算宽度.ToString();
+            textBoxSPBXXS.Text = 桩水平变形系数.ToString();
+            textBoxZDSPWYXS.Text = 桩顶水平位移系数.ToString();
+            textBoxZDWJXS.Text = 桩顶最大弯矩系数.ToString();
+            textBoxKLBLXS.Text = 水平抗力比例系数.ToString();
 
-
-            
-            
+            double 桩顶水平位移允许值 = 0;
+            double 位移控制水平承载力 = 0;
+            double ft = Convert.ToDouble(textBoxZDFT.Text);
 
 
 
             if (桩身配筋率 > 0.0065)
             {
                 
-                double 桩顶水平位移系数 = GetSPWYXS(换算埋深,radioButtonYSJJ.Checked);
-                double 桩顶水平位移允许值 = Convert.ToDouble(textBoxWYYXZ.Text);
-                double 位移控制水平承载力 = 0.75 * Math.Pow(桩水平变形系数, 3) * 桩身抗弯刚度 * 桩顶水平位移允许值 / 桩顶水平位移系数;
+                
+                桩顶水平位移允许值 = Convert.ToDouble(textBoxWYYXZ.Text);
+                位移控制水平承载力 = 0.75 * Math.Pow(桩水平变形系数, 3) * 桩身抗弯刚度 * 桩顶水平位移允许值 / 桩顶水平位移系数;
                 textBoxSPCZL.Text = 位移控制水平承载力.ToString("F2");
             }
             else
             {
-                double 桩顶最大弯矩系数 = GetWJXS(换算埋深,radioButtonYSJJ.Checked);
+                // 单桩水平承载力特征值
+                double 输入竖向力 = Convert.ToDouble(textBoxSXL3.Text);
+                
                 
                 double 桩截面塑性系数 = Convert.ToDouble(textBoxSXXS.Text);
-                double ft = Convert.ToDouble(textBoxFT.Text);
+                
                 double 桩顶压力竖向影响系数 = Convert.ToDouble(textBoxYLYXXS.Text);
                 double 桩顶拉力竖向影响系数 = Convert.ToDouble(textBoxLLYXXS.Text);
                 double 桩身换算截面积 = Math.PI * 桩外径 * 桩外径 * (1 + (模量比值 - 1) * 桩身配筋率) / 4;
@@ -762,20 +850,49 @@ namespace Foundation
                 {
                     // 表示拉力
                     合成水平承载力特征值 = 0.75 * 桩水平变形系数 * 桩截面塑性系数 * ft * 1000 * 换算截面模量 * (1.25 + 22 * 桩身配筋率) * (1 - 桩顶拉力竖向影响系数 * 输入竖向力 / (桩截面塑性系数 * ft * 1000 * 桩身换算截面积)) / 桩顶最大弯矩系数;
-                    Console.WriteLine(合成水平承载力特征值);
+                   
                 }
                 else 
                 {
                     合成水平承载力特征值 = 0.75 * 桩水平变形系数 * 桩截面塑性系数 * ft * 1000 * 换算截面模量 * (1.25 + 22 * 桩身配筋率) * (1 - 桩顶压力竖向影响系数 * 输入竖向力 / (桩截面塑性系数 * ft * 1000 * 桩身换算截面积)) / 桩顶最大弯矩系数;
-                    Console.WriteLine(合成水平承载力特征值);
+                   
                 }
 
                
                 
-                textBoxHSJMJ.Text = 桩身换算截面积.ToString("F2");
-                
+                textBoxHSJMJ.Text = 桩身换算截面积.ToString();
+                textBoxZSQDSPCZL.Text = 合成水平承载力特征值.ToString();
                 
             }
+
+
+
+
+            // 输出计算书
+            string outresult = $"***********************第{computetime}次计算书*******************************";
+            outresult += "\n";
+            outresult += "\n";
+            outresult += "用户输入参数:" + "\n";
+            outresult += $"桩外径:{桩外径}m\n";
+            outresult += $"桩内径:{桩内径}m(0表示实心桩)\n";
+            outresult += $"保护层厚度:{保护层厚度}mm\n";
+            outresult += $"桩身配筋率:{桩身配筋率}\n";
+            outresult += $"混凝土强度等级:{comboBox1.SelectedItem.ToString()}MPa,混凝土弹性模量Ec={混凝土弹性模量}N/mm^2,ft={ft}N/mm^2\n";
+            outresult += $"钢筋弹性模量Es:{钢筋弹性模量}N/mm^2\n";
+            if (checkBox1.Checked) 
+            { 
+                outresult += $"本次计算考虑地下水位：地下水位深度为{Convert.ToDouble(textBoxDXSWSD3.Text)}m\n";
+            }
+            else
+            {
+                outresult += $"本次计算不考虑地下水位\n";
+            }
+
+
+
+
+            computetime += 1;
+
         }
         private double GetWJXS(double hsms,bool isjj)
         {
@@ -783,11 +900,15 @@ namespace Foundation
             if (isjj)
             {
                 // 定义已知点和对应的值
-                double[] knownValues = { 0, 2.4, 2.6, 2.8, 3.0, 3.5, 4.0 };
-                double[] correspondingResults = { 0, 0.601, 0.639, 0.675, 0.703, 0.750, 0.768 };
+                double[] knownValues = { 2.4, 2.6, 2.8, 3.0, 3.5, 4.0 };
+                double[] correspondingResults = { 0.601, 0.639, 0.675, 0.703, 0.750, 0.768 };
                 if (hsms >= 4)
                 {
-                    return 4;
+                    return 0.768;
+                }
+                else if (hsms<=2.4)
+                {
+                    return 0.601;
                 }
                 else
                 {
@@ -805,11 +926,15 @@ namespace Foundation
             else
             {
                 // 定义已知点和对应的值
-                double[] knownValues = { 0, 2.4, 2.6, 2.8, 3.0, 3.5, 4.0 };
-                double[] correspondingResults = { 0, 1.045, 1.018, 0.990, 0.967, 0.934, 0.926 };
+                double[] knownValues = {  2.4, 2.6, 2.8, 3.0, 3.5, 4.0 };
+                double[] correspondingResults = {  1.045, 1.018, 0.990, 0.967, 0.934, 0.926 };
                 if (hsms >= 4)
                 {
-                    return 4;
+                    return 0.926;
+                }
+                else if (hsms <= 2.4)
+                {
+                    return 1.045;
                 }
                 else
                 {
@@ -832,11 +957,15 @@ namespace Foundation
             if (isjj)
             {
                 // 定义已知点和对应的值
-                double[] knownValues = { 0, 2.4, 2.6, 2.8, 3.0, 3.5, 4.0 };
-                double[] correspondingResults = { 0, 3.526, 3.163, 2.905, 2.727, 2.502, 2.441 };
+                double[] knownValues = {  2.4, 2.6, 2.8, 3.0, 3.5, 4.0 };
+                double[] correspondingResults = { 3.526, 3.163, 2.905, 2.727, 2.502, 2.441 };
                 if (hsms >= 4)
                 {
-                    return 4;
+                    return 2.441;
+                }
+                else if (hsms<=2.4)
+                {
+                    return 3.526;
                 }
                 else
                 {
@@ -854,11 +983,15 @@ namespace Foundation
             else
             {
                 // 定义已知点和对应的值
-                double[] knownValues = { 0, 2.4, 2.6, 2.8, 3.0, 3.5, 4.0 };
-                double[] correspondingResults = { 0, 1.095, 1.079, 1.055, 1.028, 0.970, 0.940 };
+                double[] knownValues = { 2.4, 2.6, 2.8, 3.0, 3.5, 4.0 };
+                double[] correspondingResults = { 1.095, 1.079, 1.055, 1.028, 0.970, 0.940 };
                 if (hsms >= 4)
                 {
-                    return 4;
+                    return 0.940;
+                }
+                else if (hsms<=2.4)
+                {
+                    return 1.095;
                 }
                 else
                 {
@@ -893,45 +1026,39 @@ namespace Foundation
             if (配筋率 <= 0.0065)
             {
                 textBoxWYYXZ.BackColor = Color.White;
+
+                textBoxSXL3.Enabled = true;
                 textBoxSXXS.Enabled = true;
-                textBoxFT.Enabled = true;
                 textBoxHSJMJ.Enabled = true;
                 textBoxLLYXXS.Enabled = true;
                 textBoxYLYXXS.Enabled = true;
+                textBoxZSQDSPCZL.Enabled = true;
 
+                textBoxSXL3.BackColor = Color.LightSteelBlue;
                 textBoxSXXS.BackColor = Color.LightSteelBlue;
-                textBoxFT.BackColor = Color.LightSteelBlue;
-                textBoxZDWJXS.BackColor = Color.LightSteelBlue;
                 textBoxLLYXXS.BackColor = Color.LightSteelBlue;
                 textBoxYLYXXS.BackColor = Color.LightSteelBlue;
 
                 textBoxWYYXZ.Enabled = false;
-                textBoxZDSPWYXS.Enabled = false;
                 textBoxSPCZL.Enabled = false;
             }
             else
             {
-
+                textBoxSXL3.BackColor = Color.White;
                 textBoxSXXS.BackColor = Color.White;
-                textBoxFT.BackColor = Color.White;
-                textBoxZDWJXS.BackColor = Color.White;
                 textBoxLLYXXS.BackColor = Color.White;
                 textBoxYLYXXS.BackColor = Color.White;
+                
 
+                textBoxSXL3.Enabled = false;
                 textBoxSXXS.Enabled = false;
-                textBoxFT.Enabled = false;
-                textBoxZDWJXS.Enabled = false;
                 textBoxHSJMJ.Enabled = false;
                 textBoxLLYXXS.Enabled = false;
                 textBoxYLYXXS.Enabled = false;
+
                 textBoxWYYXZ.Enabled = true;
-                textBoxZDSPWYXS.Enabled = true;
                 textBoxSPCZL.Enabled = true;
-
                 textBoxWYYXZ.BackColor = Color.LightSteelBlue;
-                textBoxZDSPWYXS.BackColor = Color.LightSteelBlue;
-
-
             }
         }
 
@@ -1114,10 +1241,126 @@ namespace Foundation
             }
         }
 
-        private void buttonblxs_Click(object sender, EventArgs e)
+
+
+        private void buttonmrcs3_Click(object sender, EventArgs e)
         {
-            Form form2 = new Form2();
-            form2.Show();
+            
+            textBoxBHC.Text = "40";
+
+            if (string.IsNullOrWhiteSpace(textBoxPJL.Text))
+            {
+                MessageBox.Show("请将配筋率填写完整", "输入参数不足", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                textBoxPJL.Focus();
+                return;
+            }
+            double 桩身配筋率 = Convert.ToDouble(textBoxPJL.Text);
+
+            if (桩身配筋率 > 0.0065)
+            {
+                textBoxWYYXZ.Text = "0.01";
+               
+            }
+            else
+            {
+                textBoxSXXS.Text = "2";
+                textBoxYLYXXS.Text = "0.5";
+                textBoxLLYXXS.Text = "1";
+            }
+
+
+        }
+
+        private void checkBoxZDHNT_CheckedChanged(object sender, EventArgs e)
+        {
+            textBoxZDEC.Enabled = checkBoxZDHNT.Checked;
+            textBoxZDFT.Enabled = checkBoxZDHNT.Checked;
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string selectedValue = comboBox1.SelectedItem.ToString();
+            if (selectedValue == "C25")
+            {
+                textBoxZDEC.Text = "28000";
+                textBoxZDFT.Text = "1.27";
+            }
+            else if (selectedValue == "C30")
+            {
+                textBoxZDEC.Text = "30000";
+                textBoxZDFT.Text = "1.43";
+            }
+            else if (selectedValue == "C35")
+            {
+                textBoxZDEC.Text = "31500";
+                textBoxZDFT.Text = "1.57";
+            }
+            else if (selectedValue == "C40")
+            {
+                textBoxZDEC.Text = "32500";
+                textBoxZDFT.Text = "1.71";
+            }
+            else if (selectedValue == "C45")
+            {
+                textBoxZDEC.Text = "33500";
+                textBoxZDFT.Text = "1.8";
+            }
+            else if (selectedValue == "C50")
+            {
+                textBoxZDEC.Text = "34500";
+                textBoxZDFT.Text = "1.89";
+            }
+            else if (selectedValue == "C55")
+            {
+                textBoxZDEC.Text = "35500";
+                textBoxZDFT.Text = "1.96";
+            }
+            else if (selectedValue == "C60")
+            {
+                textBoxZDEC.Text = "36000";
+                textBoxZDFT.Text = "2.04";
+            }
+            else if (selectedValue == "C65")
+            {
+                textBoxZDEC.Text = "36500";
+                textBoxZDFT.Text = "2.09";
+            }
+            else if (selectedValue == "C70")
+            {
+                textBoxZDEC.Text = "37000";
+                textBoxZDFT.Text = "2.14";
+            }
+            else if (selectedValue == "C75")
+            {
+                textBoxZDEC.Text = "37500";
+                textBoxZDFT.Text = "2.18";
+            }
+            else if (selectedValue == "C80")
+            {
+                textBoxZDEC.Text = "38000";
+                textBoxZDFT.Text = "2.22";
+            }
+        }
+
+        private void checkBoxZDGJML_CheckedChanged(object sender, EventArgs e)
+        {
+            textBoxES.Enabled = checkBoxZDGJML.Checked;
+        }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+            var savefiledialog = new System.Windows.Forms.SaveFileDialog();
+            savefiledialog.Filter = "文本文件(*.txt)|*.txt";
+            savefiledialog.Title = "保存输出结果";
+            if (savefiledialog.ShowDialog() == DialogResult.OK)
+            {
+                string outputpath = savefiledialog.FileName;
+                using (StreamWriter writer = new StreamWriter(outputpath, true))
+                {
+                    writer.Write(outresult);
+                }
+                MessageBox.Show("结果已经保存至文件" + outputpath);
+            }
         }
     }
 }
