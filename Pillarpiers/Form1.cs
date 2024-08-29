@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using ExcelDataReader;
 using ClosedXML;
 using System.IO;
+using ClosedXML.Excel;
 
 
 namespace Pillarpiers
@@ -541,6 +542,103 @@ namespace Pillarpiers
                 }
             }
             return 高度变化系数;
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            exceldata1.Columns.Add("条形基础自重", typeof(double));
+            exceldata1.Columns.Add("总拔力", typeof(double));
+            exceldata1.Columns.Add("抗拔稳定系数", typeof(double));
+            exceldata1.Columns.Add("是否满足抗拔稳定验算", typeof(string));
+            exceldata1.Columns.Add("总抗滑力", typeof(double));
+            exceldata1.Columns.Add("总滑动力", typeof(double));
+            exceldata1.Columns.Add("抗滑移稳定系数", typeof(double));
+            exceldata1.Columns.Add("是否满足抗滑移稳定验算", typeof(string));
+            exceldata1.Columns.Add("总抗倾覆力", typeof(double));
+            exceldata1.Columns.Add("总倾覆力", typeof(double));
+            exceldata1.Columns.Add("抗倾覆稳定系数", typeof(double));
+            exceldata1.Columns.Add("是否满足抗倾覆稳定验算", typeof(string));
+
+            for (int i = 1; i < exceldata1.Rows.Count; i++)
+            {
+                DataRow selectedRow = exceldata1.Rows[i];
+                double valuex3 = Math.Abs(Convert.ToDouble(selectedRow[4]));
+                double valuex4 = Math.Abs(Convert.ToDouble(selectedRow[5]));
+
+
+                var spl = Convert.ToDouble(Math.Max(valuex3, valuex4).ToString());
+                var zbl = Convert.ToDouble(selectedRow[6].ToString());
+                var wj = Convert.ToDouble(selectedRow[7].ToString());
+
+                var height = Convert.ToDouble(textBoxJXGD1.Text);
+                var width = Convert.ToDouble(textBoxJXKD1.Text);
+                var longth = Convert.ToDouble(textBoxJXCD1.Text);
+                var Weight = 24 * height * width * longth;
+
+                var kbxs = Weight / zbl;
+                var mcxs = Convert.ToDouble(textBoxMCXS1.Text);
+                var khl = (Weight - zbl) * mcxs;
+                var hdl = Convert.ToDouble(textBoxSPL1.Text);
+                var khxs = khl / hdl;
+                double zkqfl;
+                double zqfl;
+                var jcg = Convert.ToDouble(textBoxJXGD1.Text);
+                var jcc = Convert.ToDouble(textBoxJXCD1.Text);
+                //抗倾覆
+                if (zbl >= 0)
+                {
+                    zkqfl = Weight * jcc / 2;
+                    zqfl = Math.Abs(zbl) * jcc / 2 + Math.Abs(spl) * jcg + Math.Abs(wj);
+                }
+                else
+                {
+                    zkqfl = Weight * jcc / 2 + jcc / 2 * Math.Abs(zbl);
+                    zqfl = Math.Abs(spl) * jcg + Math.Abs(wj);
+                }
+                var kqfxs = zkqfl / zqfl;
+
+
+                string result1 = (zbl > 0 && kbxs < 1.6) ? "不满足" : "满足";
+                string result2 = (khxs >= 1.3) ? "满足" : "不满足";
+                string result3 = (kqfxs >= 1.6) ? "满足" : "不满足";
+
+                // 赋值
+                selectedRow["条形基础自重"] = Weight;
+                selectedRow["总拔力"] = zbl;
+                selectedRow["抗拔稳定系数"] = kbxs;
+                selectedRow["是否满足抗拔稳定验算"] = result1;
+
+                selectedRow["总抗滑力"] = khl;
+                selectedRow["总滑动力"] = hdl;
+                selectedRow["抗滑移稳定系数"] = khxs;
+                selectedRow["是否满足抗滑移稳定验算"] = result2;
+
+                selectedRow["总抗倾覆力"] = zkqfl;
+                selectedRow["总倾覆力"] = zqfl;
+                selectedRow["抗倾覆稳定系数"] = kqfxs;
+                selectedRow["是否满足抗倾覆稳定验算"] = result3;
+            }
+            string savepath = "";
+            using (SaveFileDialog saveFileDialog = new SaveFileDialog())
+            {
+                saveFileDialog.Title = "请选择保存路径";
+                saveFileDialog.Filter = "Excel Files|*.xlsx";
+                if (saveFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    savepath = saveFileDialog.FileName;
+                }
+                ExportDataTableToExcel(exceldata1, savepath);
+                MessageBox.Show("导出成功");
+            }
+        }
+
+        static void ExportDataTableToExcel(DataTable dataTable, string exportPath)
+        {
+            using (var workbook = new XLWorkbook())
+            {
+                var worksheet = workbook.Worksheets.Add(dataTable);
+                workbook.SaveAs(exportPath);
+            }
         }
     }
 }

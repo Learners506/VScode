@@ -227,55 +227,56 @@
             this.textBoxJCZZ3 = new System.Windows.Forms.TextBox();
             this.label72 = new System.Windows.Forms.Label();
             this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.label79 = new System.Windows.Forms.Label();
-            this.textBox25JBFY = new System.Windows.Forms.TextBox();
-            this.label80 = new System.Windows.Forms.Label();
-            this.textBox50JBFY = new System.Windows.Forms.TextBox();
-            this.groupBox23 = new System.Windows.Forms.GroupBox();
-            this.label81 = new System.Windows.Forms.Label();
-            this.textBoxFZXS = new System.Windows.Forms.TextBox();
-            this.label82 = new System.Windows.Forms.Label();
-            this.textBoxFYTXXS = new System.Windows.Forms.TextBox();
-            this.label83 = new System.Windows.Forms.Label();
-            this.textBoxFXTXXS = new System.Windows.Forms.TextBox();
-            this.label84 = new System.Windows.Forms.Label();
-            this.textBoxCZHLCD = new System.Windows.Forms.TextBox();
-            this.label85 = new System.Windows.Forms.Label();
-            this.textBoxPXHLCD = new System.Windows.Forms.TextBox();
-            this.label86 = new System.Windows.Forms.Label();
-            this.textBoxGFBZL = new System.Windows.Forms.TextBox();
-            this.label87 = new System.Windows.Forms.Label();
-            this.textBoxHLZL = new System.Windows.Forms.TextBox();
-            this.label88 = new System.Windows.Forms.Label();
-            this.textBoxHLKD = new System.Windows.Forms.TextBox();
-            this.label89 = new System.Windows.Forms.Label();
-            this.textBoxGBBHXS = new System.Windows.Forms.TextBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.label90 = new System.Windows.Forms.Label();
-            this.textBoxWMGD = new System.Windows.Forms.TextBox();
-            this.groupBox24 = new System.Windows.Forms.GroupBox();
-            this.button3 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
-            this.textBoxHHZ = new System.Windows.Forms.TextBox();
-            this.label91 = new System.Windows.Forms.Label();
-            this.label92 = new System.Windows.Forms.Label();
-            this.textBox25FYHZ = new System.Windows.Forms.TextBox();
-            this.label93 = new System.Windows.Forms.Label();
-            this.textBox25FXHZ = new System.Windows.Forms.TextBox();
-            this.label94 = new System.Windows.Forms.Label();
-            this.textBox50FYHZ = new System.Windows.Forms.TextBox();
-            this.label95 = new System.Windows.Forms.Label();
-            this.textBox50FXHZ = new System.Windows.Forms.TextBox();
-            this.label96 = new System.Windows.Forms.Label();
-            this.textBoxFYSJZ = new System.Windows.Forms.TextBox();
-            this.label97 = new System.Windows.Forms.Label();
-            this.textBoxFXSJZ = new System.Windows.Forms.TextBox();
-            this.label98 = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
+            this.groupBox24 = new System.Windows.Forms.GroupBox();
+            this.textBoxLLSJZ = new System.Windows.Forms.TextBox();
             this.textBoxWJSJZ = new System.Windows.Forms.TextBox();
             this.label99 = new System.Windows.Forms.Label();
-            this.textBoxLLSJZ = new System.Windows.Forms.TextBox();
-            this.label100 = new System.Windows.Forms.Label();
+            this.textBoxFXSJZ = new System.Windows.Forms.TextBox();
+            this.label98 = new System.Windows.Forms.Label();
+            this.textBoxFYSJZ = new System.Windows.Forms.TextBox();
+            this.label97 = new System.Windows.Forms.Label();
+            this.textBox50FXHZ = new System.Windows.Forms.TextBox();
+            this.label96 = new System.Windows.Forms.Label();
+            this.textBox50FYHZ = new System.Windows.Forms.TextBox();
+            this.label95 = new System.Windows.Forms.Label();
+            this.textBox25FXHZ = new System.Windows.Forms.TextBox();
+            this.label94 = new System.Windows.Forms.Label();
+            this.textBox25FYHZ = new System.Windows.Forms.TextBox();
+            this.label93 = new System.Windows.Forms.Label();
+            this.textBoxHHZ = new System.Windows.Forms.TextBox();
+            this.label92 = new System.Windows.Forms.Label();
+            this.label91 = new System.Windows.Forms.Label();
+            this.groupBox23 = new System.Windows.Forms.GroupBox();
             this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.textBoxHLKD = new System.Windows.Forms.TextBox();
+            this.label88 = new System.Windows.Forms.Label();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.textBoxHLZL = new System.Windows.Forms.TextBox();
+            this.label79 = new System.Windows.Forms.Label();
+            this.label87 = new System.Windows.Forms.Label();
+            this.textBoxWMGD = new System.Windows.Forms.TextBox();
+            this.textBoxGFBZL = new System.Windows.Forms.TextBox();
+            this.textBoxGBBHXS = new System.Windows.Forms.TextBox();
+            this.label86 = new System.Windows.Forms.Label();
+            this.label100 = new System.Windows.Forms.Label();
+            this.label90 = new System.Windows.Forms.Label();
+            this.textBoxPXHLCD = new System.Windows.Forms.TextBox();
+            this.textBoxFXTXXS = new System.Windows.Forms.TextBox();
+            this.label85 = new System.Windows.Forms.Label();
+            this.label89 = new System.Windows.Forms.Label();
+            this.textBoxCZHLCD = new System.Windows.Forms.TextBox();
+            this.textBoxFYTXXS = new System.Windows.Forms.TextBox();
+            this.label84 = new System.Windows.Forms.Label();
+            this.label83 = new System.Windows.Forms.Label();
+            this.textBoxFZXS = new System.Windows.Forms.TextBox();
+            this.label82 = new System.Windows.Forms.Label();
+            this.textBox50JBFY = new System.Windows.Forms.TextBox();
+            this.label81 = new System.Windows.Forms.Label();
+            this.textBox25JBFY = new System.Windows.Forms.TextBox();
+            this.label80 = new System.Windows.Forms.Label();
+            this.button11 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox8.SuspendLayout();
@@ -303,8 +304,8 @@
             this.groupBox21.SuspendLayout();
             this.groupBox22.SuspendLayout();
             this.tabPage4.SuspendLayout();
-            this.groupBox23.SuspendLayout();
             this.groupBox24.SuspendLayout();
+            this.groupBox23.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -323,6 +324,7 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.button11);
             this.tabPage1.Controls.Add(this.groupBox8);
             this.tabPage1.Controls.Add(this.button2);
             this.tabPage1.Controls.Add(this.button1);
@@ -388,7 +390,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(170, 394);
+            this.button2.Location = new System.Drawing.Point(117, 390);
             this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(57, 28);
@@ -399,7 +401,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(61, 394);
+            this.button1.Location = new System.Drawing.Point(30, 390);
             this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(62, 28);
@@ -2364,37 +2366,196 @@
             this.tabPage4.Text = "彩钢瓦屋面光伏支架基础效应力计算";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
-            // label79
+            // button10
             // 
-            this.label79.AutoSize = true;
-            this.label79.Location = new System.Drawing.Point(16, 28);
-            this.label79.Name = "label79";
-            this.label79.Size = new System.Drawing.Size(107, 12);
-            this.label79.TabIndex = 0;
-            this.label79.Text = "25年基本风压(kPa)";
+            this.button10.Location = new System.Drawing.Point(404, 408);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(69, 23);
+            this.button10.TabIndex = 4;
+            this.button10.Text = "取消";
+            this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
-            // textBox25JBFY
+            // button3
             // 
-            this.textBox25JBFY.Location = new System.Drawing.Point(153, 22);
-            this.textBox25JBFY.Name = "textBox25JBFY";
-            this.textBox25JBFY.Size = new System.Drawing.Size(61, 21);
-            this.textBox25JBFY.TabIndex = 1;
+            this.button3.Location = new System.Drawing.Point(311, 408);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(69, 23);
+            this.button3.TabIndex = 4;
+            this.button3.Text = "计算";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
-            // label80
+            // groupBox24
             // 
-            this.label80.AutoSize = true;
-            this.label80.Location = new System.Drawing.Point(16, 56);
-            this.label80.Name = "label80";
-            this.label80.Size = new System.Drawing.Size(107, 12);
-            this.label80.TabIndex = 0;
-            this.label80.Text = "50年基本风压(kPa)";
+            this.groupBox24.Controls.Add(this.textBoxLLSJZ);
+            this.groupBox24.Controls.Add(this.textBoxWJSJZ);
+            this.groupBox24.Controls.Add(this.label99);
+            this.groupBox24.Controls.Add(this.textBoxFXSJZ);
+            this.groupBox24.Controls.Add(this.label98);
+            this.groupBox24.Controls.Add(this.textBoxFYSJZ);
+            this.groupBox24.Controls.Add(this.label97);
+            this.groupBox24.Controls.Add(this.textBox50FXHZ);
+            this.groupBox24.Controls.Add(this.label96);
+            this.groupBox24.Controls.Add(this.textBox50FYHZ);
+            this.groupBox24.Controls.Add(this.label95);
+            this.groupBox24.Controls.Add(this.textBox25FXHZ);
+            this.groupBox24.Controls.Add(this.label94);
+            this.groupBox24.Controls.Add(this.textBox25FYHZ);
+            this.groupBox24.Controls.Add(this.label93);
+            this.groupBox24.Controls.Add(this.textBoxHHZ);
+            this.groupBox24.Controls.Add(this.label92);
+            this.groupBox24.Controls.Add(this.label91);
+            this.groupBox24.Location = new System.Drawing.Point(274, 12);
+            this.groupBox24.Name = "groupBox24";
+            this.groupBox24.Size = new System.Drawing.Size(270, 272);
+            this.groupBox24.TabIndex = 3;
+            this.groupBox24.TabStop = false;
+            this.groupBox24.Text = "计算结果参数";
             // 
-            // textBox50JBFY
+            // textBoxLLSJZ
             // 
-            this.textBox50JBFY.Location = new System.Drawing.Point(153, 53);
-            this.textBox50JBFY.Name = "textBox50JBFY";
-            this.textBox50JBFY.Size = new System.Drawing.Size(61, 21);
-            this.textBox50JBFY.TabIndex = 1;
+            this.textBoxLLSJZ.Location = new System.Drawing.Point(191, 235);
+            this.textBoxLLSJZ.Name = "textBoxLLSJZ";
+            this.textBoxLLSJZ.Size = new System.Drawing.Size(61, 21);
+            this.textBoxLLSJZ.TabIndex = 1;
+            // 
+            // textBoxWJSJZ
+            // 
+            this.textBoxWJSJZ.Location = new System.Drawing.Point(191, 207);
+            this.textBoxWJSJZ.Name = "textBoxWJSJZ";
+            this.textBoxWJSJZ.Size = new System.Drawing.Size(61, 21);
+            this.textBoxWJSJZ.TabIndex = 1;
+            // 
+            // label99
+            // 
+            this.label99.AutoSize = true;
+            this.label99.Location = new System.Drawing.Point(14, 241);
+            this.label99.Name = "label99";
+            this.label99.Size = new System.Drawing.Size(173, 12);
+            this.label99.TabIndex = 0;
+            this.label99.Text = "单个夹具所受拉力设计值(kN/m)";
+            // 
+            // textBoxFXSJZ
+            // 
+            this.textBoxFXSJZ.Location = new System.Drawing.Point(191, 181);
+            this.textBoxFXSJZ.Name = "textBoxFXSJZ";
+            this.textBoxFXSJZ.Size = new System.Drawing.Size(61, 21);
+            this.textBoxFXSJZ.TabIndex = 1;
+            // 
+            // label98
+            // 
+            this.label98.AutoSize = true;
+            this.label98.Location = new System.Drawing.Point(14, 213);
+            this.label98.Name = "label98";
+            this.label98.Size = new System.Drawing.Size(149, 12);
+            this.label98.TabIndex = 0;
+            this.label98.Text = "横梁所受弯矩设计值(kN/m)";
+            // 
+            // textBoxFYSJZ
+            // 
+            this.textBoxFYSJZ.Location = new System.Drawing.Point(191, 154);
+            this.textBoxFYSJZ.Name = "textBoxFYSJZ";
+            this.textBoxFYSJZ.Size = new System.Drawing.Size(61, 21);
+            this.textBoxFYSJZ.TabIndex = 1;
+            // 
+            // label97
+            // 
+            this.label97.AutoSize = true;
+            this.label97.Location = new System.Drawing.Point(14, 187);
+            this.label97.Name = "label97";
+            this.label97.Size = new System.Drawing.Size(173, 12);
+            this.label97.TabIndex = 0;
+            this.label97.Text = "横梁风吸基本工况设计值(kN/m)";
+            // 
+            // textBox50FXHZ
+            // 
+            this.textBox50FXHZ.Location = new System.Drawing.Point(191, 127);
+            this.textBox50FXHZ.Name = "textBox50FXHZ";
+            this.textBox50FXHZ.Size = new System.Drawing.Size(61, 21);
+            this.textBox50FXHZ.TabIndex = 1;
+            // 
+            // label96
+            // 
+            this.label96.AutoSize = true;
+            this.label96.Location = new System.Drawing.Point(14, 160);
+            this.label96.Name = "label96";
+            this.label96.Size = new System.Drawing.Size(173, 12);
+            this.label96.TabIndex = 0;
+            this.label96.Text = "横梁风压基本工况设计值(kN/m)";
+            // 
+            // textBox50FYHZ
+            // 
+            this.textBox50FYHZ.Location = new System.Drawing.Point(191, 100);
+            this.textBox50FYHZ.Name = "textBox50FYHZ";
+            this.textBox50FYHZ.Size = new System.Drawing.Size(61, 21);
+            this.textBox50FYHZ.TabIndex = 1;
+            // 
+            // label95
+            // 
+            this.label95.AutoSize = true;
+            this.label95.Location = new System.Drawing.Point(14, 133);
+            this.label95.Name = "label95";
+            this.label95.Size = new System.Drawing.Size(161, 12);
+            this.label95.TabIndex = 0;
+            this.label95.Text = "横梁所受50年风吸荷载(kN/m)";
+            // 
+            // textBox25FXHZ
+            // 
+            this.textBox25FXHZ.Location = new System.Drawing.Point(191, 73);
+            this.textBox25FXHZ.Name = "textBox25FXHZ";
+            this.textBox25FXHZ.Size = new System.Drawing.Size(61, 21);
+            this.textBox25FXHZ.TabIndex = 1;
+            // 
+            // label94
+            // 
+            this.label94.AutoSize = true;
+            this.label94.Location = new System.Drawing.Point(14, 106);
+            this.label94.Name = "label94";
+            this.label94.Size = new System.Drawing.Size(161, 12);
+            this.label94.TabIndex = 0;
+            this.label94.Text = "横梁所受50年风压荷载(kN/m)";
+            // 
+            // textBox25FYHZ
+            // 
+            this.textBox25FYHZ.Location = new System.Drawing.Point(191, 46);
+            this.textBox25FYHZ.Name = "textBox25FYHZ";
+            this.textBox25FYHZ.Size = new System.Drawing.Size(61, 21);
+            this.textBox25FYHZ.TabIndex = 1;
+            // 
+            // label93
+            // 
+            this.label93.AutoSize = true;
+            this.label93.Location = new System.Drawing.Point(14, 79);
+            this.label93.Name = "label93";
+            this.label93.Size = new System.Drawing.Size(161, 12);
+            this.label93.TabIndex = 0;
+            this.label93.Text = "横梁所受25年风吸荷载(kN/m)";
+            // 
+            // textBoxHHZ
+            // 
+            this.textBoxHHZ.Location = new System.Drawing.Point(191, 19);
+            this.textBoxHHZ.Name = "textBoxHHZ";
+            this.textBoxHHZ.Size = new System.Drawing.Size(61, 21);
+            this.textBoxHHZ.TabIndex = 1;
+            // 
+            // label92
+            // 
+            this.label92.AutoSize = true;
+            this.label92.Location = new System.Drawing.Point(14, 52);
+            this.label92.Name = "label92";
+            this.label92.Size = new System.Drawing.Size(161, 12);
+            this.label92.TabIndex = 0;
+            this.label92.Text = "横梁所受25年风压荷载(kN/m)";
+            // 
+            // label91
+            // 
+            this.label91.AutoSize = true;
+            this.label91.Location = new System.Drawing.Point(14, 25);
+            this.label91.Name = "label91";
+            this.label91.Size = new System.Drawing.Size(125, 12);
+            this.label91.TabIndex = 0;
+            this.label91.Text = "横梁所受恒荷载(kN/m)";
             // 
             // groupBox23
             // 
@@ -2432,14 +2593,183 @@
             this.groupBox23.TabStop = false;
             this.groupBox23.Text = "输入参数";
             // 
-            // label81
+            // comboBox4
             // 
-            this.label81.AutoSize = true;
-            this.label81.Location = new System.Drawing.Point(16, 83);
-            this.label81.Name = "label81";
-            this.label81.Size = new System.Drawing.Size(53, 12);
-            this.label81.TabIndex = 0;
-            this.label81.Text = "风振系数";
+            this.comboBox4.FormattingEnabled = true;
+            this.comboBox4.Items.AddRange(new object[] {
+            "A",
+            "B",
+            "C",
+            "D"});
+            this.comboBox4.Location = new System.Drawing.Point(153, 214);
+            this.comboBox4.Name = "comboBox4";
+            this.comboBox4.Size = new System.Drawing.Size(61, 20);
+            this.comboBox4.TabIndex = 3;
+            this.comboBox4.Text = "B";
+            // 
+            // textBoxHLKD
+            // 
+            this.textBoxHLKD.Location = new System.Drawing.Point(153, 383);
+            this.textBoxHLKD.Name = "textBoxHLKD";
+            this.textBoxHLKD.Size = new System.Drawing.Size(61, 21);
+            this.textBoxHLKD.TabIndex = 1;
+            // 
+            // label88
+            // 
+            this.label88.AutoSize = true;
+            this.label88.Location = new System.Drawing.Point(15, 386);
+            this.label88.Name = "label88";
+            this.label88.Size = new System.Drawing.Size(71, 12);
+            this.label88.TabIndex = 0;
+            this.label88.Text = "横梁跨度(m)";
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(18, 164);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(168, 16);
+            this.checkBox1.TabIndex = 2;
+            this.checkBox1.Text = "是否自动计算高度变化系数";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            // 
+            // textBoxHLZL
+            // 
+            this.textBoxHLZL.Location = new System.Drawing.Point(153, 356);
+            this.textBoxHLZL.Name = "textBoxHLZL";
+            this.textBoxHLZL.Size = new System.Drawing.Size(61, 21);
+            this.textBoxHLZL.TabIndex = 1;
+            // 
+            // label79
+            // 
+            this.label79.AutoSize = true;
+            this.label79.Location = new System.Drawing.Point(16, 28);
+            this.label79.Name = "label79";
+            this.label79.Size = new System.Drawing.Size(107, 12);
+            this.label79.TabIndex = 0;
+            this.label79.Text = "25年基本风压(kPa)";
+            // 
+            // label87
+            // 
+            this.label87.AutoSize = true;
+            this.label87.Location = new System.Drawing.Point(15, 359);
+            this.label87.Name = "label87";
+            this.label87.Size = new System.Drawing.Size(89, 12);
+            this.label87.TabIndex = 0;
+            this.label87.Text = "横梁重量(kg/m)";
+            // 
+            // textBoxWMGD
+            // 
+            this.textBoxWMGD.Location = new System.Drawing.Point(153, 187);
+            this.textBoxWMGD.Name = "textBoxWMGD";
+            this.textBoxWMGD.Size = new System.Drawing.Size(61, 21);
+            this.textBoxWMGD.TabIndex = 1;
+            // 
+            // textBoxGFBZL
+            // 
+            this.textBoxGFBZL.Location = new System.Drawing.Point(153, 329);
+            this.textBoxGFBZL.Name = "textBoxGFBZL";
+            this.textBoxGFBZL.Size = new System.Drawing.Size(61, 21);
+            this.textBoxGFBZL.TabIndex = 1;
+            // 
+            // textBoxGBBHXS
+            // 
+            this.textBoxGBBHXS.Location = new System.Drawing.Point(153, 247);
+            this.textBoxGBBHXS.Name = "textBoxGBBHXS";
+            this.textBoxGBBHXS.Size = new System.Drawing.Size(61, 21);
+            this.textBoxGBBHXS.TabIndex = 1;
+            // 
+            // label86
+            // 
+            this.label86.AutoSize = true;
+            this.label86.Location = new System.Drawing.Point(15, 332);
+            this.label86.Name = "label86";
+            this.label86.Size = new System.Drawing.Size(89, 12);
+            this.label86.TabIndex = 0;
+            this.label86.Text = "光伏板重量(kg)";
+            // 
+            // label100
+            // 
+            this.label100.AutoSize = true;
+            this.label100.Location = new System.Drawing.Point(43, 217);
+            this.label100.Name = "label100";
+            this.label100.Size = new System.Drawing.Size(65, 12);
+            this.label100.TabIndex = 0;
+            this.label100.Text = "粗糙度类别";
+            // 
+            // label90
+            // 
+            this.label90.AutoSize = true;
+            this.label90.Location = new System.Drawing.Point(43, 190);
+            this.label90.Name = "label90";
+            this.label90.Size = new System.Drawing.Size(71, 12);
+            this.label90.TabIndex = 0;
+            this.label90.Text = "屋面高度(m)";
+            // 
+            // textBoxPXHLCD
+            // 
+            this.textBoxPXHLCD.Location = new System.Drawing.Point(153, 302);
+            this.textBoxPXHLCD.Name = "textBoxPXHLCD";
+            this.textBoxPXHLCD.Size = new System.Drawing.Size(61, 21);
+            this.textBoxPXHLCD.TabIndex = 1;
+            // 
+            // textBoxFXTXXS
+            // 
+            this.textBoxFXTXXS.Location = new System.Drawing.Point(153, 134);
+            this.textBoxFXTXXS.Name = "textBoxFXTXXS";
+            this.textBoxFXTXXS.Size = new System.Drawing.Size(61, 21);
+            this.textBoxFXTXXS.TabIndex = 1;
+            // 
+            // label85
+            // 
+            this.label85.AutoSize = true;
+            this.label85.Location = new System.Drawing.Point(15, 305);
+            this.label85.Name = "label85";
+            this.label85.Size = new System.Drawing.Size(131, 12);
+            this.label85.TabIndex = 0;
+            this.label85.Text = "光伏板平行横梁长度(m)";
+            // 
+            // label89
+            // 
+            this.label89.AutoSize = true;
+            this.label89.Location = new System.Drawing.Point(16, 250);
+            this.label89.Name = "label89";
+            this.label89.Size = new System.Drawing.Size(101, 12);
+            this.label89.TabIndex = 0;
+            this.label89.Text = "风压高度变化系数";
+            // 
+            // textBoxCZHLCD
+            // 
+            this.textBoxCZHLCD.Location = new System.Drawing.Point(153, 275);
+            this.textBoxCZHLCD.Name = "textBoxCZHLCD";
+            this.textBoxCZHLCD.Size = new System.Drawing.Size(61, 21);
+            this.textBoxCZHLCD.TabIndex = 1;
+            // 
+            // textBoxFYTXXS
+            // 
+            this.textBoxFYTXXS.Location = new System.Drawing.Point(153, 107);
+            this.textBoxFYTXXS.Name = "textBoxFYTXXS";
+            this.textBoxFYTXXS.Size = new System.Drawing.Size(61, 21);
+            this.textBoxFYTXXS.TabIndex = 1;
+            // 
+            // label84
+            // 
+            this.label84.AutoSize = true;
+            this.label84.Location = new System.Drawing.Point(15, 278);
+            this.label84.Name = "label84";
+            this.label84.Size = new System.Drawing.Size(131, 12);
+            this.label84.TabIndex = 0;
+            this.label84.Text = "光伏板垂直横梁长度(m)";
+            // 
+            // label83
+            // 
+            this.label83.AutoSize = true;
+            this.label83.Location = new System.Drawing.Point(16, 137);
+            this.label83.Name = "label83";
+            this.label83.Size = new System.Drawing.Size(77, 12);
+            this.label83.TabIndex = 0;
+            this.label83.Text = "风吸体型系数";
             // 
             // textBoxFZXS
             // 
@@ -2457,365 +2787,47 @@
             this.label82.TabIndex = 0;
             this.label82.Text = "风压体型系数";
             // 
-            // textBoxFYTXXS
-            // 
-            this.textBoxFYTXXS.Location = new System.Drawing.Point(153, 107);
-            this.textBoxFYTXXS.Name = "textBoxFYTXXS";
-            this.textBoxFYTXXS.Size = new System.Drawing.Size(61, 21);
-            this.textBoxFYTXXS.TabIndex = 1;
-            // 
-            // label83
-            // 
-            this.label83.AutoSize = true;
-            this.label83.Location = new System.Drawing.Point(16, 137);
-            this.label83.Name = "label83";
-            this.label83.Size = new System.Drawing.Size(77, 12);
-            this.label83.TabIndex = 0;
-            this.label83.Text = "风吸体型系数";
-            // 
-            // textBoxFXTXXS
-            // 
-            this.textBoxFXTXXS.Location = new System.Drawing.Point(153, 134);
-            this.textBoxFXTXXS.Name = "textBoxFXTXXS";
-            this.textBoxFXTXXS.Size = new System.Drawing.Size(61, 21);
-            this.textBoxFXTXXS.TabIndex = 1;
-            // 
-            // label84
-            // 
-            this.label84.AutoSize = true;
-            this.label84.Location = new System.Drawing.Point(15, 278);
-            this.label84.Name = "label84";
-            this.label84.Size = new System.Drawing.Size(131, 12);
-            this.label84.TabIndex = 0;
-            this.label84.Text = "光伏板垂直横梁长度(m)";
-            // 
-            // textBoxCZHLCD
-            // 
-            this.textBoxCZHLCD.Location = new System.Drawing.Point(153, 275);
-            this.textBoxCZHLCD.Name = "textBoxCZHLCD";
-            this.textBoxCZHLCD.Size = new System.Drawing.Size(61, 21);
-            this.textBoxCZHLCD.TabIndex = 1;
-            // 
-            // label85
-            // 
-            this.label85.AutoSize = true;
-            this.label85.Location = new System.Drawing.Point(15, 305);
-            this.label85.Name = "label85";
-            this.label85.Size = new System.Drawing.Size(131, 12);
-            this.label85.TabIndex = 0;
-            this.label85.Text = "光伏板平行横梁长度(m)";
-            // 
-            // textBoxPXHLCD
-            // 
-            this.textBoxPXHLCD.Location = new System.Drawing.Point(153, 302);
-            this.textBoxPXHLCD.Name = "textBoxPXHLCD";
-            this.textBoxPXHLCD.Size = new System.Drawing.Size(61, 21);
-            this.textBoxPXHLCD.TabIndex = 1;
-            // 
-            // label86
-            // 
-            this.label86.AutoSize = true;
-            this.label86.Location = new System.Drawing.Point(15, 332);
-            this.label86.Name = "label86";
-            this.label86.Size = new System.Drawing.Size(89, 12);
-            this.label86.TabIndex = 0;
-            this.label86.Text = "光伏板重量(kg)";
-            // 
-            // textBoxGFBZL
-            // 
-            this.textBoxGFBZL.Location = new System.Drawing.Point(153, 329);
-            this.textBoxGFBZL.Name = "textBoxGFBZL";
-            this.textBoxGFBZL.Size = new System.Drawing.Size(61, 21);
-            this.textBoxGFBZL.TabIndex = 1;
-            // 
-            // label87
-            // 
-            this.label87.AutoSize = true;
-            this.label87.Location = new System.Drawing.Point(15, 359);
-            this.label87.Name = "label87";
-            this.label87.Size = new System.Drawing.Size(89, 12);
-            this.label87.TabIndex = 0;
-            this.label87.Text = "横梁重量(kg/m)";
-            // 
-            // textBoxHLZL
-            // 
-            this.textBoxHLZL.Location = new System.Drawing.Point(153, 356);
-            this.textBoxHLZL.Name = "textBoxHLZL";
-            this.textBoxHLZL.Size = new System.Drawing.Size(61, 21);
-            this.textBoxHLZL.TabIndex = 1;
-            // 
-            // label88
-            // 
-            this.label88.AutoSize = true;
-            this.label88.Location = new System.Drawing.Point(15, 386);
-            this.label88.Name = "label88";
-            this.label88.Size = new System.Drawing.Size(71, 12);
-            this.label88.TabIndex = 0;
-            this.label88.Text = "横梁跨度(m)";
-            // 
-            // textBoxHLKD
-            // 
-            this.textBoxHLKD.Location = new System.Drawing.Point(153, 383);
-            this.textBoxHLKD.Name = "textBoxHLKD";
-            this.textBoxHLKD.Size = new System.Drawing.Size(61, 21);
-            this.textBoxHLKD.TabIndex = 1;
-            // 
-            // label89
-            // 
-            this.label89.AutoSize = true;
-            this.label89.Location = new System.Drawing.Point(16, 250);
-            this.label89.Name = "label89";
-            this.label89.Size = new System.Drawing.Size(101, 12);
-            this.label89.TabIndex = 0;
-            this.label89.Text = "风压高度变化系数";
-            // 
-            // textBoxGBBHXS
-            // 
-            this.textBoxGBBHXS.Location = new System.Drawing.Point(153, 247);
-            this.textBoxGBBHXS.Name = "textBoxGBBHXS";
-            this.textBoxGBBHXS.Size = new System.Drawing.Size(61, 21);
-            this.textBoxGBBHXS.TabIndex = 1;
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(18, 164);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(168, 16);
-            this.checkBox1.TabIndex = 2;
-            this.checkBox1.Text = "是否自动计算高度变化系数";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
-            // 
-            // label90
-            // 
-            this.label90.AutoSize = true;
-            this.label90.Location = new System.Drawing.Point(43, 190);
-            this.label90.Name = "label90";
-            this.label90.Size = new System.Drawing.Size(71, 12);
-            this.label90.TabIndex = 0;
-            this.label90.Text = "屋面高度(m)";
-            // 
-            // textBoxWMGD
-            // 
-            this.textBoxWMGD.Location = new System.Drawing.Point(153, 187);
-            this.textBoxWMGD.Name = "textBoxWMGD";
-            this.textBoxWMGD.Size = new System.Drawing.Size(61, 21);
-            this.textBoxWMGD.TabIndex = 1;
-            // 
-            // groupBox24
-            // 
-            this.groupBox24.Controls.Add(this.textBoxLLSJZ);
-            this.groupBox24.Controls.Add(this.textBoxWJSJZ);
-            this.groupBox24.Controls.Add(this.label99);
-            this.groupBox24.Controls.Add(this.textBoxFXSJZ);
-            this.groupBox24.Controls.Add(this.label98);
-            this.groupBox24.Controls.Add(this.textBoxFYSJZ);
-            this.groupBox24.Controls.Add(this.label97);
-            this.groupBox24.Controls.Add(this.textBox50FXHZ);
-            this.groupBox24.Controls.Add(this.label96);
-            this.groupBox24.Controls.Add(this.textBox50FYHZ);
-            this.groupBox24.Controls.Add(this.label95);
-            this.groupBox24.Controls.Add(this.textBox25FXHZ);
-            this.groupBox24.Controls.Add(this.label94);
-            this.groupBox24.Controls.Add(this.textBox25FYHZ);
-            this.groupBox24.Controls.Add(this.label93);
-            this.groupBox24.Controls.Add(this.textBoxHHZ);
-            this.groupBox24.Controls.Add(this.label92);
-            this.groupBox24.Controls.Add(this.label91);
-            this.groupBox24.Location = new System.Drawing.Point(274, 12);
-            this.groupBox24.Name = "groupBox24";
-            this.groupBox24.Size = new System.Drawing.Size(270, 272);
-            this.groupBox24.TabIndex = 3;
-            this.groupBox24.TabStop = false;
-            this.groupBox24.Text = "计算结果参数";
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(311, 408);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(69, 23);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "计算";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // button10
-            // 
-            this.button10.Location = new System.Drawing.Point(404, 408);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(69, 23);
-            this.button10.TabIndex = 4;
-            this.button10.Text = "取消";
-            this.button10.UseVisualStyleBackColor = true;
-            this.button10.Click += new System.EventHandler(this.button10_Click);
-            // 
-            // textBoxHHZ
-            // 
-            this.textBoxHHZ.Location = new System.Drawing.Point(191, 19);
-            this.textBoxHHZ.Name = "textBoxHHZ";
-            this.textBoxHHZ.Size = new System.Drawing.Size(61, 21);
-            this.textBoxHHZ.TabIndex = 1;
-            // 
-            // label91
-            // 
-            this.label91.AutoSize = true;
-            this.label91.Location = new System.Drawing.Point(14, 25);
-            this.label91.Name = "label91";
-            this.label91.Size = new System.Drawing.Size(125, 12);
-            this.label91.TabIndex = 0;
-            this.label91.Text = "横梁所受恒荷载(kN/m)";
-            // 
-            // label92
-            // 
-            this.label92.AutoSize = true;
-            this.label92.Location = new System.Drawing.Point(14, 52);
-            this.label92.Name = "label92";
-            this.label92.Size = new System.Drawing.Size(161, 12);
-            this.label92.TabIndex = 0;
-            this.label92.Text = "横梁所受25年风压荷载(kN/m)";
-            // 
-            // textBox25FYHZ
-            // 
-            this.textBox25FYHZ.Location = new System.Drawing.Point(191, 46);
-            this.textBox25FYHZ.Name = "textBox25FYHZ";
-            this.textBox25FYHZ.Size = new System.Drawing.Size(61, 21);
-            this.textBox25FYHZ.TabIndex = 1;
-            // 
-            // label93
-            // 
-            this.label93.AutoSize = true;
-            this.label93.Location = new System.Drawing.Point(14, 79);
-            this.label93.Name = "label93";
-            this.label93.Size = new System.Drawing.Size(161, 12);
-            this.label93.TabIndex = 0;
-            this.label93.Text = "横梁所受25年风吸荷载(kN/m)";
-            // 
-            // textBox25FXHZ
-            // 
-            this.textBox25FXHZ.Location = new System.Drawing.Point(191, 73);
-            this.textBox25FXHZ.Name = "textBox25FXHZ";
-            this.textBox25FXHZ.Size = new System.Drawing.Size(61, 21);
-            this.textBox25FXHZ.TabIndex = 1;
-            // 
-            // label94
-            // 
-            this.label94.AutoSize = true;
-            this.label94.Location = new System.Drawing.Point(14, 106);
-            this.label94.Name = "label94";
-            this.label94.Size = new System.Drawing.Size(161, 12);
-            this.label94.TabIndex = 0;
-            this.label94.Text = "横梁所受50年风压荷载(kN/m)";
-            // 
-            // textBox50FYHZ
-            // 
-            this.textBox50FYHZ.Location = new System.Drawing.Point(191, 100);
-            this.textBox50FYHZ.Name = "textBox50FYHZ";
-            this.textBox50FYHZ.Size = new System.Drawing.Size(61, 21);
-            this.textBox50FYHZ.TabIndex = 1;
-            // 
-            // label95
-            // 
-            this.label95.AutoSize = true;
-            this.label95.Location = new System.Drawing.Point(14, 133);
-            this.label95.Name = "label95";
-            this.label95.Size = new System.Drawing.Size(161, 12);
-            this.label95.TabIndex = 0;
-            this.label95.Text = "横梁所受50年风吸荷载(kN/m)";
-            // 
-            // textBox50FXHZ
-            // 
-            this.textBox50FXHZ.Location = new System.Drawing.Point(191, 127);
-            this.textBox50FXHZ.Name = "textBox50FXHZ";
-            this.textBox50FXHZ.Size = new System.Drawing.Size(61, 21);
-            this.textBox50FXHZ.TabIndex = 1;
-            // 
-            // label96
-            // 
-            this.label96.AutoSize = true;
-            this.label96.Location = new System.Drawing.Point(14, 160);
-            this.label96.Name = "label96";
-            this.label96.Size = new System.Drawing.Size(173, 12);
-            this.label96.TabIndex = 0;
-            this.label96.Text = "横梁风压基本工况设计值(kN/m)";
-            // 
-            // textBoxFYSJZ
-            // 
-            this.textBoxFYSJZ.Location = new System.Drawing.Point(191, 154);
-            this.textBoxFYSJZ.Name = "textBoxFYSJZ";
-            this.textBoxFYSJZ.Size = new System.Drawing.Size(61, 21);
-            this.textBoxFYSJZ.TabIndex = 1;
-            // 
-            // label97
-            // 
-            this.label97.AutoSize = true;
-            this.label97.Location = new System.Drawing.Point(14, 187);
-            this.label97.Name = "label97";
-            this.label97.Size = new System.Drawing.Size(173, 12);
-            this.label97.TabIndex = 0;
-            this.label97.Text = "横梁风吸基本工况设计值(kN/m)";
-            // 
-            // textBoxFXSJZ
-            // 
-            this.textBoxFXSJZ.Location = new System.Drawing.Point(191, 181);
-            this.textBoxFXSJZ.Name = "textBoxFXSJZ";
-            this.textBoxFXSJZ.Size = new System.Drawing.Size(61, 21);
-            this.textBoxFXSJZ.TabIndex = 1;
-            // 
-            // label98
-            // 
-            this.label98.AutoSize = true;
-            this.label98.Location = new System.Drawing.Point(14, 213);
-            this.label98.Name = "label98";
-            this.label98.Size = new System.Drawing.Size(149, 12);
-            this.label98.TabIndex = 0;
-            this.label98.Text = "横梁所受弯矩设计值(kN/m)";
-            // 
-            // textBoxWJSJZ
-            // 
-            this.textBoxWJSJZ.Location = new System.Drawing.Point(191, 207);
-            this.textBoxWJSJZ.Name = "textBoxWJSJZ";
-            this.textBoxWJSJZ.Size = new System.Drawing.Size(61, 21);
-            this.textBoxWJSJZ.TabIndex = 1;
-            // 
-            // label99
-            // 
-            this.label99.AutoSize = true;
-            this.label99.Location = new System.Drawing.Point(14, 241);
-            this.label99.Name = "label99";
-            this.label99.Size = new System.Drawing.Size(173, 12);
-            this.label99.TabIndex = 0;
-            this.label99.Text = "单个夹具所受拉力设计值(kN/m)";
-            // 
-            // textBoxLLSJZ
-            // 
-            this.textBoxLLSJZ.Location = new System.Drawing.Point(191, 235);
-            this.textBoxLLSJZ.Name = "textBoxLLSJZ";
-            this.textBoxLLSJZ.Size = new System.Drawing.Size(61, 21);
-            this.textBoxLLSJZ.TabIndex = 1;
-            // 
-            // label100
-            // 
-            this.label100.AutoSize = true;
-            this.label100.Location = new System.Drawing.Point(43, 217);
-            this.label100.Name = "label100";
-            this.label100.Size = new System.Drawing.Size(65, 12);
-            this.label100.TabIndex = 0;
-            this.label100.Text = "粗糙度类别";
-            // 
-            // comboBox4
-            // 
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Items.AddRange(new object[] {
-            "A",
-            "B",
-            "C",
-            "D"});
-            this.comboBox4.Location = new System.Drawing.Point(153, 214);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(61, 20);
-            this.comboBox4.TabIndex = 3;
-            this.comboBox4.Text = "B";
+            // textBox50JBFY
+            // 
+            this.textBox50JBFY.Location = new System.Drawing.Point(153, 53);
+            this.textBox50JBFY.Name = "textBox50JBFY";
+            this.textBox50JBFY.Size = new System.Drawing.Size(61, 21);
+            this.textBox50JBFY.TabIndex = 1;
+            // 
+            // label81
+            // 
+            this.label81.AutoSize = true;
+            this.label81.Location = new System.Drawing.Point(16, 83);
+            this.label81.Name = "label81";
+            this.label81.Size = new System.Drawing.Size(53, 12);
+            this.label81.TabIndex = 0;
+            this.label81.Text = "风振系数";
+            // 
+            // textBox25JBFY
+            // 
+            this.textBox25JBFY.Location = new System.Drawing.Point(153, 22);
+            this.textBox25JBFY.Name = "textBox25JBFY";
+            this.textBox25JBFY.Size = new System.Drawing.Size(61, 21);
+            this.textBox25JBFY.TabIndex = 1;
+            // 
+            // label80
+            // 
+            this.label80.AutoSize = true;
+            this.label80.Location = new System.Drawing.Point(16, 56);
+            this.label80.Name = "label80";
+            this.label80.Size = new System.Drawing.Size(107, 12);
+            this.label80.TabIndex = 0;
+            this.label80.Text = "50年基本风压(kPa)";
+            // 
+            // button11
+            // 
+            this.button11.Location = new System.Drawing.Point(207, 390);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(61, 28);
+            this.button11.TabIndex = 7;
+            this.button11.Text = "导出结果";
+            this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
             // Form1
             // 
@@ -2823,10 +2835,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(787, 465);
             this.Controls.Add(this.tabControl1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
-            this.Text = "基础稳定验算";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "屋面光伏基础计算软件V1.0";
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.groupBox8.ResumeLayout(false);
@@ -2876,10 +2890,10 @@
             this.groupBox22.ResumeLayout(false);
             this.groupBox22.PerformLayout();
             this.tabPage4.ResumeLayout(false);
-            this.groupBox23.ResumeLayout(false);
-            this.groupBox23.PerformLayout();
             this.groupBox24.ResumeLayout(false);
             this.groupBox24.PerformLayout();
+            this.groupBox23.ResumeLayout(false);
+            this.groupBox23.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -3133,6 +3147,7 @@
         private System.Windows.Forms.Label label96;
         private System.Windows.Forms.ComboBox comboBox4;
         private System.Windows.Forms.Label label100;
+        private System.Windows.Forms.Button button11;
     }
 }
 

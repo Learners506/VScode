@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\GithubProject\\VScode\\Pillarpiers\\",
+  "WorkspaceRootPath": "E:\\GitHubFile\\VScode\\Pillarpiers\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0461CC8E-E87C-4E25-BDD3-BA986A4EB473}|Pillarpiers.csproj|D:\\GithubProject\\VScode\\Pillarpiers\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0461CC8E-E87C-4E25-BDD3-BA986A4EB473}|Pillarpiers.csproj|E:\\GitHubFile\\VScode\\Pillarpiers\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0461CC8E-E87C-4E25-BDD3-BA986A4EB473}|Pillarpiers.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0461CC8E-E87C-4E25-BDD3-BA986A4EB473}|Pillarpiers.csproj|d:\\githubproject\\vscode\\pillarpiers\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{0461CC8E-E87C-4E25-BDD3-BA986A4EB473}|Pillarpiers.csproj|e:\\githubfile\\vscode\\pillarpiers\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{0461CC8E-E87C-4E25-BDD3-BA986A4EB473}|Pillarpiers.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -18,49 +18,28 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Form1.cs",
-              "DocumentMoniker": "D:\\GithubProject\\VScode\\Pillarpiers\\Form1.cs",
+              "DocumentMoniker": "E:\\GitHubFile\\VScode\\Pillarpiers\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "D:\\GithubProject\\VScode\\Pillarpiers\\Form1.cs",
+              "ToolTip": "E:\\GitHubFile\\VScode\\Pillarpiers\\Form1.cs",
               "RelativeToolTip": "Form1.cs",
-              "ViewState": "AQIAANQBAAAAAAAAAAAwwOgBAAAAAAAA",
+              "ViewState": "AQIAAJgBAAAAAAAAAAAwwCQCAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-24T11:53:05.791Z",
               "EditorCaption": ""
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "Orientation": 0,
-      "VerticalTabListWidth": 256,
-      "FloatingWindowState": {
-        "Id": "c37bf23f-402d-4465-8b75-bd76cf1a3ee1",
-        "Display": 1,
-        "X": 177,
-        "Y": 170,
-        "Width": 1155,
-        "Height": 830,
-        "WindowState": 0
-      },
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
+            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Form1.cs [\u8BBE\u8BA1]",
-              "DocumentMoniker": "D:\\GithubProject\\VScode\\Pillarpiers\\Form1.cs",
+              "DocumentMoniker": "E:\\GitHubFile\\VScode\\Pillarpiers\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "D:\\GithubProject\\VScode\\Pillarpiers\\Form1.cs [\u8BBE\u8BA1]",
+              "ToolTip": "E:\\GitHubFile\\VScode\\Pillarpiers\\Form1.cs [\u8BBE\u8BA1]",
               "RelativeToolTip": "Form1.cs [\u8BBE\u8BA1]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-25T08:29:34.369Z",
