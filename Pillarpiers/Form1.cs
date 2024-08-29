@@ -23,6 +23,8 @@ namespace Pillarpiers
             radioButtonJX.Checked = true;
             textBoxYXBJ1.Enabled = false;
             textBoxYXGD1.Enabled = false;
+            textBoxWMGD.Enabled = false;
+            comboBox4.Enabled = false;
 
             radioButtonJX.CheckedChanged += RadioButton_CheckChanged;
             radioButtonYX.CheckedChanged += RadioButton_CheckChanged;
@@ -396,6 +398,149 @@ namespace Pillarpiers
             {
                 textBoxKQFMZ3.BackColor = Color.Red;
             }
+        }
+
+        // 屋面彩钢瓦计算
+        private void button10_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        // 屋面彩钢瓦开始计算
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if (!AreTextBoxesFilled(textBox25JBFY,textBox50JBFY,textBoxFZXS,textBoxFYTXXS,textBoxFXTXXS,textBoxCZHLCD,textBoxPXHLCD,textBoxGFBZL,textBoxHLZL,textBoxHLKD)) 
+            {
+                return;
+            }
+            if (checkBox1.Checked)
+            {
+                if (!AreTextBoxesFilled(textBoxWMGD))
+                {
+                    return;
+                }
+            }
+            else 
+            {
+                if (!AreTextBoxesFilled(textBoxGBBHXS))
+                {
+                    return;
+                }
+            }
+
+            double 二五年基本分压 = Convert.ToDouble(textBox25JBFY.Text);
+            double 五十年基本分压 = Convert.ToDouble(textBox50JBFY.Text);
+            double 风振系数 = Convert.ToDouble(textBoxFZXS.Text);
+            double 风压体型系数 = Convert.ToDouble(textBoxFYTXXS.Text);
+            double 风吸体型系数 = Convert.ToDouble(textBoxFXTXXS.Text);
+            double 风压高度变化系数 = 0;
+            if (checkBox1.Checked) 
+            { 
+                double 屋面高度 = Convert.ToDouble(textBoxWMGD.Text);
+                string 粗糙度类别 = comboBox4.Text;
+                if (屋面高度 > 30)
+                {
+                    MessageBox.Show("屋面高度大于30m,请手动输入风压高度变化系数", "输入错误", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+                风压高度变化系数 = getgdbhxs(屋面高度, 粗糙度类别);
+                textBoxGBBHXS.Text = 风压高度变化系数.ToString();
+            }
+            else
+            {
+                风压高度变化系数 = Convert.ToDouble(textBoxGBBHXS.Text);
+            }
+            
+            double 光伏垂直横梁长度 = Convert.ToDouble(textBoxCZHLCD.Text);
+            double 光伏平行横梁长度 = Convert.ToDouble(textBoxPXHLCD.Text);
+            double 光伏板重量 = Convert.ToDouble(textBoxGFBZL.Text);
+            double 横梁重量 = Convert.ToDouble(textBoxHLZL.Text);
+            double 横梁跨度 = Convert.ToDouble(textBoxHLKD.Text);
+
+            double 二五年风压标准值 = 二五年基本分压*风振系数*风压高度变化系数*风压体型系数;
+            double 二五年风吸标准值 = 二五年基本分压 * 风振系数 * 风压高度变化系数 * 风吸体型系数;
+            double 五十年风压标准值 = 五十年基本分压 * 风振系数 * 风压高度变化系数 * 风压体型系数;
+            double 五十年风吸标准值 = 五十年基本分压 * 风振系数 * 风压高度变化系数 * 风吸体型系数;
+
+            double 横梁所受恒荷载 = (光伏板重量 * 10 / 1000 / 光伏平行横梁长度) / 2 + 横梁重量 * 10 / 1000;
+            double 横梁所受25年风压荷载 = 二五年风压标准值 * 光伏垂直横梁长度 / 2;
+            double 横梁所受25年风吸荷载 = 二五年风吸标准值 * 光伏垂直横梁长度 / 2;
+            double 横梁所受50年风压荷载 = 五十年风压标准值 * 光伏垂直横梁长度 / 2;
+            double 横梁所受50年风吸荷载 = 五十年风吸标准值 * 光伏垂直横梁长度 / 2;
+
+            double 风压基本工况设计值 = 1.3 * 横梁所受恒荷载 + 1.5 * 横梁所受25年风压荷载;
+            double 风吸基本工况设计值 = 1 * 横梁所受恒荷载 - 1.5 * 横梁所受25年风吸荷载;
+            Console.WriteLine(风压基本工况设计值);
+            Console.WriteLine(横梁跨度);
+            double 横梁所受弯矩值 =风压基本工况设计值*横梁跨度*横梁跨度/8 ;
+            double 单个夹具所受拉力设计值 = 1.5 * 横梁所受50年风吸荷载 * 横梁跨度 - 横梁所受恒荷载 * 横梁跨度;
+
+            textBoxHHZ.Text = 横梁所受恒荷载.ToString();
+            textBox25FYHZ.Text = 横梁所受25年风压荷载.ToString();
+            textBox25FXHZ.Text = 横梁所受25年风吸荷载.ToString();
+            textBox50FYHZ.Text = 横梁所受50年风压荷载.ToString();
+            textBox50FXHZ.Text = 横梁所受50年风吸荷载.ToString();
+            textBoxFYSJZ.Text = 风压基本工况设计值.ToString();
+            textBoxFXSJZ.Text = 风吸基本工况设计值.ToString();
+            textBoxWJSJZ.Text = 横梁所受弯矩值.ToString();
+            textBoxLLSJZ.Text = 单个夹具所受拉力设计值.ToString();
+
+
+
+        }
+        
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox1.Checked)
+            {
+                textBoxWMGD.Enabled = true;
+                comboBox4.Enabled = true;
+            }
+            else
+            {
+                textBoxWMGD.Enabled = false;
+                comboBox4.Enabled = false;
+            }
+        }
+
+        private double getgdbhxs(double wmgd,string ccdlb)
+        {
+            double 高度变化系数 = 0;
+            // 定义已知点和对应的值
+            double[] knownValues = { 0, 5, 10, 15, 20, 30 };
+            double[] correspondingResultsA = { 1.09, 1.09, 1.28, 1.42, 1.52, 1.67 };
+            double[] correspondingResultsB = { 1.00, 1.00, 1.00, 1.13, 1.23, 1.39 };
+            double[] correspondingResultsC = { 0.65, 0.65, 0.65, 0.65, 0.74, 0.88 };
+            double[] correspondingResultsD = { 0.51, 0.51, 0.51, 0.51, 0.51, 0.51 };
+
+            for(int i = 0; i < knownValues.Length - 1; i++)
+            {
+                if (wmgd >= knownValues[i] && wmgd <= knownValues[i + 1])
+                {
+                    if (ccdlb == "A")
+                    {
+                        double t = (wmgd - knownValues[i]) / (knownValues[i + 1] - knownValues[i]);
+                        return correspondingResultsA[i] + t * (correspondingResultsA[i + 1] - correspondingResultsA[i]);
+                    }
+                    else if (ccdlb == "B")
+                    {
+                        double t = (wmgd - knownValues[i]) / (knownValues[i + 1] - knownValues[i]);
+                        return correspondingResultsB[i] + t * (correspondingResultsB[i + 1] - correspondingResultsB[i]);
+                    }
+                    else if (ccdlb == "C")
+                    {
+                        double t = (wmgd - knownValues[i]) / (knownValues[i + 1] - knownValues[i]);
+                        return correspondingResultsC[i] + t * (correspondingResultsC[i + 1] - correspondingResultsC[i]);
+                    }
+                    else if (ccdlb == "D")
+                    {
+                        double t = (wmgd - knownValues[i]) / (knownValues[i + 1] - knownValues[i]);
+                        return correspondingResultsD[i] + t * (correspondingResultsD[i + 1] - correspondingResultsD[i]);
+                    }
+                    
+                }
+            }
+            return 高度变化系数;
         }
     }
 }

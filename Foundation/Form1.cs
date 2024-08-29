@@ -647,7 +647,7 @@ namespace Foundation
             else if (targetValues.Count == 2)
             {
                 double h1 = heightValues[0];
-                double h2 = heightValues[1];
+                double h2 = threshold -h1;
                 double m1 = targetValues[0];
                 double m2 = targetValues[1];
                 if (threshold < h1)
@@ -663,7 +663,7 @@ namespace Foundation
             {
                 double h1 = heightValues[0];
                 double h2 = heightValues[1];
-                double h3 = heightValues[2];
+                double h3 = threshold-h1-h2;
                 double m1 = targetValues[0];
                 double m2 = targetValues[1];
                 double m3 = targetValues[2];
@@ -776,7 +776,10 @@ namespace Foundation
             double 混凝土弹性模量 = Convert.ToDouble(textBoxZDEC.Text);
             double 钢筋弹性模量 = Convert.ToDouble(textBoxES.Text);
             double 模量比值 = 钢筋弹性模量 / 混凝土弹性模量;
-            double 换算截面模量 = Math.PI * 桩外径 * (桩外径 * 桩外径 + 2 * (模量比值 - 1) * 桩身配筋率 * d0 * d0) / 32;
+
+            
+
+            double 换算截面模量 = Math.PI * 桩外径 * (桩外径 * 桩外径 + 2 * (模量比值 - 1) * 桩身配筋率 * d0 * d0) / 32-Math.PI*桩内径*桩内径*桩内径*桩内径/(32*桩外径);
             double 换算截面惯性矩 = 换算截面模量 * d0 / 2;
             double 钢筋面积 = aj * 1000000 * 桩身配筋率;
             double 桩身抗弯刚度 = 0.85 * 混凝土弹性模量 * 换算截面惯性矩 * 1000;
@@ -848,6 +851,8 @@ namespace Foundation
 
 
             // 输出计算书
+            outresult += "\n";
+            outresult += "\n";
             outresult += $"***********************第{computetime}次计算书*******************************\n";
             outresult += "*****用户输入参数*****\n";
             outresult += $"桩外径:{桩外径}m\n";
@@ -894,7 +899,7 @@ namespace Foundation
             outresult += $"钢筋面积As：{钢筋面积}m^2\n";
             outresult += $"柱身抗弯刚度EI：{桩身抗弯刚度}kN*m^2\n";
             outresult += $"柱身计算宽度b0：{桩身计算宽度}m\n";
-            outresult += $"桩的水平变形系数：{桩顶水平位移系数}m^-1\n";
+            outresult += $"桩的水平变形系数：{桩水平变形系数}m^-1\n";
             outresult += $"水平抗力比例系数m：{水平抗力比例系数}MN/m^4\n";
             outresult += "\n";
             outresult += "*****桩顶约束情况*****\n";
@@ -1172,21 +1177,6 @@ namespace Foundation
                 dataGridView3.Rows[i].HeaderCell.Value = (i + 1).ToString();
             }
         }
-
-        //private void UpdateAccumulatedColumn()
-        //{
-        //    // 更新累加列的值
-        //    int accumulatedValue = 0;
-        //    foreach (DataGridViewRow row in dataGridView1.Rows)
-        //    {
-        //        if (int.TryParse(row.Cells["Column6"].Value?.ToString(), out int cellValue))
-        //        {
-        //            accumulatedValue += cellValue;
-        //        }
-        //        row.Cells["Column7"].Value = accumulatedValue;
-        //    }
-        //}
-
         // 删除当前行的数据
         private void button8_Click(object sender, EventArgs e)
         {
@@ -1403,7 +1393,7 @@ namespace Foundation
                 string outputpath = savefiledialog.FileName;
                 using (StreamWriter writer = new StreamWriter(outputpath, true))
                 {
-                    writer.Write(outresult+"\n"+"\n"+"该程序由福建省电力勘测设计院有限公司发电分公司开发\n");
+                    writer.Write(outresult+"\n"+"Designed by Fedi in FUJIAN");
                 }
                 MessageBox.Show("结果已经保存至文件" + outputpath);
             }
