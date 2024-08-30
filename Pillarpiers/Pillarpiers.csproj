@@ -35,6 +35,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>jam_jar_icon_263298.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="ClosedXML, Version=0.102.3.0, Culture=neutral, PublicKeyToken=fd1eb21b62ae805b, processorArchitecture=MSIL">
       <HintPath>packages\ClosedXML.0.102.3\lib\netstandard2.0\ClosedXML.dll</HintPath>
@@ -238,6 +241,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -252,6 +256,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="单立柱柱墩计算参数示意图.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="双立柱及三立柱条形基础稳定验算.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="双立柱条形基础稳定验算.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="三立柱条形基础稳定验算.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="彩光瓦屋面计算示意图.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="jam_jar_icon_263298.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="packages\Fody.6.5.5\build\Fody.targets" Condition="Exists('packages\Fody.6.5.5\build\Fody.targets')" />

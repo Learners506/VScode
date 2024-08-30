@@ -31,6 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button11 = new System.Windows.Forms.Button();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.loadfile1 = new System.Windows.Forms.Button();
@@ -93,6 +95,7 @@
             this.textBoxMCXS1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.groupBox15 = new System.Windows.Forms.GroupBox();
             this.textBoxHWJ2 = new System.Windows.Forms.TextBox();
             this.textBoxQWJ2 = new System.Windows.Forms.TextBox();
@@ -105,10 +108,6 @@
             this.label75 = new System.Windows.Forms.Label();
             this.label74 = new System.Windows.Forms.Label();
             this.label47 = new System.Windows.Forms.Label();
-            this.groupBox16 = new System.Windows.Forms.GroupBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.button6 = new System.Windows.Forms.Button();
-            this.label48 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.groupBox13 = new System.Windows.Forms.GroupBox();
@@ -157,6 +156,7 @@
             this.textBoxJCZZ2 = new System.Windows.Forms.TextBox();
             this.label25 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.groupBox14 = new System.Windows.Forms.GroupBox();
             this.textBoxQWJ3 = new System.Windows.Forms.TextBox();
             this.textBoxHWJ3 = new System.Windows.Forms.TextBox();
@@ -173,10 +173,6 @@
             this.label77 = new System.Windows.Forms.Label();
             this.label76 = new System.Windows.Forms.Label();
             this.label51 = new System.Windows.Forms.Label();
-            this.groupBox17 = new System.Windows.Forms.GroupBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.button7 = new System.Windows.Forms.Button();
-            this.label52 = new System.Windows.Forms.Label();
             this.button8 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
             this.groupBox18 = new System.Windows.Forms.GroupBox();
@@ -227,6 +223,7 @@
             this.textBoxJCZZ3 = new System.Windows.Forms.TextBox();
             this.label72 = new System.Windows.Forms.Label();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.button10 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.groupBox24 = new System.Windows.Forms.GroupBox();
@@ -276,9 +273,11 @@
             this.label81 = new System.Windows.Forms.Label();
             this.textBox25JBFY = new System.Windows.Forms.TextBox();
             this.label80 = new System.Windows.Forms.Label();
-            this.button11 = new System.Windows.Forms.Button();
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox8.SuspendLayout();
             this.groupBox7.SuspendLayout();
             this.groupBox6.SuspendLayout();
@@ -288,24 +287,26 @@
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.tabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.groupBox15.SuspendLayout();
-            this.groupBox16.SuspendLayout();
             this.groupBox13.SuspendLayout();
             this.groupBox11.SuspendLayout();
             this.groupBox12.SuspendLayout();
             this.groupBox10.SuspendLayout();
             this.groupBox9.SuspendLayout();
             this.tabPage3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.groupBox14.SuspendLayout();
-            this.groupBox17.SuspendLayout();
             this.groupBox18.SuspendLayout();
             this.groupBox19.SuspendLayout();
             this.groupBox20.SuspendLayout();
             this.groupBox21.SuspendLayout();
             this.groupBox22.SuspendLayout();
             this.tabPage4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.groupBox24.SuspendLayout();
             this.groupBox23.SuspendLayout();
+            this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -324,6 +325,7 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.pictureBox1);
             this.tabPage1.Controls.Add(this.button11);
             this.tabPage1.Controls.Add(this.groupBox8);
             this.tabPage1.Controls.Add(this.button2);
@@ -343,12 +345,32 @@
             this.tabPage1.Text = "单立柱柱墩基础稳定验算";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Pillarpiers.Properties.Resources.单立柱柱墩计算参数示意图;
+            this.pictureBox1.Location = new System.Drawing.Point(354, 273);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(342, 166);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 8;
+            this.pictureBox1.TabStop = false;
+            // 
+            // button11
+            // 
+            this.button11.Location = new System.Drawing.Point(207, 390);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(61, 28);
+            this.button11.TabIndex = 7;
+            this.button11.Text = "导出结果";
+            this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
+            // 
             // groupBox8
             // 
             this.groupBox8.Controls.Add(this.comboBox1);
             this.groupBox8.Controls.Add(this.loadfile1);
             this.groupBox8.Controls.Add(this.label24);
-            this.groupBox8.Location = new System.Drawing.Point(495, 11);
+            this.groupBox8.Location = new System.Drawing.Point(482, 194);
             this.groupBox8.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox8.Name = "groupBox8";
             this.groupBox8.Padding = new System.Windows.Forms.Padding(2);
@@ -420,7 +442,7 @@
             this.groupBox7.Controls.Add(this.label22);
             this.groupBox7.Controls.Add(this.textBoxZKQF1);
             this.groupBox7.Controls.Add(this.label23);
-            this.groupBox7.Location = new System.Drawing.Point(302, 312);
+            this.groupBox7.Location = new System.Drawing.Point(286, 6);
             this.groupBox7.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox7.Name = "groupBox7";
             this.groupBox7.Padding = new System.Windows.Forms.Padding(2);
@@ -440,6 +462,7 @@
             // label20
             // 
             this.label20.AutoSize = true;
+            this.label20.ForeColor = System.Drawing.Color.Red;
             this.label20.Location = new System.Drawing.Point(16, 98);
             this.label20.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label20.Name = "label20";
@@ -511,7 +534,7 @@
             this.groupBox6.Controls.Add(this.label17);
             this.groupBox6.Controls.Add(this.textBoxZKHL1);
             this.groupBox6.Controls.Add(this.label18);
-            this.groupBox6.Location = new System.Drawing.Point(302, 178);
+            this.groupBox6.Location = new System.Drawing.Point(286, 135);
             this.groupBox6.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.Padding = new System.Windows.Forms.Padding(2);
@@ -531,6 +554,7 @@
             // label19
             // 
             this.label19.AutoSize = true;
+            this.label19.ForeColor = System.Drawing.Color.Red;
             this.label19.Location = new System.Drawing.Point(16, 98);
             this.label19.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label19.Name = "label19";
@@ -600,7 +624,7 @@
             this.groupBox5.Controls.Add(this.label14);
             this.groupBox5.Controls.Add(this.textBoxZBL1);
             this.groupBox5.Controls.Add(this.label13);
-            this.groupBox5.Location = new System.Drawing.Point(302, 70);
+            this.groupBox5.Location = new System.Drawing.Point(484, 73);
             this.groupBox5.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Padding = new System.Windows.Forms.Padding(2);
@@ -620,6 +644,7 @@
             // label15
             // 
             this.label15.AutoSize = true;
+            this.label15.ForeColor = System.Drawing.Color.Red;
             this.label15.Location = new System.Drawing.Point(16, 74);
             this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label15.Name = "label15";
@@ -667,11 +692,11 @@
             // 
             this.groupBox4.Controls.Add(this.textBoxJCZZ1);
             this.groupBox4.Controls.Add(this.label12);
-            this.groupBox4.Location = new System.Drawing.Point(302, 11);
+            this.groupBox4.Location = new System.Drawing.Point(485, 5);
             this.groupBox4.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox4.Size = new System.Drawing.Size(178, 52);
+            this.groupBox4.Size = new System.Drawing.Size(201, 52);
             this.groupBox4.TabIndex = 2;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "稳定性复核";
@@ -706,14 +731,14 @@
             this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox2.Size = new System.Drawing.Size(272, 103);
+            this.groupBox2.Size = new System.Drawing.Size(258, 103);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "柱脚荷载";
             // 
             // textBoxWJ1
             // 
-            this.textBoxWJ1.Location = new System.Drawing.Point(178, 66);
+            this.textBoxWJ1.Location = new System.Drawing.Point(157, 66);
             this.textBoxWJ1.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxWJ1.Name = "textBoxWJ1";
             this.textBoxWJ1.Size = new System.Drawing.Size(50, 21);
@@ -731,7 +756,7 @@
             // 
             // textBoxBL1
             // 
-            this.textBoxBL1.Location = new System.Drawing.Point(178, 42);
+            this.textBoxBL1.Location = new System.Drawing.Point(157, 42);
             this.textBoxBL1.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxBL1.Name = "textBoxBL1";
             this.textBoxBL1.Size = new System.Drawing.Size(50, 21);
@@ -749,7 +774,7 @@
             // 
             // textBoxSPL1
             // 
-            this.textBoxSPL1.Location = new System.Drawing.Point(178, 17);
+            this.textBoxSPL1.Location = new System.Drawing.Point(157, 17);
             this.textBoxSPL1.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxSPL1.Name = "textBoxSPL1";
             this.textBoxSPL1.Size = new System.Drawing.Size(50, 21);
@@ -788,7 +813,7 @@
             this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox1.Size = new System.Drawing.Size(272, 241);
+            this.groupBox1.Size = new System.Drawing.Size(258, 241);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "基础相关参数";
@@ -798,7 +823,7 @@
             this.textBoxJXCD1.Location = new System.Drawing.Point(76, 208);
             this.textBoxJXCD1.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxJXCD1.Name = "textBoxJXCD1";
-            this.textBoxJXCD1.Size = new System.Drawing.Size(49, 21);
+            this.textBoxJXCD1.Size = new System.Drawing.Size(37, 21);
             this.textBoxJXCD1.TabIndex = 6;
             // 
             // label8
@@ -816,7 +841,7 @@
             this.textBoxJXKD1.Location = new System.Drawing.Point(76, 183);
             this.textBoxJXKD1.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxJXKD1.Name = "textBoxJXKD1";
-            this.textBoxJXKD1.Size = new System.Drawing.Size(49, 21);
+            this.textBoxJXKD1.Size = new System.Drawing.Size(37, 21);
             this.textBoxJXKD1.TabIndex = 6;
             // 
             // label7
@@ -834,7 +859,7 @@
             this.textBoxJXGD1.Location = new System.Drawing.Point(76, 157);
             this.textBoxJXGD1.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxJXGD1.Name = "textBoxJXGD1";
-            this.textBoxJXGD1.Size = new System.Drawing.Size(49, 21);
+            this.textBoxJXGD1.Size = new System.Drawing.Size(37, 21);
             this.textBoxJXGD1.TabIndex = 6;
             // 
             // label5
@@ -849,7 +874,7 @@
             // 
             // textBoxYXGD1
             // 
-            this.textBoxYXGD1.Location = new System.Drawing.Point(217, 200);
+            this.textBoxYXGD1.Location = new System.Drawing.Point(202, 200);
             this.textBoxYXGD1.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxYXGD1.Name = "textBoxYXGD1";
             this.textBoxYXGD1.Size = new System.Drawing.Size(46, 21);
@@ -858,7 +883,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(146, 203);
+            this.label6.Location = new System.Drawing.Point(131, 203);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(71, 12);
@@ -867,7 +892,7 @@
             // 
             // textBoxYXBJ1
             // 
-            this.textBoxYXBJ1.Location = new System.Drawing.Point(217, 173);
+            this.textBoxYXBJ1.Location = new System.Drawing.Point(202, 173);
             this.textBoxYXBJ1.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxYXBJ1.Name = "textBoxYXBJ1";
             this.textBoxYXBJ1.Size = new System.Drawing.Size(46, 21);
@@ -876,7 +901,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(146, 178);
+            this.label4.Location = new System.Drawing.Point(131, 178);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(71, 12);
@@ -976,8 +1001,8 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.pictureBox2);
             this.tabPage2.Controls.Add(this.groupBox15);
-            this.tabPage2.Controls.Add(this.groupBox16);
             this.tabPage2.Controls.Add(this.button4);
             this.tabPage2.Controls.Add(this.button5);
             this.tabPage2.Controls.Add(this.groupBox13);
@@ -993,6 +1018,16 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "双立柱条形基础稳定验算";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::Pillarpiers.Properties.Resources.双立柱条形基础稳定验算;
+            this.pictureBox2.Location = new System.Drawing.Point(363, 248);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(338, 183);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 10;
+            this.pictureBox2.TabStop = false;
             // 
             // groupBox15
             // 
@@ -1113,49 +1148,6 @@
             this.label47.Size = new System.Drawing.Size(77, 12);
             this.label47.TabIndex = 0;
             this.label47.Text = "水平力Fx(kN)";
-            // 
-            // groupBox16
-            // 
-            this.groupBox16.Controls.Add(this.comboBox2);
-            this.groupBox16.Controls.Add(this.button6);
-            this.groupBox16.Controls.Add(this.label48);
-            this.groupBox16.Location = new System.Drawing.Point(491, 11);
-            this.groupBox16.Margin = new System.Windows.Forms.Padding(2);
-            this.groupBox16.Name = "groupBox16";
-            this.groupBox16.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox16.Size = new System.Drawing.Size(272, 61);
-            this.groupBox16.TabIndex = 10;
-            this.groupBox16.TabStop = false;
-            this.groupBox16.Text = "导入文件";
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(44, 23);
-            this.comboBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(133, 20);
-            this.comboBox2.TabIndex = 7;
-            // 
-            // button6
-            // 
-            this.button6.Location = new System.Drawing.Point(184, 23);
-            this.button6.Margin = new System.Windows.Forms.Padding(2);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(84, 20);
-            this.button6.TabIndex = 6;
-            this.button6.Text = "导入文件";
-            this.button6.UseVisualStyleBackColor = true;
-            // 
-            // label48
-            // 
-            this.label48.AutoSize = true;
-            this.label48.Location = new System.Drawing.Point(7, 27);
-            this.label48.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(29, 12);
-            this.label48.TabIndex = 5;
-            this.label48.Text = "工况";
             // 
             // button4
             // 
@@ -1340,7 +1332,7 @@
             this.groupBox11.Controls.Add(this.label31);
             this.groupBox11.Controls.Add(this.textBoxZKQFL2);
             this.groupBox11.Controls.Add(this.label32);
-            this.groupBox11.Location = new System.Drawing.Point(300, 310);
+            this.groupBox11.Location = new System.Drawing.Point(540, 112);
             this.groupBox11.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox11.Name = "groupBox11";
             this.groupBox11.Padding = new System.Windows.Forms.Padding(2);
@@ -1360,6 +1352,7 @@
             // label29
             // 
             this.label29.AutoSize = true;
+            this.label29.ForeColor = System.Drawing.Color.Red;
             this.label29.Location = new System.Drawing.Point(16, 98);
             this.label29.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label29.Name = "label29";
@@ -1431,7 +1424,7 @@
             this.groupBox12.Controls.Add(this.label35);
             this.groupBox12.Controls.Add(this.textBoxZKHL2);
             this.groupBox12.Controls.Add(this.label36);
-            this.groupBox12.Location = new System.Drawing.Point(300, 182);
+            this.groupBox12.Location = new System.Drawing.Point(314, 109);
             this.groupBox12.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox12.Name = "groupBox12";
             this.groupBox12.Padding = new System.Windows.Forms.Padding(2);
@@ -1451,6 +1444,7 @@
             // label33
             // 
             this.label33.AutoSize = true;
+            this.label33.ForeColor = System.Drawing.Color.Red;
             this.label33.Location = new System.Drawing.Point(16, 98);
             this.label33.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label33.Name = "label33";
@@ -1520,7 +1514,7 @@
             this.groupBox10.Controls.Add(this.label27);
             this.groupBox10.Controls.Add(this.textBoxZBL2);
             this.groupBox10.Controls.Add(this.label28);
-            this.groupBox10.Location = new System.Drawing.Point(300, 79);
+            this.groupBox10.Location = new System.Drawing.Point(539, 8);
             this.groupBox10.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox10.Name = "groupBox10";
             this.groupBox10.Padding = new System.Windows.Forms.Padding(2);
@@ -1540,6 +1534,7 @@
             // label26
             // 
             this.label26.AutoSize = true;
+            this.label26.ForeColor = System.Drawing.Color.Red;
             this.label26.Location = new System.Drawing.Point(16, 74);
             this.label26.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label26.Name = "label26";
@@ -1589,7 +1584,7 @@
             this.groupBox9.Controls.Add(this.label41);
             this.groupBox9.Controls.Add(this.textBoxJCZZ2);
             this.groupBox9.Controls.Add(this.label25);
-            this.groupBox9.Location = new System.Drawing.Point(300, 9);
+            this.groupBox9.Location = new System.Drawing.Point(317, 9);
             this.groupBox9.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox9.Name = "groupBox9";
             this.groupBox9.Padding = new System.Windows.Forms.Padding(2);
@@ -1636,8 +1631,8 @@
             // 
             // tabPage3
             // 
+            this.tabPage3.Controls.Add(this.pictureBox3);
             this.tabPage3.Controls.Add(this.groupBox14);
-            this.tabPage3.Controls.Add(this.groupBox17);
             this.tabPage3.Controls.Add(this.button8);
             this.tabPage3.Controls.Add(this.button9);
             this.tabPage3.Controls.Add(this.groupBox18);
@@ -1653,6 +1648,16 @@
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "三立柱条形基础稳定验算";
             this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::Pillarpiers.Properties.Resources.三立柱条形基础稳定验算;
+            this.pictureBox3.Location = new System.Drawing.Point(352, 246);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(330, 185);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 19;
+            this.pictureBox3.TabStop = false;
             // 
             // groupBox14
             // 
@@ -1671,7 +1676,7 @@
             this.groupBox14.Controls.Add(this.label77);
             this.groupBox14.Controls.Add(this.label76);
             this.groupBox14.Controls.Add(this.label51);
-            this.groupBox14.Location = new System.Drawing.Point(10, 228);
+            this.groupBox14.Location = new System.Drawing.Point(10, 246);
             this.groupBox14.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox14.Name = "groupBox14";
             this.groupBox14.Padding = new System.Windows.Forms.Padding(2);
@@ -1812,49 +1817,6 @@
             this.label51.TabIndex = 0;
             this.label51.Text = "水平力Fx(kN)";
             // 
-            // groupBox17
-            // 
-            this.groupBox17.Controls.Add(this.comboBox3);
-            this.groupBox17.Controls.Add(this.button7);
-            this.groupBox17.Controls.Add(this.label52);
-            this.groupBox17.Location = new System.Drawing.Point(492, 13);
-            this.groupBox17.Margin = new System.Windows.Forms.Padding(2);
-            this.groupBox17.Name = "groupBox17";
-            this.groupBox17.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox17.Size = new System.Drawing.Size(274, 61);
-            this.groupBox17.TabIndex = 19;
-            this.groupBox17.TabStop = false;
-            this.groupBox17.Text = "导入文件";
-            // 
-            // comboBox3
-            // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(44, 23);
-            this.comboBox3.Margin = new System.Windows.Forms.Padding(2);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(133, 20);
-            this.comboBox3.TabIndex = 7;
-            // 
-            // button7
-            // 
-            this.button7.Location = new System.Drawing.Point(184, 22);
-            this.button7.Margin = new System.Windows.Forms.Padding(2);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(86, 21);
-            this.button7.TabIndex = 6;
-            this.button7.Text = "导入文件";
-            this.button7.UseVisualStyleBackColor = true;
-            // 
-            // label52
-            // 
-            this.label52.AutoSize = true;
-            this.label52.Location = new System.Drawing.Point(7, 27);
-            this.label52.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(29, 12);
-            this.label52.TabIndex = 5;
-            this.label52.Text = "工况";
-            // 
             // button8
             // 
             this.button8.Location = new System.Drawing.Point(168, 393);
@@ -1899,7 +1861,7 @@
             this.groupBox18.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox18.Name = "groupBox18";
             this.groupBox18.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox18.Size = new System.Drawing.Size(272, 219);
+            this.groupBox18.Size = new System.Drawing.Size(272, 234);
             this.groupBox18.TabIndex = 15;
             this.groupBox18.TabStop = false;
             this.groupBox18.Text = "基础相关参数";
@@ -2058,7 +2020,7 @@
             this.groupBox19.Controls.Add(this.label62);
             this.groupBox19.Controls.Add(this.textBoxZKQF3);
             this.groupBox19.Controls.Add(this.label63);
-            this.groupBox19.Location = new System.Drawing.Point(301, 312);
+            this.groupBox19.Location = new System.Drawing.Point(541, 113);
             this.groupBox19.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox19.Name = "groupBox19";
             this.groupBox19.Padding = new System.Windows.Forms.Padding(2);
@@ -2078,6 +2040,7 @@
             // label60
             // 
             this.label60.AutoSize = true;
+            this.label60.ForeColor = System.Drawing.Color.Red;
             this.label60.Location = new System.Drawing.Point(16, 98);
             this.label60.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label60.Name = "label60";
@@ -2149,7 +2112,7 @@
             this.groupBox20.Controls.Add(this.label66);
             this.groupBox20.Controls.Add(this.textBoxZKHL3);
             this.groupBox20.Controls.Add(this.label67);
-            this.groupBox20.Location = new System.Drawing.Point(301, 184);
+            this.groupBox20.Location = new System.Drawing.Point(319, 113);
             this.groupBox20.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox20.Name = "groupBox20";
             this.groupBox20.Padding = new System.Windows.Forms.Padding(2);
@@ -2169,6 +2132,7 @@
             // label64
             // 
             this.label64.AutoSize = true;
+            this.label64.ForeColor = System.Drawing.Color.Red;
             this.label64.Location = new System.Drawing.Point(16, 98);
             this.label64.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label64.Name = "label64";
@@ -2238,7 +2202,7 @@
             this.groupBox21.Controls.Add(this.label69);
             this.groupBox21.Controls.Add(this.textBoxZBL3);
             this.groupBox21.Controls.Add(this.label70);
-            this.groupBox21.Location = new System.Drawing.Point(301, 81);
+            this.groupBox21.Location = new System.Drawing.Point(541, 9);
             this.groupBox21.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox21.Name = "groupBox21";
             this.groupBox21.Padding = new System.Windows.Forms.Padding(2);
@@ -2258,6 +2222,7 @@
             // label68
             // 
             this.label68.AutoSize = true;
+            this.label68.ForeColor = System.Drawing.Color.Red;
             this.label68.Location = new System.Drawing.Point(16, 74);
             this.label68.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label68.Name = "label68";
@@ -2307,7 +2272,7 @@
             this.groupBox22.Controls.Add(this.label71);
             this.groupBox22.Controls.Add(this.textBoxJCZZ3);
             this.groupBox22.Controls.Add(this.label72);
-            this.groupBox22.Location = new System.Drawing.Point(301, 10);
+            this.groupBox22.Location = new System.Drawing.Point(319, 9);
             this.groupBox22.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox22.Name = "groupBox22";
             this.groupBox22.Padding = new System.Windows.Forms.Padding(2);
@@ -2354,6 +2319,7 @@
             // 
             // tabPage4
             // 
+            this.tabPage4.Controls.Add(this.pictureBox4);
             this.tabPage4.Controls.Add(this.button10);
             this.tabPage4.Controls.Add(this.button3);
             this.tabPage4.Controls.Add(this.groupBox24);
@@ -2366,9 +2332,19 @@
             this.tabPage4.Text = "彩钢瓦屋面光伏支架基础效应力计算";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::Pillarpiers.Properties.Resources.彩光瓦屋面计算示意图;
+            this.pictureBox4.Location = new System.Drawing.Point(401, 198);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(336, 230);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 5;
+            this.pictureBox4.TabStop = false;
+            // 
             // button10
             // 
-            this.button10.Location = new System.Drawing.Point(404, 408);
+            this.button10.Location = new System.Drawing.Point(290, 305);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(69, 23);
             this.button10.TabIndex = 4;
@@ -2378,7 +2354,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(311, 408);
+            this.button3.Location = new System.Drawing.Point(290, 256);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(69, 23);
             this.button3.TabIndex = 4;
@@ -2408,29 +2384,30 @@
             this.groupBox24.Controls.Add(this.label91);
             this.groupBox24.Location = new System.Drawing.Point(274, 12);
             this.groupBox24.Name = "groupBox24";
-            this.groupBox24.Size = new System.Drawing.Size(270, 272);
+            this.groupBox24.Size = new System.Drawing.Size(496, 168);
             this.groupBox24.TabIndex = 3;
             this.groupBox24.TabStop = false;
             this.groupBox24.Text = "计算结果参数";
             // 
             // textBoxLLSJZ
             // 
-            this.textBoxLLSJZ.Location = new System.Drawing.Point(191, 235);
+            this.textBoxLLSJZ.Location = new System.Drawing.Point(431, 96);
             this.textBoxLLSJZ.Name = "textBoxLLSJZ";
-            this.textBoxLLSJZ.Size = new System.Drawing.Size(61, 21);
+            this.textBoxLLSJZ.Size = new System.Drawing.Size(48, 21);
             this.textBoxLLSJZ.TabIndex = 1;
             // 
             // textBoxWJSJZ
             // 
-            this.textBoxWJSJZ.Location = new System.Drawing.Point(191, 207);
+            this.textBoxWJSJZ.Location = new System.Drawing.Point(431, 68);
             this.textBoxWJSJZ.Name = "textBoxWJSJZ";
-            this.textBoxWJSJZ.Size = new System.Drawing.Size(61, 21);
+            this.textBoxWJSJZ.Size = new System.Drawing.Size(48, 21);
             this.textBoxWJSJZ.TabIndex = 1;
             // 
             // label99
             // 
             this.label99.AutoSize = true;
-            this.label99.Location = new System.Drawing.Point(14, 241);
+            this.label99.ForeColor = System.Drawing.Color.Red;
+            this.label99.Location = new System.Drawing.Point(254, 102);
             this.label99.Name = "label99";
             this.label99.Size = new System.Drawing.Size(173, 12);
             this.label99.TabIndex = 0;
@@ -2438,15 +2415,16 @@
             // 
             // textBoxFXSJZ
             // 
-            this.textBoxFXSJZ.Location = new System.Drawing.Point(191, 181);
+            this.textBoxFXSJZ.Location = new System.Drawing.Point(431, 42);
             this.textBoxFXSJZ.Name = "textBoxFXSJZ";
-            this.textBoxFXSJZ.Size = new System.Drawing.Size(61, 21);
+            this.textBoxFXSJZ.Size = new System.Drawing.Size(48, 21);
             this.textBoxFXSJZ.TabIndex = 1;
             // 
             // label98
             // 
             this.label98.AutoSize = true;
-            this.label98.Location = new System.Drawing.Point(14, 213);
+            this.label98.ForeColor = System.Drawing.Color.Red;
+            this.label98.Location = new System.Drawing.Point(254, 74);
             this.label98.Name = "label98";
             this.label98.Size = new System.Drawing.Size(149, 12);
             this.label98.TabIndex = 0;
@@ -2454,15 +2432,15 @@
             // 
             // textBoxFYSJZ
             // 
-            this.textBoxFYSJZ.Location = new System.Drawing.Point(191, 154);
+            this.textBoxFYSJZ.Location = new System.Drawing.Point(431, 15);
             this.textBoxFYSJZ.Name = "textBoxFYSJZ";
-            this.textBoxFYSJZ.Size = new System.Drawing.Size(61, 21);
+            this.textBoxFYSJZ.Size = new System.Drawing.Size(48, 21);
             this.textBoxFYSJZ.TabIndex = 1;
             // 
             // label97
             // 
             this.label97.AutoSize = true;
-            this.label97.Location = new System.Drawing.Point(14, 187);
+            this.label97.Location = new System.Drawing.Point(254, 48);
             this.label97.Name = "label97";
             this.label97.Size = new System.Drawing.Size(173, 12);
             this.label97.TabIndex = 0;
@@ -2472,13 +2450,13 @@
             // 
             this.textBox50FXHZ.Location = new System.Drawing.Point(191, 127);
             this.textBox50FXHZ.Name = "textBox50FXHZ";
-            this.textBox50FXHZ.Size = new System.Drawing.Size(61, 21);
+            this.textBox50FXHZ.Size = new System.Drawing.Size(46, 21);
             this.textBox50FXHZ.TabIndex = 1;
             // 
             // label96
             // 
             this.label96.AutoSize = true;
-            this.label96.Location = new System.Drawing.Point(14, 160);
+            this.label96.Location = new System.Drawing.Point(254, 21);
             this.label96.Name = "label96";
             this.label96.Size = new System.Drawing.Size(173, 12);
             this.label96.TabIndex = 0;
@@ -2488,7 +2466,7 @@
             // 
             this.textBox50FYHZ.Location = new System.Drawing.Point(191, 100);
             this.textBox50FYHZ.Name = "textBox50FYHZ";
-            this.textBox50FYHZ.Size = new System.Drawing.Size(61, 21);
+            this.textBox50FYHZ.Size = new System.Drawing.Size(46, 21);
             this.textBox50FYHZ.TabIndex = 1;
             // 
             // label95
@@ -2504,7 +2482,7 @@
             // 
             this.textBox25FXHZ.Location = new System.Drawing.Point(191, 73);
             this.textBox25FXHZ.Name = "textBox25FXHZ";
-            this.textBox25FXHZ.Size = new System.Drawing.Size(61, 21);
+            this.textBox25FXHZ.Size = new System.Drawing.Size(46, 21);
             this.textBox25FXHZ.TabIndex = 1;
             // 
             // label94
@@ -2520,7 +2498,7 @@
             // 
             this.textBox25FYHZ.Location = new System.Drawing.Point(191, 46);
             this.textBox25FYHZ.Name = "textBox25FYHZ";
-            this.textBox25FYHZ.Size = new System.Drawing.Size(61, 21);
+            this.textBox25FYHZ.Size = new System.Drawing.Size(46, 21);
             this.textBox25FYHZ.TabIndex = 1;
             // 
             // label93
@@ -2536,7 +2514,7 @@
             // 
             this.textBoxHHZ.Location = new System.Drawing.Point(191, 19);
             this.textBoxHHZ.Name = "textBoxHHZ";
-            this.textBoxHHZ.Size = new System.Drawing.Size(61, 21);
+            this.textBoxHHZ.Size = new System.Drawing.Size(46, 21);
             this.textBoxHHZ.TabIndex = 1;
             // 
             // label92
@@ -2819,21 +2797,28 @@
             this.label80.TabIndex = 0;
             this.label80.Text = "50年基本风压(kPa)";
             // 
-            // button11
+            // statusStrip1
             // 
-            this.button11.Location = new System.Drawing.Point(207, 390);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(61, 28);
-            this.button11.TabIndex = 7;
-            this.button11.Text = "导出结果";
-            this.button11.UseVisualStyleBackColor = true;
-            this.button11.Click += new System.EventHandler(this.button11_Click);
+            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripStatusLabel1});
+            this.statusStrip1.Location = new System.Drawing.Point(0, 466);
+            this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.Size = new System.Drawing.Size(787, 22);
+            this.statusStrip1.TabIndex = 1;
+            this.statusStrip1.Text = "statusStrip1";
+            // 
+            // toolStripStatusLabel1
+            // 
+            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(349, 17);
+            this.toolStripStatusLabel1.Text = "Designed By 福建省电力勘测设计院发电分公司（市政分公司）";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(787, 465);
+            this.ClientSize = new System.Drawing.Size(787, 488);
+            this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.tabControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -2843,6 +2828,7 @@
             this.Text = "屋面光伏基础计算软件V1.0";
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox8.ResumeLayout(false);
             this.groupBox8.PerformLayout();
             this.groupBox7.ResumeLayout(false);
@@ -2860,10 +2846,9 @@
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             this.tabPage2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.groupBox15.ResumeLayout(false);
             this.groupBox15.PerformLayout();
-            this.groupBox16.ResumeLayout(false);
-            this.groupBox16.PerformLayout();
             this.groupBox13.ResumeLayout(false);
             this.groupBox13.PerformLayout();
             this.groupBox11.ResumeLayout(false);
@@ -2875,10 +2860,9 @@
             this.groupBox9.ResumeLayout(false);
             this.groupBox9.PerformLayout();
             this.tabPage3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.groupBox14.ResumeLayout(false);
             this.groupBox14.PerformLayout();
-            this.groupBox17.ResumeLayout(false);
-            this.groupBox17.PerformLayout();
             this.groupBox18.ResumeLayout(false);
             this.groupBox18.PerformLayout();
             this.groupBox19.ResumeLayout(false);
@@ -2890,11 +2874,15 @@
             this.groupBox22.ResumeLayout(false);
             this.groupBox22.PerformLayout();
             this.tabPage4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.groupBox24.ResumeLayout(false);
             this.groupBox24.PerformLayout();
             this.groupBox23.ResumeLayout(false);
             this.groupBox23.PerformLayout();
+            this.statusStrip1.ResumeLayout(false);
+            this.statusStrip1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -2965,10 +2953,6 @@
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Button loadfile1;
         private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.GroupBox groupBox16;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Label label48;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.GroupBox groupBox13;
@@ -3030,10 +3014,6 @@
         private System.Windows.Forms.Label label50;
         private System.Windows.Forms.TextBox textBoxZLSPL3;
         private System.Windows.Forms.Label label51;
-        private System.Windows.Forms.GroupBox groupBox17;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Label label52;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.GroupBox groupBox18;
@@ -3148,6 +3128,12 @@
         private System.Windows.Forms.ComboBox comboBox4;
         private System.Windows.Forms.Label label100;
         private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.StatusStrip statusStrip1;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
     }
 }
 
