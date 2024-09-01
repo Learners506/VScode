@@ -2409,9 +2409,9 @@
             this.label99.ForeColor = System.Drawing.Color.Red;
             this.label99.Location = new System.Drawing.Point(254, 102);
             this.label99.Name = "label99";
-            this.label99.Size = new System.Drawing.Size(173, 12);
+            this.label99.Size = new System.Drawing.Size(161, 12);
             this.label99.TabIndex = 0;
-            this.label99.Text = "单个夹具所受拉力设计值(kN/m)";
+            this.label99.Text = "单个夹具所受拉力设计值(kN)";
             // 
             // textBoxFXSJZ
             // 
