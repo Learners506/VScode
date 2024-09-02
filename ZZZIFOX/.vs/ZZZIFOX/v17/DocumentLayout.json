@@ -1,12 +1,154 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\GithubProject\\VScode\\ZZZIFOX\\",
-  "Documents": [],
+  "WorkspaceRootPath": "E:\\GitHubFile\\VScode\\ZZZIFOX\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1C630A4E-0CD8-4FF4-9136-9CE2506C8848}|ZZZIFOX.csproj|e:\\githubfile\\vscode\\zzzifox\\projectitems\\newcopycs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1C630A4E-0CD8-4FF4-9136-9CE2506C8848}|ZZZIFOX.csproj|solutionrelative:projectitems\\newcopycs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1C630A4E-0CD8-4FF4-9136-9CE2506C8848}|ZZZIFOX.csproj|e:\\githubfile\\vscode\\zzzifox\\settings\\newcopy.settings||{6D2695F9-5365-4A78-89ED-F205C045BFE6}",
+      "RelativeMoniker": "D:0:0:{1C630A4E-0CD8-4FF4-9136-9CE2506C8848}|ZZZIFOX.csproj|solutionrelative:settings\\newcopy.settings||{6D2695F9-5365-4A78-89ED-F205C045BFE6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1C630A4E-0CD8-4FF4-9136-9CE2506C8848}|ZZZIFOX.csproj|e:\\githubfile\\vscode\\zzzifox\\wpfui\\newcopywindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1C630A4E-0CD8-4FF4-9136-9CE2506C8848}|ZZZIFOX.csproj|solutionrelative:wpfui\\newcopywindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1C630A4E-0CD8-4FF4-9136-9CE2506C8848}|ZZZIFOX.csproj|e:\\githubfile\\vscode\\zzzifox\\wpfui\\newcopywindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{1C630A4E-0CD8-4FF4-9136-9CE2506C8848}|ZZZIFOX.csproj|solutionrelative:wpfui\\newcopywindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1C630A4E-0CD8-4FF4-9136-9CE2506C8848}|ZZZIFOX.csproj|e:\\githubfile\\vscode\\zzzifox\\dotnetarx\\tools.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1C630A4E-0CD8-4FF4-9136-9CE2506C8848}|ZZZIFOX.csproj|solutionrelative:dotnetarx\\tools.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1C630A4E-0CD8-4FF4-9136-9CE2506C8848}|ZZZIFOX.csproj|e:\\githubfile\\vscode\\zzzifox\\dotnetarx\\enttools.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1C630A4E-0CD8-4FF4-9136-9CE2506C8848}|ZZZIFOX.csproj|solutionrelative:dotnetarx\\enttools.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1C630A4E-0CD8-4FF4-9136-9CE2506C8848}|ZZZIFOX.csproj|e:\\githubfile\\vscode\\zzzifox\\startmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1C630A4E-0CD8-4FF4-9136-9CE2506C8848}|ZZZIFOX.csproj|solutionrelative:startmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1C630A4E-0CD8-4FF4-9136-9CE2506C8848}|ZZZIFOX.csproj|e:\\githubfile\\vscode\\zzzifox\\command.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1C630A4E-0CD8-4FF4-9136-9CE2506C8848}|ZZZIFOX.csproj|solutionrelative:command.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Tools.cs",
+              "DocumentMoniker": "E:\\GitHubFile\\VScode\\ZZZIFOX\\DotNetARX\\Tools.cs",
+              "RelativeDocumentMoniker": "DotNetARX\\Tools.cs",
+              "ToolTip": "E:\\GitHubFile\\VScode\\ZZZIFOX\\DotNetARX\\Tools.cs",
+              "RelativeToolTip": "DotNetARX\\Tools.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAmwDcAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-02T13:56:31.771Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "EntTools.cs",
+              "DocumentMoniker": "E:\\GitHubFile\\VScode\\ZZZIFOX\\DotNetARX\\EntTools.cs",
+              "RelativeDocumentMoniker": "DotNetARX\\EntTools.cs",
+              "ToolTip": "E:\\GitHubFile\\VScode\\ZZZIFOX\\DotNetARX\\EntTools.cs",
+              "RelativeToolTip": "DotNetARX\\EntTools.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAAABEAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-02T13:55:21.404Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "NewCopyWindow.xaml",
+              "DocumentMoniker": "E:\\GitHubFile\\VScode\\ZZZIFOX\\WPFUI\\NewCopyWindow.xaml",
+              "RelativeDocumentMoniker": "WPFUI\\NewCopyWindow.xaml",
+              "ToolTip": "E:\\GitHubFile\\VScode\\ZZZIFOX\\WPFUI\\NewCopyWindow.xaml",
+              "RelativeToolTip": "WPFUI\\NewCopyWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-09-02T12:56:47.548Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "NewCopy.settings",
+              "DocumentMoniker": "E:\\GitHubFile\\VScode\\ZZZIFOX\\Settings\\NewCopy.settings",
+              "RelativeDocumentMoniker": "Settings\\NewCopy.settings",
+              "ToolTip": "E:\\GitHubFile\\VScode\\ZZZIFOX\\Settings\\NewCopy.settings",
+              "RelativeToolTip": "Settings\\NewCopy.settings",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002767|",
+              "WhenOpened": "2024-09-02T12:50:20.771Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "NewCopyWindow.xaml.cs",
+              "DocumentMoniker": "E:\\GitHubFile\\VScode\\ZZZIFOX\\WPFUI\\NewCopyWindow.xaml.cs",
+              "RelativeDocumentMoniker": "WPFUI\\NewCopyWindow.xaml.cs",
+              "ToolTip": "E:\\GitHubFile\\VScode\\ZZZIFOX\\WPFUI\\NewCopyWindow.xaml.cs",
+              "RelativeToolTip": "WPFUI\\NewCopyWindow.xaml.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAA3wCYAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-02T12:41:38.206Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "NewCopycs.cs",
+              "DocumentMoniker": "E:\\GitHubFile\\VScode\\ZZZIFOX\\ProjectItems\\NewCopycs.cs",
+              "RelativeDocumentMoniker": "ProjectItems\\NewCopycs.cs",
+              "ToolTip": "E:\\GitHubFile\\VScode\\ZZZIFOX\\ProjectItems\\NewCopycs.cs",
+              "RelativeToolTip": "ProjectItems\\NewCopycs.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAA3wCAAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-02T12:02:24.22Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "StartMenu.cs",
+              "DocumentMoniker": "E:\\GitHubFile\\VScode\\ZZZIFOX\\StartMenu.cs",
+              "RelativeDocumentMoniker": "StartMenu.cs",
+              "ToolTip": "E:\\GitHubFile\\VScode\\ZZZIFOX\\StartMenu.cs",
+              "RelativeToolTip": "StartMenu.cs",
+              "ViewState": "AQIAACgAAAAAAAAAAAAgwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-02T12:01:52.512Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Command.cs",
+              "DocumentMoniker": "E:\\GitHubFile\\VScode\\ZZZIFOX\\Command.cs",
+              "RelativeDocumentMoniker": "Command.cs",
+              "ToolTip": "E:\\GitHubFile\\VScode\\ZZZIFOX\\Command.cs",
+              "RelativeToolTip": "Command.cs",
+              "ViewState": "AQIAACIAAAAAAAAAAAAiwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-02T12:01:46.49Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
