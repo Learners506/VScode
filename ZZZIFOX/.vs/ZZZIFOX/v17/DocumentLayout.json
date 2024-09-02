@@ -7,7 +7,7 @@
       "RelativeMoniker": "D:0:0:{1C630A4E-0CD8-4FF4-9136-9CE2506C8848}|ZZZIFOX.csproj|solutionrelative:projectitems\\newcopycs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1C630A4E-0CD8-4FF4-9136-9CE2506C8848}|ZZZIFOX.csproj|e:\\githubfile\\vscode\\zzzifox\\settings\\newcopy.settings||{6D2695F9-5365-4A78-89ED-F205C045BFE6}",
+      "AbsoluteMoniker": "D:0:0:{1C630A4E-0CD8-4FF4-9136-9CE2506C8848}|ZZZIFOX.csproj|E:\\GitHubFile\\VScode\\ZZZIFOX\\settings\\newcopy.settings||{6D2695F9-5365-4A78-89ED-F205C045BFE6}",
       "RelativeMoniker": "D:0:0:{1C630A4E-0CD8-4FF4-9136-9CE2506C8848}|ZZZIFOX.csproj|solutionrelative:settings\\newcopy.settings||{6D2695F9-5365-4A78-89ED-F205C045BFE6}"
     },
     {
@@ -54,8 +54,7 @@
               "RelativeToolTip": "DotNetARX\\Tools.cs",
               "ViewState": "AQIAAAEAAAAAAAAAAAAmwDcAAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-02T13:56:31.771Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-02T13:56:31.771Z"
             },
             {
               "$type": "Document",
@@ -67,8 +66,7 @@
               "RelativeToolTip": "DotNetARX\\EntTools.cs",
               "ViewState": "AQIAAAQAAAAAAAAAAAAAABEAAAAvAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-02T13:55:21.404Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-02T13:55:21.404Z"
             },
             {
               "$type": "Document",
@@ -79,8 +77,7 @@
               "ToolTip": "E:\\GitHubFile\\VScode\\ZZZIFOX\\WPFUI\\NewCopyWindow.xaml",
               "RelativeToolTip": "WPFUI\\NewCopyWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-09-02T12:56:47.548Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-02T12:56:47.548Z"
             },
             {
               "$type": "Document",
@@ -91,8 +88,7 @@
               "ToolTip": "E:\\GitHubFile\\VScode\\ZZZIFOX\\Settings\\NewCopy.settings",
               "RelativeToolTip": "Settings\\NewCopy.settings",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002767|",
-              "WhenOpened": "2024-09-02T12:50:20.771Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-02T12:50:20.771Z"
             },
             {
               "$type": "Document",
@@ -104,8 +100,7 @@
               "RelativeToolTip": "WPFUI\\NewCopyWindow.xaml.cs",
               "ViewState": "AQIAABcAAAAAAAAAAAA3wCYAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-02T12:41:38.206Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-02T12:41:38.206Z"
             },
             {
               "$type": "Document",
@@ -115,7 +110,7 @@
               "RelativeDocumentMoniker": "ProjectItems\\NewCopycs.cs",
               "ToolTip": "E:\\GitHubFile\\VScode\\ZZZIFOX\\ProjectItems\\NewCopycs.cs",
               "RelativeToolTip": "ProjectItems\\NewCopycs.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAA3wCAAAAAgAAAA",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAcwCMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-02T12:02:24.22Z",
               "EditorCaption": ""
@@ -130,8 +125,7 @@
               "RelativeToolTip": "StartMenu.cs",
               "ViewState": "AQIAACgAAAAAAAAAAAAgwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-02T12:01:52.512Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-02T12:01:52.512Z"
             },
             {
               "$type": "Document",
@@ -143,8 +137,7 @@
               "RelativeToolTip": "Command.cs",
               "ViewState": "AQIAACIAAAAAAAAAAAAiwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-02T12:01:46.49Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-02T12:01:46.49Z"
             }
           ]
         }

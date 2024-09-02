@@ -20,9 +20,23 @@ namespace ZZZIFOX.ProjectItems
         {
             //settings主要有两个方法一个是Reload一个是Save
             settings.Reload();
-            var w1 = new NewCopyWindow();
-            var dr = w1.ShowDialog();
-            if (dr != true) return;
+            string wheatherset = Env.Editor.GetString("\n是否重置参数 (回车: 否, 1: 是").StringResult;
+            switch (wheatherset)
+            {
+                case "":
+                    break;
+                case "1":
+                    new NewCopyWindow().ShowDialog();
+                    break;
+                default:
+                    break;
+            }
+            
+
+
+            //var w1 = new NewCopyWindow();
+            //var dr = w1.ShowDialog();
+            //if (dr != true) return;
 
             string result = settings.TextString;
             string pattern = @"^\d+\*\d+(\.\d+)?(,\d+\*\d+(\.\d+)?)*$";
