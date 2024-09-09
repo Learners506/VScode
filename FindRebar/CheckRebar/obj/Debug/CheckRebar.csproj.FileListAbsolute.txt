@@ -1,0 +1,10 @@
+E:\GitHubFile\VScode\FindRebar\CheckRebar\bin\Debug\CheckRebar.exe.config
+E:\GitHubFile\VScode\FindRebar\CheckRebar\bin\Debug\CheckRebar.exe
+E:\GitHubFile\VScode\FindRebar\CheckRebar\bin\Debug\CheckRebar.pdb
+E:\GitHubFile\VScode\FindRebar\CheckRebar\obj\Debug\CheckRebar.csproj.AssemblyReference.cache
+E:\GitHubFile\VScode\FindRebar\CheckRebar\obj\Debug\CheckRebar.Form1.resources
+E:\GitHubFile\VScode\FindRebar\CheckRebar\obj\Debug\CheckRebar.Properties.Resources.resources
+E:\GitHubFile\VScode\FindRebar\CheckRebar\obj\Debug\CheckRebar.csproj.GenerateResource.cache
+E:\GitHubFile\VScode\FindRebar\CheckRebar\obj\Debug\CheckRebar.csproj.CoreCompileInputs.cache
+E:\GitHubFile\VScode\FindRebar\CheckRebar\obj\Debug\CheckRebar.exe
+E:\GitHubFile\VScode\FindRebar\CheckRebar\obj\Debug\CheckRebar.pdb
