@@ -8,23 +8,24 @@
         Title="TranslateUI" Height="392" Width="410" Background="#FFE2DBDB">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="1*"></RowDefinition>
             <RowDefinition Height="2*"></RowDefinition>
-            <RowDefinition Height="7*"></RowDefinition>
+            <RowDefinition Height="4*"></RowDefinition>
+            <RowDefinition Height="10*"></RowDefinition>
+            <RowDefinition Height="2*"></RowDefinition>
             <RowDefinition Height="1*"></RowDefinition>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition></ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>
         </Grid.ColumnDefinitions>
-        <StackPanel Grid.Row="0" Grid.Column="0" Orientation="Horizontal">
+        <StackPanel Grid.Row="0" Grid.Column="0" Orientation="Horizontal" Margin="0,10,0,0">
             <Label HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10,0,0,0">目标语言</Label>
             <ComboBox SelectedIndex="0" VerticalAlignment="Center" Width="99" Margin="10,0,0,0">
                 <ComboBoxItem HorizontalAlignment="Center" VerticalAlignment="Center">中文</ComboBoxItem>
                 <ComboBoxItem HorizontalAlignment="Center" VerticalAlignment="Center">英文</ComboBoxItem>
             </ComboBox>
         </StackPanel>
-        <StackPanel Grid.Row="0" Grid.Column="1" Orientation="Horizontal">
+        <StackPanel Grid.Row="0" Grid.Column="1" Orientation="Horizontal" Margin="0,10,0,-3">
             <Label HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10,0,0,0">待翻译语言</Label>
             <ComboBox SelectedIndex="0" VerticalAlignment="Center" Width="99" Margin="10,0,0,0">
                 <ComboBoxItem HorizontalAlignment="Center" VerticalAlignment="Center">自动识别</ComboBoxItem>
@@ -45,6 +46,83 @@
                 <Button Margin="20,0,0,0" Width="36">说明</Button>
             </StackPanel>
         </GroupBox>
+        <Grid Grid.Row="2" Grid.ColumnSpan="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="6*"></ColumnDefinition>
+                <ColumnDefinition Width="3*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <GroupBox Header="文字排版设置" Margin="10,0,-1,0" >
+                <StackPanel Height="161">
+                    <StackPanel Orientation="Horizontal" Margin="0,10,0,10">
+                        <Label Margin="10,0,25,0">字宽</Label>
+                        <TextBox Width="60" Margin="0,0,10,0"></TextBox>
+                        <ComboBox SelectedIndex="1" Width="50" Margin="0,0,10,0">
+                            <ComboBoxItem>0.5</ComboBoxItem>
+                            <ComboBoxItem>0.7</ComboBoxItem>
+                            <ComboBoxItem>1</ComboBoxItem>
+                            <ComboBoxItem>1.2</ComboBoxItem>
+                        </ComboBox>
+                        <Button Width="50">拾取</Button>
+                        
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                        <Label Margin="10,0,25,0">字高</Label>
+                        <TextBox Width="60" Margin="0,0,10,0"></TextBox>
+                        <ComboBox SelectedIndex="1" Width="50" Margin="0,0,10,0">
+                            <ComboBoxItem>250</ComboBoxItem>
+                            <ComboBoxItem>300</ComboBoxItem>
+                            <ComboBoxItem>400</ComboBoxItem>
+                            <ComboBoxItem>500</ComboBoxItem>
+                        </ComboBox>
+                        <Button Width="50">拾取</Button>
+
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                        <Label Margin="10,0,25,0">字宽</Label>
+                        <TextBox Width="60" Margin="0,0,10,0"></TextBox>
+                        <ComboBox SelectedIndex="1" Width="50" Margin="0,0,10,0">
+                            <ComboBoxItem>1</ComboBoxItem>
+                            <ComboBoxItem>1.5</ComboBoxItem>
+                            <ComboBoxItem>2</ComboBoxItem>
+                            <ComboBoxItem>2.5</ComboBoxItem>
+                        </ComboBox>
+                        <Button Width="50">拾取</Button>
+
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Label Margin="0,0,10,0">字体样式</Label>
+                        <TextBox Width="60" Margin="0,0,10,0"></TextBox>
+                        <ComboBox SelectedIndex="1" Width="50" Margin="0,0,10,0">
+                            <ComboBoxItem>0.5</ComboBoxItem>
+                            <ComboBoxItem>0.7</ComboBoxItem>
+                            <ComboBoxItem>1</ComboBoxItem>
+                            <ComboBoxItem>1.2</ComboBoxItem>
+                        </ComboBox>
+                        
+                    </StackPanel>
+
+                </StackPanel>
+            </GroupBox>
+            <GroupBox Grid.Column="1" Header="翻译数据" Margin="10,0,10,0">
+                <StackPanel>
+                    <Button Width="70" Margin="0,20,0,10">导出数据</Button>
+                    <Button Width="90" Margin="0,10,0,0">打开专业词库</Button>
+                    <Button Width="90" Margin="0,20,0,0">存储专业词库</Button>
+                    <Button Width="70" Margin="0,20,0,0">帮助说明</Button>
+                </StackPanel>
+            </GroupBox>
+        </Grid>
+        <StackPanel Grid.Row="3" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Horizontal" >
+            <Button Width="50" Margin="0,0,50,0">确定</Button>
+            <Button Width="50" Margin="50,0,0,0">取消</Button>
+        </StackPanel>
+
+
+        <StatusBar  Grid.Row="4" Grid.ColumnSpan="2">
+            <StatusBarItem>
+                <TextBlock FontSize="10">CAD翻译软件V1.0 中国电建集团福建省电力勘测设计院有限公司发电分公司（市政分公司）</TextBlock>
+            </StatusBarItem>
+        </StatusBar>
 
 
 
