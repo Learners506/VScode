@@ -1,0 +1,52 @@
+﻿<Window x:Class="ZZZIFOX.WPFUI.TranslateUI"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ZZZIFOX.WPFUI"
+        mc:Ignorable="d"
+        Title="TranslateUI" Height="392" Width="410" Background="#FFE2DBDB">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="2*"></RowDefinition>
+            <RowDefinition Height="7*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Row="0" Grid.Column="0" Orientation="Horizontal">
+            <Label HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10,0,0,0">目标语言</Label>
+            <ComboBox SelectedIndex="0" VerticalAlignment="Center" Width="99" Margin="10,0,0,0">
+                <ComboBoxItem HorizontalAlignment="Center" VerticalAlignment="Center">中文</ComboBoxItem>
+                <ComboBoxItem HorizontalAlignment="Center" VerticalAlignment="Center">英文</ComboBoxItem>
+            </ComboBox>
+        </StackPanel>
+        <StackPanel Grid.Row="0" Grid.Column="1" Orientation="Horizontal">
+            <Label HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10,0,0,0">待翻译语言</Label>
+            <ComboBox SelectedIndex="0" VerticalAlignment="Center" Width="99" Margin="10,0,0,0">
+                <ComboBoxItem HorizontalAlignment="Center" VerticalAlignment="Center">自动识别</ComboBoxItem>
+                <ComboBoxItem HorizontalAlignment="Center" VerticalAlignment="Center">中文</ComboBoxItem>
+                <ComboBoxItem HorizontalAlignment="Center" VerticalAlignment="Center">英文</ComboBoxItem>
+            </ComboBox>
+        </StackPanel>
+        <GroupBox Grid.Row="1" Header="翻译模式选择一"  HorizontalAlignment="Center" VerticalAlignment="Center" Height="45" Width="196">
+            <StackPanel Orientation="Horizontal" >
+                <RadioButton Content="原位替换" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10,0,30,0" IsChecked="False" GroupName="modeone"/>
+                <RadioButton Content="原位新增" HorizontalAlignment="Center" VerticalAlignment="Center" IsChecked="True" GroupName="modeone"/>
+            </StackPanel>
+        </GroupBox>
+        <GroupBox Grid.Row="1" Grid.Column="1" Header="翻译模式选择二"  HorizontalAlignment="Center" VerticalAlignment="Center" Height="45" Width="196">
+            <StackPanel Orientation="Horizontal" >
+                <RadioButton Content="词句" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10,0,10,0" IsChecked="False" GroupName="modetwo"/>
+                <RadioButton Content="文段" HorizontalAlignment="Center" VerticalAlignment="Center" IsChecked="True" GroupName="modetwo"/>
+                <Button Margin="20,0,0,0" Width="36">说明</Button>
+            </StackPanel>
+        </GroupBox>
+
+
+
+    </Grid>
+</Window>

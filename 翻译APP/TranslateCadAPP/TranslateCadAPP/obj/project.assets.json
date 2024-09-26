@@ -896,11 +896,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\np0825\\Desktop\\TranslateCadAPP\\TranslateCadAPP\\TranslateCadAPP.csproj",
+      "projectUniqueName": "D:\\GithubProject\\VScode\\翻译APP\\TranslateCadAPP\\TranslateCadAPP\\TranslateCadAPP.csproj",
       "projectName": "TranslateCadAPP",
-      "projectPath": "C:\\Users\\np0825\\Desktop\\TranslateCadAPP\\TranslateCadAPP\\TranslateCadAPP.csproj",
+      "projectPath": "D:\\GithubProject\\VScode\\翻译APP\\TranslateCadAPP\\TranslateCadAPP\\TranslateCadAPP.csproj",
       "packagesPath": "C:\\Users\\np0825\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\np0825\\Desktop\\TranslateCadAPP\\TranslateCadAPP\\obj\\",
+      "outputPath": "D:\\GithubProject\\VScode\\翻译APP\\TranslateCadAPP\\TranslateCadAPP\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\np0825\\AppData\\Roaming\\NuGet\\NuGet.Config",

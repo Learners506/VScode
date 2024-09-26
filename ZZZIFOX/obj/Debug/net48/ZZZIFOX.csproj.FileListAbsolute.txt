@@ -31,3 +31,6 @@ E:\GitHubFile\VScode\ZZZIFOX\obj\Debug\net48\ZZZIFOX_MarkupCompile.lref
 E:\GitHubFile\VScode\ZZZIFOX\obj\Debug\net48\WPFUI\NewCopyWindow.baml
 E:\GitHubFile\VScode\ZZZIFOX\obj\Debug\net48\WPFUI\Window1.baml
 E:\GitHubFile\VScode\ZZZIFOX\obj\Debug\net48\ZZZIFOX.g.resources
+D:\GithubProject\VScode\ZZZIFOX\bin\Debug\net48\ZZZIFOX.dll.config
+D:\GithubProject\VScode\ZZZIFOX\obj\Debug\net48\WPFUI\NewCopyWindow.g.cs
+D:\GithubProject\VScode\ZZZIFOX\obj\Debug\net48\WPFUI\NewCopyWindow.baml

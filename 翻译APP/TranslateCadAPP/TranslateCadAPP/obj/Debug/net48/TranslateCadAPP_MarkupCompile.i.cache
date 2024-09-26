@@ -4,7 +4,7 @@
 library
 C#
 .cs
-C:\Users\np0825\Desktop\TranslateCadAPP\TranslateCadAPP\obj\Debug\net48\
+D:\GithubProject\VScode\翻译APP\TranslateCadAPP\TranslateCadAPP\obj\Debug\net48\
 TranslateCadAPP
 none
 false
@@ -16,5 +16,5 @@ Debug;acad;DEBUG;NETFRAMEWORK;NET48;
 38-1759230027
 WPFUI\translatecad.xaml;
 
-False
+True
 

@@ -5,12 +5,18 @@
     <Compile Update="WPFUI\NewCopyWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="WPFUI\TranslateUI.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="WPFUI\Window1.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="WPFUI\NewCopyWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="WPFUI\TranslateUI.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="WPFUI\Window1.xaml">

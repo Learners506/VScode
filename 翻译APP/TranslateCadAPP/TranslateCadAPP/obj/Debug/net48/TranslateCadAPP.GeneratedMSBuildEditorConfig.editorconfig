@@ -14,6 +14,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = TranslateCadAPP
-build_property.ProjectDir = C:\Users\np0825\Desktop\TranslateCadAPP\TranslateCadAPP\
+build_property.ProjectDir = D:\GithubProject\VScode\翻译APP\TranslateCadAPP\TranslateCadAPP\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

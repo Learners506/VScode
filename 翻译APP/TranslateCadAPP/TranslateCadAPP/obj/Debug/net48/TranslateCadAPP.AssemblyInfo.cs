@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TranslateCadAPP")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5eb57ba12e69421b3cccc230f89895ce16929f95")]
 [assembly: System.Reflection.AssemblyProductAttribute("TranslateCadAPP")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TranslateCadAPP")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
