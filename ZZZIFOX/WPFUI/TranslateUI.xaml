@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ZZZIFOX.WPFUI"
         mc:Ignorable="d"
-        Title="TranslateUI" Height="392" Width="410" Background="#FFE2DBDB">
+        Title="CAD翻译插件" Height="392" Width="424" Background="#FFE2DBDB" WindowStartupLocation="CenterScreen">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="2*"></RowDefinition>
@@ -120,7 +120,7 @@
 
         <StatusBar  Grid.Row="4" Grid.ColumnSpan="2">
             <StatusBarItem>
-                <TextBlock FontSize="10">CAD翻译软件V1.0 中国电建集团福建省电力勘测设计院有限公司发电分公司（市政分公司）</TextBlock>
+                <TextBlock FontSize="10">CAD翻译插件V1.0 中国电建集团福建省电力勘测设计院有限公司发电分公司（市政分公司）</TextBlock>
             </StatusBarItem>
         </StatusBar>
 

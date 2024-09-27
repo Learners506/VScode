@@ -34,3 +34,5 @@ E:\GitHubFile\VScode\ZZZIFOX\obj\Debug\net48\ZZZIFOX.g.resources
 D:\GithubProject\VScode\ZZZIFOX\bin\Debug\net48\ZZZIFOX.dll.config
 D:\GithubProject\VScode\ZZZIFOX\obj\Debug\net48\WPFUI\NewCopyWindow.g.cs
 D:\GithubProject\VScode\ZZZIFOX\obj\Debug\net48\WPFUI\NewCopyWindow.baml
+D:\GithubProject\VScode\ZZZIFOX\obj\Debug\net48\WPFUI\TranslateUI.g.cs
+D:\GithubProject\VScode\ZZZIFOX\obj\Debug\net48\WPFUI\TranslateUI.baml
