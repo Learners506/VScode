@@ -54,6 +54,11 @@
 	    <AutoGen>True</AutoGen>
 	    <DependentUpon>Settings.settings</DependentUpon>
 	  </Compile>
+	  <Compile Update="Settings\Translateset.Designer.cs">
+	    <DesignTimeSharedInput>True</DesignTimeSharedInput>
+	    <DependentUpon>Translateset.settings</DependentUpon>
+	    <AutoGen>True</AutoGen>
+	  </Compile>
 	  <Compile Update="Settings\NewCopy.Designer.cs">
 	    <DesignTimeSharedInput>True</DesignTimeSharedInput>
 	    <DependentUpon>NewCopy.settings</DependentUpon>
@@ -65,6 +70,10 @@
 	  <None Update="Properties\Settings.settings">
 	    <Generator>SettingsSingleFileGenerator</Generator>
 	    <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+	  </None>
+	  <None Update="Settings\Translateset.settings">
+	    <LastGenOutput>Translateset.Designer.cs</LastGenOutput>
+	    <Generator>SettingsSingleFileGenerator</Generator>
 	  </None>
 	  <None Update="Settings\NewCopy.settings">
 	    <LastGenOutput>NewCopy.Designer.cs</LastGenOutput>
