@@ -50,24 +50,24 @@ namespace ZZZIFOX.Settings {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("False")]
-        public bool modeonereplace {
+        public bool modeoneone {
             get {
-                return ((bool)(this["modeonereplace"]));
+                return ((bool)(this["modeoneone"]));
             }
             set {
-                this["modeonereplace"] = value;
+                this["modeoneone"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("False")]
-        public bool modetwowd {
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool modetwoone {
             get {
-                return ((bool)(this["modetwowd"]));
+                return ((bool)(this["modetwoone"]));
             }
             set {
-                this["modetwowd"] = value;
+                this["modetwoone"] = value;
             }
         }
         
@@ -116,6 +116,42 @@ namespace ZZZIFOX.Settings {
             }
             set {
                 this["style"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool modeonetwo {
+            get {
+                return ((bool)(this["modeonetwo"]));
+            }
+            set {
+                this["modeonetwo"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool modetwotwo {
+            get {
+                return ((bool)(this["modetwotwo"]));
+            }
+            set {
+                this["modetwotwo"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool ztstyle {
+            get {
+                return ((bool)(this["ztstyle"]));
+            }
+            set {
+                this["ztstyle"] = value;
             }
         }
     }

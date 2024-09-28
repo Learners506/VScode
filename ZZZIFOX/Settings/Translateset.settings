@@ -8,11 +8,11 @@
     <Setting Name="FYString" Type="System.String" Scope="User">
       <Value Profile="(Default)">自动识别</Value>
     </Setting>
-    <Setting Name="modeonereplace" Type="System.Boolean" Scope="User">
+    <Setting Name="modeoneone" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">False</Value>
     </Setting>
-    <Setting Name="modetwowd" Type="System.Boolean" Scope="User">
-      <Value Profile="(Default)">False</Value>
+    <Setting Name="modetwoone" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
     </Setting>
     <Setting Name="width" Type="System.Double" Scope="User">
       <Value Profile="(Default)">0.7</Value>
@@ -25,6 +25,15 @@
     </Setting>
     <Setting Name="style" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="modeonetwo" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="modetwotwo" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="ztstyle" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
     </Setting>
   </Settings>
 </SettingsFile>

@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ZZZIFOX.WPFUI"
         mc:Ignorable="d"
-        Title="CAD翻译插件" Height="392" Width="424" Background="#FFE2DBDB" WindowStartupLocation="CenterScreen">
+        Title="CAD翻译插件" Height="392" Width="424" Background="#FFE2DBDB" WindowStartupLocation="CenterScreen" Closed="Window_Closed" Loaded="Window_Loaded" Topmost="True">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="2*"></RowDefinition>
@@ -20,14 +20,14 @@
         </Grid.ColumnDefinitions>
         <StackPanel Grid.Row="0" Grid.Column="0" Orientation="Horizontal" Margin="0,10,0,0">
             <Label HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10,0,0,0">目标语言</Label>
-            <ComboBox SelectedIndex="0" VerticalAlignment="Center" Width="99" Margin="10,0,0,0">
+            <ComboBox SelectedIndex="0" VerticalAlignment="Center" Width="99" Margin="10,0,0,0" Text="{Binding MBString}">
                 <ComboBoxItem HorizontalAlignment="Center" VerticalAlignment="Center">中文</ComboBoxItem>
                 <ComboBoxItem HorizontalAlignment="Center" VerticalAlignment="Center">英文</ComboBoxItem>
             </ComboBox>
         </StackPanel>
         <StackPanel Grid.Row="0" Grid.Column="1" Orientation="Horizontal" Margin="0,10,0,-3">
             <Label HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10,0,0,0">待翻译语言</Label>
-            <ComboBox SelectedIndex="0" VerticalAlignment="Center" Width="99" Margin="10,0,0,0">
+            <ComboBox SelectedIndex="0" VerticalAlignment="Center" Width="99" Margin="10,0,0,0" Text="{Binding FYString}">
                 <ComboBoxItem HorizontalAlignment="Center" VerticalAlignment="Center">自动识别</ComboBoxItem>
                 <ComboBoxItem HorizontalAlignment="Center" VerticalAlignment="Center">中文</ComboBoxItem>
                 <ComboBoxItem HorizontalAlignment="Center" VerticalAlignment="Center">英文</ComboBoxItem>
@@ -35,14 +35,14 @@
         </StackPanel>
         <GroupBox Grid.Row="1" Header="翻译模式选择一"  HorizontalAlignment="Center" VerticalAlignment="Center" Height="45" Width="196">
             <StackPanel Orientation="Horizontal" >
-                <RadioButton Content="原位替换" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10,0,30,0" IsChecked="False" GroupName="modeone"/>
-                <RadioButton Content="原位新增" HorizontalAlignment="Center" VerticalAlignment="Center" IsChecked="True" GroupName="modeone"/>
+                <RadioButton Content="原位替换" Name="oneone" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10,0,30,0"  GroupName="modeone"/>
+                <RadioButton Content="原位新增" Name="onetwo" HorizontalAlignment="Center" VerticalAlignment="Center"  GroupName="modeone" Checked="onetwo_Checked" Unchecked="onetwo_Unchecked"/>
             </StackPanel>
         </GroupBox>
         <GroupBox Grid.Row="1" Grid.Column="1" Header="翻译模式选择二"  HorizontalAlignment="Center" VerticalAlignment="Center" Height="45" Width="196">
             <StackPanel Orientation="Horizontal" >
-                <RadioButton Content="词句" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10,0,10,0" IsChecked="False" GroupName="modetwo"/>
-                <RadioButton Content="文段" HorizontalAlignment="Center" VerticalAlignment="Center" IsChecked="True" GroupName="modetwo"/>
+                <RadioButton Content="词句" Name="twoone" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10,0,10,0" GroupName="modetwo" Checked="twoone_Checked" Unchecked="twoone_Unchecked"/>
+                <RadioButton Content="文段" Name="twotwo" HorizontalAlignment="Center" VerticalAlignment="Center"  GroupName="modetwo"/>
                 <Button Margin="20,0,0,0" Width="36">说明</Button>
             </StackPanel>
         </GroupBox>
@@ -53,46 +53,47 @@
             </Grid.ColumnDefinitions>
             <GroupBox Header="文字排版设置" Margin="10,0,-1,0" >
                 <StackPanel Height="161">
-                    <StackPanel Orientation="Horizontal" Margin="0,10,0,10">
+                    <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
                         <Label Margin="10,0,25,0">字宽</Label>
-                        <TextBox Width="60" Margin="0,0,10,0"></TextBox>
-                        <ComboBox SelectedIndex="1" Width="50" Margin="0,0,10,0">
+                        <TextBox Width="60" Margin="0,0,10,0" Name="zk" Text="{Binding width}"></TextBox>
+                        <ComboBox Name="zkcom"  Width="50" Margin="0,0,10,0" SelectionChanged="zkcom_SelectionChanged">
                             <ComboBoxItem>0.5</ComboBoxItem>
                             <ComboBoxItem>0.7</ComboBoxItem>
                             <ComboBoxItem>1</ComboBoxItem>
                             <ComboBoxItem>1.2</ComboBoxItem>
                         </ComboBox>
-                        <Button Width="50">拾取</Button>
+                        <Button Name="zkbt" Width="50" Click="zkbt_Click">拾取</Button>
                         
                     </StackPanel>
                     <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
                         <Label Margin="10,0,25,0">字高</Label>
-                        <TextBox Width="60" Margin="0,0,10,0"></TextBox>
-                        <ComboBox SelectedIndex="1" Width="50" Margin="0,0,10,0">
+                        <TextBox  Width="60" Margin="0,0,10,0" Name="zg" Text="{Binding height}"></TextBox>
+                        <ComboBox Name="zgcom"  Width="50" Margin="0,0,10,0" SelectionChanged="zgcom_SelectionChanged">
                             <ComboBoxItem>250</ComboBoxItem>
                             <ComboBoxItem>300</ComboBoxItem>
                             <ComboBoxItem>400</ComboBoxItem>
                             <ComboBoxItem>500</ComboBoxItem>
                         </ComboBox>
-                        <Button Width="50">拾取</Button>
+                        <Button Name="zgbt" Width="50" Click="zgbt_Click">拾取</Button>
 
                     </StackPanel>
                     <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
-                        <Label Margin="10,0,25,0">字宽</Label>
-                        <TextBox Width="60" Margin="0,0,10,0"></TextBox>
-                        <ComboBox SelectedIndex="1" Width="50" Margin="0,0,10,0">
+                        <Label Margin="10,0,25,0">行距</Label>
+                        <TextBox Width="60" Margin="0,0,10,0" Name="hj" Text="{Binding distance}"></TextBox>
+                        <ComboBox Name="hjcom" Width="50" Margin="0,0,10,0" SelectionChanged="hjcom_SelectionChanged">
                             <ComboBoxItem>1</ComboBoxItem>
                             <ComboBoxItem>1.5</ComboBoxItem>
                             <ComboBoxItem>2</ComboBoxItem>
                             <ComboBoxItem>2.5</ComboBoxItem>
                         </ComboBox>
-                        <Button Width="50">拾取</Button>
+                        <Button Name="hjbt" Width="50" Click="hjbt_Click">拾取</Button>
 
                     </StackPanel>
+                    <RadioButton Name="ztysrbn" Margin="10,0,0,10" GroupName="three" Checked="ztysrbn_Checked"  Unchecked="ztysrbn_Unchecked" Click="ztysrbn_Click">是否使用系统字体样式</RadioButton>
                     <StackPanel Orientation="Horizontal">
                         <Label Margin="0,0,10,0">字体样式</Label>
-                        <TextBox Width="60" Margin="0,0,10,0"></TextBox>
-                        <ComboBox Width="110" Margin="0,0,10,0"/>
+                        <TextBox Width="60" Margin="0,0,10,0" Name="ztstyle" Text="{Binding style}" IsEnabled="False"></TextBox>
+                        <ComboBox Name="ztyscom" Width="110" Margin="0,0,10,0" SelectionChanged="ztyscom_SelectionChanged"/>
 
                     </StackPanel>
 
@@ -108,8 +109,8 @@
             </GroupBox>
         </Grid>
         <StackPanel Grid.Row="3" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Horizontal" >
-            <Button Width="50" Margin="0,0,50,0">确定</Button>
-            <Button Width="50" Margin="50,0,0,0">取消</Button>
+            <Button Width="50" Margin="0,0,50,0" Click="Button_Click">确定</Button>
+            <Button Width="50" Margin="50,0,0,0" Click="Button_Click_1">取消</Button>
         </StackPanel>
 
 

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "XNub2m2gvBc=",
+  "dgSpecHash": "u9ZG/+P0E4M=",
   "success": true,
   "projectFilePath": "E:\\GitHubFile\\VScode\\ZZZIFOX\\ZZZIFOX.csproj",
   "expectedPackageFiles": [
@@ -8,7 +8,8 @@
     "C:\\Users\\ZZZ\\.nuget\\packages\\autocad.net.core\\23.0.0\\autocad.net.core.23.0.0.nupkg.sha512",
     "C:\\Users\\ZZZ\\.nuget\\packages\\autocad.net.model\\23.0.0\\autocad.net.model.23.0.0.nupkg.sha512",
     "C:\\Users\\ZZZ\\.nuget\\packages\\ifox.basal.source\\0.7.2\\ifox.basal.source.0.7.2.nupkg.sha512",
-    "C:\\Users\\ZZZ\\.nuget\\packages\\ifox.cad.source\\0.7.2\\ifox.cad.source.0.7.2.nupkg.sha512"
+    "C:\\Users\\ZZZ\\.nuget\\packages\\ifox.cad.source\\0.7.2\\ifox.cad.source.0.7.2.nupkg.sha512",
+    "C:\\Users\\ZZZ\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
   ],
   "logs": []
 }
