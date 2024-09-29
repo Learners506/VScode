@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "E:\\GitHubFile\\VScode\\ZZZIFOX\\ZZZIFOX.csproj": {}
+    "D:\\GithubProject\\VScode\\ZZZIFOX\\ZZZIFOX.csproj": {}
   },
   "projects": {
-    "E:\\GitHubFile\\VScode\\ZZZIFOX\\ZZZIFOX.csproj": {
+    "D:\\GithubProject\\VScode\\ZZZIFOX\\ZZZIFOX.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\GitHubFile\\VScode\\ZZZIFOX\\ZZZIFOX.csproj",
+        "projectUniqueName": "D:\\GithubProject\\VScode\\ZZZIFOX\\ZZZIFOX.csproj",
         "projectName": "ZZZIFOX",
-        "projectPath": "E:\\GitHubFile\\VScode\\ZZZIFOX\\ZZZIFOX.csproj",
-        "packagesPath": "C:\\Users\\ZZZ\\.nuget\\packages\\",
-        "outputPath": "E:\\GitHubFile\\VScode\\ZZZIFOX\\obj\\",
+        "projectPath": "D:\\GithubProject\\VScode\\ZZZIFOX\\ZZZIFOX.csproj",
+        "packagesPath": "C:\\Users\\np0825\\.nuget\\packages\\",
+        "outputPath": "D:\\GithubProject\\VScode\\ZZZIFOX\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ZZZ\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\np0825\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -67,7 +67,7 @@
               "version": "[13.0.3, )"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }

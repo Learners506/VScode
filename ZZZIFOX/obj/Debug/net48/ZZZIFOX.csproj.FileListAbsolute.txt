@@ -40,3 +40,5 @@ E:\GitHubFile\VScode\ZZZIFOX\obj\Debug\net48\WPFUI\TranslateUI.g.cs
 E:\GitHubFile\VScode\ZZZIFOX\obj\Debug\net48\WPFUI\TranslateUI.baml
 E:\GitHubFile\VScode\ZZZIFOX\bin\Debug\net48\Newtonsoft.Json.dll
 E:\GitHubFile\VScode\ZZZIFOX\obj\Debug\net48\ZZZIFOX.csproj.Up2Date
+D:\GithubProject\VScode\ZZZIFOX\bin\Debug\net48\Newtonsoft.Json.dll
+D:\GithubProject\VScode\ZZZIFOX\obj\Debug\net48\ZZZIFOX.csproj.Up2Date

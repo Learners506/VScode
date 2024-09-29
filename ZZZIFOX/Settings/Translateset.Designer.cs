@@ -154,5 +154,17 @@ namespace ZZZIFOX.Settings {
                 this["ztstyle"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string resulstr {
+            get {
+                return ((string)(this["resulstr"]));
+            }
+            set {
+                this["resulstr"] = value;
+            }
+        }
     }
 }

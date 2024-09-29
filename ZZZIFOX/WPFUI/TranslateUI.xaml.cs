@@ -282,5 +282,24 @@ namespace ZZZIFOX.WPFUI
             }
             _lastChecked = ztysrbn.IsChecked ?? false;
         }
+
+        //翻译过程数据导出
+        private void etresult_Click(object sender, RoutedEventArgs e)
+        {
+            var savefiledialog = new System.Windows.Forms.SaveFileDialog();
+            savefiledialog.Filter = "文本文件(*.txt)|*.txt";
+            savefiledialog.Title = "保存输出结果";
+            if (savefiledialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            {
+                string outputpath = savefiledialog.FileName;
+                using (StreamWriter writer = new StreamWriter(outputpath, true))
+                {
+                    writer.Write(ThisOptions.resulstr);
+                }
+            }
+
+
+
+        }
     }
 }

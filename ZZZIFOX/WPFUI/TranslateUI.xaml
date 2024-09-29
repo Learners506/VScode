@@ -101,7 +101,7 @@
             </GroupBox>
             <GroupBox Grid.Column="1" Header="翻译数据" Margin="10,0,10,0">
                 <StackPanel>
-                    <Button Width="70" Margin="0,20,0,10">导出数据</Button>
+                    <Button Name="etresult" Width="70" Margin="0,20,0,10" Click="etresult_Click">导出数据</Button>
                     <Button Width="90" Margin="0,10,0,0">打开专业词库</Button>
                     <Button Width="90" Margin="0,20,0,0">存储专业词库</Button>
                     <Button Width="70" Margin="0,20,0,0">帮助说明</Button>
