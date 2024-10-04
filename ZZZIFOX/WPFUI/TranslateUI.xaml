@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ZZZIFOX.WPFUI"
         mc:Ignorable="d"
-        Title="CAD翻译插件" Height="392" Width="424" Background="#FFE2DBDB" WindowStartupLocation="CenterScreen" Closed="Window_Closed" Loaded="Window_Loaded" Topmost="True">
+        Title="基于专业知识库的CAD快速翻译排版" Height="392" Width="424" Background="#FFE2DBDB" WindowStartupLocation="CenterScreen" Closed="Window_Closed" Loaded="Window_Loaded" Topmost="True">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="2*"></RowDefinition>
@@ -33,17 +33,17 @@
                 <ComboBoxItem HorizontalAlignment="Center" VerticalAlignment="Center">英文</ComboBoxItem>
             </ComboBox>
         </StackPanel>
-        <GroupBox Grid.Row="1" Header="翻译模式选择一"  HorizontalAlignment="Center" VerticalAlignment="Center" Height="45" Width="196">
+        <GroupBox Grid.Row="1" Header="翻译设置选项一"  HorizontalAlignment="Center" VerticalAlignment="Center" Height="45" Width="196">
             <StackPanel Orientation="Horizontal" >
                 <RadioButton Content="原位替换" Name="oneone" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10,0,30,0"  GroupName="modeone"/>
                 <RadioButton Content="原位新增" Name="onetwo" HorizontalAlignment="Center" VerticalAlignment="Center"  GroupName="modeone" Checked="onetwo_Checked" Unchecked="onetwo_Unchecked"/>
             </StackPanel>
         </GroupBox>
-        <GroupBox Grid.Row="1" Grid.Column="1" Header="翻译模式选择二"  HorizontalAlignment="Center" VerticalAlignment="Center" Height="45" Width="196">
+        <GroupBox Grid.Row="1" Grid.Column="1" Header="翻译设置选项二"  HorizontalAlignment="Center" VerticalAlignment="Center" Height="45" Width="196">
             <StackPanel Orientation="Horizontal" >
                 <RadioButton Content="词句" Name="twoone" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10,0,10,0" GroupName="modetwo" Checked="twoone_Checked" Unchecked="twoone_Unchecked"/>
                 <RadioButton Content="文段" Name="twotwo" HorizontalAlignment="Center" VerticalAlignment="Center"  GroupName="modetwo"/>
-                <Button Margin="20,0,0,0" Width="36">说明</Button>
+                <Button Name="modebut" Margin="20,0,0,0" Width="36" Click="modebut_Click">说明</Button>
             </StackPanel>
         </GroupBox>
         <Grid Grid.Row="2" Grid.ColumnSpan="2">
@@ -78,7 +78,7 @@
 
                     </StackPanel>
                     <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
-                        <Label Margin="10,0,25,0">行距</Label>
+                        <Label Margin="4.8,0,6,0" Content="新增行距"/>
                         <TextBox Width="60" Margin="0,0,10,0" Name="hj" Text="{Binding distance}"></TextBox>
                         <ComboBox Name="hjcom" Width="50" Margin="0,0,10,0" SelectionChanged="hjcom_SelectionChanged">
                             <ComboBoxItem>1</ComboBoxItem>
@@ -99,12 +99,12 @@
 
                 </StackPanel>
             </GroupBox>
-            <GroupBox Grid.Column="1" Header="翻译数据" Margin="10,0,10,0">
+            <GroupBox Grid.Column="1" Header="翻译结果数据" Margin="10,0,10,0">
                 <StackPanel>
                     <Button Name="etresult" Width="70" Margin="0,20,0,10" Click="etresult_Click">导出数据</Button>
-                    <Button Width="90" Margin="0,10,0,0">打开专业词库</Button>
-                    <Button Width="90" Margin="0,20,0,0">存储专业词库</Button>
-                    <Button Width="70" Margin="0,20,0,0">帮助说明</Button>
+                    <Button Name="openword" Width="90" Margin="0,10,0,0" Click="openword_Click">打开专业词库</Button>
+                    <Button Name="storageword" Width="90" Margin="0,20,0,0" Click="storageword_Click">存储专业词库</Button>
+                    <Button Name="helpbt" Width="70" Margin="0,20,0,0" Click="helpbt_Click">帮助说明</Button>
                 </StackPanel>
             </GroupBox>
         </Grid>
@@ -116,7 +116,7 @@
 
         <StatusBar  Grid.Row="4" Grid.ColumnSpan="2">
             <StatusBarItem>
-                <TextBlock FontSize="10">CAD翻译插件V1.0 中国电建集团福建省电力勘测设计院有限公司发电分公司（市政分公司）</TextBlock>
+                <TextBlock FontSize="10">BY 中国电建集团福建省电力勘测设计院有限公司发电分公司（市政分公司）</TextBlock>
             </StatusBarItem>
         </StatusBar>
 

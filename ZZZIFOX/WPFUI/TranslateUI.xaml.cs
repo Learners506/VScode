@@ -230,35 +230,43 @@ namespace ZZZIFOX.WPFUI
             DialogResult = true;
             this.Close();
             double thjj = 0;
-            while (true)
-            {
-                // 提示用户选择一个实体
-                PromptEntityOptions peo = new PromptEntityOptions("\n请选择一个实体: ");
-                PromptEntityResult per = Env.Editor.GetEntity(peo);
+            var p1 = Env.Editor.GetPoint("请指定第一个点");
+            var p2key = new PromptPointOptions("请指定第二个点");
+            p2key.UseBasePoint = true;
+            p2key.BasePoint = p1.Value;
+            var p2 = Env.Editor.GetPoint(p2key);
+            thjj = Math.Abs(p1.Value.Y - p2.Value.Y) / ThisOptions.height;
+            #region
+            //while (true)
+            //{
+            //    // 提示用户选择一个实体
+            //    PromptEntityOptions peo = new PromptEntityOptions("\n请选择一个实体: ");
+            //    PromptEntityResult per = Env.Editor.GetEntity(peo);
 
-                if (per.Status == PromptStatus.Cancel)
-                {
-                    break;
-                }
-                else if (per.Status != PromptStatus.OK)
-                {
-                    Env.Editor.WriteMessage("\n选择取消或失败，请重新选择.");
-                    continue;
+            //    if (per.Status == PromptStatus.Cancel)
+            //    {
+            //        break;
+            //    }
+            //    else if (per.Status != PromptStatus.OK)
+            //    {
+            //        Env.Editor.WriteMessage("\n选择取消或失败，请重新选择.");
+            //        continue;
 
-                }
-                using var trans = new DBTrans();
-                Entity ent = trans.GetObject(per.ObjectId, OpenMode.ForRead) as Entity;
+            //    }
+            //    using var trans = new DBTrans();
+            //    Entity ent = trans.GetObject(per.ObjectId, OpenMode.ForRead) as Entity;
 
-                if (ent is MText mtext)
-                {
-                    thjj = mtext.LineSpacingFactor;
-                    break;
-                }
-                else
-                {
-                    Env.Editor.WriteMessage("\n选择的不是文字，请重新选择.");
-                }
-            }
+            //    if (ent is MText mtext)
+            //    {
+            //        thjj = mtext.LineSpacingFactor;
+            //        break;
+            //    }
+            //    else
+            //    {
+            //        Env.Editor.WriteMessage("\n选择的不是文字，请重新选择.");
+            //    }
+            //}
+            #endregion
             hj.Text = thjj.ToString();
             ThisOptions.distance = thjj;
             new TranslateUI().ShowDialog();
@@ -297,9 +305,105 @@ namespace ZZZIFOX.WPFUI
                     writer.Write(ThisOptions.resulstr);
                 }
             }
-
+            System.Windows.MessageBox.Show($"文件已经保存至{savefiledialog.FileName}");
 
 
         }
+
+        private void openword_Click(object sender, RoutedEventArgs e)
+        {
+            string resultPath = System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop),"transWords.txt");
+            if (!File.Exists(resultPath)) 
+            { 
+                // 文件不存在的时候就创建它
+                File.Create(resultPath).Dispose();
+            }
+            Process.Start(new ProcessStartInfo(resultPath) { UseShellExecute = true });
+        }
+
+        private void storageword_Click(object sender, RoutedEventArgs e)
+        {
+            new translatewords().ShowDialog();
+        }
+
+        private void modebut_Click(object sender, RoutedEventArgs e)
+        {
+            var filePath = System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), "翻译设置说明.txt");
+            // 检查文件是否存在
+            if (!File.Exists(filePath))
+            {
+                // 如果文件不存在，则创建文件并写入说明文字
+                try
+                {
+                    using (StreamWriter writer = new StreamWriter(filePath))
+                    {
+                        writer.WriteLine(getszsm()); // 您想要写入的说明文字
+                        
+                    }
+                    Process.Start(new ProcessStartInfo(filePath) { UseShellExecute = true });
+                }
+                catch (Exception ex)
+                {
+                    System.Windows.MessageBox.Show($"创建文件时出错: {ex.Message}", "错误", MessageBoxButton.OK, MessageBoxImage.Error);
+                }
+            }
+            else
+            {
+                Process.Start(new ProcessStartInfo(filePath) { UseShellExecute = true });
+            }
+        }
+
+        private void helpbt_Click(object sender, RoutedEventArgs e)
+        {
+            var filePath = System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), "帮助文档.txt");
+            // 检查文件是否存在
+            if (!File.Exists(filePath))
+            {
+                // 如果文件不存在，则创建文件并写入说明文字
+                try
+                {
+                    using (StreamWriter writer = new StreamWriter(filePath))
+                    {
+                        writer.WriteLine(getztsm()); // 您想要写入的说明文字
+                        
+                    }
+                    Process.Start(new ProcessStartInfo(filePath) { UseShellExecute = true });
+                }
+                catch (Exception ex)
+                {
+                    System.Windows.MessageBox.Show($"创建文件时出错: {ex.Message}", "错误", MessageBoxButton.OK, MessageBoxImage.Error);
+                }
+            }
+            else
+            {
+                Process.Start(new ProcessStartInfo(filePath) { UseShellExecute = true });
+            }
+        }
+
+        private string getszsm()
+        {
+            string str = "";
+            str += "翻译设置说明\n\n翻译设置选项一：原位替换指的是将翻译后的文字替换到原文字位置上，直接进行替换（原文字消失）。\n" +
+                "原位新增指的是将翻译后的文字增加到图纸中（原文字不消失），增加的位置根据新增行距自动向下新增。\n\n" +
+                "翻译设置选项二：词句指的是对句子进行翻译，可以结合专业文库和网络翻译对文字进行翻译，也可以选中多个文字对象对其进行批量翻译。\n" +
+                "文段翻译指的是对整个段落进行翻译，可选中图纸上按行排版好的单行文字或多行文字，程序自己根据文字坐标进行排序，组合成一段进行翻译，翻译后" +
+                "输出的翻译文字为多行文字，用户可指定多行文字的插入点和宽度进行排版。";
+            return str;
+        }
+        private string getztsm()
+        {
+            string str = "";
+            str += "插件帮助说明\n\n" +
+                "语言设置：待翻译语言可选择自动识别、中文、英文，目标语言提供了中文和英文互译两种选项\n\n" +
+                "翻译设置选项可见设置内说明文档\n\n" +
+                "文字排版设置：对于原位新增，设置完字宽、字高，新增翻译文字可按照该设置样式添加，对于原位替换则会修改原文字样式为新增样式，设置适用于词句和文段两种格式。" +
+                "新增行距表示使用原位新增时，新增的字体距离原字体的向下的几倍原字高。插件还设置了选择使用系统字体样式的选项，插件会自动识别图纸中已有的文字的字体样式，用户可指定一个字体样式作为翻译语言的字体样式。" +
+                "另外用户可以通过拾取的方式来获取这些参数，字宽、字高可通过拾取图纸上已有的文字来设置，新增行距可通过点击图纸上的两个点来自定义翻译文字和源文字之间的距离。\n\n" +
+                "翻译结果数据：用户在翻译过程中的数据可通过导出数据按钮导出为txt文档，其中翻译前后语言通过 ，隔开，和专业词库的存储格式相同，方便用户对导出的数据进行筛选修改后存储如专业词库中。" +
+                "打开专业词库按钮可以打开存储在本地的专业词库，用户可通过此处来批量添加专业词库，也可通过存储专业词库按钮中去删除、搜索、添加专业词库的词汇。";
+            return str;
+        }
+
+
     }
 }

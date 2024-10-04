@@ -5,12 +5,12 @@
     <RestoreTool Condition=" '$(RestoreTool)' == '' ">NuGet</RestoreTool>
     <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>
     <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">$(UserProfile)\.nuget\packages\</NuGetPackageRoot>
-    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\np0825\.nuget\packages\</NuGetPackageFolders>
+    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\ZZZ\.nuget\packages\</NuGetPackageFolders>
     <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
     <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">6.10.1</NuGetToolVersion>
   </PropertyGroup>
   <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <SourceRoot Include="C:\Users\np0825\.nuget\packages\" />
+    <SourceRoot Include="C:\Users\ZZZ\.nuget\packages\" />
   </ItemGroup>
   <ItemGroup Condition=" '$(Language)' == 'C#' AND '$(ExcludeRestorePackageImports)' != 'true' ">
     <Compile Include="$(NuGetPackageRoot)ifox.cad.source\0.7.2\contentFiles\cs\any\IFox.CAD.Source\Algorithms\Graph\Graph.cs" Condition="Exists('$(NuGetPackageRoot)ifox.cad.source\0.7.2\contentFiles\cs\any\IFox.CAD.Source\Algorithms\Graph\Graph.cs')">
@@ -905,8 +905,8 @@
     </Compile>
   </ItemGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <PkgAutoCAD_NET_Model Condition=" '$(PkgAutoCAD_NET_Model)' == '' ">C:\Users\np0825\.nuget\packages\autocad.net.model\23.0.0</PkgAutoCAD_NET_Model>
-    <PkgAutoCAD_NET_Core Condition=" '$(PkgAutoCAD_NET_Core)' == '' ">C:\Users\np0825\.nuget\packages\autocad.net.core\23.0.0</PkgAutoCAD_NET_Core>
-    <PkgAutoCAD_NET Condition=" '$(PkgAutoCAD_NET)' == '' ">C:\Users\np0825\.nuget\packages\autocad.net\23.0.0</PkgAutoCAD_NET>
+    <PkgAutoCAD_NET_Model Condition=" '$(PkgAutoCAD_NET_Model)' == '' ">C:\Users\ZZZ\.nuget\packages\autocad.net.model\23.0.0</PkgAutoCAD_NET_Model>
+    <PkgAutoCAD_NET_Core Condition=" '$(PkgAutoCAD_NET_Core)' == '' ">C:\Users\ZZZ\.nuget\packages\autocad.net.core\23.0.0</PkgAutoCAD_NET_Core>
+    <PkgAutoCAD_NET Condition=" '$(PkgAutoCAD_NET)' == '' ">C:\Users\ZZZ\.nuget\packages\autocad.net\23.0.0</PkgAutoCAD_NET>
   </PropertyGroup>
 </Project>

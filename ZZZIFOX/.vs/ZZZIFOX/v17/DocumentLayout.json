@@ -1,41 +1,45 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\GithubProject\\VScode\\ZZZIFOX\\",
+  "WorkspaceRootPath": "E:\\GitHubFile\\VScode\\ZZZIFOX\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1C630A4E-0CD8-4FF4-9136-9CE2506C8848}|ZZZIFOX.csproj|d:\\githubproject\\vscode\\zzzifox\\wpfui\\translateui.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{1C630A4E-0CD8-4FF4-9136-9CE2506C8848}|ZZZIFOX.csproj|e:\\githubfile\\vscode\\zzzifox\\wpfui\\translateui.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{1C630A4E-0CD8-4FF4-9136-9CE2506C8848}|ZZZIFOX.csproj|solutionrelative:wpfui\\translateui.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1C630A4E-0CD8-4FF4-9136-9CE2506C8848}|ZZZIFOX.csproj|d:\\githubproject\\vscode\\zzzifox\\wpfui\\translateui.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1C630A4E-0CD8-4FF4-9136-9CE2506C8848}|ZZZIFOX.csproj|e:\\githubfile\\vscode\\zzzifox\\wpfui\\translateui.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1C630A4E-0CD8-4FF4-9136-9CE2506C8848}|ZZZIFOX.csproj|solutionrelative:wpfui\\translateui.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1C630A4E-0CD8-4FF4-9136-9CE2506C8848}|ZZZIFOX.csproj|d:\\githubproject\\vscode\\zzzifox\\projectitems\\translater.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1C630A4E-0CD8-4FF4-9136-9CE2506C8848}|ZZZIFOX.csproj|e:\\githubfile\\vscode\\zzzifox\\wpfui\\translatewords.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{1C630A4E-0CD8-4FF4-9136-9CE2506C8848}|ZZZIFOX.csproj|solutionrelative:wpfui\\translatewords.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1C630A4E-0CD8-4FF4-9136-9CE2506C8848}|ZZZIFOX.csproj|e:\\githubfile\\vscode\\zzzifox\\projectitems\\translater.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1C630A4E-0CD8-4FF4-9136-9CE2506C8848}|ZZZIFOX.csproj|solutionrelative:projectitems\\translater.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1C630A4E-0CD8-4FF4-9136-9CE2506C8848}|ZZZIFOX.csproj|d:\\githubproject\\vscode\\zzzifox\\projectitems\\readfies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1C630A4E-0CD8-4FF4-9136-9CE2506C8848}|ZZZIFOX.csproj|solutionrelative:projectitems\\readfies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1C630A4E-0CD8-4FF4-9136-9CE2506C8848}|ZZZIFOX.csproj|D:\\GithubProject\\VScode\\ZZZIFOX\\settings\\translateset.settings||{6D2695F9-5365-4A78-89ED-F205C045BFE6}",
+      "AbsoluteMoniker": "D:0:0:{1C630A4E-0CD8-4FF4-9136-9CE2506C8848}|ZZZIFOX.csproj|E:\\GitHubFile\\VScode\\ZZZIFOX\\settings\\translateset.settings||{6D2695F9-5365-4A78-89ED-F205C045BFE6}",
       "RelativeMoniker": "D:0:0:{1C630A4E-0CD8-4FF4-9136-9CE2506C8848}|ZZZIFOX.csproj|solutionrelative:settings\\translateset.settings||{6D2695F9-5365-4A78-89ED-F205C045BFE6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1C630A4E-0CD8-4FF4-9136-9CE2506C8848}|ZZZIFOX.csproj|d:\\githubproject\\vscode\\zzzifox\\projectitems\\selectsimlartext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1C630A4E-0CD8-4FF4-9136-9CE2506C8848}|ZZZIFOX.csproj|e:\\githubfile\\vscode\\zzzifox\\wpfui\\translatewords.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1C630A4E-0CD8-4FF4-9136-9CE2506C8848}|ZZZIFOX.csproj|solutionrelative:wpfui\\translatewords.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1C630A4E-0CD8-4FF4-9136-9CE2506C8848}|ZZZIFOX.csproj|e:\\githubfile\\vscode\\zzzifox\\projectitems\\selectsimlartext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1C630A4E-0CD8-4FF4-9136-9CE2506C8848}|ZZZIFOX.csproj|solutionrelative:projectitems\\selectsimlartext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1C630A4E-0CD8-4FF4-9136-9CE2506C8848}|ZZZIFOX.csproj|d:\\githubproject\\vscode\\zzzifox\\projectitems\\blockcount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1C630A4E-0CD8-4FF4-9136-9CE2506C8848}|ZZZIFOX.csproj|e:\\githubfile\\vscode\\zzzifox\\projectitems\\blockcount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1C630A4E-0CD8-4FF4-9136-9CE2506C8848}|ZZZIFOX.csproj|solutionrelative:projectitems\\blockcount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1C630A4E-0CD8-4FF4-9136-9CE2506C8848}|ZZZIFOX.csproj|d:\\githubproject\\vscode\\zzzifox\\projectitems\\toinsetblock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1C630A4E-0CD8-4FF4-9136-9CE2506C8848}|ZZZIFOX.csproj|e:\\githubfile\\vscode\\zzzifox\\projectitems\\toinsetblock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1C630A4E-0CD8-4FF4-9136-9CE2506C8848}|ZZZIFOX.csproj|solutionrelative:projectitems\\toinsetblock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1C630A4E-0CD8-4FF4-9136-9CE2506C8848}|ZZZIFOX.csproj|d:\\githubproject\\vscode\\zzzifox\\startmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1C630A4E-0CD8-4FF4-9136-9CE2506C8848}|ZZZIFOX.csproj|e:\\githubfile\\vscode\\zzzifox\\startmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1C630A4E-0CD8-4FF4-9136-9CE2506C8848}|ZZZIFOX.csproj|solutionrelative:startmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -46,30 +50,42 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ReadFies.cs",
-              "DocumentMoniker": "D:\\GithubProject\\VScode\\ZZZIFOX\\ProjectItems\\ReadFies.cs",
-              "RelativeDocumentMoniker": "ProjectItems\\ReadFies.cs",
-              "ToolTip": "D:\\GithubProject\\VScode\\ZZZIFOX\\ProjectItems\\ReadFies.cs",
-              "RelativeToolTip": "ProjectItems\\ReadFies.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAAE8AAAA0AAAA",
+              "DocumentIndex": 5,
+              "Title": "translatewords.xaml.cs",
+              "DocumentMoniker": "E:\\GitHubFile\\VScode\\ZZZIFOX\\WPFUI\\translatewords.xaml.cs",
+              "RelativeDocumentMoniker": "WPFUI\\translatewords.xaml.cs",
+              "ToolTip": "E:\\GitHubFile\\VScode\\ZZZIFOX\\WPFUI\\translatewords.xaml.cs",
+              "RelativeToolTip": "WPFUI\\translatewords.xaml.cs",
+              "ViewState": "AQIAAJcAAAAAAAAAAAAIwKQAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-29T03:14:48.048Z",
+              "WhenOpened": "2024-10-02T07:50:35.164Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "translatewords.xaml",
+              "DocumentMoniker": "E:\\GitHubFile\\VScode\\ZZZIFOX\\WPFUI\\translatewords.xaml",
+              "RelativeDocumentMoniker": "WPFUI\\translatewords.xaml",
+              "ToolTip": "E:\\GitHubFile\\VScode\\ZZZIFOX\\WPFUI\\translatewords.xaml",
+              "RelativeToolTip": "WPFUI\\translatewords.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-10-02T06:17:08.939Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "TranslateUI.xaml.cs",
-              "DocumentMoniker": "D:\\GithubProject\\VScode\\ZZZIFOX\\WPFUI\\TranslateUI.xaml.cs",
+              "DocumentMoniker": "E:\\GitHubFile\\VScode\\ZZZIFOX\\WPFUI\\TranslateUI.xaml.cs",
               "RelativeDocumentMoniker": "WPFUI\\TranslateUI.xaml.cs",
-              "ToolTip": "D:\\GithubProject\\VScode\\ZZZIFOX\\WPFUI\\TranslateUI.xaml.cs",
+              "ToolTip": "E:\\GitHubFile\\VScode\\ZZZIFOX\\WPFUI\\TranslateUI.xaml.cs",
               "RelativeToolTip": "WPFUI\\TranslateUI.xaml.cs",
-              "ViewState": "AQIAAPkAAAAAAAAAAAAAABUAAAAlAAAA",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAAJABAABiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-28T00:09:39.24Z",
               "EditorCaption": ""
@@ -78,9 +94,9 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "TranslateUI.xaml",
-              "DocumentMoniker": "D:\\GithubProject\\VScode\\ZZZIFOX\\WPFUI\\TranslateUI.xaml",
+              "DocumentMoniker": "E:\\GitHubFile\\VScode\\ZZZIFOX\\WPFUI\\TranslateUI.xaml",
               "RelativeDocumentMoniker": "WPFUI\\TranslateUI.xaml",
-              "ToolTip": "D:\\GithubProject\\VScode\\ZZZIFOX\\WPFUI\\TranslateUI.xaml",
+              "ToolTip": "E:\\GitHubFile\\VScode\\ZZZIFOX\\WPFUI\\TranslateUI.xaml",
               "RelativeToolTip": "WPFUI\\TranslateUI.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-09-26T10:33:45.461Z",
@@ -90,9 +106,9 @@
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "Translateset.settings",
-              "DocumentMoniker": "D:\\GithubProject\\VScode\\ZZZIFOX\\Settings\\Translateset.settings",
+              "DocumentMoniker": "E:\\GitHubFile\\VScode\\ZZZIFOX\\Settings\\Translateset.settings",
               "RelativeDocumentMoniker": "Settings\\Translateset.settings",
-              "ToolTip": "D:\\GithubProject\\VScode\\ZZZIFOX\\Settings\\Translateset.settings",
+              "ToolTip": "E:\\GitHubFile\\VScode\\ZZZIFOX\\Settings\\Translateset.settings",
               "RelativeToolTip": "Settings\\Translateset.settings",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002767|",
               "WhenOpened": "2024-09-27T15:26:37.294Z",
@@ -100,24 +116,24 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Translater.cs",
-              "DocumentMoniker": "D:\\GithubProject\\VScode\\ZZZIFOX\\ProjectItems\\Translater.cs",
+              "DocumentMoniker": "E:\\GitHubFile\\VScode\\ZZZIFOX\\ProjectItems\\Translater.cs",
               "RelativeDocumentMoniker": "ProjectItems\\Translater.cs",
-              "ToolTip": "D:\\GithubProject\\VScode\\ZZZIFOX\\ProjectItems\\Translater.cs",
+              "ToolTip": "E:\\GitHubFile\\VScode\\ZZZIFOX\\ProjectItems\\Translater.cs",
               "RelativeToolTip": "ProjectItems\\Translater.cs",
-              "ViewState": "AQIAACwAAAAAAAAAAAAowBUAAAAbAAAA",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAABIAAACPAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-25T12:23:54.559Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "SelectSimlarText.cs",
-              "DocumentMoniker": "D:\\GithubProject\\VScode\\ZZZIFOX\\ProjectItems\\SelectSimlarText.cs",
+              "DocumentMoniker": "E:\\GitHubFile\\VScode\\ZZZIFOX\\ProjectItems\\SelectSimlarText.cs",
               "RelativeDocumentMoniker": "ProjectItems\\SelectSimlarText.cs",
-              "ToolTip": "D:\\GithubProject\\VScode\\ZZZIFOX\\ProjectItems\\SelectSimlarText.cs",
+              "ToolTip": "E:\\GitHubFile\\VScode\\ZZZIFOX\\ProjectItems\\SelectSimlarText.cs",
               "RelativeToolTip": "ProjectItems\\SelectSimlarText.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAACgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -125,11 +141,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "BlockCount.cs",
-              "DocumentMoniker": "D:\\GithubProject\\VScode\\ZZZIFOX\\ProjectItems\\BlockCount.cs",
+              "DocumentMoniker": "E:\\GitHubFile\\VScode\\ZZZIFOX\\ProjectItems\\BlockCount.cs",
               "RelativeDocumentMoniker": "ProjectItems\\BlockCount.cs",
-              "ToolTip": "D:\\GithubProject\\VScode\\ZZZIFOX\\ProjectItems\\BlockCount.cs",
+              "ToolTip": "E:\\GitHubFile\\VScode\\ZZZIFOX\\ProjectItems\\BlockCount.cs",
               "RelativeToolTip": "ProjectItems\\BlockCount.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAwwB4AAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -137,11 +153,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "ToInsetBlock.cs",
-              "DocumentMoniker": "D:\\GithubProject\\VScode\\ZZZIFOX\\ProjectItems\\ToInsetBlock.cs",
+              "DocumentMoniker": "E:\\GitHubFile\\VScode\\ZZZIFOX\\ProjectItems\\ToInsetBlock.cs",
               "RelativeDocumentMoniker": "ProjectItems\\ToInsetBlock.cs",
-              "ToolTip": "D:\\GithubProject\\VScode\\ZZZIFOX\\ProjectItems\\ToInsetBlock.cs",
+              "ToolTip": "E:\\GitHubFile\\VScode\\ZZZIFOX\\ProjectItems\\ToInsetBlock.cs",
               "RelativeToolTip": "ProjectItems\\ToInsetBlock.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -149,11 +165,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "StartMenu.cs",
-              "DocumentMoniker": "D:\\GithubProject\\VScode\\ZZZIFOX\\StartMenu.cs",
+              "DocumentMoniker": "E:\\GitHubFile\\VScode\\ZZZIFOX\\StartMenu.cs",
               "RelativeDocumentMoniker": "StartMenu.cs",
-              "ToolTip": "D:\\GithubProject\\VScode\\ZZZIFOX\\StartMenu.cs",
+              "ToolTip": "E:\\GitHubFile\\VScode\\ZZZIFOX\\StartMenu.cs",
               "RelativeToolTip": "StartMenu.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAADoAAAA2AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

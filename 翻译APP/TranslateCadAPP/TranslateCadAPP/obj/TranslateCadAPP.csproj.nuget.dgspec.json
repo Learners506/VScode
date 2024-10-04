@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\GithubProject\\VScode\\翻译APP\\TranslateCadAPP\\TranslateCadAPP\\TranslateCadAPP.csproj": {}
+    "E:\\GitHubFile\\VScode\\翻译APP\\TranslateCadAPP\\TranslateCadAPP\\TranslateCadAPP.csproj": {}
   },
   "projects": {
-    "D:\\GithubProject\\VScode\\翻译APP\\TranslateCadAPP\\TranslateCadAPP\\TranslateCadAPP.csproj": {
+    "E:\\GitHubFile\\VScode\\翻译APP\\TranslateCadAPP\\TranslateCadAPP\\TranslateCadAPP.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GithubProject\\VScode\\翻译APP\\TranslateCadAPP\\TranslateCadAPP\\TranslateCadAPP.csproj",
+        "projectUniqueName": "E:\\GitHubFile\\VScode\\翻译APP\\TranslateCadAPP\\TranslateCadAPP\\TranslateCadAPP.csproj",
         "projectName": "TranslateCadAPP",
-        "projectPath": "D:\\GithubProject\\VScode\\翻译APP\\TranslateCadAPP\\TranslateCadAPP\\TranslateCadAPP.csproj",
-        "packagesPath": "C:\\Users\\np0825\\.nuget\\packages\\",
-        "outputPath": "D:\\GithubProject\\VScode\\翻译APP\\TranslateCadAPP\\TranslateCadAPP\\obj\\",
+        "projectPath": "E:\\GitHubFile\\VScode\\翻译APP\\TranslateCadAPP\\TranslateCadAPP\\TranslateCadAPP.csproj",
+        "packagesPath": "C:\\Users\\ZZZ\\.nuget\\packages\\",
+        "outputPath": "E:\\GitHubFile\\VScode\\翻译APP\\TranslateCadAPP\\TranslateCadAPP\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\np0825\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ZZZ\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -67,7 +67,7 @@
               "version": "[13.0.3, )"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     }
