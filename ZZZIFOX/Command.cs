@@ -2,8 +2,6 @@
 {
     public static class Command
     {
-
-
         // 右边朝向
         [CommandMethod(nameof(r1right))]
         public static void r1right()
@@ -61,7 +59,6 @@
             }
 
         }
-
         // 上面
         [CommandMethod(nameof(r1up))]
         public static void r1up()
@@ -120,7 +117,6 @@
             }
 
         }
-
         // 左面
         [CommandMethod(nameof(r1left))]
         public static void r1left()
@@ -179,7 +175,6 @@
             }
 
         }
-
         // 下面
         [CommandMethod(nameof(r1down))]
         public static void r1down()
@@ -265,5 +260,6 @@
 
             return new Point3d(centerX, centerY, centerZ);
         }
+
     }
 }

@@ -1,9 +1,0 @@
-{
-  "profiles": {
-    "配置文件 1": {
-      "commandName": "Executable",
-      "executablePath": "D:\\Software\\AutoCAD2021\\AutoCAD 2021\\acad.exe",
-      "commandLineArgs": "/nologo"
-    }
-  }
-}

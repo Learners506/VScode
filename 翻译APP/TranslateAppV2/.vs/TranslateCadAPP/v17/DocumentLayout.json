@@ -3,24 +3,24 @@
   "WorkspaceRootPath": "D:\\GithubProject\\VScode\\\u7FFB\u8BD1APP\\TranslateAppV2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3A861A87-ED8F-4857-AED4-198D2562483E}|TranslateCadAPP.csproj|d:\\githubproject\\vscode\\\u7FFB\u8BD1app\\translateappv2\\wpfui\\translatecadv2.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{3A861A87-ED8F-4857-AED4-198D2562483E}|TranslateCadAPP.csproj|solutionrelative:wpfui\\translatecadv2.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3A861A87-ED8F-4857-AED4-198D2562483E}|TranslateCadAPP.csproj|d:\\githubproject\\vscode\\\u7FFB\u8BD1app\\translateappv2\\wpfui\\window1.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{3A861A87-ED8F-4857-AED4-198D2562483E}|TranslateCadAPP.csproj|solutionrelative:wpfui\\window1.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3A861A87-ED8F-4857-AED4-198D2562483E}|TranslateCadAPP.csproj|d:\\githubproject\\vscode\\\u7FFB\u8BD1app\\translateappv2\\wpfui\\translatecad.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{3A861A87-ED8F-4857-AED4-198D2562483E}|TranslateCadAPP.csproj|solutionrelative:wpfui\\translatecad.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3A861A87-ED8F-4857-AED4-198D2562483E}|TranslateCadAPP.csproj|d:\\githubproject\\vscode\\\u7FFB\u8BD1app\\translateappv2\\wpfui\\translatecad.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3A861A87-ED8F-4857-AED4-198D2562483E}|TranslateCadAPP.csproj|solutionrelative:wpfui\\translatecad.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3A861A87-ED8F-4857-AED4-198D2562483E}|TranslateCadAPP.csproj|d:\\githubproject\\vscode\\\u7FFB\u8BD1app\\translateappv2\\command.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3A861A87-ED8F-4857-AED4-198D2562483E}|TranslateCadAPP.csproj|solutionrelative:command.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A861A87-ED8F-4857-AED4-198D2562483E}|TranslateCadAPP.csproj|d:\\githubproject\\vscode\\\u7FFB\u8BD1app\\translateappv2\\wpfui\\window1.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3A861A87-ED8F-4857-AED4-198D2562483E}|TranslateCadAPP.csproj|solutionrelative:wpfui\\window1.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A861A87-ED8F-4857-AED4-198D2562483E}|TranslateCadAPP.csproj|d:\\githubproject\\vscode\\\u7FFB\u8BD1app\\translateappv2\\wpfui\\translatecadv2.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3A861A87-ED8F-4857-AED4-198D2562483E}|TranslateCadAPP.csproj|solutionrelative:wpfui\\translatecadv2.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A861A87-ED8F-4857-AED4-198D2562483E}|TranslateCadAPP.csproj|d:\\githubproject\\vscode\\\u7FFB\u8BD1app\\translateappv2\\wpfui\\translatecad.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3A861A87-ED8F-4857-AED4-198D2562483E}|TranslateCadAPP.csproj|solutionrelative:wpfui\\translatecad.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3A861A87-ED8F-4857-AED4-198D2562483E}|TranslateCadAPP.csproj|d:\\githubproject\\vscode\\\u7FFB\u8BD1app\\translateappv2\\code\\cadtranslate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -34,11 +34,15 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "TranslateCADV2.xaml",
               "DocumentMoniker": "D:\\GithubProject\\VScode\\\u7FFB\u8BD1APP\\TranslateAppV2\\WPFUI\\TranslateCADV2.xaml",
               "RelativeDocumentMoniker": "WPFUI\\TranslateCADV2.xaml",
@@ -50,18 +54,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Window1.xaml",
               "DocumentMoniker": "D:\\GithubProject\\VScode\\\u7FFB\u8BD1APP\\TranslateAppV2\\WPFUI\\Window1.xaml",
               "RelativeDocumentMoniker": "WPFUI\\Window1.xaml",
               "ToolTip": "D:\\GithubProject\\VScode\\\u7FFB\u8BD1APP\\TranslateAppV2\\WPFUI\\Window1.xaml",
               "RelativeToolTip": "WPFUI\\Window1.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-08-16T00:15:00.952Z"
+              "WhenOpened": "2024-08-16T00:15:00.952Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "Command.cs",
               "DocumentMoniker": "D:\\GithubProject\\VScode\\\u7FFB\u8BD1APP\\TranslateAppV2\\Command.cs",
               "RelativeDocumentMoniker": "Command.cs",
@@ -69,23 +74,25 @@
               "RelativeToolTip": "Command.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-21T14:57:34.986Z"
+              "WhenOpened": "2024-07-21T14:57:34.986Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "translatecad.xaml.cs",
               "DocumentMoniker": "D:\\GithubProject\\VScode\\\u7FFB\u8BD1APP\\TranslateAppV2\\WPFUI\\translatecad.xaml.cs",
               "RelativeDocumentMoniker": "WPFUI\\translatecad.xaml.cs",
               "ToolTip": "D:\\GithubProject\\VScode\\\u7FFB\u8BD1APP\\TranslateAppV2\\WPFUI\\translatecad.xaml.cs",
               "RelativeToolTip": "WPFUI\\translatecad.xaml.cs",
-              "ViewState": "AQIAAFcAAAAAAAAAAAAowBAAAAAiAAAA",
+              "ViewState": "AQIAAC8CAAAAAAAAAAAowBAAAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-18T14:33:00.238Z"
+              "WhenOpened": "2024-07-18T14:33:00.238Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "translatecad.xaml",
               "DocumentMoniker": "D:\\GithubProject\\VScode\\\u7FFB\u8BD1APP\\TranslateAppV2\\WPFUI\\translatecad.xaml",
               "RelativeDocumentMoniker": "WPFUI\\translatecad.xaml",

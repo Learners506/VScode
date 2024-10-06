@@ -4,6 +4,7 @@ using System.Linq;
 using System.Net.NetworkInformation;
 using System.Text;
 using System.Threading.Tasks;
+using ClosedXML.Excel;
 
 namespace ZZZIFOX.ProjectItems
 {
@@ -81,6 +82,51 @@ namespace ZZZIFOX.ProjectItems
                 }
 
             } 
+        }
+
+        [CommandMethod(nameof(ETC))]
+        public void ETC()
+        {
+            //选择Excel路径
+            var fileDialog = new Microsoft.Win32.OpenFileDialog()
+            {
+                Filter = "Excel files (*.xlsx;*.xls)|*.xlsx;*.xls"
+            };
+            if (fileDialog.ShowDialog() != true) return;
+            var excelPath = fileDialog.FileName;
+            Env.Editor.WriteMessage(excelPath + "\n");
+
+            // 读取文件
+            using (var workbook = new XLWorkbook(excelPath))
+            {
+                var worksheet = workbook.Worksheet(1);
+                var range = worksheet.RangeUsed();
+
+                var r1 = Env.Editor.GetDouble(new PromptDoubleOptions("\n请设置字体大小："));
+                var r2 = Env.Editor.GetDouble(new PromptDoubleOptions("\n请设置行高："));
+                var r3 = Env.Editor.GetDouble(new PromptDoubleOptions("\n请设置列宽："));
+                var fontsize = r1.Value;
+                var rowheight = r2.Value;
+                var columnwidth = r3.Value;
+
+                var p1 = Env.Editor.GetPoint("\n请设置插入点：");
+                var startPoint = p1.Value.Ucs2Wcs();
+
+                using var tr = new DBTrans();
+                for (int i = 1; i <= range.RowCount(); i++)
+                {
+                    for (int j = 1; j <= range.ColumnCount(); j++)
+                    {
+                        var cellvalue = range.Cell(i, j).Value.ToString();
+                        // 创建文本
+                        DBText text = new DBText();
+                        text.Position = startPoint + new Vector3d((j - 1) * columnwidth, -(i - 1) * rowheight, 0);
+                        text.Height = fontsize;
+                        text.TextString = cellvalue;
+                        tr.CurrentSpace.AppendEntity(text);
+                    }
+                }
+            }
         }
     }
 }

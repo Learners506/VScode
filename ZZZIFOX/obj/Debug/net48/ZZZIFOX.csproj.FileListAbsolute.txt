@@ -18,8 +18,6 @@ D:\GithubProject\VScode\ZZZIFOX\obj\Debug\net48\WPFUI\NewCopyWindow.g.cs
 D:\GithubProject\VScode\ZZZIFOX\obj\Debug\net48\WPFUI\NewCopyWindow.baml
 D:\GithubProject\VScode\ZZZIFOX\obj\Debug\net48\WPFUI\TranslateUI.g.cs
 D:\GithubProject\VScode\ZZZIFOX\obj\Debug\net48\WPFUI\TranslateUI.baml
-D:\GithubProject\VScode\ZZZIFOX\bin\Debug\net48\Newtonsoft.Json.dll
-D:\GithubProject\VScode\ZZZIFOX\obj\Debug\net48\ZZZIFOX.csproj.Up2Date
 E:\GitHubFile\VScode\ZZZIFOX\bin\Debug\net48\ZZZIFOX.dll.config
 E:\GitHubFile\VScode\ZZZIFOX\bin\Debug\net48\ZZZIFOX.dll
 E:\GitHubFile\VScode\ZZZIFOX\bin\Debug\net48\ZZZIFOX.pdb
@@ -44,3 +42,8 @@ E:\GitHubFile\VScode\ZZZIFOX\obj\Debug\net48\ZZZIFOX.sourcelink.json
 E:\GitHubFile\VScode\ZZZIFOX\obj\Debug\net48\ZZZIFOX.csproj.Up2Date
 E:\GitHubFile\VScode\ZZZIFOX\obj\Debug\net48\ZZZIFOX.dll
 E:\GitHubFile\VScode\ZZZIFOX\obj\Debug\net48\ZZZIFOX.pdb
+D:\GithubProject\VScode\ZZZIFOX\obj\Debug\net48\WPFUI\translatewords.g.cs
+D:\GithubProject\VScode\ZZZIFOX\obj\Debug\net48\WPFUI\translatewords.baml
+D:\GithubProject\VScode\ZZZIFOX\obj\Debug\net48\ZZZIFOX.csproj.Fody.CopyLocal.cache
+D:\GithubProject\VScode\ZZZIFOX\obj\Debug\net48\WPFUI\TestPanelSet.g.cs
+D:\GithubProject\VScode\ZZZIFOX\obj\Debug\net48\WPFUI\TestPanelSet.baml

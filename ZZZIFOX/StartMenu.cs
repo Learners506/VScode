@@ -36,6 +36,9 @@ namespace ZZZIFOX
 
                 zcdl.InvokeMethod("AddMenuItem", 0, "文字导出txt(EtoF)", "\u0003EtoF ");
                 zcdl.InvokeMethod("AddMenuItem", 1, "txt导入为文字(FtoE)", "\u0003FtoE ");
+                zcdl.InvokeMethod("AddMenuItem", 2, "文字对齐(DQWZ)", "\u0003DQWZ ");
+                zcdl.InvokeMethod("AddMenuItem", 3, "导出图层文字(dctcwz)", "\u0003dctcwz ");
+                zcdl.InvokeMethod("AddMenuItem", 4, "读取EXCEL文字内容到CAD(ETC)", "\u0003ETC ");
 
             }
             // 添加分隔符
@@ -51,7 +54,7 @@ namespace ZZZIFOX
             }
 
 
-            menu.InvokeMethod("AddMenuItem", 3, "测试文件(CS99)", "\u0003CS999 ");
+            menu.InvokeMethod("AddMenuItem", 3, "文字翻译(TRANS)", "\u0003TRANS ");
 
             // 添加菜单到菜单栏
             try

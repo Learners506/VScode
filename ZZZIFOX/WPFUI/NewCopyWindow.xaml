@@ -14,7 +14,6 @@
         <TextBox HorizontalAlignment="Left" Margin="68,41,0,0" TextWrapping="Wrap" Text="{Binding TextString}" VerticalAlignment="Top" Width="221"/>
         <Button Content="确定" HorizontalAlignment="Left" Margin="48,109,0,0" VerticalAlignment="Top" Width="48" Click="Button_Click"/>
         <Button Content="取消" HorizontalAlignment="Left" Margin="191,109,0,0" VerticalAlignment="Top" Width="52" Click="Button_Click_1"/>
-
     </Grid>
 
 
