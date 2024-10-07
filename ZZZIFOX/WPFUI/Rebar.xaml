@@ -1,0 +1,117 @@
+﻿<UserControl x:Class="ZZZIFOX.WPFUI.Rebar"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ZZZIFOX.WPFUI"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800" Loaded="UserControl_Loaded">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"></ColumnDefinition>
+            <ColumnDefinition Width="7*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        
+        
+        <TabControl Grid.Column="1">
+            <TabItem Header="单层梁钢筋排布" Margin="-2,-2,-2,0">
+                <Grid Background="#FFE5E5E5">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="2*"></RowDefinition>
+                        <RowDefinition Height="15*"></RowDefinition>
+                        <RowDefinition Height="2*"></RowDefinition>
+                        <RowDefinition Height="15*"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Label Content="梁钢筋排成一排时钢筋最多根数（梁顶/梁底）" HorizontalAlignment="Center" VerticalAlignment="Center" ></Label>
+                    <DataGrid Grid.Row="1"></DataGrid>
+                    <Label Grid.Row="2" Content="梁钢筋排成一排时钢筋最多面积（梁顶/梁底）" HorizontalAlignment="Center" VerticalAlignment="Center" ></Label>
+                    <DataGrid Grid.Row="3"></DataGrid>
+                </Grid>
+            </TabItem>
+            <TabItem Header="TabItem">
+                <Grid Background="#FFE5E5E5"/>
+            </TabItem>
+        </TabControl>
+        <Grid Grid.Column="0" Background="#FFE5E5E5">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="3*"></ColumnDefinition>
+                <ColumnDefinition Width="2*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <StackPanel Orientation="Vertical">
+                <Label Content="使用年限" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,15,0,0"/>
+                <Label Content="环境类别" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                <Label Content="砼强度(MPa)" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                <Label Content="箍筋直径" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,10" />
+                <Label Content="最小保护层(mm)" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                <Label Content="保护层厚度(mm)" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,10" />
+                <Label Content="查询直径(mm)" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                <Label Content="查询梁宽(mm)" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                <Label Content="单排最大根数" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                <Label Content="梁顶实配(cm^2)" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,10,0,0" />
+                <Label Content="顶2倍(cm^2)" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                <Label Content="顶2.5倍(cm^2)" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                <Label Content="梁底实配(cm^2)" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,10,0,0" />
+                <Label Content="底2倍(cm^2)" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                <Label Content="底2.5倍(cm^2)" HorizontalAlignment="Center" VerticalAlignment="Center" />
+
+            </StackPanel>
+            <StackPanel Grid.Column="1" Orientation="Vertical">
+                <ComboBox Name="comboBoxSYNX" SelectedIndex="0" HorizontalAlignment="Center" VerticalAlignment="Center" Width="50" Margin="0,15,0,4" >
+                    <ComboBoxItem>50</ComboBoxItem>
+                    <ComboBoxItem>100</ComboBoxItem>
+                </ComboBox>
+                <ComboBox Name="comboBoxHJLB" SelectedIndex="1" HorizontalAlignment="Center" VerticalAlignment="Center" Width="50" >
+                    <ComboBoxItem>一</ComboBoxItem>
+                    <ComboBoxItem>二a</ComboBoxItem>
+                    <ComboBoxItem>二b</ComboBoxItem>
+                    <ComboBoxItem>三a</ComboBoxItem>
+                    <ComboBoxItem>三b</ComboBoxItem>
+                </ComboBox>
+                <ComboBox Name="comboBoxHNTQD" SelectedIndex="1" HorizontalAlignment="Center" VerticalAlignment="Center" Width="50" Margin="0,4,0,0" >
+                    <ComboBoxItem>小等于C25</ComboBoxItem>
+                    <ComboBoxItem>大于C25</ComboBoxItem>
+                </ComboBox>
+                <ComboBox Name="comboBoxGJZJ" SelectedIndex="1" HorizontalAlignment="Center" VerticalAlignment="Center" Width="50" Margin="0,4,0,0" >
+                    <ComboBoxItem>6</ComboBoxItem>
+                    <ComboBoxItem>8</ComboBoxItem>
+                    <ComboBoxItem>10</ComboBoxItem>
+                    <ComboBoxItem>12</ComboBoxItem>
+                </ComboBox>
+                <TextBox Name="textBoxZXBHC" HorizontalAlignment="Center" VerticalAlignment="Center" Width="50" Margin="0,18,0,0" Height="17.24" />
+                <TextBox Name="textBoxBHCHD" HorizontalAlignment="Center" VerticalAlignment="Center" Width="50" Margin="0,8,0,0" Height="17.24" />
+                <ComboBox Name="comboBoxGAJZJ" SelectedIndex="1" HorizontalAlignment="Center" VerticalAlignment="Center" Width="50" Margin="0,14,0,0" >
+                    <ComboBoxItem>14</ComboBoxItem>
+                    <ComboBoxItem>16</ComboBoxItem>
+                    <ComboBoxItem>18</ComboBoxItem>
+                    <ComboBoxItem>20</ComboBoxItem>
+                    <ComboBoxItem>22</ComboBoxItem>
+                    <ComboBoxItem>25</ComboBoxItem>
+                    <ComboBoxItem>28</ComboBoxItem>
+                    <ComboBoxItem>32</ComboBoxItem>
+                </ComboBox>
+                <ComboBox Name="comboBoxLK" SelectedIndex="1" HorizontalAlignment="Center" VerticalAlignment="Center" Width="50" Margin="0,4,0,0" >
+                    <ComboBoxItem>200</ComboBoxItem>
+                    <ComboBoxItem>250</ComboBoxItem>
+                    <ComboBoxItem>300</ComboBoxItem>
+                    <ComboBoxItem>350</ComboBoxItem>
+                    <ComboBoxItem>400</ComboBoxItem>
+                    <ComboBoxItem>450</ComboBoxItem>
+                    <ComboBoxItem>500</ComboBoxItem>
+                    <ComboBoxItem>600</ComboBoxItem>
+                    <ComboBoxItem>700</ComboBoxItem>
+                    <ComboBoxItem>800</ComboBoxItem>
+                    <ComboBoxItem>900</ComboBoxItem>
+                    <ComboBoxItem>1000</ComboBoxItem>
+                </ComboBox>
+                <TextBox Name="textBoxDPZDGS" HorizontalAlignment="Center" VerticalAlignment="Center" Width="50" Margin="0,8,0,0" Height="17.24" />
+                <TextBox Name="textBoxLDSP1" HorizontalAlignment="Center" VerticalAlignment="Center" Width="50" Margin="0,18,0,0" Height="17.24" />
+                <TextBox Name="textBoxLDSP2" HorizontalAlignment="Center" VerticalAlignment="Center" Width="50" Margin="0,8,0,0" Height="17.24" />
+                <TextBox Name="textBoxLDSP3" HorizontalAlignment="Center" VerticalAlignment="Center" Width="50" Margin="0,8,0,0" Height="17.24" />
+                <TextBox Name="textBoxLDISP1" HorizontalAlignment="Center" VerticalAlignment="Center" Width="50" Margin="0,18,0,0" Height="17.24" />
+                <TextBox Name="textBoxLDISP2" HorizontalAlignment="Center" VerticalAlignment="Center" Width="50" Margin="0,8,0,0" Height="17.24" />
+                <TextBox Name="textBoxLDISP3" HorizontalAlignment="Center" VerticalAlignment="Center" Width="50" Margin="0,8,0,0" Height="17.24" />
+            </StackPanel>
+        </Grid>
+
+    </Grid>
+</UserControl>

@@ -47,3 +47,5 @@ D:\GithubProject\VScode\ZZZIFOX\obj\Debug\net48\WPFUI\translatewords.baml
 D:\GithubProject\VScode\ZZZIFOX\obj\Debug\net48\ZZZIFOX.csproj.Fody.CopyLocal.cache
 D:\GithubProject\VScode\ZZZIFOX\obj\Debug\net48\WPFUI\TestPanelSet.g.cs
 D:\GithubProject\VScode\ZZZIFOX\obj\Debug\net48\WPFUI\TestPanelSet.baml
+D:\GithubProject\VScode\ZZZIFOX\obj\Debug\net48\WPFUI\Rebar.g.cs
+D:\GithubProject\VScode\ZZZIFOX\obj\Debug\net48\WPFUI\Rebar.baml

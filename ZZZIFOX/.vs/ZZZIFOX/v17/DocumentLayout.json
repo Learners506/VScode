@@ -1,7 +1,28 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\GithubProject\\VScode\\ZZZIFOX\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1C630A4E-0CD8-4FF4-9136-9CE2506C8848}|ZZZIFOX.csproj|d:\\githubproject\\vscode\\zzzifox\\wpfui\\rebar.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1C630A4E-0CD8-4FF4-9136-9CE2506C8848}|ZZZIFOX.csproj|solutionrelative:wpfui\\rebar.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1C630A4E-0CD8-4FF4-9136-9CE2506C8848}|ZZZIFOX.csproj|d:\\githubproject\\vscode\\zzzifox\\wpfui\\rebar.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{1C630A4E-0CD8-4FF4-9136-9CE2506C8848}|ZZZIFOX.csproj|solutionrelative:wpfui\\rebar.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1C630A4E-0CD8-4FF4-9136-9CE2506C8848}|ZZZIFOX.csproj|d:\\githubproject\\vscode\\zzzifox\\projectitems\\checkrebar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1C630A4E-0CD8-4FF4-9136-9CE2506C8848}|ZZZIFOX.csproj|solutionrelative:projectitems\\checkrebar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1C630A4E-0CD8-4FF4-9136-9CE2506C8848}|ZZZIFOX.csproj|d:\\githubproject\\vscode\\zzzifox\\startmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1C630A4E-0CD8-4FF4-9136-9CE2506C8848}|ZZZIFOX.csproj|solutionrelative:startmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1C630A4E-0CD8-4FF4-9136-9CE2506C8848}|ZZZIFOX.csproj|d:\\githubproject\\vscode\\zzzifox\\projectitems\\dllproject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1C630A4E-0CD8-4FF4-9136-9CE2506C8848}|ZZZIFOX.csproj|solutionrelative:projectitems\\dllproject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +30,74 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Rebar.xaml.cs",
+              "DocumentMoniker": "D:\\GithubProject\\VScode\\ZZZIFOX\\WPFUI\\Rebar.xaml.cs",
+              "RelativeDocumentMoniker": "WPFUI\\Rebar.xaml.cs",
+              "ToolTip": "D:\\GithubProject\\VScode\\ZZZIFOX\\WPFUI\\Rebar.xaml.cs",
+              "RelativeToolTip": "WPFUI\\Rebar.xaml.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAAgAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-07T02:30:07.555Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CheckRebar.cs",
+              "DocumentMoniker": "D:\\GithubProject\\VScode\\ZZZIFOX\\ProjectItems\\CheckRebar.cs",
+              "RelativeDocumentMoniker": "ProjectItems\\CheckRebar.cs",
+              "ToolTip": "D:\\GithubProject\\VScode\\ZZZIFOX\\ProjectItems\\CheckRebar.cs",
+              "RelativeToolTip": "ProjectItems\\CheckRebar.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAYwB8AAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-07T02:28:27.122Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DLLproject.cs",
+              "DocumentMoniker": "D:\\GithubProject\\VScode\\ZZZIFOX\\ProjectItems\\DLLproject.cs",
+              "RelativeDocumentMoniker": "ProjectItems\\DLLproject.cs",
+              "ToolTip": "D:\\GithubProject\\VScode\\ZZZIFOX\\ProjectItems\\DLLproject.cs",
+              "RelativeToolTip": "ProjectItems\\DLLproject.cs",
+              "ViewState": "AQIAAAABAAAAAAAAAAAIwBgBAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-07T02:27:51.098Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Rebar.xaml",
+              "DocumentMoniker": "D:\\GithubProject\\VScode\\ZZZIFOX\\WPFUI\\Rebar.xaml",
+              "RelativeDocumentMoniker": "WPFUI\\Rebar.xaml",
+              "ToolTip": "D:\\GithubProject\\VScode\\ZZZIFOX\\WPFUI\\Rebar.xaml",
+              "RelativeToolTip": "WPFUI\\Rebar.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-10-07T02:07:51.657Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "StartMenu.cs",
+              "DocumentMoniker": "D:\\GithubProject\\VScode\\ZZZIFOX\\StartMenu.cs",
+              "RelativeDocumentMoniker": "StartMenu.cs",
+              "ToolTip": "D:\\GithubProject\\VScode\\ZZZIFOX\\StartMenu.cs",
+              "RelativeToolTip": "StartMenu.cs",
+              "ViewState": "AQIAAB8AAAAAAAAAAAAYwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-07T02:00:40.891Z",
+              "EditorCaption": ""
             }
           ]
         }
